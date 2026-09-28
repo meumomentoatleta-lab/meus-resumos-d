@@ -343,9 +343,11 @@ function renderMindmaps() {
 function populateSubjects() {
   const select = document.getElementById("flashcardSubject");
 
-  const subjects = getSubjects();
+  const subjectsWithCards = [
+    ...new Set(flashcards.map((card) => card.subject)),
+  ];
 
-  subjects.forEach((subject) => {
+  subjectsWithCards.forEach((subject) => {
     const option = document.createElement("option");
 
     option.value = subject;
