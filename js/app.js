@@ -53,11 +53,29 @@ async function loadStudyData() {
   flashcards = flashcardsBySubject.flat();
 }
 
+function getCardProgressKey(card) {
+  return JSON.stringify([card.subject, card.id]);
+}
+
 function getCardProgress(card, progress) {
-  return (
-    progress[card.id] ||
-    (card.legacyId == null ? undefined : progress[card.legacyId])
-  );
+  const progressKey = getCardProgressKey(card);
+
+  if (progress[progressKey]) {
+    return progress[progressKey];
+  }
+
+  const legacyKeys = [card.id, card.legacyId].filter((key) => key != null);
+
+  for (const legacyKey of legacyKeys) {
+    const matchingCards = flashcards.filter(
+      (candidate) =>
+        candidate.id === legacyKey || candidate.legacyId === legacyKey,
+    );
+
+    if (matchingCards.length === 1 && progress[legacyKey]) {
+      return progress[legacyKey];
+    }
+  }
 }
 
 /* =========================================
@@ -71,30 +89,70 @@ let currentCardIndex = 0;
 let isFlipped = false;
 
 /* =========================================
-   LOCAL STORAGE
+   PROGRESSO DIÁRIO
 ========================================= */
 
 const STORAGE_KEY = "meus_estudos_progress";
 
+function getLocalDateKey(date = new Date()) {
+  const year = date.getFullYear();
+  const month = String(date.getMonth() + 1).padStart(2, "0");
+  const day = String(date.getDate()).padStart(2, "0");
+
+  return `${year}-${month}-${day}`;
+}
+
 function getProgress() {
-  const saved = localStorage.getItem(STORAGE_KEY);
+  const saved = sessionStorage.getItem(STORAGE_KEY);
 
   if (!saved) {
     return {};
   }
 
   try {
-    return JSON.parse(saved);
+    const stored = JSON.parse(saved);
+
+    if (
+      stored.date !== getLocalDateKey() ||
+      typeof stored.progress !== "object" ||
+      stored.progress === null
+    ) {
+      sessionStorage.removeItem(STORAGE_KEY);
+      return {};
+    }
+
+    return stored.progress;
   } catch {
+    sessionStorage.removeItem(STORAGE_KEY);
     return {};
   }
 }
 
 function saveProgress(progress) {
-  localStorage.setItem(
+  sessionStorage.setItem(
     STORAGE_KEY,
+    JSON.stringify({
+      date: getLocalDateKey(),
+      progress,
+    }),
+  );
+}
 
-    JSON.stringify(progress),
+function scheduleDailyProgressReset() {
+  const now = new Date();
+  const nextMidnight = new Date(
+    now.getFullYear(),
+    now.getMonth(),
+    now.getDate() + 1,
+  );
+
+  window.setTimeout(
+    () => {
+      sessionStorage.removeItem(STORAGE_KEY);
+      updateDashboard();
+      scheduleDailyProgressReset();
+    },
+    nextMidnight.getTime() - now.getTime() + 50,
   );
 }
 
@@ -439,7 +497,7 @@ function markCard(known, event) {
 
   const progress = getProgress();
 
-  progress[card.id] = {
+  progress[getCardProgressKey(card)] = {
     status: known ? "known" : "unknown",
 
     date: new Date().toISOString(),
@@ -616,6 +674,14 @@ document.addEventListener("keydown", function (event) {
 ========================================= */
 
 document.addEventListener("DOMContentLoaded", async function () {
+  scheduleDailyProgressReset();
+
+  document.addEventListener("visibilitychange", () => {
+    if (!document.hidden) {
+      updateDashboard();
+    }
+  });
+
   try {
     await loadStudyData();
   } catch (error) {
