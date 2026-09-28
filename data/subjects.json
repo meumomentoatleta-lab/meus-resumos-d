@@ -31,6 +31,16 @@
       "mindmaps": "data/mindmaps/administrativo.json"
     },
     {
+      "id": "auditoria",
+      "name": "Auditoria",
+      "shortName": "Auditoria",
+      "icon": "🔎",
+      "color": "#be123c",
+      "description": "Auditoria fiscal, NF-e, EFD-Reinf e obrigações fiscais digitais.",
+      "flashcards": "data/flashcards/auditoria.json",
+      "mindmaps": "data/mindmaps/auditoria.json"
+    },
+    {
       "id": "contabilidade",
       "name": "Contabilidade",
       "shortName": "Contabilidade",
