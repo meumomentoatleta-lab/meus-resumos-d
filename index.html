@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Meus Estudos</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header class="topbar">
+
+    <div class="logo" onclick="showPage('dashboard')">
+        📚 <span>Meus Estudos</span>
+    </div>
+
+    <nav>
+        <button onclick="showPage('dashboard')">🏠 Dashboard</button>
+        <button onclick="showPage('mindmaps')">🧠 Mind Maps</button>
+        <button onclick="showPage('flashcards')">🃏 Flashcards</button>
+    </nav>
+
+    <div class="top-actions">
+
+        <button
+            class="icon-button"
+            onclick="toggleDarkMode()"
+            title="Alternar tema">
+            🌙
+        </button>
+
+    </div>
+
+</header>
+
+
+<main class="container">
+
+
+    <!-- ========================================= -->
+    <!-- DASHBOARD                                -->
+    <!-- ========================================= -->
+
+    <section id="dashboard" class="page active">
+
+        <div class="page-header">
+
+            <div>
+                <h1>Olá! 👋</h1>
+
+                <p>
+                    Continue seus estudos de onde parou.
+                </p>
+            </div>
+
+            <div class="search-box">
+
+                <input
+                    type="text"
+                    id="globalSearch"
+                    placeholder="🔎 Buscar conteúdo..."
+                    oninput="globalSearch()">
+
+            </div>
+
+        </div>
+
+
+        <!-- CARDS DE RESUMO -->
+
+        <div class="stats-grid">
+
+            <div class="stat-card">
+                <span class="stat-icon">🧠</span>
+
+                <div>
+                    <span class="stat-number" id="totalMindmaps">
+                        0
+                    </span>
+
+                    <span class="stat-label">
+                        Mind Maps
+                    </span>
+                </div>
+            </div>
+
+
+            <div class="stat-card">
+                <span class="stat-icon">🃏</span>
+
+                <div>
+                    <span class="stat-number" id="totalFlashcards">
+                        0
+                    </span>
+
+                    <span class="stat-label">
+                        Flashcards
+                    </span>
+                </div>
+            </div>
+
+
+            <div class="stat-card">
+                <span class="stat-icon">✅</span>
+
+                <div>
+                    <span class="stat-number" id="cardsKnown">
+                        0
+                    </span>
+
+                    <span class="stat-label">
+                        Cards dominados
+                    </span>
+                </div>
+            </div>
+
+
+            <div class="stat-card">
+                <span class="stat-icon">📊</span>
+
+                <div>
+                    <span class="stat-number" id="studyProgress">
+                        0%
+                    </span>
+
+                    <span class="stat-label">
+                        Progresso
+                    </span>
+                </div>
+            </div>
+
+        </div>
+
+
+        <!-- ATALHOS -->
+
+        <h2 class="section-title">
+            Estudar
+        </h2>
+
+
+        <div class="action-grid">
+
+            <div
+                class="action-card"
+                onclick="showPage('mindmaps')">
+
+                <div class="action-icon">
+                    🧠
+                </div>
+
+                <h3>
+                    Mind Maps
+                </h3>
+
+                <p>
+                    Revise os conteúdos através de mapas mentais.
+                </p>
+
+                <span class="action-link">
+                    Ver mapas →
+                </span>
+
+            </div>
+
+
+            <div
+                class="action-card"
+                onclick="showPage('flashcards')">
+
+                <div class="action-icon">
+                    🃏
+                </div>
+
+                <h3>
+                    Flashcards
+                </h3>
+
+                <p>
+                    Teste sua memória e revise os pontos importantes.
+                </p>
+
+                <span class="action-link">
+                    Estudar cards →
+                </span>
+
+            </div>
+
+        </div>
+
+
+        <!-- MATÉRIAS -->
+
+        <h2 class="section-title">
+            📚 Matérias
+        </h2>
+
+        <div
+            id="subjectsDashboard"
+            class="subjects-grid">
+        </div>
+
+    </section>
+
+
+
+    <!-- ========================================= -->
+    <!-- MIND MAPS                                -->
+    <!-- ========================================= -->
+
+    <section id="mindmaps" class="page">
+
+        <div class="page-header">
+
+            <div>
+
+                <h1>🧠 Mind Maps</h1>
+
+                <p>
+                    Seus mapas mentais organizados por matéria.
+                </p>
+
+            </div>
+
+            <input
+                type="text"
+                id="mindmapSearch"
+                class="search-input"
+                placeholder="🔎 Buscar mapa..."
+                oninput="renderMindmaps()">
+
+        </div>
+
+
+        <div
+            id="mindmapsContainer"
+            class="content-grid">
+        </div>
+
+    </section>
+
+
+
+    <!-- ========================================= -->
+    <!-- FLASHCARDS                               -->
+    <!-- ========================================= -->
+
+    <section id="flashcards" class="page">
+
+        <div class="page-header">
+
+            <div>
+
+                <h1>🃏 Flashcards</h1>
+
+                <p>
+                    Revise e teste seus conhecimentos.
+                </p>
+
+            </div>
+
+            <select
+                id="flashcardSubject"
+                onchange="startFlashcards()">
+
+                <option value="all">
+                    Todas as matérias
+                </option>
+
+            </select>
+
+        </div>
+
+
+        <!-- PROGRESSO -->
+
+        <div class="study-progress">
+
+            <div class="progress-info">
+
+                <span id="cardCounter">
+                    Card 1 de 1
+                </span>
+
+                <span id="sessionProgress">
+                    0%
+                </span>
+
+            </div>
+
+            <div class="progress-bar">
+
+                <div
+                    id="sessionProgressBar"
+                    class="progress-fill">
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- CARD -->
+
+        <div
+            id="flashcard"
+            class="flashcard"
+            onclick="flipCard()">
+
+            <div class="flashcard-inner">
+
+                <div class="flashcard-front">
+
+                    <span class="card-label">
+                        PERGUNTA
+                    </span>
+
+                    <h2 id="cardFront">
+                        Carregando...
+                    </h2>
+
+                    <span class="flip-hint">
+                        Clique para revelar
+                    </span>
+
+                </div>
+
+
+                <div class="flashcard-back">
+
+                    <span class="card-label">
+                        RESPOSTA
+                    </span>
+
+                    <p id="cardBack">
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- CONTROLES -->
+
+        <div class="flashcard-controls">
+
+            <button
+                class="btn btn-danger"
+                onclick="markCard(false, event)">
+
+                ❌ Não sabia
+
+            </button>
+
+
+            <button
+                class="btn btn-secondary"
+                onclick="nextCard(event)">
+
+                Pular
+
+            </button>
+
+
+            <button
+                class="btn btn-success"
+                onclick="markCard(true, event)">
+
+                ✅ Eu sabia
+
+            </button>
+
+        </div>
+
+
+        <div class="keyboard-hint">
+
+            Atalhos:
+            <kbd>Espaço</kbd> virar
+            <kbd>←</kbd> não sabia
+            <kbd>→</kbd> sabia
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ========================================= -->
+    <!-- BUSCA                                    -->
+    <!-- ========================================= -->
+
+    <section id="search" class="page">
+
+        <div class="page-header">
+
+            <div>
+
+                <h1>🔎 Busca</h1>
+
+                <p id="searchDescription">
+                    Resultados encontrados.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div
+            id="searchResults"
+            class="content-grid">
+        </div>
+
+    </section>
+
+</main>
+
+
+<footer>
+
+    <p>
+        📚 Meus Estudos • Seus estudos, organizados.
+    </p>
+
+</footer>
+
+
+<script src="js/app.js"></script>
+
+</body>
+</html>

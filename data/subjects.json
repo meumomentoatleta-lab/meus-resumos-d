@@ -1,0 +1,54 @@
+{
+  "subjects": [
+    {
+      "id": "tributario",
+      "name": "Direito Tributário",
+      "shortName": "Tributário",
+      "icon": "⚖️",
+      "color": "#2563eb",
+      "description": "CTN, tributos, obrigação tributária, crédito tributário e legislação tributária.",
+      "flashcards": "data/flashcards/tributario.json",
+      "mindmaps": "data/mindmaps/tributario.json"
+    },
+    {
+      "id": "constitucional",
+      "name": "Direito Constitucional",
+      "shortName": "Constitucional",
+      "icon": "📜",
+      "color": "#7c3aed",
+      "description": "Constituição Federal, direitos fundamentais, organização do Estado e poderes.",
+      "flashcards": "data/flashcards/constitucional.json",
+      "mindmaps": "data/mindmaps/constitucional.json"
+    },
+    {
+      "id": "administrativo",
+      "name": "Direito Administrativo",
+      "shortName": "Administrativo",
+      "icon": "🏛️",
+      "color": "#059669",
+      "description": "Administração Pública, atos administrativos, agentes públicos e licitações.",
+      "flashcards": "data/flashcards/administrativo.json",
+      "mindmaps": "data/mindmaps/administrativo.json"
+    },
+    {
+      "id": "contabilidade",
+      "name": "Contabilidade",
+      "shortName": "Contabilidade",
+      "icon": "📊",
+      "color": "#d97706",
+      "description": "Contabilidade geral, patrimônio, lançamentos, demonstrações e análise.",
+      "flashcards": "data/flashcards/contabilidade.json",
+      "mindmaps": "data/mindmaps/contabilidade.json"
+    },
+    {
+      "id": "tecnologia",
+      "name": "Tecnologia da Informação",
+      "shortName": "TI",
+      "icon": "💻",
+      "color": "#0891b2",
+      "description": "Banco de dados, SQL, engenharia de software, segurança e desenvolvimento.",
+      "flashcards": "data/flashcards/tecnologia.json",
+      "mindmaps": "data/mindmaps/tecnologia.json"
+    }
+  ]
+}

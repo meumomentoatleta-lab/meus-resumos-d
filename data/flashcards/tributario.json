@@ -1,0 +1,23 @@
+{
+    "subject": "Direito Tributário",
+
+    "cards": [
+
+        {
+            "id": "trib-001",
+            "topic": "Crédito Tributário",
+            "front": "O que é crédito tributário?",
+            "back": "Direito do Fisco de exigir o tributo ou penalidade pecuniária.",
+            "difficulty": "facil"
+        },
+
+        {
+            "id": "trib-002",
+            "topic": "Crédito Tributário",
+            "front": "Como o crédito tributário é constituído?",
+            "back": "Por meio do lançamento.",
+            "difficulty": "facil"
+        }
+
+    ]
+}
