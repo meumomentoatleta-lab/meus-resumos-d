@@ -5,6 +5,7 @@
 
         {
             "id": "trib-001",
+            "legacyId": 1,
             "topic": "Crédito Tributário",
             "front": "O que é crédito tributário?",
             "back": "Direito do Fisco de exigir o tributo ou penalidade pecuniária.",
@@ -13,6 +14,7 @@
 
         {
             "id": "trib-002",
+            "legacyId": 2,
             "topic": "Crédito Tributário",
             "front": "Como o crédito tributário é constituído?",
             "back": "Por meio do lançamento.",

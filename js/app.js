@@ -6,7 +6,25 @@ let subjects = [];
 
 let mindmaps = [];
 
-async function loadMindmaps() {
+let flashcards = [];
+
+async function loadSubjectCollection(subject, pathKey, dataKey) {
+  const response = await fetch(subject[pathKey]);
+
+  if (!response.ok) {
+    throw new Error(`Não foi possível carregar ${subject[pathKey]}.`);
+  }
+
+  const data = await response.json();
+  const items = Array.isArray(data[dataKey]) ? data[dataKey] : [];
+
+  return items.map((item) => ({
+    ...item,
+    subject: item.subject || data.subject || subject.name,
+  }));
+}
+
+async function loadStudyData() {
   const response = await fetch("data/subjects.json");
 
   if (!response.ok) {
@@ -17,100 +35,30 @@ async function loadMindmaps() {
 
   subjects = Array.isArray(data.subjects) ? data.subjects : [];
 
-  const mindmapsBySubject = await Promise.all(
-    subjects.map(async (subject) => {
-      const mindmapsResponse = await fetch(subject.mindmaps);
-
-      if (!mindmapsResponse.ok) {
-        throw new Error(`Não foi possível carregar ${subject.mindmaps}.`);
-      }
-
-      const subjectData = await mindmapsResponse.json();
-      const subjectMindmaps = Array.isArray(subjectData.mindmaps)
-        ? subjectData.mindmaps
-        : [];
-
-      return subjectMindmaps.map((map) => ({
-        ...map,
-        subject: map.subject || subject.name,
-      }));
-    }),
-  );
+  const [mindmapsBySubject, flashcardsBySubject] = await Promise.all([
+    Promise.all(
+      subjects.map((subject) =>
+        loadSubjectCollection(subject, "mindmaps", "mindmaps"),
+      ),
+    ),
+    Promise.all(
+      subjects.map((subject) =>
+        loadSubjectCollection(subject, "flashcards", "cards"),
+      ),
+    ),
+  ]);
 
   mindmaps = mindmapsBySubject.flat();
+
+  flashcards = flashcardsBySubject.flat();
 }
 
-const flashcards = [
-  {
-    id: 1,
-    subject: "Direito Tributário",
-    front: "O que é crédito tributário?",
-    back: "É o direito do Fisco de exigir o tributo ou penalidade pecuniária.",
-  },
-
-  {
-    id: 2,
-    subject: "Direito Tributário",
-    front: "Como o crédito tributário é constituído?",
-    back: "O crédito tributário é constituído pelo lançamento.",
-  },
-
-  {
-    id: 3,
-    subject: "Direito Tributário",
-    front: "Quais são as modalidades de lançamento?",
-    back: "De ofício, por declaração e por homologação.",
-  },
-
-  {
-    id: 4,
-    subject: "Direito Tributário",
-    front: "O que suspende a exigibilidade do crédito?",
-    back: "Moratória, depósito integral, reclamações, recursos e outras hipóteses do CTN.",
-  },
-
-  {
-    id: 5,
-    subject: "Direito Tributário",
-    front: "O que é obrigação tributária principal?",
-    back: "Tem por objeto o pagamento do tributo ou penalidade pecuniária.",
-  },
-
-  {
-    id: 6,
-    subject: "Direito Tributário",
-    front: "O que é obrigação tributária acessória?",
-    back: "É a obrigação de fazer ou não fazer algo no interesse da arrecadação ou fiscalização.",
-  },
-
-  {
-    id: 7,
-    subject: "Direito Constitucional",
-    front: "Qual é o fundamento da República no art. 1º?",
-    back: "A dignidade da pessoa humana é um dos fundamentos da República.",
-  },
-
-  {
-    id: 8,
-    subject: "Direito Constitucional",
-    front: "Quantos Poderes existem no Brasil?",
-    back: "Legislativo, Executivo e Judiciário.",
-  },
-
-  {
-    id: 9,
-    subject: "Direito Administrativo",
-    front: "Quais são os princípios expressos do art. 37?",
-    back: "Legalidade, impessoalidade, moralidade, publicidade e eficiência.",
-  },
-
-  {
-    id: 10,
-    subject: "Direito Administrativo",
-    front: "O que significa LIMPE?",
-    back: "Legalidade, Impessoalidade, Moralidade, Publicidade e Eficiência.",
-  },
-];
+function getCardProgress(card, progress) {
+  return (
+    progress[card.id] ||
+    (card.legacyId == null ? undefined : progress[card.legacyId])
+  );
+}
 
 /* =========================================
    ESTADO
@@ -193,8 +141,8 @@ function updateDashboard() {
 
   const totalCards = flashcards.length;
 
-  const knownCards = Object.values(progress).filter(
-    (item) => item.status === "known",
+  const knownCards = flashcards.filter(
+    (card) => getCardProgress(card, progress)?.status === "known",
   ).length;
 
   const percentage =
@@ -216,17 +164,17 @@ function updateDashboard() {
 ========================================= */
 
 function getSubjects() {
-  const subjects = new Set();
+  const subjectNames = new Set(subjects.map((subject) => subject.name));
 
   mindmaps.forEach((map) => {
-    subjects.add(map.subject);
+    subjectNames.add(map.subject);
   });
 
   flashcards.forEach((card) => {
-    subjects.add(card.subject);
+    subjectNames.add(card.subject);
   });
 
-  return [...subjects];
+  return [...subjectNames];
 }
 
 function renderSubjects() {
@@ -240,7 +188,7 @@ function renderSubjects() {
     const subjectCards = flashcards.filter((card) => card.subject === subject);
 
     const known = subjectCards.filter(
-      (card) => progress[card.id]?.status === "known",
+      (card) => getCardProgress(card, progress)?.status === "known",
     ).length;
 
     const percentage =
@@ -667,7 +615,7 @@ document.addEventListener("keydown", function (event) {
 
 document.addEventListener("DOMContentLoaded", async function () {
   try {
-    await loadMindmaps();
+    await loadStudyData();
   } catch (error) {
     console.error(error);
   }

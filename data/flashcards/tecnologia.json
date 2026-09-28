@@ -1,0 +1,11 @@
+{
+  "subject": "Tecnologia da Informação",
+  "cards": [      {
+            "id": "trib-001",
+            "legacyId": 1,
+            "topic": "Internet",
+            "front": "O que é internet?",
+            "back": "Rede global de computadores que permite a comunicação e o compartilhamento de informações.",
+            "difficulty": "facil"
+        }]
+}
