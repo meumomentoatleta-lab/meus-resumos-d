@@ -2,149 +2,115 @@
    DADOS
 ========================================= */
 
-const mindmaps = [
+let subjects = [];
 
-    {
-        id: 1,
-        title: "Crédito Tributário",
-        subject: "Direito Tributário",
-        description:
-            "Conceito, constituição, suspensão, extinção e exclusão.",
-        icon: "💰"
-    },
+let mindmaps = [];
 
-    {
-        id: 2,
-        title: "Obrigação Tributária",
-        subject: "Direito Tributário",
-        description:
-            "Obrigação principal, acessória, sujeito ativo e passivo.",
-        icon: "📜"
-    },
+async function loadMindmaps() {
+  const response = await fetch("data/subjects.json");
 
-    {
-        id: 3,
-        title: "Competência Tributária",
-        subject: "Direito Tributário",
-        description:
-            "Competência privativa, comum, residual e extraordinária.",
-        icon: "⚖️"
-    },
+  if (!response.ok) {
+    throw new Error("Não foi possível carregar data/subjects.json.");
+  }
 
-    {
-        id: 4,
-        title: "Sistema Tributário Nacional",
-        subject: "Direito Tributário",
-        description:
-            "Tributos, princípios e limitações ao poder de tributar.",
-        icon: "🏛️"
-    },
+  const data = await response.json();
 
-    {
-        id: 5,
-        title: "Princípios Constitucionais",
-        subject: "Direito Constitucional",
-        description:
-            "Princípios fundamentais da Constituição Federal.",
-        icon: "📖"
-    },
+  subjects = Array.isArray(data.subjects) ? data.subjects : [];
 
-    {
-        id: 6,
-        title: "Administração Pública",
-        subject: "Direito Administrativo",
-        description:
-            "Princípios, organização e agentes públicos.",
-        icon: "🏢"
-    }
+  const mindmapsBySubject = await Promise.all(
+    subjects.map(async (subject) => {
+      const mindmapsResponse = await fetch(subject.mindmaps);
 
-];
+      if (!mindmapsResponse.ok) {
+        throw new Error(`Não foi possível carregar ${subject.mindmaps}.`);
+      }
 
+      const subjectData = await mindmapsResponse.json();
+      const subjectMindmaps = Array.isArray(subjectData.mindmaps)
+        ? subjectData.mindmaps
+        : [];
+
+      return subjectMindmaps.map((map) => ({
+        ...map,
+        subject: map.subject || subject.name,
+      }));
+    }),
+  );
+
+  mindmaps = mindmapsBySubject.flat();
+}
 
 const flashcards = [
+  {
+    id: 1,
+    subject: "Direito Tributário",
+    front: "O que é crédito tributário?",
+    back: "É o direito do Fisco de exigir o tributo ou penalidade pecuniária.",
+  },
 
-    {
-        id: 1,
-        subject: "Direito Tributário",
-        front: "O que é crédito tributário?",
-        back:
-            "É o direito do Fisco de exigir o tributo ou penalidade pecuniária."
-    },
+  {
+    id: 2,
+    subject: "Direito Tributário",
+    front: "Como o crédito tributário é constituído?",
+    back: "O crédito tributário é constituído pelo lançamento.",
+  },
 
-    {
-        id: 2,
-        subject: "Direito Tributário",
-        front: "Como o crédito tributário é constituído?",
-        back:
-            "O crédito tributário é constituído pelo lançamento."
-    },
+  {
+    id: 3,
+    subject: "Direito Tributário",
+    front: "Quais são as modalidades de lançamento?",
+    back: "De ofício, por declaração e por homologação.",
+  },
 
-    {
-        id: 3,
-        subject: "Direito Tributário",
-        front: "Quais são as modalidades de lançamento?",
-        back:
-            "De ofício, por declaração e por homologação."
-    },
+  {
+    id: 4,
+    subject: "Direito Tributário",
+    front: "O que suspende a exigibilidade do crédito?",
+    back: "Moratória, depósito integral, reclamações, recursos e outras hipóteses do CTN.",
+  },
 
-    {
-        id: 4,
-        subject: "Direito Tributário",
-        front: "O que suspende a exigibilidade do crédito?",
-        back:
-            "Moratória, depósito integral, reclamações, recursos e outras hipóteses do CTN."
-    },
+  {
+    id: 5,
+    subject: "Direito Tributário",
+    front: "O que é obrigação tributária principal?",
+    back: "Tem por objeto o pagamento do tributo ou penalidade pecuniária.",
+  },
 
-    {
-        id: 5,
-        subject: "Direito Tributário",
-        front: "O que é obrigação tributária principal?",
-        back:
-            "Tem por objeto o pagamento do tributo ou penalidade pecuniária."
-    },
+  {
+    id: 6,
+    subject: "Direito Tributário",
+    front: "O que é obrigação tributária acessória?",
+    back: "É a obrigação de fazer ou não fazer algo no interesse da arrecadação ou fiscalização.",
+  },
 
-    {
-        id: 6,
-        subject: "Direito Tributário",
-        front: "O que é obrigação tributária acessória?",
-        back:
-            "É a obrigação de fazer ou não fazer algo no interesse da arrecadação ou fiscalização."
-    },
+  {
+    id: 7,
+    subject: "Direito Constitucional",
+    front: "Qual é o fundamento da República no art. 1º?",
+    back: "A dignidade da pessoa humana é um dos fundamentos da República.",
+  },
 
-    {
-        id: 7,
-        subject: "Direito Constitucional",
-        front: "Qual é o fundamento da República no art. 1º?",
-        back:
-            "A dignidade da pessoa humana é um dos fundamentos da República."
-    },
+  {
+    id: 8,
+    subject: "Direito Constitucional",
+    front: "Quantos Poderes existem no Brasil?",
+    back: "Legislativo, Executivo e Judiciário.",
+  },
 
-    {
-        id: 8,
-        subject: "Direito Constitucional",
-        front: "Quantos Poderes existem no Brasil?",
-        back:
-            "Legislativo, Executivo e Judiciário."
-    },
+  {
+    id: 9,
+    subject: "Direito Administrativo",
+    front: "Quais são os princípios expressos do art. 37?",
+    back: "Legalidade, impessoalidade, moralidade, publicidade e eficiência.",
+  },
 
-    {
-        id: 9,
-        subject: "Direito Administrativo",
-        front: "Quais são os princípios expressos do art. 37?",
-        back:
-            "Legalidade, impessoalidade, moralidade, publicidade e eficiência."
-    },
-
-    {
-        id: 10,
-        subject: "Direito Administrativo",
-        front: "O que significa LIMPE?",
-        back:
-            "Legalidade, Impessoalidade, Moralidade, Publicidade e Eficiência."
-    }
-
+  {
+    id: 10,
+    subject: "Direito Administrativo",
+    front: "O que significa LIMPE?",
+    back: "Legalidade, Impessoalidade, Moralidade, Publicidade e Eficiência.",
+  },
 ];
-
 
 /* =========================================
    ESTADO
@@ -156,258 +122,139 @@ let currentCardIndex = 0;
 
 let isFlipped = false;
 
-
 /* =========================================
    LOCAL STORAGE
 ========================================= */
 
 const STORAGE_KEY = "meus_estudos_progress";
 
-
 function getProgress() {
+  const saved = localStorage.getItem(STORAGE_KEY);
 
-    const saved =
-        localStorage.getItem(STORAGE_KEY);
+  if (!saved) {
+    return {};
+  }
 
-    if (!saved) {
-
-        return {};
-
-    }
-
-    try {
-
-        return JSON.parse(saved);
-
-    } catch {
-
-        return {};
-
-    }
-
+  try {
+    return JSON.parse(saved);
+  } catch {
+    return {};
+  }
 }
-
 
 function saveProgress(progress) {
+  localStorage.setItem(
+    STORAGE_KEY,
 
-    localStorage.setItem(
-
-        STORAGE_KEY,
-
-        JSON.stringify(progress)
-
-    );
-
+    JSON.stringify(progress),
+  );
 }
-
 
 /* =========================================
    NAVEGAÇÃO
 ========================================= */
 
 function showPage(pageId) {
+  document.querySelectorAll(".page").forEach((page) => {
+    page.classList.remove("active");
+  });
 
-    document
-        .querySelectorAll(".page")
-        .forEach(page => {
+  const page = document.getElementById(pageId);
 
-            page.classList.remove("active");
+  if (page) {
+    page.classList.add("active");
+  }
 
-        });
+  if (pageId === "dashboard") {
+    updateDashboard();
+  }
 
+  if (pageId === "mindmaps") {
+    renderMindmaps();
+  }
 
-    const page =
-        document.getElementById(pageId);
+  if (pageId === "flashcards") {
+    startFlashcards();
+  }
 
+  window.scrollTo({
+    top: 0,
 
-    if (page) {
-
-        page.classList.add("active");
-
-    }
-
-
-    if (pageId === "dashboard") {
-
-        updateDashboard();
-
-    }
-
-
-    if (pageId === "mindmaps") {
-
-        renderMindmaps();
-
-    }
-
-
-    if (pageId === "flashcards") {
-
-        startFlashcards();
-
-    }
-
-
-    window.scrollTo({
-
-        top: 0,
-
-        behavior: "smooth"
-
-    });
-
+    behavior: "smooth",
+  });
 }
-
 
 /* =========================================
    DASHBOARD
 ========================================= */
 
 function updateDashboard() {
+  const progress = getProgress();
 
-    const progress =
-        getProgress();
+  const totalCards = flashcards.length;
 
+  const knownCards = Object.values(progress).filter(
+    (item) => item.status === "known",
+  ).length;
 
-    const totalCards =
-        flashcards.length;
+  const percentage =
+    totalCards === 0 ? 0 : Math.round((knownCards / totalCards) * 100);
 
+  document.getElementById("totalMindmaps").textContent = mindmaps.length;
 
-    const knownCards =
-        Object.values(progress)
-            .filter(item =>
-                item.status === "known"
-            ).length;
+  document.getElementById("totalFlashcards").textContent = totalCards;
 
+  document.getElementById("cardsKnown").textContent = knownCards;
 
-    const percentage =
-        totalCards === 0
+  document.getElementById("studyProgress").textContent = percentage + "%";
 
-            ? 0
-
-            : Math.round(
-                (knownCards / totalCards) * 100
-            );
-
-
-    document.getElementById(
-        "totalMindmaps"
-    ).textContent =
-        mindmaps.length;
-
-
-    document.getElementById(
-        "totalFlashcards"
-    ).textContent =
-        totalCards;
-
-
-    document.getElementById(
-        "cardsKnown"
-    ).textContent =
-        knownCards;
-
-
-    document.getElementById(
-        "studyProgress"
-    ).textContent =
-        percentage + "%";
-
-
-    renderSubjects();
-
+  renderSubjects();
 }
-
 
 /* =========================================
    MATÉRIAS
 ========================================= */
 
 function getSubjects() {
+  const subjects = new Set();
 
-    const subjects = new Set();
+  mindmaps.forEach((map) => {
+    subjects.add(map.subject);
+  });
 
+  flashcards.forEach((card) => {
+    subjects.add(card.subject);
+  });
 
-    mindmaps.forEach(map => {
-
-        subjects.add(map.subject);
-
-    });
-
-
-    flashcards.forEach(card => {
-
-        subjects.add(card.subject);
-
-    });
-
-
-    return [...subjects];
-
+  return [...subjects];
 }
 
-
 function renderSubjects() {
+  const container = document.getElementById("subjectsDashboard");
 
-    const container =
-        document.getElementById(
-            "subjectsDashboard"
-        );
+  container.innerHTML = "";
 
+  const progress = getProgress();
 
-    container.innerHTML = "";
+  getSubjects().forEach((subject) => {
+    const subjectCards = flashcards.filter((card) => card.subject === subject);
 
+    const known = subjectCards.filter(
+      (card) => progress[card.id]?.status === "known",
+    ).length;
 
-    const progress =
-        getProgress();
+    const percentage =
+      subjectCards.length === 0
+        ? 0
+        : Math.round((known / subjectCards.length) * 100);
 
+    const mapCount = mindmaps.filter((map) => map.subject === subject).length;
 
-    getSubjects().forEach(subject => {
+    const card = document.createElement("div");
 
-        const subjectCards =
-            flashcards.filter(
-                card =>
-                    card.subject === subject
-            );
+    card.className = "subject-card";
 
-
-        const known =
-            subjectCards.filter(card =>
-
-                progress[card.id]?.status ===
-                "known"
-
-            ).length;
-
-
-        const percentage =
-            subjectCards.length === 0
-
-                ? 0
-
-                : Math.round(
-                    (known /
-                        subjectCards.length) *
-                    100
-                );
-
-
-        const mapCount =
-            mindmaps.filter(
-                map =>
-                    map.subject === subject
-            ).length;
-
-
-        const card =
-            document.createElement("div");
-
-
-        card.className =
-            "subject-card";
-
-
-        card.innerHTML = `
+    card.innerHTML = `
 
             <h3>${subject}</h3>
 
@@ -435,57 +282,29 @@ function renderSubjects() {
 
         `;
 
-
-        container.appendChild(card);
-
-    });
-
+    container.appendChild(card);
+  });
 }
-
 
 /* =========================================
    MIND MAPS
 ========================================= */
 
 function renderMindmaps() {
+  const container = document.getElementById("mindmapsContainer");
 
-    const container =
-        document.getElementById(
-            "mindmapsContainer"
-        );
+  const search = document.getElementById("mindmapSearch").value.toLowerCase();
 
+  const filtered = mindmaps.filter(
+    (map) =>
+      map.title.toLowerCase().includes(search) ||
+      map.subject.toLowerCase().includes(search),
+  );
 
-    const search =
-        document
-            .getElementById(
-                "mindmapSearch"
-            )
-            .value
-            .toLowerCase();
+  container.innerHTML = "";
 
-
-    const filtered =
-        mindmaps.filter(map =>
-
-            map.title
-                .toLowerCase()
-                .includes(search)
-
-            ||
-
-            map.subject
-                .toLowerCase()
-                .includes(search)
-
-        );
-
-
-    container.innerHTML = "";
-
-
-    if (filtered.length === 0) {
-
-        container.innerHTML = `
+  if (filtered.length === 0) {
+    container.innerHTML = `
 
             <div class="empty-state">
 
@@ -495,26 +314,48 @@ function renderMindmaps() {
 
         `;
 
-        return;
+    return;
+  }
 
+  const mapsBySubject = new Map();
+
+  filtered.forEach((map) => {
+    if (!mapsBySubject.has(map.subject)) {
+      mapsBySubject.set(map.subject, []);
     }
 
+    mapsBySubject.get(map.subject).push(map);
+  });
 
-    filtered.forEach(map => {
+  mapsBySubject.forEach((subjectMindmaps, subject) => {
+    const group = document.createElement("section");
 
-        const card =
-            document.createElement("div");
+    group.className = "mindmap-group";
 
+    const heading = document.createElement("h2");
 
-        card.className =
-            "mindmap-card";
+    heading.textContent = subject;
 
+    group.appendChild(heading);
 
-        card.innerHTML = `
+    const grid = document.createElement("div");
+
+    grid.className = "content-grid";
+
+    subjectMindmaps.forEach((map) => {
+      const card = document.createElement(map.available ? "a" : "div");
+
+      card.className = "mindmap-card";
+
+      if (map.available) {
+        card.href = map.path;
+      }
+
+      card.innerHTML = `
 
             <div class="mindmap-icon">
 
-                ${map.icon}
+                ${map.icon || "🧠"}
 
             </div>
 
@@ -526,7 +367,7 @@ function renderMindmaps() {
 
             <p>
 
-                ${map.description}
+                ${map.description || ""}
 
             </p>
 
@@ -538,347 +379,181 @@ function renderMindmaps() {
 
         `;
 
-
-        container.appendChild(card);
-
+      grid.appendChild(card);
     });
 
-}
+    group.appendChild(grid);
 
+    container.appendChild(group);
+  });
+}
 
 /* =========================================
    FLASHCARDS
 ========================================= */
 
 function populateSubjects() {
+  const select = document.getElementById("flashcardSubject");
 
-    const select =
-        document.getElementById(
-            "flashcardSubject"
-        );
+  const subjects = getSubjects();
 
+  subjects.forEach((subject) => {
+    const option = document.createElement("option");
 
-    const subjects =
-        getSubjects();
+    option.value = subject;
 
+    option.textContent = subject;
 
-    subjects.forEach(subject => {
-
-        const option =
-            document.createElement(
-                "option"
-            );
-
-
-        option.value =
-            subject;
-
-
-        option.textContent =
-            subject;
-
-
-        select.appendChild(option);
-
-    });
-
+    select.appendChild(option);
+  });
 }
-
 
 function startFlashcards() {
+  const select = document.getElementById("flashcardSubject");
 
-    const select =
-        document.getElementById(
-            "flashcardSubject"
-        );
+  const subject = select.value;
 
+  if (subject === "all") {
+    currentCards = [...flashcards];
+  } else {
+    currentCards = flashcards.filter((card) => card.subject === subject);
+  }
 
-    const subject =
-        select.value;
+  currentCardIndex = 0;
 
+  isFlipped = false;
 
-    if (subject === "all") {
-
-        currentCards =
-            [...flashcards];
-
-    } else {
-
-        currentCards =
-            flashcards.filter(
-                card =>
-                    card.subject === subject
-            );
-
-    }
-
-
-    currentCardIndex = 0;
-
-    isFlipped = false;
-
-
-    showCurrentCard();
-
+  showCurrentCard();
 }
-
 
 function showCurrentCard() {
+  const flashcard = document.getElementById("flashcard");
 
-    const flashcard =
-        document.getElementById(
-            "flashcard"
-        );
+  if (currentCards.length === 0) {
+    return;
+  }
 
+  flashcard.classList.remove("flipped");
 
-    if (currentCards.length === 0) {
+  isFlipped = false;
 
-        return;
+  const card = currentCards[currentCardIndex];
 
-    }
+  document.getElementById("cardFront").textContent = card.front;
 
+  document.getElementById("cardBack").textContent = card.back;
 
-    flashcard.classList.remove(
-        "flipped"
-    );
-
-
-    isFlipped = false;
-
-
-    const card =
-        currentCards[currentCardIndex];
-
-
-    document.getElementById(
-        "cardFront"
-    ).textContent =
-        card.front;
-
-
-    document.getElementById(
-        "cardBack"
-    ).textContent =
-        card.back;
-
-
-    document.getElementById(
-        "cardCounter"
-    ).textContent =
-
-        `Card ${currentCardIndex + 1}
+  document.getElementById("cardCounter").textContent =
+    `Card ${currentCardIndex + 1}
          de ${currentCards.length}`;
 
+  const percentage = Math.round((currentCardIndex / currentCards.length) * 100);
 
-    const percentage =
-        Math.round(
+  document.getElementById("sessionProgress").textContent = percentage + "%";
 
-            (
-                currentCardIndex /
-                currentCards.length
-            ) * 100
-
-        );
-
-
-    document.getElementById(
-        "sessionProgress"
-    ).textContent =
-        percentage + "%";
-
-
-    document.getElementById(
-        "sessionProgressBar"
-    ).style.width =
-        percentage + "%";
-
+  document.getElementById("sessionProgressBar").style.width = percentage + "%";
 }
-
 
 function flipCard() {
+  const flashcard = document.getElementById("flashcard");
 
-    const flashcard =
-        document.getElementById(
-            "flashcard"
-        );
+  isFlipped = !isFlipped;
 
-
-    isFlipped =
-        !isFlipped;
-
-
-    flashcard.classList.toggle(
-        "flipped",
-        isFlipped
-    );
-
+  flashcard.classList.toggle("flipped", isFlipped);
 }
-
 
 function nextCard(event) {
+  if (event) {
+    event.stopPropagation();
+  }
 
-    if (event) {
+  if (currentCardIndex < currentCards.length - 1) {
+    currentCardIndex++;
+  } else {
+    currentCardIndex = 0;
+  }
 
-        event.stopPropagation();
-
-    }
-
-
-    if (
-        currentCardIndex <
-        currentCards.length - 1
-    ) {
-
-        currentCardIndex++;
-
-    } else {
-
-        currentCardIndex = 0;
-
-    }
-
-
-    showCurrentCard();
-
+  showCurrentCard();
 }
-
 
 function markCard(known, event) {
+  if (event) {
+    event.stopPropagation();
+  }
 
-    if (event) {
+  if (currentCards.length === 0) {
+    return;
+  }
 
-        event.stopPropagation();
+  const card = currentCards[currentCardIndex];
 
-    }
+  const progress = getProgress();
 
+  progress[card.id] = {
+    status: known ? "known" : "unknown",
 
-    if (currentCards.length === 0) {
+    date: new Date().toISOString(),
+  };
 
-        return;
+  saveProgress(progress);
 
-    }
+  nextCard();
 
-
-    const card =
-        currentCards[currentCardIndex];
-
-
-    const progress =
-        getProgress();
-
-
-    progress[card.id] = {
-
-        status:
-            known
-                ? "known"
-                : "unknown",
-
-        date:
-            new Date().toISOString()
-
-    };
-
-
-    saveProgress(progress);
-
-
-    nextCard();
-
-    updateDashboard();
-
+  updateDashboard();
 }
-
 
 /* =========================================
    BUSCA GLOBAL
 ========================================= */
 
 function globalSearch() {
+  const input = document.getElementById("globalSearch");
 
-    const input =
-        document.getElementById(
-            "globalSearch"
-        );
+  const query = input.value.trim().toLowerCase();
 
+  if (!query) {
+    return;
+  }
 
-    const query =
-        input.value
-            .trim()
-            .toLowerCase();
+  showPage("search");
 
+  const results = document.getElementById("searchResults");
 
-    if (!query) {
+  results.innerHTML = "";
 
-        return;
-
-    }
-
-
-    showPage("search");
-
-
-    const results =
-        document.getElementById(
-            "searchResults"
-        );
-
-
-    results.innerHTML = "";
-
-
-    const maps =
-        mindmaps.filter(map =>
-
-            `${map.title}
+  const maps = mindmaps.filter((map) =>
+    `${map.title}
              ${map.subject}
              ${map.description}`
 
-                .toLowerCase()
-                .includes(query)
+      .toLowerCase()
+      .includes(query),
+  );
 
-        );
-
-
-    const cards =
-        flashcards.filter(card =>
-
-            `${card.front}
+  const cards = flashcards.filter((card) =>
+    `${card.front}
              ${card.back}
              ${card.subject}`
 
-                .toLowerCase()
-                .includes(query)
+      .toLowerCase()
+      .includes(query),
+  );
 
-        );
-
-
-    document.getElementById(
-        "searchDescription"
-    ).textContent =
-
-        `${maps.length} mind map(s)
+  document.getElementById("searchDescription").textContent =
+    `${maps.length} mind map(s)
          e ${cards.length} flashcard(s)
          encontrados.`;
 
+  maps.forEach((map) => {
+    const item = document.createElement("div");
 
-    maps.forEach(map => {
+    item.className = "mindmap-card";
 
-        const item =
-            document.createElement(
-                "div"
-            );
-
-
-        item.className =
-            "mindmap-card";
-
-
-        item.innerHTML = `
+    item.innerHTML = `
 
             <div class="mindmap-icon">
 
-                ${map.icon}
+                ${map.icon || "🧠"}
 
             </div>
 
@@ -890,7 +565,7 @@ function globalSearch() {
 
             <p>
 
-                ${map.description}
+                ${map.description || ""}
 
             </p>
 
@@ -902,25 +577,15 @@ function globalSearch() {
 
         `;
 
+    results.appendChild(item);
+  });
 
-        results.appendChild(item);
+  cards.forEach((card) => {
+    const item = document.createElement("div");
 
-    });
+    item.className = "mindmap-card";
 
-
-    cards.forEach(card => {
-
-        const item =
-            document.createElement(
-                "div"
-            );
-
-
-        item.className =
-            "mindmap-card";
-
-
-        item.innerHTML = `
+    item.innerHTML = `
 
             <div class="mindmap-icon">
 
@@ -948,123 +613,72 @@ function globalSearch() {
 
         `;
 
-
-        results.appendChild(item);
-
-    });
-
+    results.appendChild(item);
+  });
 }
-
 
 /* =========================================
    DARK MODE
 ========================================= */
 
 function toggleDarkMode() {
+  document.body.classList.toggle("dark");
 
-    document.body.classList.toggle(
-        "dark"
-    );
+  const dark = document.body.classList.contains("dark");
 
-
-    const dark =
-        document.body.classList.contains(
-            "dark"
-        );
-
-
-    localStorage.setItem(
-        "darkMode",
-        dark
-    );
-
+  localStorage.setItem("darkMode", dark);
 }
-
 
 function loadDarkMode() {
+  const dark = localStorage.getItem("darkMode");
 
-    const dark =
-        localStorage.getItem(
-            "darkMode"
-        );
-
-
-    if (dark === "true") {
-
-        document.body.classList.add(
-            "dark"
-        );
-
-    }
-
+  if (dark === "true") {
+    document.body.classList.add("dark");
+  }
 }
-
 
 /* =========================================
    TECLADO
 ========================================= */
 
-document.addEventListener(
-    "keydown",
-    function(event) {
+document.addEventListener("keydown", function (event) {
+  if (!document.getElementById("flashcards").classList.contains("active")) {
+    return;
+  }
 
-        if (
-            !document
-                .getElementById(
-                    "flashcards"
-                )
-                .classList
-                .contains("active")
-        ) {
+  if (event.code === "Space") {
+    event.preventDefault();
 
-            return;
+    flipCard();
+  }
 
-        }
+  if (event.key === "ArrowRight") {
+    markCard(true);
+  }
 
-
-        if (event.code === "Space") {
-
-            event.preventDefault();
-
-            flipCard();
-
-        }
-
-
-        if (event.key === "ArrowRight") {
-
-            markCard(true);
-
-        }
-
-
-        if (event.key === "ArrowLeft") {
-
-            markCard(false);
-
-        }
-
-    }
-);
-
+  if (event.key === "ArrowLeft") {
+    markCard(false);
+  }
+});
 
 /* =========================================
    INICIALIZAÇÃO
 ========================================= */
 
-document.addEventListener(
-    "DOMContentLoaded",
-    function() {
+document.addEventListener("DOMContentLoaded", async function () {
+  try {
+    await loadMindmaps();
+  } catch (error) {
+    console.error(error);
+  }
 
-        populateSubjects();
+  populateSubjects();
 
-        updateDashboard();
+  updateDashboard();
 
-        renderMindmaps();
+  renderMindmaps();
 
-        loadDarkMode();
+  loadDarkMode();
 
-        startFlashcards();
-
-    }
-);
+  startFlashcards();
+});

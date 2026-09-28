@@ -1,0 +1,26 @@
+{
+  "mindmaps": [
+    {
+      "title": "Crédito Tributário",
+      "subject": "Direito Tributário",
+      "path": "mindmaps/tributario/credito-tributario.html",
+      "available": true
+    },
+    {
+      "title": "Obrigação Tributária",
+      "subject": "Direito Tributário",
+      "path": "mindmaps/tributario/obrigacao-tributaria.html"
+    },
+    {
+      "title": "Competência Tributária",
+      "subject": "Direito Tributário",
+      "path": "mindmaps/tributario/competencia-tributaria.html"
+    },
+    {
+      "title": "Crase",
+      "subject": "Português",
+      "path": "mindmaps/tributario/crase.html",
+      "available": true
+    }
+  ]
+}

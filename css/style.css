@@ -503,11 +503,29 @@ body {
 }
 
 
+.mindmap-group {
+
+    grid-column: 1 / -1;
+
+}
+
+
+.mindmap-group h2 {
+
+    margin-bottom: 14px;
+
+}
+
+
 /* =========================================
    MIND MAP CARD
 ========================================= */
 
 .mindmap-card {
+
+    color: inherit;
+
+    text-decoration: none;
 
     background: var(--surface);
 
@@ -519,6 +537,15 @@ body {
     padding: 22px;
 
     transition: 0.2s;
+
+}
+
+
+.mindmap-card:focus-visible {
+
+    outline: 3px solid var(--primary);
+
+    outline-offset: 3px;
 
 }
 
