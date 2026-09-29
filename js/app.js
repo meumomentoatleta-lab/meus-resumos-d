@@ -484,6 +484,17 @@ function nextCard(event) {
   showCurrentCard();
 }
 
+function previousCard() {
+  if (currentCards.length === 0) {
+    return;
+  }
+
+  currentCardIndex =
+    currentCardIndex > 0 ? currentCardIndex - 1 : currentCards.length - 1;
+
+  showCurrentCard();
+}
+
 function markCard(known, event) {
   if (event) {
     event.stopPropagation();
@@ -660,11 +671,18 @@ document.addEventListener("keydown", function (event) {
     flipCard();
   }
 
+  if (event.key === "ArrowLeft") {
+    event.preventDefault();
+    previousCard();
+  }
+
   if (event.key === "ArrowRight") {
+    event.preventDefault();
     markCard(true);
   }
 
-  if (event.key === "ArrowLeft") {
+  if (event.key.toLowerCase() === "n") {
+    event.preventDefault();
     markCard(false);
   }
 });
