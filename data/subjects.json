@@ -59,6 +59,17 @@
       "description": "Banco de dados, SQL, engenharia de software, segurança e desenvolvimento.",
       "flashcards": "data/flashcards/tecnologia.json",
       "mindmaps": "data/mindmaps/tecnologia.json"
+    },
+     {
+      "id": "reforma",
+      "name": "Reforma Tributária",
+      "shortName": "Reforma",
+      "icon": "�",
+      "color": "#ea580c",
+      "description": "Propostas e impactos da reforma tributária no sistema fiscal.",
+      "flashcards": "data/flashcards/reforma.json",
+      "mindmaps": "data/mindmaps/reforma.json"
     }
+   
   ]
 }

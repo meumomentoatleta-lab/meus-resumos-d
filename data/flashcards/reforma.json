@@ -1,0 +1,167 @@
+{
+    "subject": "Reforma Tributária",
+
+    
+  "cards": [
+    {
+      "id": "ibscbs-001",
+      "legacyId": 1,
+      "topic": "Disposições Preliminares",
+      "front": "Quais tributos foram instituídos pela LC 214/2025?",
+      "back": "IBS, CBS e Imposto Seletivo (IS).",
+      "difficulty": "facil"
+    },
+    {
+      "id": "ibscbs-002",
+      "legacyId": 2,
+      "topic": "Disposições Preliminares",
+      "front": "Quem possui competência para instituir o IBS?",
+      "back": "Estados, Municípios e Distrito Federal, de forma compartilhada.",
+      "difficulty": "facil"
+    },
+    {
+      "id": "ibscbs-003",
+      "legacyId": 3,
+      "topic": "Disposições Preliminares",
+      "front": "Quem possui competência para instituir a CBS?",
+      "back": "A União.",
+      "difficulty": "facil"
+    },
+    {
+      "id": "ibscbs-004",
+      "legacyId": 4,
+      "topic": "Conceitos Fundamentais",
+      "front": "O que é considerado fornecimento?",
+      "back": "Entrega, disponibilização, cessão, concessão, licenciamento ou prestação, conforme o objeto.",
+      "difficulty": "medio"
+    },
+    {
+      "id": "ibscbs-005",
+      "legacyId": 5,
+      "topic": "Conceitos Fundamentais",
+      "front": "Como a energia é tratada para fins do IBS e da CBS?",
+      "back": "A energia com valor econômico é equiparada a bem material.",
+      "difficulty": "facil"
+    },
+    {
+      "id": "ibscbs-006",
+      "legacyId": 6,
+      "topic": "Conceitos Fundamentais",
+      "front": "Adquirente e destinatário são necessariamente a mesma pessoa?",
+      "back": "Não. O adquirente e o destinatário podem ser pessoas diferentes.",
+      "difficulty": "facil"
+    },
+    {
+      "id": "ibscbs-007",
+      "legacyId": 7,
+      "topic": "Incidência",
+      "front": "Qual é a regra geral de incidência do IBS e da CBS?",
+      "back": "Incidem sobre operações onerosas com bens ou serviços.",
+      "difficulty": "facil"
+    },
+    {
+      "id": "ibscbs-008",
+      "legacyId": 8,
+      "topic": "Incidência",
+      "front": "Operações não onerosas são tributadas pelo IBS e CBS?",
+      "back": "Somente quando houver previsão expressa na LC.",
+      "difficulty": "medio"
+    },
+    {
+      "id": "ibscbs-009",
+      "legacyId": 9,
+      "topic": "Incidência",
+      "front": "Cite exemplos de operações onerosas.",
+      "back": "Compra e venda, troca, locação, cessão, concessão e prestação de serviços.",
+      "difficulty": "medio"
+    },
+    {
+      "id": "ibscbs-010",
+      "legacyId": 10,
+      "topic": "Incidências Específicas",
+      "front": "Qual é a base de cálculo em fornecimentos específicos entre partes relacionadas?",
+      "back": "O valor de mercado.",
+      "difficulty": "facil"
+    },
+    {
+      "id": "ibscbs-011",
+      "legacyId": 11,
+      "topic": "Incidências Específicas",
+      "front": "Quando uma bonificação não sofre incidência?",
+      "back": "Quando consta no documento fiscal e não depende de evento posterior.",
+      "difficulty": "medio"
+    },
+    {
+      "id": "ibscbs-012",
+      "legacyId": 12,
+      "topic": "Partes Relacionadas",
+      "front": "Qual percentual caracteriza relação entre sócios comuns?",
+      "back": "Participação de 20% ou mais do capital.",
+      "difficulty": "medio"
+    },
+    {
+      "id": "ibscbs-013",
+      "legacyId": 13,
+      "topic": "Partes Relacionadas",
+      "front": "Qual percentual pode caracterizar controle pelo capital?",
+      "back": "Mais de 50% do capital.",
+      "difficulty": "medio"
+    },
+    {
+      "id": "ibscbs-014",
+      "legacyId": 14,
+      "topic": "Não Incidência",
+      "front": "Há incidência na transferência de bens entre estabelecimentos do mesmo titular?",
+      "back": "Não. A transferência entre estabelecimentos do mesmo titular não sofre incidência.",
+      "difficulty": "facil"
+    },
+    {
+      "id": "ibscbs-015",
+      "legacyId": 15,
+      "topic": "Não Incidência",
+      "front": "Doações sem contraprestação sofrem incidência?",
+      "back": "Não, conforme a hipótese de não incidência prevista.",
+      "difficulty": "facil"
+    },
+    {
+      "id": "ibscbs-016",
+      "legacyId": 16,
+      "topic": "Imunidades",
+      "front": "As exportações de bens e serviços sofrem incidência?",
+      "back": "Não. As exportações estão abrangidas pela imunidade.",
+      "difficulty": "facil"
+    },
+    {
+      "id": "ibscbs-017",
+      "legacyId": 17,
+      "topic": "Imunidades",
+      "front": "Quais publicações estão abrangidas pela imunidade?",
+      "back": "Livros, jornais, periódicos e papel destinado à impressão.",
+      "difficulty": "facil"
+    },
+    {
+      "id": "ibscbs-018",
+      "legacyId": 18,
+      "topic": "Fato Gerador",
+      "front": "Quando ocorre o fato gerador no fornecimento de bens?",
+      "back": "No momento da entrega ou disponibilização do bem.",
+      "difficulty": "facil"
+    },
+    {
+      "id": "ibscbs-019",
+      "legacyId": 19,
+      "topic": "Fato Gerador",
+      "front": "Quando ocorre o fato gerador nos serviços?",
+      "back": "No momento da conclusão do serviço.",
+      "difficulty": "facil"
+    },
+    {
+      "id": "ibscbs-020",
+      "legacyId": 20,
+      "topic": "Fato Gerador",
+      "front": "Quando ocorre o fato gerador em fornecimento contínuo?",
+      "back": "No primeiro entre o pagamento exigível e o pagamento efetivo.",
+      "difficulty": "medio"
+    }
+  ]
+}
