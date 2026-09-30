@@ -803,6 +803,198 @@ body {
 }
 
 
+.contest-filters {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 12px;
+
+    margin-bottom: 22px;
+
+}
+
+
+.contest-filters select {
+
+    min-width: 190px;
+
+    padding: 12px 14px;
+
+    color: var(--text);
+
+    background: var(--surface);
+
+    border: 1px solid var(--border);
+
+    border-radius: 8px;
+
+}
+
+
+.contest-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+
+    gap: 16px;
+
+}
+
+
+.contest-card {
+
+    min-width: 0;
+
+    padding: 20px;
+
+    background: var(--surface);
+
+    border: 1px solid var(--border);
+
+    border-radius: 8px;
+
+}
+
+
+.contest-card-header {
+
+    display: flex;
+
+    align-items: flex-start;
+
+    justify-content: space-between;
+
+    gap: 14px;
+
+    margin-bottom: 18px;
+
+}
+
+
+.contest-card-header h2 {
+
+    font-size: 19px;
+
+    line-height: 1.35;
+
+    overflow-wrap: anywhere;
+
+}
+
+
+.contest-status {
+
+    flex: 0 0 auto;
+
+    padding: 5px 9px;
+
+    border-radius: 999px;
+
+    font-size: 12px;
+
+    font-weight: 600;
+
+}
+
+
+.contest-status-inscrito {
+
+    color: #166534;
+
+    background: #dcfce7;
+
+}
+
+
+.contest-status-no-radar {
+
+    color: #9a3412;
+
+    background: #ffedd5;
+
+}
+
+
+.contest-details {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+
+    gap: 14px;
+
+}
+
+
+.contest-details dt {
+
+    margin-bottom: 3px;
+
+    color: var(--text-secondary);
+
+    font-size: 12px;
+
+}
+
+
+.contest-details dd {
+
+    font-size: 14px;
+
+    overflow-wrap: anywhere;
+
+}
+
+
+.contest-notes {
+
+    margin-top: 16px;
+
+    color: var(--text-secondary);
+
+    font-size: 14px;
+
+    line-height: 1.55;
+
+    white-space: pre-line;
+
+}
+
+
+.contest-link {
+
+    display: inline-block;
+
+    margin-top: 16px;
+
+    color: var(--primary);
+
+    font-weight: 600;
+
+    text-decoration: none;
+
+}
+
+
+.contest-link:hover {
+
+    text-decoration: underline;
+
+}
+
+
+.contest-empty-state {
+
+    grid-column: 1 / -1;
+
+}
+
+
 /* =========================================
    FLASHCARD
 ========================================= */
@@ -1148,6 +1340,12 @@ body.dark .tag {
 
     }
 
+    .contest-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
 }
 
 
@@ -1207,6 +1405,25 @@ body.dark .tag {
     .subjects-grid,
     .content-grid,
     .summary-card-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+    .contest-filters {
+
+        flex-direction: column;
+
+    }
+
+    .contest-filters .search-input,
+    .contest-filters select {
+
+        width: 100%;
+
+    }
+
+    .contest-details {
 
         grid-template-columns: 1fr;
 

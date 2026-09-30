@@ -12,6 +12,19 @@ let summaryDocuments = [];
 
 let selectedSummaryPath = "";
 
+let contestEntries = [];
+
+async function loadConcursos() {
+  const response = await fetch("data/concursos/concursos.json");
+
+  if (!response.ok) {
+    throw new Error("Não foi possível carregar data/concursos/concursos.json.");
+  }
+
+  const data = await response.json();
+  contestEntries = Array.isArray(data.concursos) ? data.concursos : [];
+}
+
 async function loadSubjectCollection(subject, pathKey, dataKey) {
   const response = await fetch(subject[pathKey]);
 
@@ -241,6 +254,10 @@ function showPage(pageId) {
 
   if (pageId === "summaries") {
     renderSummary();
+  }
+
+  if (pageId === "concursos") {
+    renderConcursos();
   }
 
   window.scrollTo({
@@ -548,6 +565,133 @@ function showSummaryDocument(path) {
   viewer.innerHTML = window.DOMPurify.sanitize(
     window.marked.parse(summary.markdown),
   );
+}
+
+function formatContestDate(dateValue) {
+  if (!dateValue || !/^\d{4}-\d{2}-\d{2}$/.test(dateValue)) {
+    return "Não informado";
+  }
+
+  const date = new Date(`${dateValue}T00:00:00`);
+
+  if (Number.isNaN(date.getTime())) {
+    return "Não informado";
+  }
+
+  return new Intl.DateTimeFormat("pt-BR", { dateStyle: "long" }).format(date);
+}
+
+function createContestMeta(label, value) {
+  const item = document.createElement("div");
+  const term = document.createElement("dt");
+  const description = document.createElement("dd");
+
+  term.textContent = label;
+  description.textContent = value || "Não informado";
+  item.append(term, description);
+
+  return item;
+}
+
+function renderConcursos() {
+  const container = document.getElementById("contestList");
+  const search = document
+    .getElementById("contestSearch")
+    .value.trim()
+    .toLocaleLowerCase("pt-BR");
+  const selectedStatus = document.getElementById("contestStatus").value;
+  const counts = document.getElementById("contestCounts");
+  const enrolledCount = contestEntries.filter(
+    (contest) => contest.status === "inscrito",
+  ).length;
+  const radarCount = contestEntries.filter(
+    (contest) => contest.status === "no-radar",
+  ).length;
+
+  counts.textContent = `${enrolledCount} inscritos · ${radarCount} no radar`;
+  container.replaceChildren();
+
+  const filteredContests = contestEntries.filter((contest) => {
+    const matchesStatus =
+      selectedStatus === "todos" || contest.status === selectedStatus;
+    const searchableText = [
+      contest.nome,
+      contest.cargo,
+      contest.banca,
+      contest.local,
+      contest.observacoes,
+    ]
+      .filter(Boolean)
+      .join(" ")
+      .toLocaleLowerCase("pt-BR");
+
+    return matchesStatus && searchableText.includes(search);
+  });
+
+  if (filteredContests.length === 0) {
+    const emptyState = document.createElement("div");
+    emptyState.className = "empty-state contest-empty-state";
+    emptyState.textContent =
+      contestEntries.length === 0
+        ? "Nenhum concurso cadastrado."
+        : "Nenhum concurso corresponde aos filtros.";
+    container.appendChild(emptyState);
+    return;
+  }
+
+  filteredContests.forEach((contest) => {
+    const card = document.createElement("article");
+    const header = document.createElement("div");
+    const title = document.createElement("h2");
+    const status = document.createElement("span");
+    const details = document.createElement("dl");
+
+    card.className = "contest-card";
+    header.className = "contest-card-header";
+    title.textContent = contest.nome || "Concurso sem nome";
+    status.className = `contest-status contest-status-${contest.status === "inscrito" ? "inscrito" : "no-radar"}`;
+    status.textContent =
+      contest.status === "inscrito" ? "Inscrito" : "No radar";
+
+    details.className = "contest-details";
+    details.append(
+      createContestMeta("Cargo", contest.cargo),
+      createContestMeta("Banca", contest.banca),
+      createContestMeta(
+        "Inscrições até",
+        formatContestDate(contest.inscricoesAte),
+      ),
+      createContestMeta("Prova", formatContestDate(contest.provaEm)),
+    );
+
+    header.append(title, status);
+    card.append(header, details);
+
+    if (contest.observacoes) {
+      const notes = document.createElement("p");
+      notes.className = "contest-notes";
+      notes.textContent = contest.observacoes;
+      card.appendChild(notes);
+    }
+
+    if (typeof contest.link === "string") {
+      try {
+        const url = new URL(contest.link);
+
+        if (url.protocol === "https:") {
+          const link = document.createElement("a");
+          link.className = "contest-link";
+          link.href = url.href;
+          link.target = "_blank";
+          link.rel = "noopener noreferrer";
+          link.textContent = "Abrir edital ou página oficial ↗";
+          card.appendChild(link);
+        }
+      } catch {}
+    }
+
+    container.appendChild(card);
+  });
 }
 
 /* =========================================
@@ -859,6 +1003,12 @@ document.addEventListener("DOMContentLoaded", async function () {
   try {
     await loadStudyData();
     await loadSummaries();
+  } catch (error) {
+    console.error(error);
+  }
+
+  try {
+    await loadConcursos();
   } catch (error) {
     console.error(error);
   }

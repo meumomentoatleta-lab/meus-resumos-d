@@ -212,6 +212,29 @@
             </div>
 
 
+            <div
+                class="action-card"
+                onclick="showPage('concursos')">
+
+                <div class="action-icon">
+                    🏆
+                </div>
+
+                <h3>
+                    Concursos
+                </h3>
+
+                <p>
+                    Acompanhe inscrições, editais e datas de prova.
+                </p>
+
+                <span class="action-link">
+                    Ver concursos →
+                </span>
+
+            </div>
+
+
             <a
                 class="action-card"
                 href="https://stealth-borogovia-757.notion.site/ebd//393dcaf23fee809bbba8fa545ec7ffe7?v=393dcaf23fee8000b10e000c5b6f4592"
@@ -479,6 +502,51 @@
     </section>
 
 
+    <section id="concursos" class="page">
+
+        <div class="page-header">
+
+            <div>
+
+                <h1>🏆 Concursos</h1>
+
+                <p id="contestCounts">
+                    Organize concursos inscritos e no radar.
+                </p>
+
+            </div>
+
+        </div>
+
+        <div class="contest-filters">
+
+            <input
+                type="search"
+                id="contestSearch"
+                class="search-input"
+                placeholder="Buscar concurso..."
+                aria-label="Buscar concurso"
+                oninput="renderConcursos()">
+
+            <select
+                id="contestStatus"
+                aria-label="Filtrar por situação"
+                onchange="renderConcursos()">
+                <option value="todos">Todas as situações</option>
+                <option value="inscrito">Inscrito</option>
+                <option value="no-radar">No radar</option>
+            </select>
+
+        </div>
+
+        <div
+            id="contestList"
+            class="contest-grid">
+        </div>
+
+    </section>
+
+
     <section id="search" class="page">
 
         <div class="page-header">
@@ -517,7 +585,7 @@
 
 <script src="https://cdn.jsdelivr.net/npm/marked@15.0.12/marked.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/dompurify@3.2.6/dist/purify.min.js"></script>
-<script src="js/app.js?v=4"></script>
+<script src="js/app.js?v=5"></script>
 
 </body>
 </html>
