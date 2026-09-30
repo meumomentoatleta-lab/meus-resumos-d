@@ -610,6 +610,106 @@ body {
 }
 
 
+.summary-reader {
+
+    max-width: 880px;
+
+    margin: 0 auto;
+
+    line-height: 1.7;
+
+    overflow-wrap: anywhere;
+
+}
+
+
+.summary-reader h1,
+.summary-reader h2,
+.summary-reader h3 {
+
+    margin: 1.5em 0 0.6em;
+
+}
+
+
+.summary-reader h1:first-child {
+
+    margin-top: 0;
+
+}
+
+
+.summary-reader p,
+.summary-reader ul,
+.summary-reader ol,
+.summary-reader blockquote,
+.summary-reader pre,
+.summary-reader table {
+
+    margin: 0 0 1em;
+
+}
+
+
+.summary-reader ul,
+.summary-reader ol {
+
+    padding-left: 1.5em;
+
+}
+
+
+.summary-reader blockquote {
+
+    border-left: 3px solid var(--primary);
+
+    padding-left: 1em;
+
+    color: var(--text-secondary);
+
+}
+
+
+.summary-reader pre {
+
+    overflow-x: auto;
+
+    padding: 1em;
+
+    background: var(--surface);
+
+    border: 1px solid var(--border);
+
+    border-radius: 8px;
+
+}
+
+
+.summary-reader table {
+
+    display: block;
+
+    max-width: 100%;
+
+    overflow-x: auto;
+
+    border-collapse: collapse;
+
+}
+
+
+.summary-reader th,
+.summary-reader td {
+
+    padding: 8px 12px;
+
+    border: 1px solid var(--border);
+
+    text-align: left;
+
+}
+
+
 /* =========================================
    FLASHCARD
 ========================================= */

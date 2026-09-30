@@ -8,7 +8,8 @@
       "color": "#2563eb",
       "description": "CTN, tributos, obrigação tributária, crédito tributário e legislação tributária.",
       "flashcards": "data/flashcards/tributario.json",
-      "mindmaps": "data/mindmaps/tributario.json"
+      "mindmaps": "data/mindmaps/tributario.json",
+      "summary": "resumos/tributario/direito-tributario.md"
     },
     {
       "id": "constitucional",
@@ -78,7 +79,8 @@
       "color": "#059669",
       "description": "Análise de dados, machine learning, estatística e visualização.",
       "flashcards": "data/flashcards/cienciaDados.json",
-      "mindmaps": "data/mindmaps/cienciaDados.json"
+      "mindmaps": "data/mindmaps/cienciaDados.json",
+      "summary": "resumos/cienciaDados/modelagem-multidimensional.md"
     }
    
   ]

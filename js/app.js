@@ -8,6 +8,8 @@ let mindmaps = [];
 
 let flashcards = [];
 
+let summaryDocuments = [];
+
 async function loadSubjectCollection(subject, pathKey, dataKey) {
   const response = await fetch(subject[pathKey]);
 
@@ -51,6 +53,43 @@ async function loadStudyData() {
   mindmaps = mindmapsBySubject.flat();
 
   flashcards = flashcardsBySubject.flat();
+}
+
+async function loadSummaries() {
+  const configuredSubjects = subjects.filter((subject) => subject.summary);
+
+  const loadedSummaries = await Promise.all(
+    configuredSubjects.map(async (subject) => {
+      try {
+        const summaryUrl = new URL(subject.summary, window.location.href);
+        const summariesRoot = new URL("resumos/", window.location.href);
+
+        if (
+          summaryUrl.origin !== window.location.origin ||
+          !summaryUrl.pathname.startsWith(summariesRoot.pathname)
+        ) {
+          throw new Error("Os resumos devem estar na pasta local resumos/.");
+        }
+
+        const response = await fetch(summaryUrl);
+
+        if (!response.ok) {
+          throw new Error(`Não foi possível carregar ${subject.summary}.`);
+        }
+
+        return {
+          subject: subject.name,
+          path: subject.summary,
+          markdown: await response.text(),
+        };
+      } catch (error) {
+        console.error(error);
+        return null;
+      }
+    }),
+  );
+
+  summaryDocuments = loadedSummaries.filter(Boolean);
 }
 
 function getCardProgressKey(card) {
@@ -181,6 +220,10 @@ function showPage(pageId) {
 
   if (pageId === "flashcards") {
     startFlashcards();
+  }
+
+  if (pageId === "summaries") {
+    renderSummary();
   }
 
   window.scrollTo({
@@ -392,6 +435,47 @@ function renderMindmaps() {
 
     container.appendChild(group);
   });
+}
+
+function populateSummarySubjects() {
+  const select = document.getElementById("summarySubject");
+
+  select.replaceChildren();
+
+  summaryDocuments.forEach((summary) => {
+    const option = document.createElement("option");
+
+    option.value = summary.path;
+    option.textContent = summary.subject;
+
+    select.appendChild(option);
+  });
+
+  select.disabled = summaryDocuments.length === 0;
+
+  renderSummary();
+}
+
+function renderSummary() {
+  const select = document.getElementById("summarySubject");
+  const viewer = document.getElementById("summaryContent");
+  const summary = summaryDocuments.find((item) => item.path === select.value);
+
+  viewer.replaceChildren();
+
+  if (!summary) {
+    viewer.textContent = "Nenhum resumo Markdown está cadastrado.";
+    return;
+  }
+
+  if (!window.marked || !window.DOMPurify) {
+    viewer.textContent = summary.markdown;
+    return;
+  }
+
+  viewer.innerHTML = window.DOMPurify.sanitize(
+    window.marked.parse(summary.markdown),
+  );
 }
 
 /* =========================================
@@ -702,11 +786,13 @@ document.addEventListener("DOMContentLoaded", async function () {
 
   try {
     await loadStudyData();
+    await loadSummaries();
   } catch (error) {
     console.error(error);
   }
 
   populateSubjects();
+  populateSummarySubjects();
 
   updateDashboard();
 
