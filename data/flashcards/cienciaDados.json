@@ -1,0 +1,169 @@
+{
+    "subject": "Ciência de Dados",
+
+    
+  
+  "cards": [
+    {
+      "id": "md-001",
+      "legacyId": 1,
+      "topic": "Modelagem Multidimensional",
+      "front": "Qual é o principal objetivo da modelagem multidimensional?",
+      "back": "Organizar dados para facilitar consultas analíticas rápidas, relatórios e apoio à tomada de decisões.",
+      "difficulty": "facil"
+    },
+    {
+      "id": "md-002",
+      "legacyId": 2,
+      "topic": "Cubos de Dados",
+      "front": "O que é um cubo de dados?",
+      "back": "Uma estrutura multidimensional utilizada para organizar e analisar dados sob diferentes dimensões. Uma matriz tridimensional é denominada cubo de dados.",
+      "difficulty": "facil"
+    },
+    {
+      "id": "md-003",
+      "legacyId": 3,
+      "topic": "Cubos de Dados",
+      "front": "Qual é a diferença entre cubo denso e cubo esparso?",
+      "back": "O cubo denso possui a maioria das células preenchidas com dados; o cubo esparso possui grande quantidade de células vazias.",
+      "difficulty": "facil"
+    },
+    {
+      "id": "md-004",
+      "legacyId": 4,
+      "topic": "Tabela Fato",
+      "front": "O que é armazenado em uma Tabela Fato?",
+      "back": "Eventos mensuráveis de um processo de negócio, contendo principalmente medidas quantitativas, como quantidade, valor, custo e lucro.",
+      "difficulty": "facil"
+    },
+    {
+      "id": "md-005",
+      "legacyId": 5,
+      "topic": "Tabela Dimensão",
+      "front": "Qual é a função da Tabela Dimensão?",
+      "back": "Armazenar atributos descritivos que fornecem contexto às medidas da Tabela Fato, permitindo análises por quem, o quê, onde, quando e como.",
+      "difficulty": "facil"
+    },
+    {
+      "id": "md-006",
+      "legacyId": 6,
+      "topic": "Star Schema",
+      "front": "Qual é a principal característica do esquema estrela?",
+      "back": "Uma Tabela Fato central conectada diretamente a várias Tabelas Dimensão, geralmente desnormalizadas.",
+      "difficulty": "facil"
+    },
+    {
+      "id": "md-007",
+      "legacyId": 7,
+      "topic": "Snowflake Schema",
+      "front": "Qual é a principal diferença entre o esquema estrela e o esquema floco de neve?",
+      "back": "No estrela, as dimensões são geralmente desnormalizadas; no floco de neve, as dimensões são normalizadas e podem ser divididas em tabelas menores.",
+      "difficulty": "medio"
+    },
+    {
+      "id": "md-008",
+      "legacyId": 8,
+      "topic": "Fact Constellation",
+      "front": "O que caracteriza o esquema Constelação de Fatos?",
+      "back": "A existência de duas ou mais Tabelas Fato que compartilham uma ou mais dimensões conformes.",
+      "difficulty": "medio"
+    },
+    {
+      "id": "md-009",
+      "legacyId": 9,
+      "topic": "Medidas",
+      "front": "O que é uma medida aditiva?",
+      "back": "É uma medida que pode ser somada livremente em todas as dimensões do modelo dimensional, como valor de venda e quantidade.",
+      "difficulty": "facil"
+    },
+    {
+      "id": "md-010",
+      "legacyId": 10,
+      "topic": "Medidas",
+      "front": "O que é uma medida não-aditiva?",
+      "back": "É uma medida que não pode ser somada em nenhuma dimensão, como percentuais, razões e médias.",
+      "difficulty": "facil"
+    },
+    {
+      "id": "md-011",
+      "legacyId": 11,
+      "topic": "Medidas",
+      "front": "O que é uma medida semi-aditiva?",
+      "back": "É uma medida que pode ser somada em algumas dimensões, mas não em outras, normalmente não podendo ser somada ao longo do tempo. Exemplo: estoque.",
+      "difficulty": "medio"
+    },
+    {
+      "id": "md-012",
+      "legacyId": 12,
+      "topic": "OLAP",
+      "front": "Qual é a finalidade do OLAP?",
+      "back": "Permitir análise multidimensional de dados, especialmente dados históricos, apoiando consultas analíticas, comparação de informações e tomada de decisões.",
+      "difficulty": "facil"
+    },
+    {
+      "id": "md-013",
+      "legacyId": 13,
+      "topic": "Operações OLAP",
+      "front": "O que faz a operação Slice?",
+      "back": "Fixa um único valor de uma dimensão e reduz o cubo multidimensional para uma estrutura de menor dimensionalidade.",
+      "difficulty": "facil"
+    },
+    {
+      "id": "md-014",
+      "legacyId": 14,
+      "topic": "Operações OLAP",
+      "front": "O que faz a operação Dice?",
+      "back": "Seleciona subconjuntos de valores em duas ou mais dimensões, criando um subcubo do cubo original.",
+      "difficulty": "facil"
+    },
+    {
+      "id": "md-015",
+      "legacyId": 15,
+      "topic": "Operações OLAP",
+      "front": "Qual é a diferença entre Drill Down e Roll Up?",
+      "back": "Drill Down aumenta o nível de detalhe, indo do geral para o específico. Roll Up aumenta a agregação, indo do específico para o geral.",
+      "difficulty": "medio"
+    },
+    {
+      "id": "md-016",
+      "legacyId": 16,
+      "topic": "OLTP x OLAP",
+      "front": "Qual é a principal diferença entre OLTP e OLAP?",
+      "back": "OLTP é voltado para processamento de transações operacionais; OLAP é voltado para consulta, análise multidimensional e tomada de decisão.",
+      "difficulty": "facil"
+    },
+    {
+      "id": "md-017",
+      "legacyId": 17,
+      "topic": "ROLAP",
+      "front": "Como funciona o ROLAP?",
+      "back": "Utiliza bancos de dados relacionais para realizar análises multidimensionais, normalmente convertendo operações analíticas em consultas SQL.",
+      "difficulty": "medio"
+    },
+    {
+      "id": "md-018",
+      "legacyId": 18,
+      "topic": "MOLAP",
+      "front": "Qual é a principal característica do MOLAP?",
+      "back": "Utiliza bancos multidimensionais com cubos que armazenam dados pré-calculados e pré-agregados, proporcionando alto desempenho nas consultas.",
+      "difficulty": "medio"
+    },
+    {
+      "id": "md-019",
+      "legacyId": 19,
+      "topic": "HOLAP",
+      "front": "O que é HOLAP?",
+      "back": "É uma abordagem híbrida que combina MOLAP e ROLAP: utiliza cubos para informações agregadas e banco relacional para dados detalhados.",
+      "difficulty": "medio"
+    },
+    {
+      "id": "md-020",
+      "legacyId": 20,
+      "topic": "Granularidade",
+      "front": "O que significa granularidade na modelagem multidimensional?",
+      "back": "Refere-se ao nível de detalhamento dos dados. Maior granularidade significa maior detalhamento; menor granularidade significa maior agregação.",
+      "difficulty": "medio"
+    }
+  ]
+
+}

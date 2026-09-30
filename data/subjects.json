@@ -69,6 +69,16 @@
       "description": "Propostas e impactos da reforma tributária no sistema fiscal.",
       "flashcards": "data/flashcards/reforma.json",
       "mindmaps": "data/mindmaps/reforma.json"
+    },
+         {
+      "id": "cienciaDados",
+      "name": "Ciência de Dados",
+      "shortName": "Dados",
+      "icon": "📊",
+      "color": "#059669",
+      "description": "Análise de dados, machine learning, estatística e visualização.",
+      "flashcards": "data/flashcards/cienciaDados.json",
+      "mindmaps": "data/mindmaps/cienciaDados.json"
     }
    
   ]
