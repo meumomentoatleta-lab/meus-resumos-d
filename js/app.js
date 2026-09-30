@@ -10,6 +10,8 @@ let flashcards = [];
 
 let summaryDocuments = [];
 
+let selectedSummaryPath = "";
+
 async function loadSubjectCollection(subject, pathKey, dataKey) {
   const response = await fetch(subject[pathKey]);
 
@@ -56,12 +58,19 @@ async function loadStudyData() {
 }
 
 async function loadSummaries() {
-  const configuredSubjects = subjects.filter((subject) => subject.summary);
+  const configuredSummaries = subjects.flatMap((subject) => {
+    const paths = subject.summaries ?? subject.summary;
+    const summaryPaths = Array.isArray(paths) ? paths : [paths];
+
+    return summaryPaths
+      .filter((path) => typeof path === "string" && path.trim())
+      .map((path) => ({ subject, path }));
+  });
 
   const loadedSummaries = await Promise.all(
-    configuredSubjects.map(async (subject) => {
+    configuredSummaries.map(async ({ subject, path }) => {
       try {
-        const summaryUrl = new URL(subject.summary, window.location.href);
+        const summaryUrl = new URL(path, window.location.href);
         const summariesRoot = new URL("resumos/", window.location.href);
 
         if (
@@ -74,13 +83,21 @@ async function loadSummaries() {
         const response = await fetch(summaryUrl);
 
         if (!response.ok) {
-          throw new Error(`Não foi possível carregar ${subject.summary}.`);
+          throw new Error(`Não foi possível carregar ${path}.`);
         }
 
+        const markdown = await response.text();
+        const firstHeading = markdown.match(/^#\s+(.+?)\s*$/m);
+        const firstLine = markdown.split(/\r?\n/).find((line) => line.trim());
+
         return {
+          subjectId: subject.id,
           subject: subject.name,
-          path: subject.summary,
-          markdown: await response.text(),
+          path,
+          title: (firstHeading?.[1] || firstLine || path)
+            .replace(/^#+\s*/, "")
+            .trim(),
+          markdown,
         };
       } catch (error) {
         console.error(error);
@@ -439,14 +456,21 @@ function renderMindmaps() {
 
 function populateSummarySubjects() {
   const select = document.getElementById("summarySubject");
+  const availableSubjects = new Map();
 
   select.replaceChildren();
 
   summaryDocuments.forEach((summary) => {
+    if (!availableSubjects.has(summary.subjectId)) {
+      availableSubjects.set(summary.subjectId, summary.subject);
+    }
+  });
+
+  availableSubjects.forEach((subjectName, subjectId) => {
     const option = document.createElement("option");
 
-    option.value = summary.path;
-    option.textContent = summary.subject;
+    option.value = subjectId;
+    option.textContent = subjectName;
 
     select.appendChild(option);
   });
@@ -458,15 +482,63 @@ function populateSummarySubjects() {
 
 function renderSummary() {
   const select = document.getElementById("summarySubject");
+  const summaryCards = document.getElementById("summaryCards");
   const viewer = document.getElementById("summaryContent");
-  const summary = summaryDocuments.find((item) => item.path === select.value);
+  const selectedSubjectDocuments = summaryDocuments.filter(
+    (item) => item.subjectId === select.value,
+  );
 
+  summaryCards.replaceChildren();
   viewer.replaceChildren();
+  selectedSummaryPath = "";
 
-  if (!summary) {
-    viewer.textContent = "Nenhum resumo Markdown está cadastrado.";
+  if (selectedSubjectDocuments.length === 0) {
+    summaryCards.textContent = "Nenhum resumo Markdown está cadastrado.";
     return;
   }
+
+  selectedSubjectDocuments.forEach((summary) => {
+    const card = document.createElement("button");
+    const heading = document.createElement("h3");
+    const preview = document.createElement("p");
+
+    card.type = "button";
+    card.className = "summary-card";
+    card.dataset.summaryPath = summary.path;
+    card.setAttribute("aria-pressed", "false");
+
+    heading.textContent = summary.title;
+    preview.textContent = summary.markdown
+      .replace(/```[\s\S]*?```/g, "Bloco de código")
+      .replace(/[#>*_`|]/g, "")
+      .replace(/\s+/g, " ")
+      .trim()
+      .slice(0, 150);
+
+    card.append(heading, preview);
+    card.addEventListener("click", () => showSummaryDocument(summary.path));
+    summaryCards.appendChild(card);
+  });
+
+  viewer.textContent = "Selecione um resumo para abrir.";
+}
+
+function showSummaryDocument(path) {
+  const viewer = document.getElementById("summaryContent");
+  const summary = summaryDocuments.find((item) => item.path === path);
+
+  if (!summary) {
+    return;
+  }
+
+  selectedSummaryPath = path;
+
+  document.querySelectorAll(".summary-card").forEach((card) => {
+    card.setAttribute(
+      "aria-pressed",
+      String(card.dataset.summaryPath === path),
+    );
+  });
 
   if (!window.marked || !window.DOMPurify) {
     viewer.textContent = summary.markdown;
