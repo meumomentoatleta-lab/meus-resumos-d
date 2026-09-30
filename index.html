@@ -539,9 +539,34 @@
 
         </div>
 
-        <div
-            id="contestList"
-            class="contest-grid">
+        <div id="contestBoard" class="contest-board">
+
+            <section
+                class="contest-lane contest-lane-inscrito"
+                aria-labelledby="enrolledLaneTitle">
+
+                <header class="contest-lane-header">
+                    <h2 id="enrolledLaneTitle">Inscrições feitas</h2>
+                    <span id="enrolledContestCount" class="contest-lane-count">0</span>
+                </header>
+
+                <div id="enrolledContestList" class="contest-lane-cards"></div>
+
+            </section>
+
+            <section
+                class="contest-lane contest-lane-radar"
+                aria-labelledby="radarLaneTitle">
+
+                <header class="contest-lane-header">
+                    <h2 id="radarLaneTitle">No radar</h2>
+                    <span id="radarContestCount" class="contest-lane-count">0</span>
+                </header>
+
+                <div id="radarContestList" class="contest-lane-cards"></div>
+
+            </section>
+
         </div>
 
     </section>
@@ -585,7 +610,7 @@
 
 <script src="https://cdn.jsdelivr.net/npm/marked@15.0.12/marked.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/dompurify@3.2.6/dist/purify.min.js"></script>
-<script src="js/app.js?v=5"></script>
+<script src="js/app.js?v=6"></script>
 
 </body>
 </html>

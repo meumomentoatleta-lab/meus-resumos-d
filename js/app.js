@@ -568,6 +568,14 @@ function showSummaryDocument(path) {
 }
 
 function formatContestDate(dateValue) {
+  if (Array.isArray(dateValue)) {
+    const dates = dateValue
+      .map((value) => formatContestDate(value))
+      .filter((value) => value !== "Não informado");
+
+    return dates.length > 0 ? dates.join(" · ") : "Não informado";
+  }
+
   if (!dateValue || !/^\d{4}-\d{2}-\d{2}$/.test(dateValue)) {
     return "Não informado";
   }
@@ -593,8 +601,60 @@ function createContestMeta(label, value) {
   return item;
 }
 
+function createContestCard(contest) {
+  const card = document.createElement("article");
+  const header = document.createElement("div");
+  const title = document.createElement("h3");
+  const status = document.createElement("span");
+  const details = document.createElement("dl");
+
+  card.className = "contest-card";
+  header.className = "contest-card-header";
+  title.textContent = contest.nome || "Concurso sem nome";
+  status.className = `contest-status contest-status-${contest.status === "inscrito" ? "inscrito" : "no-radar"}`;
+  status.textContent = contest.status === "inscrito" ? "Inscrito" : "No radar";
+
+  details.className = "contest-details";
+  details.append(
+    createContestMeta("Cargo", contest.cargo),
+    createContestMeta("Banca", contest.banca),
+    createContestMeta(
+      "Inscrições até",
+      formatContestDate(contest.inscricoesAte),
+    ),
+    createContestMeta("Prova", formatContestDate(contest.provaEm)),
+  );
+
+  header.append(title, status);
+  card.append(header, details);
+
+  if (contest.observacoes) {
+    const notes = document.createElement("p");
+    notes.className = "contest-notes";
+    notes.textContent = contest.observacoes;
+    card.appendChild(notes);
+  }
+
+  if (typeof contest.link === "string") {
+    try {
+      const url = new URL(contest.link);
+
+      if (url.protocol === "https:") {
+        const link = document.createElement("a");
+        link.className = "contest-link";
+        link.href = url.href;
+        link.target = "_blank";
+        link.rel = "noopener noreferrer";
+        link.textContent = "Abrir edital ou página oficial ↗";
+        card.appendChild(link);
+      }
+    } catch {}
+  }
+
+  return card;
+}
+
 function renderConcursos() {
-  const container = document.getElementById("contestList");
   const search = document
     .getElementById("contestSearch")
     .value.trim()
@@ -609,7 +669,6 @@ function renderConcursos() {
   ).length;
 
   counts.textContent = `${enrolledCount} inscritos · ${radarCount} no radar`;
-  container.replaceChildren();
 
   const filteredContests = contestEntries.filter((contest) => {
     const matchesStatus =
@@ -628,69 +687,45 @@ function renderConcursos() {
     return matchesStatus && searchableText.includes(search);
   });
 
-  if (filteredContests.length === 0) {
-    const emptyState = document.createElement("div");
-    emptyState.className = "empty-state contest-empty-state";
-    emptyState.textContent =
-      contestEntries.length === 0
-        ? "Nenhum concurso cadastrado."
-        : "Nenhum concurso corresponde aos filtros.";
-    container.appendChild(emptyState);
-    return;
-  }
+  const lanes = [
+    {
+      status: "inscrito",
+      section: document.querySelector(".contest-lane-inscrito"),
+      list: document.getElementById("enrolledContestList"),
+      count: document.getElementById("enrolledContestCount"),
+    },
+    {
+      status: "no-radar",
+      section: document.querySelector(".contest-lane-radar"),
+      list: document.getElementById("radarContestList"),
+      count: document.getElementById("radarContestCount"),
+    },
+  ];
 
-  filteredContests.forEach((contest) => {
-    const card = document.createElement("article");
-    const header = document.createElement("div");
-    const title = document.createElement("h2");
-    const status = document.createElement("span");
-    const details = document.createElement("dl");
-
-    card.className = "contest-card";
-    header.className = "contest-card-header";
-    title.textContent = contest.nome || "Concurso sem nome";
-    status.className = `contest-status contest-status-${contest.status === "inscrito" ? "inscrito" : "no-radar"}`;
-    status.textContent =
-      contest.status === "inscrito" ? "Inscrito" : "No radar";
-
-    details.className = "contest-details";
-    details.append(
-      createContestMeta("Cargo", contest.cargo),
-      createContestMeta("Banca", contest.banca),
-      createContestMeta(
-        "Inscrições até",
-        formatContestDate(contest.inscricoesAte),
-      ),
-      createContestMeta("Prova", formatContestDate(contest.provaEm)),
+  lanes.forEach((lane) => {
+    const laneContests = filteredContests.filter(
+      (contest) => contest.status === lane.status,
     );
 
-    header.append(title, status);
-    card.append(header, details);
+    lane.section.hidden =
+      selectedStatus !== "todos" && selectedStatus !== lane.status;
+    lane.count.textContent = laneContests.length;
+    lane.list.replaceChildren();
 
-    if (contest.observacoes) {
-      const notes = document.createElement("p");
-      notes.className = "contest-notes";
-      notes.textContent = contest.observacoes;
-      card.appendChild(notes);
+    if (laneContests.length === 0) {
+      const emptyState = document.createElement("p");
+      emptyState.className = "contest-lane-empty";
+      emptyState.textContent =
+        contestEntries.length === 0
+          ? "Nenhum concurso cadastrado."
+          : "Nenhum concurso neste grupo.";
+      lane.list.appendChild(emptyState);
+      return;
     }
 
-    if (typeof contest.link === "string") {
-      try {
-        const url = new URL(contest.link);
-
-        if (url.protocol === "https:") {
-          const link = document.createElement("a");
-          link.className = "contest-link";
-          link.href = url.href;
-          link.target = "_blank";
-          link.rel = "noopener noreferrer";
-          link.textContent = "Abrir edital ou página oficial ↗";
-          card.appendChild(link);
-        }
-      } catch {}
-    }
-
-    container.appendChild(card);
+    laneContests.forEach((contest) => {
+      lane.list.appendChild(createContestCard(contest));
+    });
   });
 }
 

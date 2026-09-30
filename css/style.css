@@ -833,14 +833,125 @@ body {
 }
 
 
-.contest-grid {
+.contest-board {
 
     display: grid;
 
     grid-template-columns:
         repeat(2, minmax(0, 1fr));
 
-    gap: 16px;
+    gap: 18px;
+
+    align-items: start;
+
+}
+
+
+.contest-lane {
+
+    min-width: 0;
+
+    padding: 16px;
+
+    background: var(--background);
+
+    border: 1px solid var(--border);
+
+    border-radius: 10px;
+
+}
+
+
+.contest-lane[hidden] {
+
+    display: none;
+
+}
+
+
+.contest-lane-header {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 12px;
+
+    padding: 3px 2px 14px;
+
+}
+
+
+.contest-lane-header h2 {
+
+    font-size: 16px;
+
+}
+
+
+.contest-lane-inscrito .contest-lane-header {
+
+    border-bottom: 3px solid #16a34a;
+
+}
+
+
+.contest-lane-radar .contest-lane-header {
+
+    border-bottom: 3px solid #d97706;
+
+}
+
+
+.contest-lane-count {
+
+    display: grid;
+
+    place-items: center;
+
+    min-width: 28px;
+
+    height: 28px;
+
+    padding: 0 7px;
+
+    color: var(--text-secondary);
+
+    background: var(--surface);
+
+    border: 1px solid var(--border);
+
+    border-radius: 999px;
+
+    font-size: 12px;
+
+    font-weight: 700;
+
+}
+
+
+.contest-lane-cards {
+
+    display: grid;
+
+    gap: 12px;
+
+    padding-top: 14px;
+
+}
+
+
+.contest-lane-empty {
+
+    padding: 18px 8px;
+
+    color: var(--text-secondary);
+
+    font-size: 13px;
+
+    text-align: center;
 
 }
 
@@ -875,7 +986,7 @@ body {
 }
 
 
-.contest-card-header h2 {
+.contest-card-header h3 {
 
     font-size: 19px;
 
@@ -1340,7 +1451,7 @@ body.dark .tag {
 
     }
 
-    .contest-grid {
+    .contest-board {
 
         grid-template-columns: 1fr;
 

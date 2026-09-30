@@ -1,3 +1,20 @@
 {
-  "concursos": []
+  "concursos": [
+    {
+      "id": "sefaz-al",
+      "nome": "SEFAZ-AL",
+      "cargo": "Auditor",
+      "status": "inscrito",
+      "provaEm": [
+        "2026-12-20",
+        "2027-01-10"
+      ]
+    },
+    {
+      "id": "sefaz-rs",
+      "nome": "SEFAZ-RS",
+      "cargo": "Auditor",
+      "status": "no-radar"
+    }
+  ]
 }
