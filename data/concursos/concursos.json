@@ -4,6 +4,8 @@
       "id": "sefaz-al",
       "nome": "SEFAZ-AL",
       "cargo": "Auditor",
+      "cidade": "Maceió",
+      "estado": "AL",
       "status": "inscrito",
       "provaEm": [
         "2026-12-20",
@@ -14,6 +16,16 @@
       "id": "sefaz-rs",
       "nome": "SEFAZ-RS",
       "cargo": "Auditor",
+      "cidade": "Porto Alegre",
+      "estado": "RS",
+      "status": "no-radar"
+    },
+    {
+      "id": "sefaz-rs",
+      "nome": "SEFAZ-DF",
+      "cargo": "Auditor",
+      "cidade": "Porto Alegre",
+      "estado": "RS",
       "status": "no-radar"
     }
   ]

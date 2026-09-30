@@ -69,7 +69,8 @@
       "color": "#ea580c",
       "description": "Propostas e impactos da reforma tributária no sistema fiscal.",
       "flashcards": "data/flashcards/reforma.json",
-      "mindmaps": "data/mindmaps/reforma.json"
+      "mindmaps": "data/mindmaps/reforma.json",
+      "summary": "resumos/reforma/itbi-cosip.md"
     },
          {
       "id": "cienciaDados",

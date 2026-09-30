@@ -162,6 +162,166 @@
       "front": "Quando ocorre o fato gerador em fornecimento contínuo?",
       "back": "No primeiro entre o pagamento exigível e o pagamento efetivo.",
       "difficulty": "medio"
+    },
+     {
+      "id": "trib-001",
+      "legacyId": 1,
+      "topic": "ITBI",
+      "front": "Qual é a competência tributária para instituir o ITBI?",
+      "back": "Dos Municípios e do Distrito Federal, relativamente às transmissões inter vivos onerosas de bens imóveis e direitos a eles relativos.",
+      "difficulty": "facil"
+    },
+    {
+      "id": "trib-002",
+      "legacyId": 2,
+      "topic": "ITBI",
+      "front": "Qual é a principal materialidade do ITBI?",
+      "back": "A transmissão inter vivos, a qualquer título, por ato oneroso, da propriedade ou do domínio útil de bens imóveis e de direitos reais sobre imóveis, exceto os de garantia.",
+      "difficulty": "facil"
+    },
+    {
+      "id": "trib-003",
+      "legacyId": 3,
+      "topic": "ITBI",
+      "front": "O ITBI incide sobre bens móveis?",
+      "back": "Não. O ITBI alcança bens imóveis e direitos a eles relativos, não bens móveis.",
+      "difficulty": "facil"
+    },
+    {
+      "id": "trib-004",
+      "legacyId": 4,
+      "topic": "ITBI",
+      "front": "Quais direitos reais sobre imóveis estão fora da incidência do ITBI?",
+      "back": "Os direitos reais de garantia, como hipoteca e anticrese. A alienação fiduciária também é tratada como direito real de garantia.",
+      "difficulty": "medio"
+    },
+    {
+      "id": "trib-005",
+      "legacyId": 5,
+      "topic": "ITBI",
+      "front": "Há incidência de ITBI na usucapião?",
+      "back": "Não. A usucapião é forma de aquisição originária, não havendo transmissão inter vivos da propriedade.",
+      "difficulty": "medio"
+    },
+    {
+      "id": "trib-006",
+      "legacyId": 6,
+      "topic": "ITBI",
+      "front": "Quando ocorre o fato gerador do ITBI na transmissão imobiliária?",
+      "back": "Com a efetiva transferência da propriedade, que se opera mediante o registro do título translativo no Registro de Imóveis.",
+      "difficulty": "medio"
+    },
+    {
+      "id": "trib-007",
+      "legacyId": 7,
+      "topic": "ITBI",
+      "front": "O ITBI incide sobre simples promessa de compra e venda?",
+      "back": "Não. A jurisprudência mencionada na aula considera que a promessa de compra e venda, sem efetiva transferência da propriedade, não gera o ITBI.",
+      "difficulty": "medio"
+    },
+    {
+      "id": "trib-008",
+      "legacyId": 8,
+      "topic": "ITBI",
+      "front": "Qual é o Município competente para cobrar o ITBI?",
+      "back": "O Município da situação do bem, ou o Distrito Federal. Não importa o domicílio das partes ou o local de celebração da escritura.",
+      "difficulty": "facil"
+    },
+    {
+      "id": "trib-009",
+      "legacyId": 9,
+      "topic": "ITBI",
+      "front": "Quem é o contribuinte do ITBI segundo o art. 42 do CTN?",
+      "back": "Qualquer das partes na operação tributada, conforme dispuser a lei. Na prática, os Municípios normalmente elegem o adquirente ou cessionário.",
+      "difficulty": "medio"
+    },
+    {
+      "id": "trib-010",
+      "legacyId": 10,
+      "topic": "ITBI",
+      "front": "Qual é a base de cálculo do ITBI após a LC 227/2026?",
+      "back": "O valor venal dos bens ou direitos transmitidos, entendido como o valor pelo qual seriam negociados à vista, em condições normais de mercado.",
+      "difficulty": "medio"
+    },
+    {
+      "id": "trib-011",
+      "legacyId": 11,
+      "topic": "ITBI",
+      "front": "A base de cálculo do ITBI está vinculada à base de cálculo do IPTU?",
+      "back": "Não. Segundo o material, as bases não estão vinculadas e a apuração dos valores possui critérios distintos.",
+      "difficulty": "medio"
+    },
+    {
+      "id": "trib-012",
+      "legacyId": 12,
+      "topic": "ITBI",
+      "front": "O que caracteriza atividade preponderante para fins do art. 37 do CTN?",
+      "back": "Quando mais de 50% da receita operacional da pessoa jurídica adquirente, no período de análise previsto no CTN, decorrer de transações imobiliárias indicadas no dispositivo.",
+      "difficulty": "dificil"
+    },
+    {
+      "id": "trib-013",
+      "legacyId": 13,
+      "topic": "ITBI",
+      "front": "Qual é o período de análise da atividade preponderante quando a empresa já atua há mais de 2 anos?",
+      "back": "Os 2 anos anteriores e os 2 anos subsequentes à aquisição.",
+      "difficulty": "medio"
+    },
+    {
+      "id": "trib-014",
+      "legacyId": 14,
+      "topic": "ITBI",
+      "front": "Qual é o período de análise da atividade preponderante quando a empresa iniciou suas atividades após ou menos de 2 anos antes da aquisição?",
+      "back": "Os 3 primeiros anos seguintes à data da aquisição.",
+      "difficulty": "medio"
+    },
+    {
+      "id": "trib-015",
+      "legacyId": 15,
+      "topic": "ITBI",
+      "front": "Qual é a regra do Tema 796 do STF sobre a imunidade do ITBI na integralização de capital?",
+      "back": "A imunidade não alcança o valor dos bens que exceder o limite do capital social a ser integralizado.",
+      "difficulty": "dificil"
+    },
+    {
+      "id": "trib-016",
+      "legacyId": 16,
+      "topic": "COSIP",
+      "front": "Quem pode instituir a COSIP?",
+      "back": "Os Municípios e o Distrito Federal.",
+      "difficulty": "facil"
+    },
+    {
+      "id": "trib-017",
+      "legacyId": 17,
+      "topic": "COSIP",
+      "front": "Quais são as finalidades da COSIP após as alterações constitucionais e da LC 227/2026?",
+      "back": "Custeio, expansão e melhoria da iluminação pública, além de sistemas de monitoramento para segurança e preservação de logradouros públicos.",
+      "difficulty": "facil"
+    },
+    {
+      "id": "trib-018",
+      "legacyId": 18,
+      "topic": "COSIP",
+      "front": "A COSIP pode ser cobrada na fatura de consumo de energia elétrica?",
+      "back": "Sim. A Constituição e o art. 82-A, § 2º, do CTN facultam a cobrança na fatura de consumo de energia elétrica.",
+      "difficulty": "facil"
+    },
+    {
+      "id": "trib-019",
+      "legacyId": 19,
+      "topic": "COSIP",
+      "front": "A COSIP pode ter valor fixo ou deve necessariamente utilizar alíquota sobre o consumo de energia?",
+      "back": "Pode ter valor fixo. O material também admite cobrança progressiva em função do consumo de energia elétrica.",
+      "difficulty": "medio"
+    },
+    {
+      "id": "trib-020",
+      "legacyId": 20,
+      "topic": "COSIP",
+      "front": "A COSIP é uma taxa de serviço público?",
+      "back": "Não. Segundo o material, a COSIP possui natureza própria e não se confunde com taxa, pois a iluminação pública é serviço uti universi, não específico e divisível.",
+      "difficulty": "medio"
     }
   ]
 }

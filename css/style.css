@@ -847,6 +847,223 @@ body {
 }
 
 
+.contest-timeline-section {
+
+    margin-bottom: 28px;
+
+    padding: 20px 22px;
+
+    background: var(--surface);
+
+    border: 1px solid var(--border);
+
+    border-radius: 10px;
+
+}
+
+
+.contest-timeline-heading {
+
+    display: flex;
+
+    align-items: baseline;
+
+    justify-content: space-between;
+
+    gap: 12px;
+
+    margin-bottom: 20px;
+
+}
+
+
+.contest-timeline-heading h2 {
+
+    font-size: 18px;
+
+}
+
+
+.contest-timeline-heading span {
+
+    color: var(--text-secondary);
+
+    font-size: 12px;
+
+}
+
+
+.contest-timeline {
+
+    position: relative;
+
+    display: grid;
+
+    gap: 0;
+
+}
+
+
+.contest-timeline-event {
+
+    position: relative;
+
+    display: grid;
+
+    grid-template-columns: 18px minmax(0, 1fr);
+
+    gap: 14px;
+
+    min-height: 86px;
+
+}
+
+
+.contest-timeline-event:not(:last-child)::before {
+
+    position: absolute;
+
+    top: 13px;
+
+    bottom: -1px;
+
+    left: 7px;
+
+    width: 2px;
+
+    background: var(--border);
+
+    content: "";
+
+}
+
+
+.contest-timeline-marker {
+
+    z-index: 1;
+
+    width: 16px;
+
+    height: 16px;
+
+    margin-top: 3px;
+
+    background: var(--primary);
+
+    border: 3px solid var(--surface);
+
+    border-radius: 50%;
+
+    box-shadow: 0 0 0 1px var(--primary);
+
+}
+
+
+.contest-timeline-content {
+
+    padding-bottom: 20px;
+
+}
+
+
+.contest-timeline-content time {
+
+    color: var(--primary);
+
+    font-size: 13px;
+
+    font-weight: 700;
+
+}
+
+
+.contest-timeline-content h3 {
+
+    margin-top: 3px;
+
+    font-size: 16px;
+
+}
+
+
+.contest-timeline-content p {
+
+    margin-top: 4px;
+
+    color: var(--text-secondary);
+
+    font-size: 13px;
+
+}
+
+
+.contest-timeline-empty {
+
+    padding: 12px 0;
+
+    color: var(--text-secondary);
+
+    font-size: 14px;
+
+}
+
+
+.contest-timeline-unscheduled {
+
+    margin: 10px 0 0 32px;
+
+}
+
+
+.contest-timeline-unscheduled-title {
+
+    margin-bottom: 8px;
+
+    color: var(--text-secondary);
+
+    font-size: 13px;
+
+}
+
+
+.contest-timeline-unscheduled-list {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(auto-fit, minmax(190px, 1fr));
+
+    gap: 8px;
+
+}
+
+
+.contest-unscheduled-item {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 3px;
+
+    padding: 10px 12px;
+
+    background: var(--background);
+
+    border-radius: 6px;
+
+    font-size: 13px;
+
+}
+
+
+.contest-unscheduled-item span {
+
+    color: var(--text-secondary);
+
+}
+
+
 .contest-lane {
 
     min-width: 0;

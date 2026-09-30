@@ -619,6 +619,10 @@ function createContestCard(contest) {
     createContestMeta("Cargo", contest.cargo),
     createContestMeta("Banca", contest.banca),
     createContestMeta(
+      "Local",
+      [contest.cidade, contest.estado].filter(Boolean).join(" / "),
+    ),
+    createContestMeta(
       "Inscrições até",
       formatContestDate(contest.inscricoesAte),
     ),
@@ -654,6 +658,98 @@ function createContestCard(contest) {
   return card;
 }
 
+function getContestExamEvents(contests) {
+  return contests
+    .flatMap((contest) => {
+      const examDates = Array.isArray(contest.provaEm)
+        ? contest.provaEm
+        : [contest.provaEm];
+
+      return examDates
+        .filter((date) => /^\d{4}-\d{2}-\d{2}$/.test(date || ""))
+        .map((date) => ({ contest, date }));
+    })
+    .sort((first, second) => first.date.localeCompare(second.date));
+}
+
+function createContestTimelineEvent(contest, date) {
+  const event = document.createElement("article");
+  const marker = document.createElement("span");
+  const content = document.createElement("div");
+  const dateLabel = document.createElement("time");
+  const title = document.createElement("h3");
+  const details = document.createElement("p");
+  const location = [contest.cidade, contest.estado].filter(Boolean).join(" / ");
+
+  event.className = "contest-timeline-event";
+  marker.className = "contest-timeline-marker";
+  content.className = "contest-timeline-content";
+  dateLabel.dateTime = date;
+  dateLabel.textContent = formatContestDate(date);
+  title.textContent = contest.nome || "Concurso sem nome";
+  details.textContent = [
+    location || "Local não informado",
+    contest.cargo,
+    contest.status === "inscrito" ? "Inscrito" : "No radar",
+  ]
+    .filter(Boolean)
+    .join(" · ");
+
+  content.append(dateLabel, title, details);
+  event.append(marker, content);
+
+  return event;
+}
+
+function renderContestTimeline(contests) {
+  const timeline = document.getElementById("contestTimeline");
+  const unscheduled = document.getElementById("contestTimelineUnscheduled");
+  const events = getContestExamEvents(contests);
+  const contestsWithoutDates = contests.filter(
+    (contest) => getContestExamEvents([contest]).length === 0,
+  );
+
+  timeline.replaceChildren();
+  unscheduled.replaceChildren();
+
+  if (events.length === 0) {
+    const emptyState = document.createElement("p");
+    emptyState.className = "contest-timeline-empty";
+    emptyState.textContent = "Nenhuma prova com data definida.";
+    timeline.appendChild(emptyState);
+  } else {
+    events.forEach(({ contest, date }) => {
+      timeline.appendChild(createContestTimelineEvent(contest, date));
+    });
+  }
+
+  if (contestsWithoutDates.length > 0) {
+    const heading = document.createElement("h3");
+    const list = document.createElement("div");
+
+    heading.className = "contest-timeline-unscheduled-title";
+    heading.textContent = "Data a definir";
+    list.className = "contest-timeline-unscheduled-list";
+
+    contestsWithoutDates.forEach((contest) => {
+      const item = document.createElement("div");
+      const title = document.createElement("strong");
+      const location = document.createElement("span");
+
+      item.className = "contest-unscheduled-item";
+      title.textContent = contest.nome || "Concurso sem nome";
+      location.textContent =
+        [contest.cidade, contest.estado].filter(Boolean).join(" / ") ||
+        "Local não informado";
+
+      item.append(title, location);
+      list.appendChild(item);
+    });
+
+    unscheduled.append(heading, list);
+  }
+}
+
 function renderConcursos() {
   const search = document
     .getElementById("contestSearch")
@@ -678,6 +774,8 @@ function renderConcursos() {
       contest.cargo,
       contest.banca,
       contest.local,
+      contest.cidade,
+      contest.estado,
       contest.observacoes,
     ]
       .filter(Boolean)
@@ -686,6 +784,8 @@ function renderConcursos() {
 
     return matchesStatus && searchableText.includes(search);
   });
+
+  renderContestTimeline(filteredContests);
 
   const lanes = [
     {
