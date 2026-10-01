@@ -27,6 +27,71 @@
       "cidade": "Porto Alegre",
       "estado": "RS",
       "status": "no-radar"
+    },
+     {
+      "id": "cgu",
+      "nome": "CGU",
+      "cargo": "Auditor e TI",
+      "cidade": "Brasília",
+      "estado": "DF",
+      "status": "no-radar"
+    },
+      {
+      "id": "sefaz-ba",
+      "nome": "SEFAZ-BA",
+      "cargo": "Auditor",
+      "cidade": "Salvador",
+      "estado": "BA",
+      "status": "no-radar"
+    }
+    ,
+      {
+      "id": "camara-dos-deputados",
+      "nome": "Câmara dos Deputados",
+      "cargo": "Auditor",
+      "cidade": "Brasília",
+      "estado": "DF",
+      "status": "no-radar"
+    } ,
+      {
+      "id": "sefaz-df",
+      "nome": "SEFAZ-DF",
+      "cargo": "Auditor",
+      "cidade": "Brasília",
+      "estado": "DF",
+      "status": "no-radar"
+    } ,
+      {
+      "id": "sefaz-to",
+      "nome": "SEFAZ-TO",
+      "cargo": "Auditor",
+      "cidade": "Palmas",
+      "estado": "TO",
+      "status": "no-radar"
+    },
+      {
+      "id": "sefaz-es",
+      "nome": "SEFAZ-ES",
+      "cargo": "Auditor",
+      "cidade": "Vitória",
+      "estado": "ES",
+      "status": "no-radar"
+    },
+      {
+      "id": "sefaz-ma",
+      "nome": "SEFAZ-MA",
+      "cargo": "Auditor",
+      "cidade": "São Luís",
+      "estado": "MA",
+      "status": "no-radar"
+    },
+      {
+      "id": "receita-federal",
+      "nome": "Receita Federal",
+      "cargo": "Analista Tributário-Fiscal",
+      "cidade": "Recife",
+      "estado": "PE",
+      "status": "no-radar"
     }
   ]
 }
