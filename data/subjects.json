@@ -9,7 +9,7 @@
       "description": "CTN, tributos, obrigação tributária, crédito tributário e legislação tributária.",
       "flashcards": "data/flashcards/tributario.json",
       "mindmaps": "data/mindmaps/tributario.json",
-      "summary": "resumos/tributario/direito-tributario.md"
+      "summaries": "data/summaries/tributario.json"
     },
     {
       "id": "constitucional",
@@ -19,7 +19,8 @@
       "color": "#7c3aed",
       "description": "Constituição Federal, direitos fundamentais, organização do Estado e poderes.",
       "flashcards": "data/flashcards/constitucional.json",
-      "mindmaps": "data/mindmaps/constitucional.json"
+      "mindmaps": "data/mindmaps/constitucional.json",
+      "summaries": "data/summaries/constitucional.json"
     },
     {
       "id": "administrativo",
@@ -29,7 +30,8 @@
       "color": "#059669",
       "description": "Administração Pública, atos administrativos, agentes públicos e licitações.",
       "flashcards": "data/flashcards/administrativo.json",
-      "mindmaps": "data/mindmaps/administrativo.json"
+      "mindmaps": "data/mindmaps/administrativo.json",
+      "summaries": "data/summaries/administrativo.json"
     },
     {
       "id": "auditoria",
@@ -39,7 +41,8 @@
       "color": "#be123c",
       "description": "Auditoria fiscal, NF-e, EFD-Reinf e obrigações fiscais digitais.",
       "flashcards": "data/flashcards/auditoria.json",
-      "mindmaps": "data/mindmaps/auditoria.json"
+      "mindmaps": "data/mindmaps/auditoria.json",
+      "summaries": "data/summaries/auditoria.json"
     },
     {
       "id": "contabilidade",
@@ -49,7 +52,8 @@
       "color": "#d97706",
       "description": "Contabilidade geral, patrimônio, lançamentos, demonstrações e análise.",
       "flashcards": "data/flashcards/contabilidade.json",
-      "mindmaps": "data/mindmaps/contabilidade.json"
+      "mindmaps": "data/mindmaps/contabilidade.json",
+      "summaries": "data/summaries/contabilidade.json"
     },
     {
       "id": "tecnologia",
@@ -59,7 +63,8 @@
       "color": "#0891b2",
       "description": "Banco de dados, SQL, engenharia de software, segurança e desenvolvimento.",
       "flashcards": "data/flashcards/tecnologia.json",
-      "mindmaps": "data/mindmaps/tecnologia.json"
+      "mindmaps": "data/mindmaps/tecnologia.json",
+      "summaries": "data/summaries/tecnologia.json"
     },
      {
       "id": "reforma",
@@ -70,7 +75,7 @@
       "description": "Propostas e impactos da reforma tributária no sistema fiscal.",
       "flashcards": "data/flashcards/reforma.json",
       "mindmaps": "data/mindmaps/reforma.json",
-      "summary": "resumos/reforma/itbi-cosip.md"
+      "summaries": "data/summaries/reforma.json"
     },
          {
       "id": "cienciaDados",
@@ -81,7 +86,7 @@
       "description": "Análise de dados, machine learning, estatística e visualização.",
       "flashcards": "data/flashcards/cienciaDados.json",
       "mindmaps": "data/mindmaps/cienciaDados.json",
-      "summary": "resumos/cienciaDados/modelagem-multidimensional.md"
+      "summaries": "data/summaries/cienciaDados.json"
     }
    
   ]

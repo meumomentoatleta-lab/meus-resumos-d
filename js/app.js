@@ -71,55 +71,83 @@ async function loadStudyData() {
 }
 
 async function loadSummaries() {
-  const configuredSummaries = subjects.flatMap((subject) => {
-    const paths = subject.summaries ?? subject.summary;
-    const summaryPaths = Array.isArray(paths) ? paths : [paths];
-
-    return summaryPaths
-      .filter((path) => typeof path === "string" && path.trim())
-      .map((path) => ({ subject, path }));
-  });
-
-  const loadedSummaries = await Promise.all(
-    configuredSummaries.map(async ({ subject, path }) => {
+  const summariesBySubject = await Promise.all(
+    subjects.map(async (subject) => {
       try {
-        const summaryUrl = new URL(path, window.location.href);
-        const summariesRoot = new URL("resumos/", window.location.href);
+        if (!subject.summaries) {
+          return [];
+        }
+
+        const catalogUrl = new URL(subject.summaries, window.location.href);
+        const catalogRoot = new URL("data/summaries/", window.location.href);
 
         if (
-          summaryUrl.origin !== window.location.origin ||
-          !summaryUrl.pathname.startsWith(summariesRoot.pathname)
+          catalogUrl.origin !== window.location.origin ||
+          !catalogUrl.pathname.startsWith(catalogRoot.pathname)
         ) {
-          throw new Error("Os resumos devem estar na pasta local resumos/.");
+          throw new Error(
+            "Os índices de resumo devem estar em data/summaries/.",
+          );
         }
 
-        const response = await fetch(summaryUrl);
+        const catalogResponse = await fetch(catalogUrl);
 
-        if (!response.ok) {
-          throw new Error(`Não foi possível carregar ${path}.`);
+        if (!catalogResponse.ok) {
+          throw new Error(`Não foi possível carregar ${subject.summaries}.`);
         }
 
-        const markdown = await response.text();
-        const firstHeading = markdown.match(/^#\s+(.+?)\s*$/m);
-        const firstLine = markdown.split(/\r?\n/).find((line) => line.trim());
+        const catalog = await catalogResponse.json();
+        const entries = Array.isArray(catalog.summaries)
+          ? catalog.summaries
+          : [];
+        const summariesRoot = new URL("resumos/", window.location.href);
 
-        return {
-          subjectId: subject.id,
-          subject: subject.name,
-          path,
-          title: (firstHeading?.[1] || firstLine || path)
-            .replace(/^#+\s*/, "")
-            .trim(),
-          markdown,
-        };
+        return await Promise.all(
+          entries
+            .filter(
+              (entry) =>
+                typeof entry.title === "string" &&
+                typeof entry.path === "string" &&
+                entry.path.trim(),
+            )
+            .map(async (entry) => {
+              try {
+                const summaryUrl = new URL(entry.path, window.location.href);
+
+                if (
+                  summaryUrl.origin !== window.location.origin ||
+                  !summaryUrl.pathname.startsWith(summariesRoot.pathname)
+                ) {
+                  throw new Error("Os resumos devem estar na pasta resumos/.");
+                }
+
+                const response = await fetch(summaryUrl);
+
+                if (!response.ok) {
+                  throw new Error(`Não foi possível carregar ${entry.path}.`);
+                }
+
+                return {
+                  subjectId: subject.id,
+                  subject: subject.name,
+                  path: entry.path,
+                  title: entry.title,
+                  markdown: await response.text(),
+                };
+              } catch (error) {
+                console.error(error);
+                return null;
+              }
+            }),
+        ).then((entries) => entries.filter(Boolean));
       } catch (error) {
         console.error(error);
-        return null;
+        return [];
       }
     }),
   );
 
-  summaryDocuments = loadedSummaries.filter(Boolean);
+  summaryDocuments = summariesBySubject.flat();
 }
 
 function getCardProgressKey(card) {

@@ -439,7 +439,170 @@
             "topic": "IBS e CBS",
             "front": "O adquirente pode ser tanto a pessoa que paga pelo fornecimento quanto aquela que age por conta e ordem de terceiros.",
             "back": "Errado. Adquirente é quem assume a obrigação de pagamento ou contraprestação, mesmo que terceiros paguem em seu nome. Quem apenas paga por conta e ordem de outra pessoa não é adquirente."
-        }
+        },
+      
+    {
+      "id": "susp-001",
+      "legacyId": 1,
+      "topic": "Suspensão do Crédito Tributário",
+      "front": "O que significa suspender a exigibilidade do crédito tributário?",
+      "back": "Impede temporariamente sua cobrança, sem extinguir o crédito.",
+      "difficulty": "facil"
+    },
+    {
+      "id": "susp-002",
+      "legacyId": 2,
+      "topic": "Art. 151 do CTN",
+      "front": "Quais são as hipóteses clássicas do art. 151 do CTN?",
+      "back": "Moratória, depósito integral, defesa administrativa, liminares e parcelamento.",
+      "difficulty": "facil"
+    },
+    {
+      "id": "susp-003",
+      "legacyId": 3,
+      "topic": "LC 236/2026",
+      "front": "Quais novas hipóteses de suspensão foram incluídas pela LC 236/2026?",
+      "back": "Arbitragem, proposta de transação aceita, acordo de mediação e garantias aceitas.",
+      "difficulty": "medio"
+    },
+    {
+      "id": "susp-004",
+      "legacyId": 4,
+      "topic": "Obrigações Acessórias",
+      "front": "A suspensão dispensa o cumprimento das obrigações acessórias?",
+      "back": "Não. As obrigações acessórias continuam sendo exigidas.",
+      "difficulty": "facil"
+    },
+    {
+      "id": "susp-005",
+      "legacyId": 5,
+      "topic": "Moratória",
+      "front": "O que é moratória?",
+      "back": "Dilatação do prazo para pagamento do tributo ou penalidade.",
+      "difficulty": "facil"
+    },
+    {
+      "id": "susp-006",
+      "legacyId": 6,
+      "topic": "Moratória",
+      "front": "Quais são os dois tipos de moratória?",
+      "back": "Moratória geral e moratória individual.",
+      "difficulty": "facil"
+    },
+    {
+      "id": "susp-007",
+      "legacyId": 7,
+      "topic": "Moratória Individual",
+      "front": "A moratória individual gera direito adquirido?",
+      "back": "Não. Pode ser revogada se os requisitos não forem satisfeitos.",
+      "difficulty": "medio"
+    },
+    {
+      "id": "susp-008",
+      "legacyId": 8,
+      "topic": "Moratória Heterônoma",
+      "front": "O que caracteriza a moratória heterônoma?",
+      "back": "A União concede moratória sobre tributos estaduais, distritais ou municipais.",
+      "difficulty": "medio"
+    },
+    {
+      "id": "susp-009",
+      "legacyId": 9,
+      "topic": "Parcelamento",
+      "front": "O parcelamento depende de qual requisito legal?",
+      "back": "Deve ser concedido na forma e condições estabelecidas em lei específica.",
+      "difficulty": "facil"
+    },
+    {
+      "id": "susp-010",
+      "legacyId": 10,
+      "topic": "Parcelamento",
+      "front": "O parcelamento exclui juros e multas?",
+      "back": "Não, salvo disposição de lei em contrário.",
+      "difficulty": "facil"
+    },
+    {
+      "id": "susp-011",
+      "legacyId": 11,
+      "topic": "Parcelamento",
+      "front": "Parcelamento equivale a pagamento para fins de denúncia espontânea?",
+      "back": "Não. O parcelamento não equivale ao pagamento integral.",
+      "difficulty": "medio"
+    },
+    {
+      "id": "susp-012",
+      "legacyId": 12,
+      "topic": "Processo Administrativo",
+      "front": "A impugnação tempestiva suspende a exigibilidade?",
+      "back": "Sim. Ela instaura o contencioso e suspende imediatamente a exigibilidade.",
+      "difficulty": "facil"
+    },
+    {
+      "id": "susp-013",
+      "legacyId": 13,
+      "topic": "Liminar",
+      "front": "O simples ajuizamento de ação judicial suspende o crédito?",
+      "back": "Não. É necessário depósito integral ou medida judicial suspensiva.",
+      "difficulty": "facil"
+    },
+    {
+      "id": "susp-014",
+      "legacyId": 14,
+      "topic": "Depósito Integral",
+      "front": "Quais requisitos o depósito deve cumprir para suspender?",
+      "back": "Deve ser integral e realizado em dinheiro.",
+      "difficulty": "facil"
+    },
+    {
+      "id": "susp-015",
+      "legacyId": 15,
+      "topic": "Depósito Integral",
+      "front": "O depósito parcial suspende a exigibilidade?",
+      "back": "Não. O art. 151, II, exige o depósito do montante integral.",
+      "difficulty": "facil"
+    },
+    {
+      "id": "susp-016",
+      "legacyId": 16,
+      "topic": "Transação",
+      "front": "A simples proposta de transação suspende a exigibilidade?",
+      "back": "Não. É necessária a aceitação da proposta pela Administração.",
+      "difficulty": "medio"
+    },
+    {
+      "id": "susp-017",
+      "legacyId": 17,
+      "topic": "Mediação",
+      "front": "O que suspende a exigibilidade na mediação?",
+      "back": "O acordo decorrente da mediação, até eventual dissolução.",
+      "difficulty": "medio"
+    },
+    {
+      "id": "susp-018",
+      "legacyId": 18,
+      "topic": "Seguro-Garantia",
+      "front": "A simples oferta de seguro-garantia suspende a exigibilidade?",
+      "back": "Não. É necessária a aceitação pelo credor e demais requisitos legais.",
+      "difficulty": "medio"
+    },
+    {
+      "id": "susp-019",
+      "legacyId": 19,
+      "topic": "Fiança Bancária",
+      "front": "A fiança bancária equivale ao depósito integral?",
+      "back": "Não. A LC 236/2026 criou hipótese própria para garantia aceita em execução fiscal.",
+      "difficulty": "medio"
+    },
+    {
+      "id": "susp-020",
+      "legacyId": 20,
+      "topic": "Confissão de Dívida",
+      "front": "O que o STJ admite questionar após confissão para parcelamento?",
+      "back": "Aspectos jurídicos; fatos confessados só em casos de erro, dolo, fraude ou simulação.",
+      "difficulty": "dificil"
+    }
+  
+
 
     ]
 }
