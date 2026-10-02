@@ -322,6 +322,170 @@
       "front": "A COSIP é uma taxa de serviço público?",
       "back": "Não. Segundo o material, a COSIP possui natureza própria e não se confunde com taxa, pois a iluminação pública é serviço uti universi, não específico e divisível.",
       "difficulty": "medio"
+    },
+    
+
+    {
+      "id": "trib-001",
+      "legacyId": 1,
+      "topic": "PAT do IBS",
+      "front": "Quais matérias estão abrangidas pelo PAT do IBS, conforme o art. 54?",
+      "back": "Lançamento de ofício; penalidades por descumprimento ou atraso de obrigações acessórias; indeferimento de restituição e ressarcimento; e outros casos previstos no regulamento único do IBS.",
+      "difficulty": "facil"
+    },
+    {
+      "id": "trib-002",
+      "legacyId": 2,
+      "topic": "Princípios do PAT",
+      "front": "Quais são os princípios expressamente previstos no art. 55 da LC 227/2026?",
+      "back": "Simplicidade, verdade material, ampla defesa, contraditório, publicidade, transparência, lealdade e boa-fé, motivação, oficialidade, cooperação, eficiência, formalismo moderado, razoável duração do processo, segurança jurídica, devido processo legal e celeridade da tramitação.",
+      "difficulty": "medio"
+    },
+    {
+      "id": "trib-003",
+      "legacyId": 3,
+      "topic": "Atos Processuais",
+      "front": "O que estabelece o princípio do formalismo moderado no PAT do IBS?",
+      "back": "Os atos e termos processuais independem de forma determinada, salvo quando a legislação exigir expressamente. Atos praticados de modo diverso são válidos se cumprirem sua finalidade essencial.",
+      "difficulty": "facil"
+    },
+    {
+      "id": "trib-004",
+      "legacyId": 4,
+      "topic": "Processo Eletrônico",
+      "front": "Quem é responsável pela implementação e gestão do sistema eletrônico do PAT do IBS?",
+      "back": "O Comitê Gestor do IBS (CGIBS), que disponibiliza o sistema para utilização pelas administrações tributárias dos Estados, do Distrito Federal e dos Municípios.",
+      "difficulty": "facil"
+    },
+    {
+      "id": "trib-005",
+      "legacyId": 5,
+      "topic": "Representação",
+      "front": "É obrigatória a representação por advogado no PAT do IBS?",
+      "back": "Não. A parte pode atuar diretamente ou por intermédio de procurador devidamente constituído, sem exigência de formação específica do procurador.",
+      "difficulty": "facil"
+    },
+    {
+      "id": "trib-006",
+      "legacyId": 6,
+      "topic": "Prazos Processuais",
+      "front": "Como são contados os prazos processuais no PAT do IBS?",
+      "back": "Em dias úteis, excluindo-se o dia do começo e incluindo-se o dia do vencimento. Os prazos só se iniciam ou vencem em dia de expediente normal.",
+      "difficulty": "facil"
+    },
+    {
+      "id": "trib-007",
+      "legacyId": 7,
+      "topic": "Prazos Processuais",
+      "front": "Qual é o período de suspensão dos prazos processuais do PAT do IBS?",
+      "back": "De 20 de dezembro a 20 de janeiro, inclusive. Nesse período, também não são realizadas sessões de julgamento.",
+      "difficulty": "facil"
+    },
+    {
+      "id": "trib-008",
+      "legacyId": 8,
+      "topic": "Prazos Processuais",
+      "front": "Qual é o prazo geral para a prática de ato pela parte quando não houver prazo expressamente previsto?",
+      "back": "10 dias, contados em dias úteis, conforme a regra geral do art. 62.",
+      "difficulty": "facil"
+    },
+    {
+      "id": "trib-009",
+      "legacyId": 9,
+      "topic": "Prazos Processuais",
+      "front": "Quando a indisponibilidade do sistema eletrônico do CGIBS caracteriza instabilidade para fins de prazo?",
+      "back": "Quando a indisponibilidade for superior a 60 minutos, ininterruptos ou não, entre 6h e 23h, ou quando ocorrer entre 23h e 24h.",
+      "difficulty": "dificil"
+    },
+    {
+      "id": "trib-010",
+      "legacyId": 10,
+      "topic": "Intimações",
+      "front": "Quando se considera realizada a intimação eletrônica se o sujeito passivo não consultar o DTE?",
+      "back": "Após 10 dias contados da data registrada no comprovante de entrega no DTE ou no sistema de comunicação eletrônica.",
+      "difficulty": "facil"
+    },
+    {
+      "id": "trib-011",
+      "legacyId": 11,
+      "topic": "Nulidades",
+      "front": "Quais são as principais hipóteses de nulidade previstas no art. 66?",
+      "back": "Atos praticados por autoridade, órgão ou servidor incompetente ou impedido; preterição do direito de defesa; decisões não fundamentadas; erro na identificação do sujeito passivo; e intimações realizadas em desacordo com as prescrições legais. Também é nulo o auto de infração que não observe os requisitos legais obrigatórios.",
+      "difficulty": "medio"
+    },
+    {
+      "id": "trib-012",
+      "legacyId": 12,
+      "topic": "Nulidades",
+      "front": "O comparecimento do interessado supre a falta ou irregularidade da intimação?",
+      "back": "Sim. Conforme o art. 66, § 2º, o comparecimento do interessado no processo administrativo tributário supre a falta ou a irregularidade da intimação.",
+      "difficulty": "facil"
+    },
+    {
+      "id": "trib-013",
+      "legacyId": 13,
+      "topic": "Nulidades",
+      "front": "O erro na identificação de um dos sujeitos passivos em lançamento com múltiplos autuados anula toda a exigência?",
+      "back": "Não. Se pelo menos um dos autuados estiver corretamente identificado, exclui-se do polo passivo aquele erroneamente qualificado, sem anular toda a exigência fiscal.",
+      "difficulty": "medio"
+    },
+    {
+      "id": "trib-014",
+      "legacyId": 14,
+      "topic": "Nulidades",
+      "front": "Qual é o efeito da nulidade sobre os demais atos do processo administrativo tributário?",
+      "back": "A nulidade prejudica somente os atos posteriores que dela dependam diretamente ou sejam consequentes. A autoridade competente deve indicar os atos atingidos e as providências necessárias.",
+      "difficulty": "medio"
+    },
+    {
+      "id": "trib-015",
+      "legacyId": 15,
+      "topic": "Nulidades",
+      "front": "Quando a parte deve arguir a nulidade de um ato processual?",
+      "back": "Na primeira oportunidade de que dispuser, sob pena de preclusão, exceto quando se tratar de nulidade cognoscível de ofício pela autoridade julgadora.",
+      "difficulty": "medio"
+    },
+    {
+      "id": "trib-016",
+      "legacyId": 16,
+      "topic": "Contencioso Tributário",
+      "front": "Quando se instaura o contencioso administrativo tributário do IBS e qual é o prazo para impugnação?",
+      "back": "O contencioso instaura-se pelo ato de impugnação ao crédito tributário formalizado por lançamento de ofício. O prazo para impugnação é de 20 dias, contado da intimação do lançamento.",
+      "difficulty": "facil"
+    },
+    {
+      "id": "trib-017",
+      "legacyId": 17,
+      "topic": "Contencioso Tributário",
+      "front": "Em quais hipóteses as provas podem ser apresentadas após a impugnação?",
+      "back": "Quando houver justa causa, força maior, fato ou direito superveniente, ou quando as provas se destinarem a contrapor alegações posteriormente trazidas aos autos. A parte contrária deverá ser intimada para se manifestar.",
+      "difficulty": "dificil"
+    },
+    {
+      "id": "trib-018",
+      "legacyId": 18,
+      "topic": "Diligências",
+      "front": "Qual é o prazo padrão para cumprimento de diligência e para manifestação da parte sobre os documentos resultantes?",
+      "back": "O prazo padrão para cumprimento da diligência é de 20 dias úteis, prorrogável mediante pedido justificado da autoridade responsável. A parte terá 20 dias para se manifestar sobre os documentos juntados, contados em dias úteis.",
+      "difficulty": "medio"
+    },
+    {
+      "id": "trib-019",
+      "legacyId": 19,
+      "topic": "Desistência e Revelia",
+      "front": "Quais situações configuram desistência tácita do litígio administrativo do IBS?",
+      "back": "Pagamento, parcelamento ou compensação do crédito em litígio; propositura de ação judicial relativa à mesma matéria; e não apresentação tempestiva do recurso. A desistência decorrente de ação judicial deve ser reconhecida pela autoridade julgadora.",
+      "difficulty": "dificil"
+    },
+    {
+      "id": "trib-020",
+      "legacyId": 20,
+      "topic": "Provimentos Vinculantes",
+      "front": "Quais decisões e enunciados vinculantes devem ser observados no PAT do IBS, conforme o art. 74?",
+      "back": "Súmulas vinculantes do STF; decisões transitadas em julgado do STF em controle concentrado; decisões do STF em controle difuso com execução suspensa por resolução do Senado; decisões do STF ou STJ em repercussão geral ou recursos repetitivos; súmulas do CGIBS; e decisões da Câmara Nacional de Integração do Contencioso do IBS e da CBS, salvo fundamentos relevantes para distinção.",
+      "difficulty": "dificil"
     }
+  
+
   ]
 }
