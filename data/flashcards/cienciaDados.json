@@ -4,6 +4,170 @@
     
   
   "cards": [
+
+{
+"id": "trib-001",
+"legacyId": 1,
+"topic": "Pré-Processamento",
+"front": "O que é pré-processamento de dados?",
+"back": "É o processo de preparação e tratamento dos dados antes da aplicação de algoritmos de mineração, visando melhorar a qualidade, a consistência e a adequação dos dados à análise.",
+"difficulty": "facil"
+},
+{
+"id": "trib-002",
+"legacyId": 2,
+"topic": "Pré-Processamento",
+"front": "Quais são as cinco etapas clássicas do pré-processamento de dados?",
+"back": "Limpeza, integração, seleção, transformação e redução de dados.",
+"difficulty": "facil"
+},
+{
+"id": "trib-003",
+"legacyId": 3,
+"topic": "Valores Ausentes",
+"front": "Qual a diferença entre MCAR, MAR e MNAR?",
+"back": "MCAR: ausência totalmente aleatória. MAR: ausência relacionada a variáveis observadas, mas não ao próprio valor faltante após condicioná-las. MNAR: ausência relacionada ao próprio valor faltante ou a variáveis não observadas.",
+"difficulty": "medio"
+},
+{
+"id": "trib-004",
+"legacyId": 4,
+"topic": "Valores Ausentes",
+"front": "O que é imputação de dados ausentes?",
+"back": "É a substituição ou estimativa de valores não observados com base nas informações disponíveis no conjunto de dados.",
+"difficulty": "facil"
+},
+{
+"id": "trib-005",
+"legacyId": 5,
+"topic": "Valores Ausentes",
+"front": "Qual a diferença entre imputação por média, mediana e moda?",
+"back": "Média: substitui pelo valor médio, sendo sensível a outliers. Mediana: utiliza o valor central, sendo mais robusta a outliers. Moda: utiliza o valor ou categoria mais frequente.",
+"difficulty": "facil"
+},
+{
+"id": "trib-006",
+"legacyId": 6,
+"topic": "Valores Ausentes",
+"front": "O que é MICE no tratamento de valores ausentes?",
+"back": "Multiple Imputation by Chained Equations. É uma técnica que gera múltiplas imputações por modelos condicionais iterativos, combinando os resultados para considerar a variância e a incerteza.",
+"difficulty": "dificil"
+},
+{
+"id": "trib-007",
+"legacyId": 7,
+"topic": "Integração de Dados",
+"front": "Qual é o objetivo da integração de dados?",
+"back": "Combinar dados de múltiplas fontes em um conjunto unificado e consistente, tratando diferenças de esquemas, nomenclaturas, tipos, redundâncias e conflitos semânticos.",
+"difficulty": "facil"
+},
+{
+"id": "trib-008",
+"legacyId": 8,
+"topic": "Seleção de Dados",
+"front": "Qual é a finalidade da seleção de dados?",
+"back": "Escolher os atributos, registros e amostras relevantes para a mineração, reduzindo dados desnecessários e custos computacionais.",
+"difficulty": "facil"
+},
+{
+"id": "trib-009",
+"legacyId": 9,
+"topic": "PCA",
+"front": "O que é PCA e qual seu objetivo?",
+"back": "Principal Component Analysis ou Análise de Componentes Principais. É uma técnica de redução de dimensionalidade que projeta os dados em componentes não correlacionados, maximizando a variância explicada.",
+"difficulty": "facil"
+},
+{
+"id": "trib-010",
+"legacyId": 10,
+"topic": "PCA",
+"front": "Qual a diferença entre PCA e LDA?",
+"back": "PCA é não supervisionado e busca maximizar a variância explicada. LDA é supervisionado e busca maximizar a separação entre classes.",
+"difficulty": "medio"
+},
+{
+"id": "trib-011",
+"legacyId": 11,
+"topic": "Normalização Numérica",
+"front": "Qual é o objetivo da normalização numérica?",
+"back": "Ajustar variáveis numéricas para escalas comparáveis, evitando que diferenças de magnitude distorçam algoritmos sensíveis à escala.",
+"difficulty": "facil"
+},
+{
+"id": "trib-012",
+"legacyId": 12,
+"topic": "Normalização Numérica",
+"front": "Qual é a fórmula do Min-Max Scaling e qual seu intervalo mais comum?",
+"back": "x' = (x - xmin) / (xmax - xmin). Seu intervalo mais comum é [0,1]. É sensível a outliers.",
+"difficulty": "medio"
+},
+{
+"id": "trib-013",
+"legacyId": 13,
+"topic": "Normalização Numérica",
+"front": "O que é Z-Score Standardization?",
+"back": "É uma técnica que transforma os valores utilizando Z = (x - média) / desvio-padrão, produzindo dados com média 0 e desvio-padrão 1.",
+"difficulty": "facil"
+},
+{
+"id": "trib-014",
+"legacyId": 14,
+"topic": "Normalização Numérica",
+"front": "Qual técnica de escalonamento é mais robusta a outliers e por quê?",
+"back": "Robust Scaling, pois utiliza a mediana e o intervalo interquartil (IQR), reduzindo a influência de valores extremos.",
+"difficulty": "medio"
+},
+{
+"id": "trib-015",
+"legacyId": 15,
+"topic": "Discretização",
+"front": "O que é discretização de dados?",
+"back": "É a transformação de atributos numéricos contínuos em um número finito de intervalos ou categorias discretas.",
+"difficulty": "facil"
+},
+{
+"id": "trib-016",
+"legacyId": 16,
+"topic": "Discretização",
+"front": "Qual a diferença entre Binning Equal-Width e Equal-Frequency?",
+"back": "Equal-Width divide os valores em intervalos de mesma largura. Equal-Frequency cria intervalos com aproximadamente a mesma quantidade de observações.",
+"difficulty": "medio"
+},
+{
+"id": "trib-017",
+"legacyId": 17,
+"topic": "Outliers",
+"front": "O que são outliers e quais métodos estatísticos podem identificá-los?",
+"back": "São observações que se afastam significativamente do padrão dos dados. Podem ser identificados por métodos como Z-Score e Intervalo Interquartil (IQR).",
+"difficulty": "facil"
+},
+{
+"id": "trib-018",
+"legacyId": 18,
+"topic": "Balanceamento de Classes",
+"front": "Qual a diferença entre Undersampling e Oversampling?",
+"back": "Undersampling reduz os exemplos da classe majoritária. Oversampling aumenta os exemplos da classe minoritária por duplicação ou geração sintética.",
+"difficulty": "medio"
+},
+{
+"id": "trib-019",
+"legacyId": 19,
+"topic": "Dados Categóricos",
+"front": "Qual a diferença entre One-Hot Encoding e Label Encoding?",
+"back": "One-Hot cria variáveis binárias para cada categoria, sem impor ordem. Label Encoding atribui números inteiros às categorias, podendo introduzir uma ordem artificial.",
+"difficulty": "medio"
+},
+{
+"id": "trib-020",
+"legacyId": 20,
+"topic": "Normalização Textual",
+"front": "Qual a diferença entre Stemming e Lematização?",
+"back": "Stemming remove afixos para obter um radical, podendo gerar formas inexistentes. Lematização utiliza regras linguísticas para obter a forma de dicionário da palavra, preservando melhor seu significado.",
+"difficulty": "medio"
+},
+
+
+
     {
       "id": "md-001",
       "legacyId": 1,

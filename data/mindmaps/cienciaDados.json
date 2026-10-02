@@ -6,6 +6,13 @@
       "subject": "Ciência de Dados",
       "path": "mindmaps/cienciaDados/modelagem-multidimensional.html",
       "available": true
+    },
+      {
+      "id": "pre-processamento",
+      "title": "Pré-processamento de Dados",
+      "subject": "Ciência de Dados",
+      "path": "mindmaps/cienciaDados/pre-processamento.html",
+      "available": true
     }
   ]
 }
