@@ -5,6 +5,11 @@
       "id": "modelagem-multidimensional",
       "title": "Resumo — Aula 07: Modelagem Multidimensional",
       "path": "resumos/cienciaDados/modelagem-multidimensional.md"
+    },
+     {
+      "id": "pre-processamento",
+      "title": "Resumo — Aula 06: Pré-processamento de Dados",
+      "path": "resumos/cienciaDados/pre-processamento.md"
     }
   ]
 }
