@@ -1,12 +1,14 @@
 {
   "mindmaps": [
     {
+      "id": "credito-tributario",
       "title": "Crédito Tributário",
       "subject": "Direito Tributário",
       "path": "mindmaps/tributario/credito-tributario.html",
       "available": true
     },
         {
+      "id": "suspensao-credito",
       "title": "Suspensão do Crédito Tributário",
       "subject": "Direito Tributário",
       "path": "mindmaps/tributario/suspensao.html",

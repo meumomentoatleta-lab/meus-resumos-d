@@ -12,6 +12,8 @@ let summaryDocuments = [];
 
 let selectedSummaryPath = "";
 
+let topicRelevance = {};
+
 let contestEntries = [];
 
 async function loadConcursos() {
@@ -37,8 +39,37 @@ async function loadSubjectCollection(subject, pathKey, dataKey) {
 
   return items.map((item) => ({
     ...item,
+    subjectId: subject.id,
     subject: item.subject || data.subject || subject.name,
   }));
+}
+
+async function loadTopicRelevance() {
+  try {
+    const response = await fetch("data/relevancia.json");
+
+    if (!response.ok) {
+      throw new Error("Não foi possível carregar data/relevancia.json.");
+    }
+
+    const data = await response.json();
+    topicRelevance = data.subjects || {};
+  } catch (error) {
+    console.error(error);
+    topicRelevance = {};
+  }
+}
+
+function formatTopicRelevance(subjectId, topicId) {
+  const relevance = topicRelevance[subjectId]?.[topicId];
+
+  if (!relevance || Object.keys(relevance).length === 0) {
+    return "Relevância não cadastrada";
+  }
+
+  return Object.entries(relevance)
+    .map(([exam, level]) => `${exam}: ${level}`)
+    .join(" | ");
 }
 
 async function loadStudyData() {
@@ -51,6 +82,7 @@ async function loadStudyData() {
   const data = await response.json();
 
   subjects = Array.isArray(data.subjects) ? data.subjects : [];
+  await loadTopicRelevance();
 
   const [mindmapsBySubject, flashcardsBySubject] = await Promise.all([
     Promise.all(
@@ -129,6 +161,7 @@ async function loadSummaries() {
 
                 return {
                   subjectId: subject.id,
+                  id: entry.id,
                   subject: subject.name,
                   path: entry.path,
                   title: entry.title,
@@ -490,6 +523,11 @@ function renderMindmaps() {
 
         `;
 
+      const relevance = document.createElement("p");
+      relevance.className = "topic-relevance";
+      relevance.textContent = formatTopicRelevance(map.subjectId, map.id);
+      card.appendChild(relevance);
+
       grid.appendChild(card);
     });
 
@@ -560,7 +598,11 @@ function renderSummary() {
       .trim()
       .slice(0, 150);
 
-    card.append(heading, preview);
+    const relevance = document.createElement("p");
+    relevance.className = "topic-relevance";
+    relevance.textContent = formatTopicRelevance(summary.subjectId, summary.id);
+
+    card.append(heading, preview, relevance);
     card.addEventListener("click", () => showSummaryDocument(summary.path));
     summaryCards.appendChild(card);
   });

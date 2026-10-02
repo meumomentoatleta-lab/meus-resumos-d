@@ -1,0 +1,16 @@
+{
+  "subjects": {
+    "tributario": {
+      "credito-tributario": {},
+      "suspensao-credito": {}
+    },
+    "reforma": {
+      "ibs-cbs": {},
+      "itbi-cosip": {},
+      "pat-i": {}
+    },
+    "cienciaDados": {
+      "modelagem-multidimensional": {}
+    }
+  }
+}

@@ -1,18 +1,21 @@
 {
   "mindmaps": [
     {
+      "id": "ibs-cbs",
       "title": "IBS e CBS",
       "subject": "Reforma Tributária",
       "path": "mindmaps/reforma/ibscbs.html",
       "available": true
     },
         {
+      "id": "itbi-cosip",
       "title": "ITBI e COSIP",
       "subject": "Reforma Tributária",
       "path": "mindmaps/reforma/itbi-cosip.html",
       "available": true
     },
         {
+      "id": "pat-i",
       "title": "Processo Administrativo Tributário I",
       "subject": "Reforma Tributária",
       "path": "mindmaps/reforma/pat-i.html",
