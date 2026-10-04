@@ -10,6 +10,11 @@
       "id": "pat-i",
       "title": "PAT do IBS",
       "path": "resumos/reforma/pat-I.md"
+    },
+      {
+      "id": "pat-ii",
+      "title": "PAT do IBS - Parte II",
+      "path": "resumos/reforma/pat-II.md"
     }
   ]
 }

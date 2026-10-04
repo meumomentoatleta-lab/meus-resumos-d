@@ -20,6 +20,13 @@
       "subject": "Reforma Tributária",
       "path": "mindmaps/reforma/pat-i.html",
       "available": true
+    },
+      {
+      "id": "pat-ii",
+      "title": "Processo Administrativo Tributário II",
+      "subject": "Reforma Tributária",
+      "path": "mindmaps/reforma/pat-ii.html",
+      "available": true
     }
   ]
 }
