@@ -952,6 +952,14 @@ function showCurrentCard() {
 
   const card = currentCards[currentCardIndex];
 
+  ["cardContestFront", "cardContestBack"].forEach((id) => {
+    const contestLabel = document.getElementById(id);
+    contestLabel.textContent = card.concurso
+      ? `Concurso: ${card.concurso}`
+      : "";
+    contestLabel.hidden = !card.concurso;
+  });
+
   document.getElementById("cardFront").textContent = card.front;
 
   document.getElementById("cardBack").textContent = card.back;

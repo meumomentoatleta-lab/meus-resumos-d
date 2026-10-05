@@ -2,6 +2,7 @@
   "mindmaps": [
     {
       "id": "credito-tributario",
+      "concurso": "SEFAZ-AL",
       "title": "Crédito Tributário",
       "subject": "Direito Tributário",
       "path": "mindmaps/tributario/credito-tributario.html",
@@ -9,6 +10,7 @@
     },
         {
       "id": "suspensao-credito",
+      "concurso": "SEFAZ-AL",
       "title": "Suspensão do Crédito Tributário",
       "subject": "Direito Tributário",
       "path": "mindmaps/tributario/suspensao.html",

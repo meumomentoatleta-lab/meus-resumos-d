@@ -7,6 +7,7 @@
 
 {
 "id": "trib-001",
+"concurso": "SEFAZ-AL",
 "legacyId": 1,
 "topic": "Pré-Processamento",
 "front": "O que é pré-processamento de dados?",
@@ -15,6 +16,7 @@
 },
 {
 "id": "trib-002",
+"concurso": "SEFAZ-AL",
 "legacyId": 2,
 "topic": "Pré-Processamento",
 "front": "Quais são as cinco etapas clássicas do pré-processamento de dados?",
@@ -23,6 +25,7 @@
 },
 {
 "id": "trib-003",
+"concurso": "SEFAZ-AL",
 "legacyId": 3,
 "topic": "Valores Ausentes",
 "front": "Qual a diferença entre MCAR, MAR e MNAR?",
@@ -31,6 +34,7 @@
 },
 {
 "id": "trib-004",
+"concurso": "SEFAZ-AL",
 "legacyId": 4,
 "topic": "Valores Ausentes",
 "front": "O que é imputação de dados ausentes?",
@@ -39,6 +43,7 @@
 },
 {
 "id": "trib-005",
+"concurso": "SEFAZ-AL",
 "legacyId": 5,
 "topic": "Valores Ausentes",
 "front": "Qual a diferença entre imputação por média, mediana e moda?",
@@ -47,6 +52,7 @@
 },
 {
 "id": "trib-006",
+"concurso": "SEFAZ-AL",
 "legacyId": 6,
 "topic": "Valores Ausentes",
 "front": "O que é MICE no tratamento de valores ausentes?",
@@ -55,6 +61,7 @@
 },
 {
 "id": "trib-007",
+"concurso": "SEFAZ-AL",
 "legacyId": 7,
 "topic": "Integração de Dados",
 "front": "Qual é o objetivo da integração de dados?",
@@ -63,6 +70,7 @@
 },
 {
 "id": "trib-008",
+"concurso": "SEFAZ-AL",
 "legacyId": 8,
 "topic": "Seleção de Dados",
 "front": "Qual é a finalidade da seleção de dados?",
@@ -71,6 +79,7 @@
 },
 {
 "id": "trib-009",
+"concurso": "SEFAZ-AL",
 "legacyId": 9,
 "topic": "PCA",
 "front": "O que é PCA e qual seu objetivo?",
@@ -79,6 +88,7 @@
 },
 {
 "id": "trib-010",
+"concurso": "SEFAZ-AL",
 "legacyId": 10,
 "topic": "PCA",
 "front": "Qual a diferença entre PCA e LDA?",
@@ -87,6 +97,7 @@
 },
 {
 "id": "trib-011",
+"concurso": "SEFAZ-AL",
 "legacyId": 11,
 "topic": "Normalização Numérica",
 "front": "Qual é o objetivo da normalização numérica?",
@@ -95,6 +106,7 @@
 },
 {
 "id": "trib-012",
+"concurso": "SEFAZ-AL",
 "legacyId": 12,
 "topic": "Normalização Numérica",
 "front": "Qual é a fórmula do Min-Max Scaling e qual seu intervalo mais comum?",
@@ -103,6 +115,7 @@
 },
 {
 "id": "trib-013",
+"concurso": "SEFAZ-AL",
 "legacyId": 13,
 "topic": "Normalização Numérica",
 "front": "O que é Z-Score Standardization?",
@@ -111,6 +124,7 @@
 },
 {
 "id": "trib-014",
+"concurso": "SEFAZ-AL",
 "legacyId": 14,
 "topic": "Normalização Numérica",
 "front": "Qual técnica de escalonamento é mais robusta a outliers e por quê?",
@@ -119,6 +133,7 @@
 },
 {
 "id": "trib-015",
+"concurso": "SEFAZ-AL",
 "legacyId": 15,
 "topic": "Discretização",
 "front": "O que é discretização de dados?",
@@ -127,6 +142,7 @@
 },
 {
 "id": "trib-016",
+"concurso": "SEFAZ-AL",
 "legacyId": 16,
 "topic": "Discretização",
 "front": "Qual a diferença entre Binning Equal-Width e Equal-Frequency?",
@@ -135,6 +151,7 @@
 },
 {
 "id": "trib-017",
+"concurso": "SEFAZ-AL",
 "legacyId": 17,
 "topic": "Outliers",
 "front": "O que são outliers e quais métodos estatísticos podem identificá-los?",
@@ -143,6 +160,7 @@
 },
 {
 "id": "trib-018",
+"concurso": "SEFAZ-AL",
 "legacyId": 18,
 "topic": "Balanceamento de Classes",
 "front": "Qual a diferença entre Undersampling e Oversampling?",
@@ -151,6 +169,7 @@
 },
 {
 "id": "trib-019",
+"concurso": "SEFAZ-AL",
 "legacyId": 19,
 "topic": "Dados Categóricos",
 "front": "Qual a diferença entre One-Hot Encoding e Label Encoding?",
@@ -159,6 +178,7 @@
 },
 {
 "id": "trib-020",
+"concurso": "SEFAZ-AL",
 "legacyId": 20,
 "topic": "Normalização Textual",
 "front": "Qual a diferença entre Stemming e Lematização?",
@@ -170,6 +190,7 @@
 
     {
       "id": "md-001",
+      "concurso": "SEFAZ-AL",
       "legacyId": 1,
       "topic": "Modelagem Multidimensional",
       "front": "Qual é o principal objetivo da modelagem multidimensional?",
@@ -178,6 +199,7 @@
     },
     {
       "id": "md-002",
+      "concurso": "SEFAZ-AL",
       "legacyId": 2,
       "topic": "Cubos de Dados",
       "front": "O que é um cubo de dados?",
@@ -186,6 +208,7 @@
     },
     {
       "id": "md-003",
+      "concurso": "SEFAZ-AL",
       "legacyId": 3,
       "topic": "Cubos de Dados",
       "front": "Qual é a diferença entre cubo denso e cubo esparso?",
@@ -194,6 +217,7 @@
     },
     {
       "id": "md-004",
+      "concurso": "SEFAZ-AL",
       "legacyId": 4,
       "topic": "Tabela Fato",
       "front": "O que é armazenado em uma Tabela Fato?",
@@ -202,6 +226,7 @@
     },
     {
       "id": "md-005",
+      "concurso": "SEFAZ-AL",
       "legacyId": 5,
       "topic": "Tabela Dimensão",
       "front": "Qual é a função da Tabela Dimensão?",
@@ -210,6 +235,7 @@
     },
     {
       "id": "md-006",
+      "concurso": "SEFAZ-AL",
       "legacyId": 6,
       "topic": "Star Schema",
       "front": "Qual é a principal característica do esquema estrela?",
@@ -218,6 +244,7 @@
     },
     {
       "id": "md-007",
+      "concurso": "SEFAZ-AL",
       "legacyId": 7,
       "topic": "Snowflake Schema",
       "front": "Qual é a principal diferença entre o esquema estrela e o esquema floco de neve?",
@@ -226,6 +253,7 @@
     },
     {
       "id": "md-008",
+      "concurso": "SEFAZ-AL",
       "legacyId": 8,
       "topic": "Fact Constellation",
       "front": "O que caracteriza o esquema Constelação de Fatos?",
@@ -234,6 +262,7 @@
     },
     {
       "id": "md-009",
+      "concurso": "SEFAZ-AL",
       "legacyId": 9,
       "topic": "Medidas",
       "front": "O que é uma medida aditiva?",
@@ -242,6 +271,7 @@
     },
     {
       "id": "md-010",
+      "concurso": "SEFAZ-AL",
       "legacyId": 10,
       "topic": "Medidas",
       "front": "O que é uma medida não-aditiva?",
@@ -250,6 +280,7 @@
     },
     {
       "id": "md-011",
+      "concurso": "SEFAZ-AL",
       "legacyId": 11,
       "topic": "Medidas",
       "front": "O que é uma medida semi-aditiva?",
@@ -258,6 +289,7 @@
     },
     {
       "id": "md-012",
+      "concurso": "SEFAZ-AL",
       "legacyId": 12,
       "topic": "OLAP",
       "front": "Qual é a finalidade do OLAP?",
@@ -266,6 +298,7 @@
     },
     {
       "id": "md-013",
+      "concurso": "SEFAZ-AL",
       "legacyId": 13,
       "topic": "Operações OLAP",
       "front": "O que faz a operação Slice?",
@@ -274,6 +307,7 @@
     },
     {
       "id": "md-014",
+      "concurso": "SEFAZ-AL",
       "legacyId": 14,
       "topic": "Operações OLAP",
       "front": "O que faz a operação Dice?",
@@ -282,6 +316,7 @@
     },
     {
       "id": "md-015",
+      "concurso": "SEFAZ-AL",
       "legacyId": 15,
       "topic": "Operações OLAP",
       "front": "Qual é a diferença entre Drill Down e Roll Up?",
@@ -290,6 +325,7 @@
     },
     {
       "id": "md-016",
+      "concurso": "SEFAZ-AL",
       "legacyId": 16,
       "topic": "OLTP x OLAP",
       "front": "Qual é a principal diferença entre OLTP e OLAP?",
@@ -298,6 +334,7 @@
     },
     {
       "id": "md-017",
+      "concurso": "SEFAZ-AL",
       "legacyId": 17,
       "topic": "ROLAP",
       "front": "Como funciona o ROLAP?",
@@ -306,6 +343,7 @@
     },
     {
       "id": "md-018",
+      "concurso": "SEFAZ-AL",
       "legacyId": 18,
       "topic": "MOLAP",
       "front": "Qual é a principal característica do MOLAP?",
@@ -314,6 +352,7 @@
     },
     {
       "id": "md-019",
+      "concurso": "SEFAZ-AL",
       "legacyId": 19,
       "topic": "HOLAP",
       "front": "O que é HOLAP?",
@@ -322,6 +361,7 @@
     },
     {
       "id": "md-020",
+      "concurso": "SEFAZ-AL",
       "legacyId": 20,
       "topic": "Granularidade",
       "front": "O que significa granularidade na modelagem multidimensional?",

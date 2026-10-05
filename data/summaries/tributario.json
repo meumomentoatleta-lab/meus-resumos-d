@@ -3,6 +3,7 @@
   "summaries": [
     {
       "id": "suspensao-credito",
+      "concurso": "SEFAZ-AL",
       "title": "Suspensão do Crédito Tributário",
       "path": "resumos/tributario/suspensao-credito.md"
     }

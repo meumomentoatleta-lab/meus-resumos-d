@@ -2,6 +2,7 @@
   "mindmaps": [
     {
       "id": "ibs-cbs",
+      "concurso": "SEFAZ-AL",
       "title": "IBS e CBS",
       "subject": "Reforma Tributária",
       "path": "mindmaps/reforma/ibscbs.html",
@@ -9,6 +10,7 @@
     },
         {
       "id": "itbi-cosip",
+      "concurso": "SEFAZ-AL",
       "title": "ITBI e COSIP",
       "subject": "Reforma Tributária",
       "path": "mindmaps/reforma/itbi-cosip.html",
@@ -16,6 +18,7 @@
     },
         {
       "id": "pat-i",
+      "concurso": "SEFAZ-AL",
       "title": "Processo Administrativo Tributário I",
       "subject": "Reforma Tributária",
       "path": "mindmaps/reforma/pat-i.html",
@@ -23,6 +26,7 @@
     },
       {
       "id": "pat-ii",
+      "concurso": "SEFAZ-AL",
       "title": "Processo Administrativo Tributário II",
       "subject": "Reforma Tributária",
       "path": "mindmaps/reforma/pat-ii.html",

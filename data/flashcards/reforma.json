@@ -5,6 +5,7 @@
   "cards": [
     {
       "id": "ibscbs-001",
+      "concurso": "SEFAZ-AL",
       "legacyId": 1,
       "topic": "Disposições Preliminares",
       "front": "Quais tributos foram instituídos pela LC 214/2025?",
@@ -13,6 +14,7 @@
     },
     {
       "id": "ibscbs-002",
+      "concurso": "SEFAZ-AL",
       "legacyId": 2,
       "topic": "Disposições Preliminares",
       "front": "Quem possui competência para instituir o IBS?",
@@ -21,6 +23,7 @@
     },
     {
       "id": "ibscbs-003",
+      "concurso": "SEFAZ-AL",
       "legacyId": 3,
       "topic": "Disposições Preliminares",
       "front": "Quem possui competência para instituir a CBS?",
@@ -29,6 +32,7 @@
     },
     {
       "id": "ibscbs-004",
+      "concurso": "SEFAZ-AL",
       "legacyId": 4,
       "topic": "Conceitos Fundamentais",
       "front": "O que é considerado fornecimento?",
@@ -37,6 +41,7 @@
     },
     {
       "id": "ibscbs-005",
+      "concurso": "SEFAZ-AL",
       "legacyId": 5,
       "topic": "Conceitos Fundamentais",
       "front": "Como a energia é tratada para fins do IBS e da CBS?",
@@ -45,6 +50,7 @@
     },
     {
       "id": "ibscbs-006",
+      "concurso": "SEFAZ-AL",
       "legacyId": 6,
       "topic": "Conceitos Fundamentais",
       "front": "Adquirente e destinatário são necessariamente a mesma pessoa?",
@@ -53,6 +59,7 @@
     },
     {
       "id": "ibscbs-007",
+      "concurso": "SEFAZ-AL",
       "legacyId": 7,
       "topic": "Incidência",
       "front": "Qual é a regra geral de incidência do IBS e da CBS?",
@@ -61,6 +68,7 @@
     },
     {
       "id": "ibscbs-008",
+      "concurso": "SEFAZ-AL",
       "legacyId": 8,
       "topic": "Incidência",
       "front": "Operações não onerosas são tributadas pelo IBS e CBS?",
@@ -69,6 +77,7 @@
     },
     {
       "id": "ibscbs-009",
+      "concurso": "SEFAZ-AL",
       "legacyId": 9,
       "topic": "Incidência",
       "front": "Cite exemplos de operações onerosas.",
@@ -77,6 +86,7 @@
     },
     {
       "id": "ibscbs-010",
+      "concurso": "SEFAZ-AL",
       "legacyId": 10,
       "topic": "Incidências Específicas",
       "front": "Qual é a base de cálculo em fornecimentos específicos entre partes relacionadas?",
@@ -85,6 +95,7 @@
     },
     {
       "id": "ibscbs-011",
+      "concurso": "SEFAZ-AL",
       "legacyId": 11,
       "topic": "Incidências Específicas",
       "front": "Quando uma bonificação não sofre incidência?",
@@ -93,6 +104,7 @@
     },
     {
       "id": "ibscbs-012",
+      "concurso": "SEFAZ-AL",
       "legacyId": 12,
       "topic": "Partes Relacionadas",
       "front": "Qual percentual caracteriza relação entre sócios comuns?",
@@ -101,6 +113,7 @@
     },
     {
       "id": "ibscbs-013",
+      "concurso": "SEFAZ-AL",
       "legacyId": 13,
       "topic": "Partes Relacionadas",
       "front": "Qual percentual pode caracterizar controle pelo capital?",
@@ -109,6 +122,7 @@
     },
     {
       "id": "ibscbs-014",
+      "concurso": "SEFAZ-AL",
       "legacyId": 14,
       "topic": "Não Incidência",
       "front": "Há incidência na transferência de bens entre estabelecimentos do mesmo titular?",
@@ -117,6 +131,7 @@
     },
     {
       "id": "ibscbs-015",
+      "concurso": "SEFAZ-AL",
       "legacyId": 15,
       "topic": "Não Incidência",
       "front": "Doações sem contraprestação sofrem incidência?",
@@ -125,6 +140,7 @@
     },
     {
       "id": "ibscbs-016",
+      "concurso": "SEFAZ-AL",
       "legacyId": 16,
       "topic": "Imunidades",
       "front": "As exportações de bens e serviços sofrem incidência?",
@@ -133,6 +149,7 @@
     },
     {
       "id": "ibscbs-017",
+      "concurso": "SEFAZ-AL",
       "legacyId": 17,
       "topic": "Imunidades",
       "front": "Quais publicações estão abrangidas pela imunidade?",
@@ -141,6 +158,7 @@
     },
     {
       "id": "ibscbs-018",
+      "concurso": "SEFAZ-AL",
       "legacyId": 18,
       "topic": "Fato Gerador",
       "front": "Quando ocorre o fato gerador no fornecimento de bens?",
@@ -149,6 +167,7 @@
     },
     {
       "id": "ibscbs-019",
+      "concurso": "SEFAZ-AL",
       "legacyId": 19,
       "topic": "Fato Gerador",
       "front": "Quando ocorre o fato gerador nos serviços?",
@@ -157,6 +176,7 @@
     },
     {
       "id": "ibscbs-020",
+      "concurso": "SEFAZ-AL",
       "legacyId": 20,
       "topic": "Fato Gerador",
       "front": "Quando ocorre o fato gerador em fornecimento contínuo?",
@@ -165,6 +185,7 @@
     },
      {
       "id": "trib-001",
+      "concurso": "SEFAZ-AL",
       "legacyId": 1,
       "topic": "ITBI",
       "front": "Qual é a competência tributária para instituir o ITBI?",
@@ -173,6 +194,7 @@
     },
     {
       "id": "trib-002",
+      "concurso": "SEFAZ-AL",
       "legacyId": 2,
       "topic": "ITBI",
       "front": "Qual é a principal materialidade do ITBI?",
@@ -181,6 +203,7 @@
     },
     {
       "id": "trib-003",
+      "concurso": "SEFAZ-AL",
       "legacyId": 3,
       "topic": "ITBI",
       "front": "O ITBI incide sobre bens móveis?",
@@ -189,6 +212,7 @@
     },
     {
       "id": "trib-004",
+      "concurso": "SEFAZ-AL",
       "legacyId": 4,
       "topic": "ITBI",
       "front": "Quais direitos reais sobre imóveis estão fora da incidência do ITBI?",
@@ -197,6 +221,7 @@
     },
     {
       "id": "trib-005",
+      "concurso": "SEFAZ-AL",
       "legacyId": 5,
       "topic": "ITBI",
       "front": "Há incidência de ITBI na usucapião?",
@@ -205,6 +230,7 @@
     },
     {
       "id": "trib-006",
+      "concurso": "SEFAZ-AL",
       "legacyId": 6,
       "topic": "ITBI",
       "front": "Quando ocorre o fato gerador do ITBI na transmissão imobiliária?",
@@ -213,6 +239,7 @@
     },
     {
       "id": "trib-007",
+      "concurso": "SEFAZ-AL",
       "legacyId": 7,
       "topic": "ITBI",
       "front": "O ITBI incide sobre simples promessa de compra e venda?",
@@ -221,6 +248,7 @@
     },
     {
       "id": "trib-008",
+      "concurso": "SEFAZ-AL",
       "legacyId": 8,
       "topic": "ITBI",
       "front": "Qual é o Município competente para cobrar o ITBI?",
@@ -229,6 +257,7 @@
     },
     {
       "id": "trib-009",
+      "concurso": "SEFAZ-AL",
       "legacyId": 9,
       "topic": "ITBI",
       "front": "Quem é o contribuinte do ITBI segundo o art. 42 do CTN?",
@@ -237,6 +266,7 @@
     },
     {
       "id": "trib-010",
+      "concurso": "SEFAZ-AL",
       "legacyId": 10,
       "topic": "ITBI",
       "front": "Qual é a base de cálculo do ITBI após a LC 227/2026?",
@@ -245,6 +275,7 @@
     },
     {
       "id": "trib-011",
+      "concurso": "SEFAZ-AL",
       "legacyId": 11,
       "topic": "ITBI",
       "front": "A base de cálculo do ITBI está vinculada à base de cálculo do IPTU?",
@@ -253,6 +284,7 @@
     },
     {
       "id": "trib-012",
+      "concurso": "SEFAZ-AL",
       "legacyId": 12,
       "topic": "ITBI",
       "front": "O que caracteriza atividade preponderante para fins do art. 37 do CTN?",
@@ -261,6 +293,7 @@
     },
     {
       "id": "trib-013",
+      "concurso": "SEFAZ-AL",
       "legacyId": 13,
       "topic": "ITBI",
       "front": "Qual é o período de análise da atividade preponderante quando a empresa já atua há mais de 2 anos?",
@@ -269,6 +302,7 @@
     },
     {
       "id": "trib-014",
+      "concurso": "SEFAZ-AL",
       "legacyId": 14,
       "topic": "ITBI",
       "front": "Qual é o período de análise da atividade preponderante quando a empresa iniciou suas atividades após ou menos de 2 anos antes da aquisição?",
@@ -277,6 +311,7 @@
     },
     {
       "id": "trib-015",
+      "concurso": "SEFAZ-AL",
       "legacyId": 15,
       "topic": "ITBI",
       "front": "Qual é a regra do Tema 796 do STF sobre a imunidade do ITBI na integralização de capital?",
@@ -285,6 +320,7 @@
     },
     {
       "id": "trib-016",
+      "concurso": "SEFAZ-AL",
       "legacyId": 16,
       "topic": "COSIP",
       "front": "Quem pode instituir a COSIP?",
@@ -293,6 +329,7 @@
     },
     {
       "id": "trib-017",
+      "concurso": "SEFAZ-AL",
       "legacyId": 17,
       "topic": "COSIP",
       "front": "Quais são as finalidades da COSIP após as alterações constitucionais e da LC 227/2026?",
@@ -301,6 +338,7 @@
     },
     {
       "id": "trib-018",
+      "concurso": "SEFAZ-AL",
       "legacyId": 18,
       "topic": "COSIP",
       "front": "A COSIP pode ser cobrada na fatura de consumo de energia elétrica?",
@@ -309,6 +347,7 @@
     },
     {
       "id": "trib-019",
+      "concurso": "SEFAZ-AL",
       "legacyId": 19,
       "topic": "COSIP",
       "front": "A COSIP pode ter valor fixo ou deve necessariamente utilizar alíquota sobre o consumo de energia?",
@@ -317,6 +356,7 @@
     },
     {
       "id": "trib-020",
+      "concurso": "SEFAZ-AL",
       "legacyId": 20,
       "topic": "COSIP",
       "front": "A COSIP é uma taxa de serviço público?",
@@ -327,6 +367,7 @@
 
     {
       "id": "trib-001",
+      "concurso": "SEFAZ-AL",
       "legacyId": 1,
       "topic": "PAT do IBS",
       "front": "Quais matérias estão abrangidas pelo PAT do IBS, conforme o art. 54?",
@@ -335,6 +376,7 @@
     },
     {
       "id": "trib-002",
+      "concurso": "SEFAZ-AL",
       "legacyId": 2,
       "topic": "Princípios do PAT",
       "front": "Quais são os princípios expressamente previstos no art. 55 da LC 227/2026?",
@@ -343,6 +385,7 @@
     },
     {
       "id": "trib-003",
+      "concurso": "SEFAZ-AL",
       "legacyId": 3,
       "topic": "Atos Processuais",
       "front": "O que estabelece o princípio do formalismo moderado no PAT do IBS?",
@@ -351,6 +394,7 @@
     },
     {
       "id": "trib-004",
+      "concurso": "SEFAZ-AL",
       "legacyId": 4,
       "topic": "Processo Eletrônico",
       "front": "Quem é responsável pela implementação e gestão do sistema eletrônico do PAT do IBS?",
@@ -359,6 +403,7 @@
     },
     {
       "id": "trib-005",
+      "concurso": "SEFAZ-AL",
       "legacyId": 5,
       "topic": "Representação",
       "front": "É obrigatória a representação por advogado no PAT do IBS?",
@@ -367,6 +412,7 @@
     },
     {
       "id": "trib-006",
+      "concurso": "SEFAZ-AL",
       "legacyId": 6,
       "topic": "Prazos Processuais",
       "front": "Como são contados os prazos processuais no PAT do IBS?",
@@ -375,6 +421,7 @@
     },
     {
       "id": "trib-007",
+      "concurso": "SEFAZ-AL",
       "legacyId": 7,
       "topic": "Prazos Processuais",
       "front": "Qual é o período de suspensão dos prazos processuais do PAT do IBS?",
@@ -383,6 +430,7 @@
     },
     {
       "id": "trib-008",
+      "concurso": "SEFAZ-AL",
       "legacyId": 8,
       "topic": "Prazos Processuais",
       "front": "Qual é o prazo geral para a prática de ato pela parte quando não houver prazo expressamente previsto?",
@@ -391,6 +439,7 @@
     },
     {
       "id": "trib-009",
+      "concurso": "SEFAZ-AL",
       "legacyId": 9,
       "topic": "Prazos Processuais",
       "front": "Quando a indisponibilidade do sistema eletrônico do CGIBS caracteriza instabilidade para fins de prazo?",
@@ -399,6 +448,7 @@
     },
     {
       "id": "trib-010",
+      "concurso": "SEFAZ-AL",
       "legacyId": 10,
       "topic": "Intimações",
       "front": "Quando se considera realizada a intimação eletrônica se o sujeito passivo não consultar o DTE?",
@@ -407,6 +457,7 @@
     },
     {
       "id": "trib-011",
+      "concurso": "SEFAZ-AL",
       "legacyId": 11,
       "topic": "Nulidades",
       "front": "Quais são as principais hipóteses de nulidade previstas no art. 66?",
@@ -415,6 +466,7 @@
     },
     {
       "id": "trib-012",
+      "concurso": "SEFAZ-AL",
       "legacyId": 12,
       "topic": "Nulidades",
       "front": "O comparecimento do interessado supre a falta ou irregularidade da intimação?",
@@ -423,6 +475,7 @@
     },
     {
       "id": "trib-013",
+      "concurso": "SEFAZ-AL",
       "legacyId": 13,
       "topic": "Nulidades",
       "front": "O erro na identificação de um dos sujeitos passivos em lançamento com múltiplos autuados anula toda a exigência?",
@@ -431,6 +484,7 @@
     },
     {
       "id": "trib-014",
+      "concurso": "SEFAZ-AL",
       "legacyId": 14,
       "topic": "Nulidades",
       "front": "Qual é o efeito da nulidade sobre os demais atos do processo administrativo tributário?",
@@ -439,6 +493,7 @@
     },
     {
       "id": "trib-015",
+      "concurso": "SEFAZ-AL",
       "legacyId": 15,
       "topic": "Nulidades",
       "front": "Quando a parte deve arguir a nulidade de um ato processual?",
@@ -447,6 +502,7 @@
     },
     {
       "id": "trib-016",
+      "concurso": "SEFAZ-AL",
       "legacyId": 16,
       "topic": "Contencioso Tributário",
       "front": "Quando se instaura o contencioso administrativo tributário do IBS e qual é o prazo para impugnação?",
@@ -455,6 +511,7 @@
     },
     {
       "id": "trib-017",
+      "concurso": "SEFAZ-AL",
       "legacyId": 17,
       "topic": "Contencioso Tributário",
       "front": "Em quais hipóteses as provas podem ser apresentadas após a impugnação?",
@@ -463,6 +520,7 @@
     },
     {
       "id": "trib-018",
+      "concurso": "SEFAZ-AL",
       "legacyId": 18,
       "topic": "Diligências",
       "front": "Qual é o prazo padrão para cumprimento de diligência e para manifestação da parte sobre os documentos resultantes?",
@@ -471,6 +529,7 @@
     },
     {
       "id": "trib-019",
+      "concurso": "SEFAZ-AL",
       "legacyId": 19,
       "topic": "Desistência e Revelia",
       "front": "Quais situações configuram desistência tácita do litígio administrativo do IBS?",
@@ -479,6 +538,7 @@
     },
     {
       "id": "trib-020",
+      "concurso": "SEFAZ-AL",
       "legacyId": 20,
       "topic": "Provimentos Vinculantes",
       "front": "Quais decisões e enunciados vinculantes devem ser observados no PAT do IBS, conforme o art. 74?",
@@ -488,6 +548,7 @@
  
     {
       "id": "trib-001",
+      "concurso": "SEFAZ-AL",
       "legacyId": 1,
       "topic": "PAT do IBS",
       "front": "Quais são os recursos cabíveis no contencioso administrativo do IBS, conforme o art. 75 da LC 227/2026?",
@@ -496,6 +557,7 @@
     },
     {
       "id": "trib-002",
+      "concurso": "SEFAZ-AL",
       "legacyId": 2,
       "topic": "Prazos Recursais",
       "front": "Qual é o prazo geral para interposição de recursos e contrarrazões no PAT do IBS?",
@@ -504,6 +566,7 @@
     },
     {
       "id": "trib-003",
+      "concurso": "SEFAZ-AL",
       "legacyId": 3,
       "topic": "Rito Sumário",
       "front": "Quais são as hipóteses de adoção do rito sumário no PAT do IBS?",
@@ -512,6 +575,7 @@
     },
     {
       "id": "trib-004",
+      "concurso": "SEFAZ-AL",
       "legacyId": 4,
       "topic": "Recurso de Ofício",
       "front": "Quando é cabível o recurso de ofício no PAT do IBS e quem o interpõe?",
@@ -520,6 +584,7 @@
     },
     {
       "id": "trib-005",
+      "concurso": "SEFAZ-AL",
       "legacyId": 5,
       "topic": "Recurso de Ofício",
       "front": "O que significa dizer que o recurso de ofício é interposto ex lege?",
@@ -528,6 +593,7 @@
     },
     {
       "id": "trib-006",
+      "concurso": "SEFAZ-AL",
       "legacyId": 6,
       "topic": "Recurso de Ofício",
       "front": "A decisão unânime contrária à Fazenda Pública, que observa provimento vinculante, está sujeita a recurso de ofício?",
@@ -536,6 +602,7 @@
     },
     {
       "id": "trib-007",
+      "concurso": "SEFAZ-AL",
       "legacyId": 7,
       "topic": "Recurso Voluntário",
       "front": "Quando cabe recurso voluntário e quem pode apresentá-lo?",
@@ -544,6 +611,7 @@
     },
     {
       "id": "trib-008",
+      "concurso": "SEFAZ-AL",
       "legacyId": 8,
       "topic": "Recurso Voluntário",
       "front": "Qual é o efeito do recurso voluntário parcial sobre a parte da decisão não recorrida?",
@@ -552,6 +620,7 @@
     },
     {
       "id": "trib-009",
+      "concurso": "SEFAZ-AL",
       "legacyId": 9,
       "topic": "Recurso de Uniformização",
       "front": "Quando cabe recurso de uniformização relativo à legislação específica do IBS?",
@@ -560,6 +629,7 @@
     },
     {
       "id": "trib-010",
+      "concurso": "SEFAZ-AL",
       "legacyId": 10,
       "topic": "Recurso de Uniformização",
       "front": "Qual é o prazo do recurso de uniformização e quem pode interpô-lo?",

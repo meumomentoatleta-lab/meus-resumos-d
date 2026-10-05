@@ -21,6 +21,7 @@
         <button onclick="showPage('dashboard')">🏠 Dashboard</button>
         <button onclick="showPage('mindmaps')">🧠 Mind Maps</button>
         <button onclick="showPage('flashcards')">🃏 Flashcards</button>
+        <button onclick="showPage('summaries')">📖 Resumos</button>
     </nav>
 
     <div class="top-actions">
@@ -384,6 +385,8 @@
 
                 <div class="flashcard-front">
 
+                    <span id="cardContestFront" class="card-contest" hidden></span>
+
                     <span class="card-label">
                         PERGUNTA
                     </span>
@@ -400,6 +403,8 @@
 
 
                 <div class="flashcard-back">
+
+                    <span id="cardContestBack" class="card-contest" hidden></span>
 
                     <span class="card-label">
                         RESPOSTA

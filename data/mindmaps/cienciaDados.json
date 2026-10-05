@@ -2,6 +2,7 @@
   "mindmaps": [
     {
       "id": "modelagem-multidimensional",
+      "concurso": "SEFAZ-AL",
       "title": "Modelagem de Multidimensional",
       "subject": "Ciência de Dados",
       "path": "mindmaps/cienciaDados/modelagem-multidimensional.html",
@@ -9,6 +10,7 @@
     },
       {
       "id": "pre-processamento",
+      "concurso": "SEFAZ-AL",
       "title": "Pré-processamento de Dados",
       "subject": "Ciência de Dados",
       "path": "mindmaps/cienciaDados/pre-processamento.html",

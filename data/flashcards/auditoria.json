@@ -3,6 +3,7 @@
   "cards": [
     {
       "id": "aud-001",
+      "concurso": "SEFAZ-AL",
       "topic": "NF-e",
       "front": "O contribuinte que for obrigado a emitir NF-e será credenciado pela administração tributária da unidade federada a qual estiver jurisdicionado, ainda que não utilize sistema eletrônico de processamento de dados.",
       "back": "Certo.",
@@ -10,6 +11,7 @@
     },
     {
       "id": "aud-002",
+      "concurso": "SEFAZ-AL",
       "topic": "NF-e",
       "front": "É vedado o credenciamento, para emissão de NF-e, de contribuinte que não utilize sistema eletrônico de processamento de dados, não podendo este contribuinte ser credenciado por terceiros.",
       "back": "Errado. O credenciamento pode ocorrer de maneira voluntária, pelo próprio contribuinte, ou de ofício, por terceiros.",
@@ -17,6 +19,7 @@
     },
     {
       "id": "aud-003",
+      "concurso": "SEFAZ-AL",
       "topic": "NF-e",
       "front": "Instituída nacionalmente pelo Ajuste SINIEF 07/2005, a NF-e existe exclusivamente em formato eletrônico XML, sendo armazenada digitalmente e autorizada previamente pela Secretaria da Fazenda (SEFAZ) competente antes da ocorrência da circulação da mercadoria.",
       "back": "Certo. A NF-e existe exclusivamente em formato eletrônico XML.",
@@ -24,6 +27,7 @@
     },
     {
       "id": "aud-004",
+      "concurso": "SEFAZ-AL",
       "topic": "EFD-Reinf",
       "front": "A escrituração fiscal digital de retenção e outras informações fiscais (EFD-Reinf) são o instrumento adequado para a declaração das contribuições previdenciárias descontadas dos empregados e das contribuições patronais incidentes sobre a folha de pagamento da entidade, por ser um módulo integrante do Sistema Público de Escrituração Digital (SPED) destinado à prestação de informações previdenciárias.",
       "back": "Errado. A EFD-Reinf integra o SPED e informa principalmente retenções de tributos e outras informações fiscais ou previdenciárias fora da remuneração do trabalho. As informações da folha, como remuneração, contribuições dos segurados, contribuição patronal e RAT/SAT, são prestadas pelo eSocial. Em resumo: eSocial trata da folha e das relações de trabalho; EFD-Reinf trata de retenções e outras informações fora da folha.",
@@ -31,6 +35,7 @@
     },
     {
       "id": "aud-005",
+      "concurso": "SEFAZ-AL",
       "topic": "NF-e",
       "front": "O arquivo digital da NF-e somente pode ser considerado documento fiscal após a concessão de autorização de uso pela administração tributária.",
       "back": "Certo. O arquivo digital deve ser transmitido eletronicamente à administração tributária e ter seu uso autorizado por meio da Autorização de Uso da NF-e.",
@@ -38,6 +43,7 @@
     },
     {
       "id": "aud-006",
+      "concurso": "SEFAZ-AL",
       "topic": "NF-e",
       "front": "A autorização de uso da NF-e implica validação do conteúdo tributário da operação pela administração tributária.",
       "back": "Errado. A autorização de uso não valida o conteúdo tributário da operação. Por exemplo, a autorização de uma NF-e que informa alíquota de ICMS de 12% não significa que a SEFAZ confirmou que essa é a alíquota correta; a operação ainda pode ser fiscalizada posteriormente.",

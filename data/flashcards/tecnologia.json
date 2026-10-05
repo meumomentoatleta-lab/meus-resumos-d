@@ -2,6 +2,7 @@
   "subject": "Tecnologia da Informação",
   "cards": [      {
             "id": "trib-001",
+            "concurso": "SEFAZ-AL",
             "legacyId": 1,
             "topic": "Internet",
             "front": "O que é internet?",

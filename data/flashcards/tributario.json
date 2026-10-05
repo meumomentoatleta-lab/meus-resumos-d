@@ -5,6 +5,7 @@
 
         {
             "id": "trib-001",
+            "concurso": "SEFAZ-AL",
             "legacyId": 1,
             "topic": "Crédito Tributário",
             "front": "O que é crédito tributário?",
@@ -14,6 +15,7 @@
 
         {
             "id": "trib-002",
+            "concurso": "SEFAZ-AL",
             "legacyId": 2,
             "topic": "Crédito Tributário",
             "front": "Como o crédito tributário é constituído?",
@@ -22,420 +24,490 @@
         },
         {
             "id": "trib-003",
+            "concurso": "SEFAZ-AL",
             "topic": "COSIP",
             "front": "Compete aos Estados a instituição de contribuição para custeio, expansão e melhoria do serviço de iluminação pública e de sistemas de monitoramento para segurança e preservação de logradouros públicos, desde que respeitadas as limitações constitucionais da legalidade e da anterioridade.",
             "back": "Errado. Compete aos Municípios e ao Distrito Federal instituir a contribuição para custeio, expansão e melhoria do serviço de iluminação pública e dos sistemas de monitoramento previstos na Constituição."
         },
         {
             "id": "trib-004",
+            "concurso": "SEFAZ-AL",
             "topic": "Taxas",
             "front": "É constitucional considerar o tipo de atividade exercida pelo contribuinte como um dos critérios para fixação do valor de taxa de fiscalização do estabelecimento.",
             "back": "Certo. O tipo de atividade pode ser um critério para fixar a taxa de fiscalização. A base de cálculo pode usar elementos presentes em bases de impostos, desde que não haja identidade integral entre elas (Tema 146 e Súmula Vinculante 29)."
         },
         {
             "id": "trib-005",
+            "concurso": "SEFAZ-AL",
             "topic": "Espécies Tributárias",
             "front": "Os empréstimos compulsórios são tributos classificados como impostos de natureza especial pela doutrina majoritária e pelo Código Tributário Nacional, por apresentarem fato gerador e base de cálculo próprios dos impostos ordinários.",
             "back": "Errado. Empréstimos compulsórios são espécie tributária autônoma, prevista no art. 148 da Constituição. Na classificação pentapartida, distinguem-se de impostos, taxas, contribuições de melhoria e contribuições especiais."
         },
         {
             "id": "trib-006",
+            "concurso": "SEFAZ-AL",
             "topic": "COSIP",
             "front": "O serviço de iluminação pública não pode ser remunerado mediante taxa.",
             "back": "Certo. Súmula Vinculante 41. Municípios e Distrito Federal podem instituir contribuição para custear, expandir e melhorar o serviço de iluminação pública, inclusive com cobrança na fatura de energia elétrica."
         },
         {
             "id": "trib-007",
+            "concurso": "SEFAZ-AL",
             "topic": "Contribuições Sociais",
             "front": "Contribuições sociais, como FGTS, salário-educação e contribuições da seguridade social, podem ser criadas mediante lei, desde que não tenham fato gerador e base de cálculo idênticos aos dos impostos.",
             "back": "Errado. Contribuições sociais podem ter fato gerador ou base de cálculo coincidentes com os de impostos."
         },
         {
             "id": "trib-008",
+            "concurso": "SEFAZ-AL",
             "topic": "IBS e CBS",
             "front": "Na importação de petróleo e derivados, a base de cálculo do IBS e da CBS a serem recolhidos deve considerar a CIDE-Combustíveis cobrada em relação à operação.",
             "back": "A extração marca este item como errado, mas a própria nota afirma: se houve incidência de CIDE na importação de petróleo, a CIDE entra na base do IBS e da CBS. Revisar o gabarito."
         },
         {
             "id": "trib-009",
+            "concurso": "SEFAZ-AL",
             "topic": "IBS e CBS",
             "front": "Diferentemente do ISS, o IBS incide sobre operações de locação de bens imóveis.",
             "back": "Certo. A legislação prevê incidência do IBS e da CBS sobre locação, cessão onerosa e arrendamento de imóveis, observadas as regras do regime específico."
         },
         {
             "id": "trib-010",
+            "concurso": "SEFAZ-AL",
             "topic": "IPTU",
             "front": "O IPTU também pode incidir sobre imóvel situado em zona rural que, por sua utilização ou área, seja considerado urbano para fins tributários, bem como sobre imóvel usado como sítio de recreio.",
             "back": "Certo. Embora a regra geral associe zona urbana ao IPTU e zona rural ao ITR, a utilização ou o enquadramento legal do imóvel pode permitir sua tributação pelo IPTU."
         },
         {
             "id": "trib-011",
+            "concurso": "SEFAZ-AL",
             "topic": "Funções dos Tributos",
             "front": "O IPI e o IOF são tradicionalmente considerados tributos parafiscais.",
             "back": "Errado. IPI e IOF são predominantemente extrafiscais: suas alíquotas podem ser usadas para regular a economia, o crédito, o consumo e a atividade industrial."
         },
         {
             "id": "trib-012",
+            "concurso": "SEFAZ-AL",
             "topic": "Isonomia Tributária",
             "front": "A União pode instituir tratamento tributário distinto entre contribuintes em situação equivalente, desde que o tributo tenha finalidade extrafiscal.",
             "back": "Errado. O art. 150, II, da Constituição veda tratamento desigual entre contribuintes em situação equivalente, ainda que o tributo tenha finalidade extrafiscal."
         },
         {
             "id": "trib-013",
+            "concurso": "SEFAZ-AL",
             "topic": "Vedação ao Confisco",
             "front": "A vedação à utilização de tributo com efeito de confisco aplica-se exclusivamente aos tributos, não alcançando multas tributárias sancionatórias.",
             "back": "Errado. A jurisprudência do STF também aplica o limite do não confisco às multas tributárias, para evitar penalidades excessivas e desproporcionais."
         },
         {
             "id": "trib-014",
+            "concurso": "SEFAZ-AL",
             "topic": "Legalidade Tributária",
             "front": "É vedado exigir ou aumentar tributo sem lei que o estabeleça.",
             "back": "Certo. Princípio da legalidade tributária, previsto no art. 150, I, da Constituição."
         },
         {
             "id": "trib-015",
+            "concurso": "SEFAZ-AL",
             "topic": "Isonomia Tributária",
             "front": "A Constituição admite tratamento tributário desigual entre contribuintes em situação equivalente quando houver conveniência arrecadatória do ente político.",
             "back": "Errado. Conveniência arrecadatória, por si só, não autoriza tratamento desigual entre contribuintes em situação equivalente."
         },
         {
             "id": "trib-016",
+            "concurso": "SEFAZ-AL",
             "topic": "Vedação ao Confisco",
             "front": "É vedado aos entes federativos utilizar tributo com efeito de confisco, e o STF estendeu essa proteção às penalidades pecuniárias por sonegação.",
             "back": "Certo. Embora multas não sejam tributos, o STF entende que a vedação ao confisco também limita penalidades pecuniárias excessivas e desproporcionais."
         },
         {
             "id": "trib-017",
+            "concurso": "SEFAZ-AL",
             "topic": "Vedação ao Confisco",
             "front": "É vedado aos entes federativos utilizar imposto com efeito de confisco, sendo que o STJ vedou a aplicação dessa regra às penalidades pecuniárias por sonegação.",
             "back": "Errado. A Constituição usa o termo tributo, que abrange todas as espécies tributárias, e a jurisprudência aplica a vedação ao confisco também às multas fiscais."
         },
         {
             "id": "trib-018",
+            "concurso": "SEFAZ-AL",
             "topic": "Anterioridade",
             "front": "O princípio da anterioridade anual impede a cobrança de tributo no mesmo exercício financeiro da publicação da lei que o instituiu ou aumentou, ressalvadas as exceções constitucionais.",
             "back": "Certo. A Constituição prevê exceções, entre elas II, IE, IPI, IOF, imposto extraordinário de guerra e empréstimo compulsório em caso de calamidade pública ou guerra externa. Algumas exceções ainda devem respeitar a noventena."
         },
         {
             "id": "trib-019",
+            "concurso": "SEFAZ-AL",
             "topic": "Anterioridade",
             "front": "A exceção à anterioridade anual refere-se apenas aos empréstimos compulsórios destinados a despesas extraordinárias decorrentes de calamidade pública, guerra externa ou sua iminência.",
             "back": "A extração marca este item como certo e anota que a despesa urgente é abrangida. Como a expressão “apenas” pode conflitar com as demais exceções constitucionais à anterioridade anual, revisar o gabarito."
         },
         {
             "id": "trib-020",
+            "concurso": "SEFAZ-AL",
             "topic": "Princípios Tributários",
             "front": "O princípio do benefício ou da equivalência determina que os impostos sejam proporcionais aos benefícios recebidos dos serviços públicos, de modo que quem utiliza mais pague mais.",
             "back": "Certo, conforme o gabarito da extração. Revisar a distinção entre o princípio do benefício e a aplicação de taxas, que são vinculadas a serviço específico e divisível ou ao exercício do poder de polícia."
         },
         {
             "id": "trib-021",
+            "concurso": "SEFAZ-AL",
             "topic": "Neutralidade Tributária",
             "front": "A neutralidade tributária exige que todos os tributos tenham a mesma alíquota, independentemente do fato gerador.",
             "back": "Errado. Neutralidade busca reduzir a interferência da tributação nas decisões econômicas; não exige alíquotas idênticas para fatos geradores distintos."
         },
         {
             "id": "trib-022",
+            "concurso": "SEFAZ-AL",
             "topic": "Tributação Indireta",
             "front": "Os impostos indiretos tendem a ser progressivos, pois oneram proporcionalmente mais os contribuintes de maior renda.",
             "back": "Errado. Impostos indiretos sobre consumo tendem a ser regressivos: o valor do tributo representa parcela maior do orçamento de pessoas de menor renda."
         },
         {
             "id": "trib-023",
+            "concurso": "SEFAZ-AL",
             "topic": "Imposto de Renda",
             "front": "Não incide imposto de renda sobre indenização por danos morais.",
             "back": "Certo."
         },
         {
             "id": "trib-024",
+            "concurso": "SEFAZ-AL",
             "topic": "Anterioridade",
             "front": "A norma legal que altera o prazo de recolhimento de obrigação tributária não se sujeita ao princípio da anterioridade.",
             "back": "Certo."
         },
         {
             "id": "trib-025",
+            "concurso": "SEFAZ-AL",
             "topic": "Competência Tributária",
             "front": "A Constituição estadual pode estabelecer limite para o aumento de tributos municipais.",
             "back": "Errado. Súmula 69 do STF: a Constituição estadual não pode estabelecer limite para o aumento de tributos municipais."
         },
         {
             "id": "trib-026",
+            "concurso": "SEFAZ-AL",
             "topic": "Obrigação Tributária",
             "front": "A obrigação tributária acessória não está sujeita à anterioridade anual.",
             "back": "Certo."
         },
         {
             "id": "trib-027",
+            "concurso": "SEFAZ-AL",
             "topic": "ITCMD",
             "front": "O ITCMD pode ser progressivo mesmo sem previsão expressa dessa progressividade na Constituição Federal.",
             "back": "Certo. O ITCMD pode ter alíquotas progressivas."
         },
         {
             "id": "trib-028",
+            "concurso": "SEFAZ-AL",
             "topic": "Legalidade Tributária",
             "front": "As alíquotas do IOF, do ISS, do IPI e do ICMS podem ser majoradas por ato infralegal editado pelo Poder Executivo.",
             "back": "Errado. Entre os tributos listados, apenas IOF e IPI admitem alteração de alíquotas por ato do Executivo, nos limites legais."
         },
         {
             "id": "trib-029",
+            "concurso": "SEFAZ-AL",
             "topic": "IPI",
             "front": "As alíquotas do IPI podem ser modificadas por decreto.",
             "back": "Certo, observados os limites e condições estabelecidos em lei."
         },
         {
             "id": "trib-030",
+            "concurso": "SEFAZ-AL",
             "topic": "Espécies Tributárias",
             "front": "A União, os Estados, o Distrito Federal e os Municípios podem instituir taxas decorrentes de obras públicas.",
             "back": "Errado. Obras públicas podem dar ensejo à contribuição de melhoria, não a taxa."
         },
         {
             "id": "trib-031",
+            "concurso": "SEFAZ-AL",
             "topic": "Taxas",
             "front": "É possível utilizar, no cálculo da taxa de coleta de lixo, um ou mais elementos da base de cálculo de determinado imposto.",
             "back": "Certo, desde que não haja identidade integral entre as bases de cálculo. O STF admite, por exemplo, elemento relacionado à área do imóvel."
         },
         {
             "id": "trib-032",
+            "concurso": "SEFAZ-AL",
             "topic": "Limitações ao Poder de Tributar",
             "front": "As limitações constitucionais ao poder de tributar são cláusulas pétreas por protegerem direitos e garantias individuais dos contribuintes.",
             "back": "Certo. Princípios tributários e imunidades que protegem direitos individuais são reconhecidos como limitações protegidas contra abolição."
         },
         {
             "id": "trib-033",
+            "concurso": "SEFAZ-AL",
             "topic": "Imunidades",
             "front": "A imunidade tributária musical não se estende à importação de suportes materiais produzidos fora do Brasil, ainda que gravados com obras musicais de artistas brasileiros.",
             "back": "Certo, conforme Tema 1083 do STF: a imunidade do art. 150, VI, e, da Constituição não alcança esses suportes importados."
         },
         {
             "id": "trib-034",
+            "concurso": "SEFAZ-AL",
             "topic": "Imunidade Recíproca",
             "front": "A imunidade recíproca impede que lei municipal atribua à União responsabilidade por reter e recolher ISS sobre serviços prestados por particulares.",
             "back": "Errado. Conforme o STF, o ente público pode ser responsável tributário quando atua como agente arrecadador e não é o contribuinte do imposto."
         },
         {
             "id": "trib-035",
+            "concurso": "SEFAZ-AL",
             "topic": "Imunidade Recíproca",
             "front": "A imunidade tributária recíproca não exonera o sucessor das obrigações tributárias relativas a fatos ocorridos antes da sucessão.",
             "back": "Certo. A imunidade não anistia débitos anteriores à sucessão; conforme Tema 414 do STF, ela não afasta a responsabilidade tributária por esses débitos."
         },
         {
             "id": "trib-036",
+            "concurso": "SEFAZ-AL",
             "topic": "Imunidades",
             "front": "O CEBAS, durante o prazo de validade, tem natureza declaratória para fins tributários e retroage à data em que comprovado o cumprimento dos requisitos legais da imunidade.",
             "back": "Certo. Súmula 612 do STJ."
         },
         {
             "id": "trib-037",
+            "concurso": "SEFAZ-AL",
             "topic": "Imunidades",
             "front": "O CEBAS tem natureza declaratória e retroage à data do cumprimento dos requisitos legais para a imunidade, independentemente de estar dentro do prazo de validade.",
             "back": "Errado. Súmula 612 do STJ condiciona esse efeito declaratório ao prazo de validade do certificado."
         },
         {
             "id": "trib-038",
+            "concurso": "SEFAZ-AL",
             "topic": "Imunidade Recíproca",
             "front": "A imunidade recíproca impede a cobrança de IPTU sobre imóvel estadual arrendado a particular, pois decorre do caráter público do bem.",
             "back": "Errado. Tema 437 do STF: a imunidade não se estende à empresa privada arrendatária que explora atividade econômica com fins lucrativos."
         },
         {
             "id": "trib-039",
+            "concurso": "SEFAZ-AL",
             "topic": "Imunidades",
             "front": "A imunidade tributária alcança bens temporariamente ociosos de instituições de educação e assistência social sem fins lucrativos que atendam aos requisitos legais.",
             "back": "Certo. Tema 693 do STF."
         },
         {
             "id": "trib-040",
+            "concurso": "SEFAZ-AL",
             "topic": "Imunidade Recíproca",
             "front": "A Constituição Federal reconhece expressamente a imunidade tributária das sociedades de economia mista prestadoras de serviços públicos.",
             "back": "Errado. A Constituição prevê expressamente a imunidade recíproca entre entes federativos. A extensão a certas empresas estatais decorre da interpretação do STF em casos específicos."
         },
         {
             "id": "trib-041",
+            "concurso": "SEFAZ-AL",
             "topic": "CSLL",
             "front": "A CSLL deve respeitar a anterioridade nonagesimal, mas não a anterioridade anual, podendo ser cobrada após 90 dias da publicação da lei que a instituiu ou aumentou.",
             "back": "Certo. O art. 195, § 6º, da Constituição exige a noventena para contribuições sociais e afasta a anterioridade anual."
         },
         {
             "id": "trib-042",
+            "concurso": "SEFAZ-AL",
             "topic": "ICMS e ISS",
             "front": "Por força da não cumulatividade e da seletividade, o contribuinte pode usar crédito integral de ICMS para abater débitos futuros de ISS.",
             "back": "Errado. ICMS e ISS são tributos distintos, de competências diferentes, e não há previsão para usar crédito de ICMS para quitar ISS."
         },
         {
             "id": "trib-043",
+            "concurso": "SEFAZ-AL",
             "topic": "IPTU",
             "front": "A majoração do IPTU até o limite da inflação dispensa lei e pode ser feita por decreto.",
             "back": "Certo, conforme o gabarito da extração. A nota também registra que o IPTU é exceção à noventena para alteração da base de cálculo, mas deve respeitar a anterioridade anual."
         },
         {
             "id": "trib-044",
+            "concurso": "SEFAZ-AL",
             "topic": "Não Cumulatividade",
             "front": "A isenção e a imunidade não implicam crédito para compensação com o montante devido nas operações seguintes.",
             "back": "Certo."
         },
         {
             "id": "trib-045",
+            "concurso": "SEFAZ-AL",
             "topic": "Competência Tributária",
             "front": "A competência tributária é indelegável, mas a capacidade tributária ativa pode ser atribuída a outra pessoa jurídica de direito público.",
             "back": "Certo. A competência de instituir tributos não se delega; funções de arrecadação e fiscalização podem ser atribuídas nos termos legais."
         },
         {
             "id": "trib-046",
+            "concurso": "SEFAZ-AL",
             "topic": "Competência Tributária",
             "front": "A competência tributária pode ser delegada a outro ente federativo por lei complementar e por prazo determinado.",
             "back": "Errado. A competência tributária é indelegável. O que pode ser atribuído é a capacidade tributária ativa, relativa à arrecadação ou fiscalização."
         },
         {
             "id": "trib-047",
+            "concurso": "SEFAZ-AL",
             "topic": "Imunidades",
             "front": "A imunidade tributária recíproca assegurada a partidos políticos, entidades sindicais dos trabalhadores e instituições de educação e assistência social sem fins lucrativos alcança o IOF sobre aplicações financeiras.",
             "back": "Certo, conforme o gabarito da extração."
         },
         {
             "id": "trib-048",
+            "concurso": "SEFAZ-AL",
             "topic": "Anterioridade",
             "front": "As taxas sujeitam-se aos princípios da anterioridade anual e nonagesimal.",
             "back": "Certo, ressalvadas as exceções constitucionais aplicáveis."
         },
         {
             "id": "trib-049",
+            "concurso": "SEFAZ-AL",
             "topic": "Imunidade Recíproca",
             "front": "A imunidade recíproca não exonera o sucessor das obrigações tributárias relativas a fatos ocorridos antes da sucessão.",
             "back": "Certo. A imunidade não perdoa débitos tributários pretéritos; o STF firmou essa tese no Tema 414 da repercussão geral."
         },
         {
             "id": "trib-050",
+            "concurso": "SEFAZ-AL",
             "topic": "Português Jurídico",
             "front": "A expressão “não obstante” pode ter sentido adversativo, equivalente a “no entanto”, ou concessivo, equivalente a “embora”.",
             "back": "Certo. O sentido depende do contexto."
         },
         {
             "id": "trib-051",
+            "concurso": "SEFAZ-AL",
             "topic": "Imunidades",
             "front": "A imunidade tributária é uma regra de competência negativa.",
             "back": "Certo. A imunidade é uma vedação constitucional ao exercício da competência tributária, e não simples dispensa legal do tributo."
         },
         {
             "id": "trib-052",
+            "concurso": "SEFAZ-AL",
             "topic": "Limitações ao Poder de Tributar",
             "front": "As limitações ao poder de tributar previstas na Constituição podem ser ampliadas por emenda constitucional.",
             "back": "Certo, desde que a emenda não reduza ou abola direitos e garantias protegidos por cláusulas pétreas."
         },
         {
             "id": "trib-053",
+            "concurso": "SEFAZ-AL",
             "topic": "Reforma Tributária",
             "front": "A partir da EC 133/2024, processos que discutem infrações tributárias, exceto as previdenciárias, devem ser extintos independentemente da fase processual.",
             "back": "Certo, conforme o gabarito da extração (PEC da Anistia)."
         },
         {
             "id": "trib-054",
+            "concurso": "SEFAZ-AL",
             "topic": "Imposto de Importação",
             "front": "É indevida a cobrança do imposto de importação no caso de importação ilícita de mercadorias sujeitas à pena de perdimento.",
             "back": "Certo."
         },
         {
             "id": "trib-055",
+            "concurso": "SEFAZ-AL",
             "topic": "Obrigação Tributária",
             "front": "A capacidade tributária passiva independe da capacidade civil da pessoa natural.",
             "back": "Certo."
         },
         {
             "id": "trib-056",
+            "concurso": "SEFAZ-AL",
             "topic": "Decadência",
             "front": "Cabe à lei complementar estabelecer normas gerais em matéria de decadência tributária.",
             "back": "Certo."
         },
         {
             "id": "trib-057",
+            "concurso": "SEFAZ-AL",
             "topic": "Imunidade Recíproca",
             "front": "Empresas públicas e sociedades de economia mista delegatárias de serviços públicos essenciais podem beneficiar-se da imunidade recíproca se não distribuírem lucros a acionistas privados nem afetarem o equilíbrio concorrencial, independentemente da cobrança de tarifa.",
             "back": "Certo, conforme o gabarito da extração."
         },
         {
             "id": "trib-058",
+            "concurso": "SEFAZ-AL",
             "topic": "IPVA",
             "front": "Somente lei estadual ou distrital específica pode atribuir ao alienante responsabilidade solidária pelo IPVA do veículo vendido quando não houver comunicação da venda ao órgão de trânsito.",
             "back": "Certo. É necessária lei específica para atribuir essa responsabilidade."
         },
         {
             "id": "trib-059",
+            "concurso": "SEFAZ-AL",
             "topic": "COSIP",
             "front": "O proprietário de imóvel não edificado que não possua unidade medidora pode ser contribuinte da COSIP.",
             "back": "Certo, conforme o gabarito da extração."
         },
         {
             "id": "trib-060",
+            "concurso": "SEFAZ-AL",
             "topic": "IPVA",
             "front": "No veículo novo de procedência estrangeira importado por empresa revendedora, o fato gerador do IPVA ocorre na data da aquisição por consumidor final.",
             "back": "Certo. Quando a importação é feita por empresa revendedora, o fato gerador ocorre na aquisição pelo consumidor final; se importado diretamente por consumidor final, ocorre no desembaraço aduaneiro."
         },
         {
             "id": "trib-061",
+            "concurso": "SEFAZ-AL",
             "topic": "Domicílio Tributário",
             "front": "O domicílio tributário do Estado de Sergipe é qualquer de suas repartições situadas no território nacional.",
             "back": "Errado. Considera-se qualquer repartição do ente tributante, não qualquer repartição do Estado situada no território nacional."
         },
         {
             "id": "trib-062",
+            "concurso": "SEFAZ-AL",
             "topic": "Domicílio Tributário",
             "front": "Na falta de eleição de domicílio pelo contribuinte, sendo incerto o local de residência da pessoa física, considera-se domicílio o centro habitual de sua atividade.",
             "back": "Certo."
         },
         {
             "id": "trib-063",
+            "concurso": "SEFAZ-AL",
             "topic": "Domicílio Tributário",
             "front": "Na falta de eleição, o domicílio tributário das firmas individuais é a residência de seu representante legal.",
             "back": "Errado. É o lugar da sede ou, quanto aos atos ou fatos que originaram a obrigação, o de cada estabelecimento."
         },
         {
             "id": "trib-064",
+            "concurso": "SEFAZ-AL",
             "topic": "Fato Gerador",
             "front": "A incidência tributária corresponde ao fato jurídico denominado fato gerador, que enseja o nascimento de um crédito tributário.",
             "back": "Errado, conforme o gabarito da extração. A nota distingue hipótese de incidência, fato gerador concreto e nascimento da obrigação tributária."
         },
         {
             "id": "trib-065",
+            "concurso": "SEFAZ-AL",
             "topic": "Imposto Seletivo",
             "front": "O imposto seletivo deve atender à neutralidade tributária e evitar ao máximo o resíduo tributário na cadeia de consumo.",
             "back": "Errado. O imposto seletivo busca desestimular o consumo de bens e serviços prejudiciais à saúde ou ao meio ambiente e, nesse sentido, interfere nas decisões de consumo."
         },
         {
             "id": "trib-066",
+            "concurso": "SEFAZ-AL",
             "topic": "IBS e CBS",
             "front": "No regime específico de incidência única do IBS e da CBS sobre combustíveis, é vedado apropriar créditos nas aquisições destinadas à distribuição, comercialização ou revenda.",
             "back": "Certo. Como a tributação ocorre em etapa única e não há novo débito nas etapas posteriores, a vedação evita créditos sem débito correspondente."
         },
         {
             "id": "trib-067",
+            "concurso": "SEFAZ-AL",
             "topic": "Imposto Seletivo",
             "front": "A seletividade do imposto seletivo não decorre da essencialidade do produto, mas do desestímulo ao consumo de bens e serviços prejudiciais à saúde ou ao meio ambiente.",
             "back": "Certo, conforme o gabarito da extração."
         },
         {
             "id": "trib-068",
+            "concurso": "SEFAZ-AL",
             "topic": "Imposto Seletivo",
             "front": "O imposto seletivo pode ter o mesmo fato gerador e a mesma base de cálculo de outros tributos.",
             "back": "Certo, conforme o gabarito da extração."
         },
         {
             "id": "trib-069",
+            "concurso": "SEFAZ-AL",
             "topic": "Imposto Seletivo",
             "front": "O imposto seletivo não integrará sua própria base de cálculo.",
             "back": "Certo, conforme o gabarito da extração."
         },
         {
             "id": "trib-070",
+            "concurso": "SEFAZ-AL",
             "topic": "Contribuições Sociais",
             "front": "A Constituição autoriza a criação de contribuições sociais com o objetivo de financiar a educação.",
             "back": "Errado. As contribuições sociais financiam a seguridade social: saúde, previdência e assistência social."
         },
         {
             "id": "trib-071",
+            "concurso": "SEFAZ-AL",
             "topic": "IBS e CBS",
             "front": "Diferentemente do ICMS, que é calculado “por dentro”, o IBS e a CBS não compõem a própria base de cálculo.",
             "back": "Certo. Macete: ICMS por dentro; IBS e CBS por fora."
         },
         {
             "id": "trib-072",
+            "concurso": "SEFAZ-AL",
             "topic": "IBS e CBS",
             "front": "O adquirente pode ser tanto a pessoa que paga pelo fornecimento quanto aquela que age por conta e ordem de terceiros.",
             "back": "Errado. Adquirente é quem assume a obrigação de pagamento ou contraprestação, mesmo que terceiros paguem em seu nome. Quem apenas paga por conta e ordem de outra pessoa não é adquirente."
@@ -443,6 +515,7 @@
       
     {
       "id": "susp-001",
+      "concurso": "SEFAZ-AL",
       "legacyId": 1,
       "topic": "Suspensão do Crédito Tributário",
       "front": "O que significa suspender a exigibilidade do crédito tributário?",
@@ -451,6 +524,7 @@
     },
     {
       "id": "susp-002",
+      "concurso": "SEFAZ-AL",
       "legacyId": 2,
       "topic": "Art. 151 do CTN",
       "front": "Quais são as hipóteses clássicas do art. 151 do CTN?",
@@ -459,6 +533,7 @@
     },
     {
       "id": "susp-003",
+      "concurso": "SEFAZ-AL",
       "legacyId": 3,
       "topic": "LC 236/2026",
       "front": "Quais novas hipóteses de suspensão foram incluídas pela LC 236/2026?",
@@ -467,6 +542,7 @@
     },
     {
       "id": "susp-004",
+      "concurso": "SEFAZ-AL",
       "legacyId": 4,
       "topic": "Obrigações Acessórias",
       "front": "A suspensão dispensa o cumprimento das obrigações acessórias?",
@@ -475,6 +551,7 @@
     },
     {
       "id": "susp-005",
+      "concurso": "SEFAZ-AL",
       "legacyId": 5,
       "topic": "Moratória",
       "front": "O que é moratória?",
@@ -483,6 +560,7 @@
     },
     {
       "id": "susp-006",
+      "concurso": "SEFAZ-AL",
       "legacyId": 6,
       "topic": "Moratória",
       "front": "Quais são os dois tipos de moratória?",
@@ -491,6 +569,7 @@
     },
     {
       "id": "susp-007",
+      "concurso": "SEFAZ-AL",
       "legacyId": 7,
       "topic": "Moratória Individual",
       "front": "A moratória individual gera direito adquirido?",
@@ -499,6 +578,7 @@
     },
     {
       "id": "susp-008",
+      "concurso": "SEFAZ-AL",
       "legacyId": 8,
       "topic": "Moratória Heterônoma",
       "front": "O que caracteriza a moratória heterônoma?",
@@ -507,6 +587,7 @@
     },
     {
       "id": "susp-009",
+      "concurso": "SEFAZ-AL",
       "legacyId": 9,
       "topic": "Parcelamento",
       "front": "O parcelamento depende de qual requisito legal?",
@@ -515,6 +596,7 @@
     },
     {
       "id": "susp-010",
+      "concurso": "SEFAZ-AL",
       "legacyId": 10,
       "topic": "Parcelamento",
       "front": "O parcelamento exclui juros e multas?",
@@ -523,6 +605,7 @@
     },
     {
       "id": "susp-011",
+      "concurso": "SEFAZ-AL",
       "legacyId": 11,
       "topic": "Parcelamento",
       "front": "Parcelamento equivale a pagamento para fins de denúncia espontânea?",
@@ -531,6 +614,7 @@
     },
     {
       "id": "susp-012",
+      "concurso": "SEFAZ-AL",
       "legacyId": 12,
       "topic": "Processo Administrativo",
       "front": "A impugnação tempestiva suspende a exigibilidade?",
@@ -539,6 +623,7 @@
     },
     {
       "id": "susp-013",
+      "concurso": "SEFAZ-AL",
       "legacyId": 13,
       "topic": "Liminar",
       "front": "O simples ajuizamento de ação judicial suspende o crédito?",
@@ -547,6 +632,7 @@
     },
     {
       "id": "susp-014",
+      "concurso": "SEFAZ-AL",
       "legacyId": 14,
       "topic": "Depósito Integral",
       "front": "Quais requisitos o depósito deve cumprir para suspender?",
@@ -555,6 +641,7 @@
     },
     {
       "id": "susp-015",
+      "concurso": "SEFAZ-AL",
       "legacyId": 15,
       "topic": "Depósito Integral",
       "front": "O depósito parcial suspende a exigibilidade?",
@@ -563,6 +650,7 @@
     },
     {
       "id": "susp-016",
+      "concurso": "SEFAZ-AL",
       "legacyId": 16,
       "topic": "Transação",
       "front": "A simples proposta de transação suspende a exigibilidade?",
@@ -571,6 +659,7 @@
     },
     {
       "id": "susp-017",
+      "concurso": "SEFAZ-AL",
       "legacyId": 17,
       "topic": "Mediação",
       "front": "O que suspende a exigibilidade na mediação?",
@@ -579,6 +668,7 @@
     },
     {
       "id": "susp-018",
+      "concurso": "SEFAZ-AL",
       "legacyId": 18,
       "topic": "Seguro-Garantia",
       "front": "A simples oferta de seguro-garantia suspende a exigibilidade?",
@@ -587,6 +677,7 @@
     },
     {
       "id": "susp-019",
+      "concurso": "SEFAZ-AL",
       "legacyId": 19,
       "topic": "Fiança Bancária",
       "front": "A fiança bancária equivale ao depósito integral?",
@@ -595,6 +686,7 @@
     },
     {
       "id": "susp-020",
+      "concurso": "SEFAZ-AL",
       "legacyId": 20,
       "topic": "Confissão de Dívida",
       "front": "O que o STJ admite questionar após confissão para parcelamento?",

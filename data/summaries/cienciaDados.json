@@ -3,11 +3,13 @@
   "summaries": [
     {
       "id": "modelagem-multidimensional",
+      "concurso": "SEFAZ-AL",
       "title": "Resumo — Aula 07: Modelagem Multidimensional",
       "path": "resumos/cienciaDados/modelagem-multidimensional.md"
     },
      {
       "id": "pre-processamento",
+      "concurso": "SEFAZ-AL",
       "title": "Resumo — Aula 06: Pré-processamento de Dados",
       "path": "resumos/cienciaDados/pre-processamento.md"
     }
