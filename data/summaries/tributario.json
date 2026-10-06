@@ -6,6 +6,12 @@
       "concurso": "SEFAZ-AL",
       "title": "Suspensão do Crédito Tributário",
       "path": "resumos/tributario/suspensao-credito.md"
+    },
+     {
+      "id": "extincao-credito",
+      "concurso": "SEFAZ-AL",
+      "title": "Extinção do Crédito Tributário",
+      "path": "resumos/tributario/extincao-credito.md"
     }
   ]
 }

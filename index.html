@@ -22,6 +22,7 @@
         <button onclick="showPage('mindmaps')">🧠 Mind Maps</button>
         <button onclick="showPage('flashcards')">🃏 Flashcards</button>
         <button onclick="showPage('summaries')">📖 Resumos</button>
+        <button onclick="showPage('relevance')">📊 Relevância</button>
     </nav>
 
     <div class="top-actions">
@@ -231,6 +232,28 @@
 
                 <span class="action-link">
                     Ver concursos →
+                </span>
+
+            </div>
+
+            <div
+                class="action-card"
+                onclick="showPage('relevance')">
+
+                <div class="action-icon">
+                    📊
+                </div>
+
+                <h3>
+                    Relevância em prova
+                </h3>
+
+                <p>
+                    Compare a importância dos assuntos para cada concurso.
+                </p>
+
+                <span class="action-link">
+                    Abrir painel →
                 </span>
 
             </div>
@@ -503,6 +526,91 @@
             class="summary-reader"
             aria-live="polite">
         </article>
+
+    </section>
+
+    <section id="relevance" class="page">
+
+        <div class="page-header">
+
+            <div>
+
+                <h1>📊 Relevância em prova</h1>
+
+                <p>
+                    Visão geral da relevância dos assuntos por concurso.
+                </p>
+
+            </div>
+
+        </div>
+
+        <div class="stats-grid relevance-stats">
+
+            <div class="stat-card">
+                <span class="stat-icon">📚</span>
+                <div>
+                    <span class="stat-number" id="relevanceTopicCount">0</span>
+                    <span class="stat-label">Assuntos no painel</span>
+                </div>
+            </div>
+
+            <div class="stat-card">
+                <span class="stat-icon">📝</span>
+                <div>
+                    <span class="stat-number" id="relevanceTrackedCount">0</span>
+                    <span class="stat-label">Com relevância cadastrada</span>
+                </div>
+            </div>
+
+            <div class="stat-card">
+                <span class="stat-icon">⭐</span>
+                <div>
+                    <span class="stat-number" id="relevanceHighCount">0</span>
+                    <span class="stat-label">Marcados como alta</span>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="relevance-filters">
+
+            <select
+                id="relevanceSubject"
+                aria-label="Filtrar por matéria"
+                onchange="renderRelevanceDashboard()">
+                <option value="all">Todas as matérias</option>
+            </select>
+
+            <input
+                type="search"
+                id="relevanceSearch"
+                class="search-input"
+                placeholder="Buscar assunto ou concurso..."
+                aria-label="Buscar assunto ou concurso"
+                oninput="renderRelevanceDashboard()">
+
+        </div>
+
+        <div class="relevance-table-wrap">
+
+            <table class="relevance-table">
+                <thead>
+                    <tr>
+                        <th scope="col">Matéria</th>
+                        <th scope="col">Assunto</th>
+                        <th scope="col">Concurso</th>
+                        <th scope="col">Relevância</th>
+                    </tr>
+                </thead>
+                <tbody id="relevanceTableBody"></tbody>
+            </table>
+
+        </div>
+
+        <p id="relevanceEmptyState" class="empty-state" hidden>
+            Nenhum assunto encontrado.
+        </p>
 
     </section>
 

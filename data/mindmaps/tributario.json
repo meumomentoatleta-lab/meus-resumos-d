@@ -15,6 +15,14 @@
       "subject": "Direito Tributário",
       "path": "mindmaps/tributario/suspensao.html",
       "available": true
+    },
+        {
+      "id": "extincao-credito",
+      "concurso": "SEFAZ-AL",
+      "title": "Extinção do Crédito Tributário",
+      "subject": "Direito Tributário",
+      "path": "mindmaps/tributario/extincao.html",
+      "available": true
     }
   ]
 }

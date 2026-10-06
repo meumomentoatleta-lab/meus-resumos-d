@@ -692,7 +692,190 @@
       "front": "O que o STJ admite questionar após confissão para parcelamento?",
       "back": "Aspectos jurídicos; fatos confessados só em casos de erro, dolo, fraude ou simulação.",
       "difficulty": "dificil"
+    },
+    
+    {
+      "id": "ext-001",
+      "concurso": "SEFAZ-AL",
+      "legacyId": 1,
+      "topic": "Extinção do Crédito Tributário",
+      "front": "Quais são as principais hipóteses de extinção do crédito tributário previstas no art. 156 do CTN?",
+      "back": "Pagamento, compensação, transação, remissão, prescrição, decadência, conversão de depósito em renda, pagamento antecipado e homologação, consignação, decisão administrativa irreformável, decisão judicial transitada em julgado, dação em pagamento de bens imóveis, sentença arbitral favorável transitada em julgado e cumprimento de acordo de mediação.",
+      "difficulty": "medio"
+    },
+    {
+      "id": "ext-002",
+      "concurso": "SEFAZ-AL",
+      "legacyId": 2,
+      "topic": "Pagamento",
+      "front": "Quais são as formas gerais de pagamento previstas no CTN?",
+      "back": "Moeda corrente, cheque ou vale postal. A legislação também pode admitir estampilha, papel selado ou processo mecânico.",
+      "difficulty": "facil"
+    },
+    {
+      "id": "ext-003",
+      "concurso": "SEFAZ-AL",
+      "legacyId": 3,
+      "topic": "Pagamento por Cheque",
+      "front": "Quando o pagamento por cheque extingue o crédito tributário?",
+      "back": "A extinção não ocorre com a simples entrega do cheque. O crédito é extinto somente com o resgate do cheque pelo sacado.",
+      "difficulty": "facil"
+    },
+    {
+      "id": "ext-004",
+      "concurso": "SEFAZ-AL",
+      "legacyId": 4,
+      "topic": "Imputação em Pagamento",
+      "front": "Qual é a ordem básica de imputação dos pagamentos prevista no art. 163 do CTN?",
+      "back": "Primeiro obrigação própria, depois responsabilidade tributária; depois contribuição de melhoria, taxas e impostos; em seguida menor prazo de prescrição e, por último, maior valor do crédito.",
+      "difficulty": "medio"
+    },
+    {
+      "id": "ext-005",
+      "concurso": "SEFAZ-AL",
+      "legacyId": 5,
+      "topic": "Restituição",
+      "front": "O sujeito passivo precisa fazer prévio protesto para ter direito à restituição do tributo pago indevidamente?",
+      "back": "Não. O art. 165 do CTN assegura a restituição independentemente de prévio protesto.",
+      "difficulty": "facil"
+    },
+    {
+      "id": "ext-006",
+      "concurso": "SEFAZ-AL",
+      "legacyId": 6,
+      "topic": "Tributos Indiretos",
+      "front": "Quando é possível a restituição de tributo que comporta transferência do encargo financeiro?",
+      "back": "Quando o contribuinte de direito comprovar que assumiu o encargo ou, se o transferiu a terceiro, quando estiver expressamente autorizado por este a receber a restituição.",
+      "difficulty": "medio"
+    },
+    {
+      "id": "ext-007",
+      "concurso": "SEFAZ-AL",
+      "legacyId": 7,
+      "topic": "Restituição",
+      "front": "Qual é o prazo geral para pleitear a restituição do pagamento indevido?",
+      "back": "Cinco anos. Na hipótese geral do art. 168, I, a contagem ocorre a partir da extinção do crédito, sendo considerado, nos tributos sujeitos a homologação, o momento do pagamento antecipado.",
+      "difficulty": "medio"
+    },
+    {
+      "id": "ext-008",
+      "concurso": "SEFAZ-AL",
+      "legacyId": 8,
+      "topic": "Restituição",
+      "front": "A partir de quando incidem os juros de mora sobre a restituição do indébito?",
+      "back": "Pela regra geral, a partir do trânsito em julgado da decisão definitiva que determinar a restituição.",
+      "difficulty": "medio"
+    },
+    {
+      "id": "ext-009",
+      "concurso": "SEFAZ-AL",
+      "legacyId": 9,
+      "topic": "Restituição",
+      "front": "A partir de quando incide a correção monetária na repetição do indébito tributário?",
+      "back": "Pela regra geral, a partir do pagamento indevido.",
+      "difficulty": "facil"
+    },
+    {
+      "id": "ext-010",
+      "concurso": "SEFAZ-AL",
+      "legacyId": 10,
+      "topic": "Compensação",
+      "front": "Quais requisitos básicos são destacados para a compensação tributária?",
+      "back": "A compensação depende de autorização legal e envolve créditos líquidos e certos, vencidos ou vincendos, do sujeito passivo contra a Fazenda Pública, observadas as condições legais.",
+      "difficulty": "medio"
+    },
+    {
+      "id": "ext-011",
+      "concurso": "SEFAZ-AL",
+      "legacyId": 11,
+      "topic": "Transação",
+      "front": "O que caracteriza a transação tributária?",
+      "back": "É o acordo entre sujeito ativo e sujeito passivo, mediante concessões mútuas, destinado à solução do litígio e à extinção do crédito tributário.",
+      "difficulty": "facil"
+    },
+    {
+      "id": "ext-012",
+      "concurso": "SEFAZ-AL",
+      "legacyId": 12,
+      "topic": "Remissão",
+      "front": "O que é remissão tributária?",
+      "back": "É o perdão do crédito tributário já constituído, concedido nas condições previstas em lei, mediante despacho fundamentado da autoridade administrativa.",
+      "difficulty": "facil"
+    },
+    {
+      "id": "ext-013",
+      "concurso": "SEFAZ-AL",
+      "legacyId": 13,
+      "topic": "Remissão",
+      "front": "Qual a diferença entre remissão, isenção e anistia quanto à constituição do crédito?",
+      "back": "Se o crédito já está constituído, pode haver remissão. Se ainda não está constituído, a dispensa do tributo ocorre por isenção e a dispensa da multa por anistia.",
+      "difficulty": "medio"
+    },
+    {
+      "id": "ext-014",
+      "concurso": "SEFAZ-AL",
+      "legacyId": 14,
+      "topic": "Decadência",
+      "front": "O que a decadência extingue no Direito Tributário?",
+      "back": "Extingue o direito da Fazenda Pública de constituir o crédito tributário pelo lançamento.",
+      "difficulty": "facil"
+    },
+    {
+      "id": "ext-015",
+      "concurso": "SEFAZ-AL",
+      "legacyId": 15,
+      "topic": "Decadência",
+      "front": "Qual é a regra geral do prazo decadencial prevista no art. 173, I, do CTN?",
+      "back": "Cinco anos contados do primeiro dia do exercício seguinte àquele em que o lançamento poderia ter sido efetuado.",
+      "difficulty": "facil"
+    },
+    {
+      "id": "ext-016",
+      "concurso": "SEFAZ-AL",
+      "legacyId": 16,
+      "topic": "Decadência",
+      "front": "O que ocorre quando um lançamento é anulado definitivamente por vício formal?",
+      "back": "A Fazenda Pública dispõe de novo prazo de cinco anos, contado da data em que se tornar definitiva a decisão que anulou o lançamento por vício formal.",
+      "difficulty": "medio"
+    },
+    {
+      "id": "ext-017",
+      "concurso": "SEFAZ-AL",
+      "legacyId": 17,
+      "topic": "Prescrição",
+      "front": "O que a prescrição tributária extingue?",
+      "back": "Extingue o direito da Fazenda Pública de cobrar judicialmente o crédito tributário já constituído definitivamente.",
+      "difficulty": "facil"
+    },
+    {
+      "id": "ext-018",
+      "concurso": "SEFAZ-AL",
+      "legacyId": 18,
+      "topic": "Prescrição",
+      "front": "Qual é o prazo prescricional para cobrança do crédito tributário?",
+      "back": "Cinco anos, contados da constituição definitiva do crédito tributário.",
+      "difficulty": "facil"
+    },
+    {
+      "id": "ext-019",
+      "concurso": "SEFAZ-AL",
+      "legacyId": 19,
+      "topic": "Prescrição",
+      "front": "O pedido de parcelamento interrompe a prescrição mesmo se for indeferido?",
+      "back": "Sim. Segundo a Súmula 653 do STJ, o pedido de parcelamento fiscal, ainda que indeferido, interrompe a prescrição por caracterizar confissão extrajudicial do débito.",
+      "difficulty": "medio"
+    },
+    {
+      "id": "ext-020",
+      "concurso": "SEFAZ-AL",
+      "legacyId": 20,
+      "topic": "Consignação em Pagamento",
+      "front": "Em quais situações o sujeito passivo pode consignar judicialmente o crédito tributário?",
+      "back": "Quando houver recusa de recebimento ou condicionamento indevido, exigência administrativa sem fundamento legal ou exigência do mesmo tributo por mais de uma pessoa jurídica sobre o mesmo fato gerador.",
+      "difficulty": "medio"
     }
+  
+
   
 
 

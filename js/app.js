@@ -72,6 +72,187 @@ function formatTopicRelevance(subjectId, topicId) {
     .join(" | ");
 }
 
+function hasRelevanceValue(value) {
+  if (typeof value === "string") {
+    return value.trim().length > 0;
+  }
+
+  if (Array.isArray(value)) {
+    return value.some(hasRelevanceValue);
+  }
+
+  if (value && typeof value === "object") {
+    return Object.values(value).some(hasRelevanceValue);
+  }
+
+  return value !== null && value !== undefined;
+}
+
+function formatRelevanceValue(value) {
+  if (Array.isArray(value)) {
+    return value.map(formatRelevanceValue).join(", ");
+  }
+
+  if (value && typeof value === "object") {
+    return Object.entries(value)
+      .map(([key, nestedValue]) => `${key}: ${formatRelevanceValue(nestedValue)}`)
+      .join(", ");
+  }
+
+  return String(value);
+}
+
+function getRelevanceTopics() {
+  const topicsById = new Map();
+
+  function addTopic(item) {
+    if (!item.id) {
+      return;
+    }
+
+    const key = `${item.subjectId}:${item.id}`;
+    let topic = topicsById.get(key);
+
+    if (!topic) {
+      topic = {
+        id: item.id,
+        subjectId: item.subjectId,
+        subject:
+          item.subject ||
+          subjects.find((entry) => entry.id === item.subjectId)?.name ||
+          item.subjectId,
+        title: item.title || item.topic || item.id,
+        contests: new Set(),
+      };
+      topicsById.set(key, topic);
+    }
+
+    if (item.concurso) {
+      topic.contests.add(item.concurso);
+    }
+  }
+
+  mindmaps.forEach(addTopic);
+  summaryDocuments.forEach(addTopic);
+
+  Object.entries(topicRelevance).forEach(([subjectId, subjectTopics]) => {
+    Object.entries(subjectTopics).forEach(([id]) => {
+      const key = `${subjectId}:${id}`;
+
+      if (!topicsById.has(key)) {
+        const subject = subjects.find((entry) => entry.id === subjectId);
+        topicsById.set(key, {
+          id,
+          subjectId,
+          subject: subject?.name || subjectId,
+          title: id,
+          contests: new Set(),
+        });
+      }
+    });
+  });
+
+  return [...topicsById.values()].sort(
+    (left, right) =>
+      left.subject.localeCompare(right.subject, "pt-BR") ||
+      left.title.localeCompare(right.title, "pt-BR"),
+  );
+}
+
+function renderRelevanceDashboard() {
+  const select = document.getElementById("relevanceSubject");
+  const searchInput = document.getElementById("relevanceSearch");
+  const tableBody = document.getElementById("relevanceTableBody");
+  const emptyState = document.getElementById("relevanceEmptyState");
+
+  if (!select || !searchInput || !tableBody || !emptyState) {
+    return;
+  }
+
+  const selectedSubject = select.value || "all";
+  const topics = getRelevanceTopics();
+  const availableSubjects = new Map(
+    topics.map((topic) => [topic.subjectId, topic.subject]),
+  );
+
+  select.replaceChildren(new Option("Todas as matérias", "all"));
+  availableSubjects.forEach((name, id) => {
+    select.add(new Option(name, id));
+  });
+  select.value = availableSubjects.has(selectedSubject) ? selectedSubject : "all";
+
+  const registeredTopics = topics.filter((topic) =>
+    hasRelevanceValue(topicRelevance[topic.subjectId]?.[topic.id]),
+  );
+  const highRelevanceTopics = registeredTopics.filter((topic) =>
+    Object.values(topicRelevance[topic.subjectId][topic.id]).some((level) =>
+      /alta/i.test(formatRelevanceValue(level)),
+    ),
+  );
+
+  document.getElementById("relevanceTopicCount").textContent = topics.length;
+  document.getElementById("relevanceTrackedCount").textContent =
+    registeredTopics.length;
+  document.getElementById("relevanceHighCount").textContent =
+    highRelevanceTopics.length;
+
+  const query = searchInput.value.trim().toLocaleLowerCase("pt-BR");
+  const filteredTopics = topics.filter((topic) => {
+    const matchesSubject =
+      select.value === "all" || topic.subjectId === select.value;
+    const relevance = topicRelevance[topic.subjectId]?.[topic.id] || {};
+    const searchableText = [
+      topic.subject,
+      topic.title,
+      ...topic.contests,
+      ...Object.entries(relevance).map(
+        ([exam, level]) => `${exam} ${formatRelevanceValue(level)}`,
+      ),
+    ]
+      .join(" ")
+      .toLocaleLowerCase("pt-BR");
+
+    return matchesSubject && searchableText.includes(query);
+  });
+
+  tableBody.replaceChildren();
+  filteredTopics.forEach((topic) => {
+    const row = document.createElement("tr");
+    const subjectCell = document.createElement("td");
+    const titleCell = document.createElement("td");
+    const contestCell = document.createElement("td");
+    const relevanceCell = document.createElement("td");
+    const relevance = topicRelevance[topic.subjectId]?.[topic.id] || {};
+    const relevanceEntries = Object.entries(relevance).filter(([, level]) =>
+      hasRelevanceValue(level),
+    );
+
+    subjectCell.textContent = topic.subject;
+    titleCell.textContent = topic.title;
+    contestCell.textContent = [...topic.contests].join(", ") || "—";
+
+    if (relevanceEntries.length === 0) {
+      relevanceCell.textContent = "Não cadastrada";
+      relevanceCell.className = "relevance-unset";
+    } else {
+      relevanceEntries.forEach(([exam, level]) => {
+        const badge = document.createElement("span");
+        const formattedLevel = formatRelevanceValue(level);
+
+        badge.className = "relevance-value";
+        badge.textContent = `${exam}: ${formattedLevel}`;
+        badge.dataset.level = formattedLevel.toLocaleLowerCase("pt-BR");
+        relevanceCell.appendChild(badge);
+      });
+    }
+
+    row.append(subjectCell, titleCell, contestCell, relevanceCell);
+    tableBody.appendChild(row);
+  });
+
+  emptyState.hidden = filteredTopics.length > 0;
+}
+
 async function loadStudyData() {
   const response = await fetch("data/subjects.json");
 
@@ -315,6 +496,10 @@ function showPage(pageId) {
 
   if (pageId === "summaries") {
     renderSummary();
+  }
+
+  if (pageId === "relevance") {
+    renderRelevanceDashboard();
   }
 
   if (pageId === "concursos") {
@@ -1232,6 +1417,7 @@ document.addEventListener("DOMContentLoaded", async function () {
   updateDashboard();
 
   renderMindmaps();
+  renderRelevanceDashboard();
 
   loadDarkMode();
 

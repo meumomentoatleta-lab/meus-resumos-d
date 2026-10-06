@@ -2,7 +2,8 @@
   "subjects": {
     "tributario": {
       "credito-tributario": {},
-      "suspensao-credito": {}
+      "suspensao-credito": {},
+      "extincao-credito": {"Relevância": "Alta"}
     },
     "reforma": {
       "ibs-cbs": {},
