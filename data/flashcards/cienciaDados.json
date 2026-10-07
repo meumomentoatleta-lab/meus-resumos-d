@@ -367,7 +367,200 @@
       "front": "O que significa granularidade na modelagem multidimensional?",
       "back": "Refere-se ao nível de detalhamento dos dados. Maior granularidade significa maior detalhamento; menor granularidade significa maior agregação.",
       "difficulty": "medio"
+    },
+
+    
+{
+ 
+      "id": "trib-001",
+      "concurso": "SEFAZ-AL",
+      "legacyId": 1,
+      "topic": "Mineração de Dados",
+      "front": "O que é Mineração de Dados (Data Mining)?",
+      "back": "É o processo de explorar grandes volumes de dados para descobrir padrões, correlações, tendências e informações implícitas potencialmente úteis para a tomada de decisões.",
+      "difficulty": "facil"
+    },
+    {
+      "id": "trib-002",
+      "concurso": "SEFAZ-AL",
+      "legacyId": 2,
+      "topic": "Tipos de Análise",
+      "front": "Quais são os quatro tipos de análise de dados e as perguntas associadas a cada um?",
+      "back": "Descritiva: o que aconteceu? Diagnóstica: por que aconteceu? Preditiva: o que provavelmente acontecerá? Prescritiva: o que deve ser feito?",
+      "difficulty": "facil"
+    },
+       {
+      "id": "trib-052",
+      "concurso": "SEFAZ-AL",
+      "legacyId": 2,
+      "topic": "Data mining",
+      "front": "Enquanto um falso positivo é um erro do tipo 2, um falso negativo é um erro do tipo 1. ",
+      "back": "e.  Erro Tipo I (falso positivo): rejeitar a hipótese nula quando ela é verdadeira.Erro Tipo II (falso negativo): não rejeitar a hipótese nula quando ela é falsa.(Tipo 2 (negativo n tem 2 pernas)",
+      "difficulty": "dificil"
+    },
+    {
+      "id": "trib-003",
+      "concurso": "SEFAZ-AL",
+      "legacyId": 3,
+      "topic": "Tipos de Dados",
+      "front": "Qual é a diferença entre dados estruturados, semiestruturados e não estruturados?",
+      "back": "Estruturados possuem modelo e campos definidos, como tabelas. Semiestruturados possuem marcadores ou organização parcial, como XML e JSON. Não estruturados não possuem modelo predefinido, como textos livres, imagens, áudios e vídeos.",
+      "difficulty": "medio"
+    },
+    {
+      "id": "trib-004",
+      "concurso": "SEFAZ-AL",
+      "legacyId": 4,
+      "topic": "KDD",
+      "front": "Quais são as cinco fases clássicas do processo KDD, segundo a sequência apresentada na aula?",
+      "back": "Seleção, pré-processamento, transformação, mineração de dados e interpretação/avaliação.",
+      "difficulty": "facil"
+    },
+    {
+      "id": "trib-005",
+      "concurso": "SEFAZ-AL",
+      "legacyId": 5,
+      "topic": "KDD",
+      "front": "Qual é a diferença entre seleção, pré-processamento e transformação no KDD?",
+      "back": "Seleção escolhe os dados relevantes. Pré-processamento melhora a qualidade dos dados, tratando ausências, erros e inconsistências. Transformação adapta a representação dos dados aos algoritmos, por exemplo, por normalização, discretização e codificação.",
+      "difficulty": "medio"
+    },
+    {
+      "id": "trib-006",
+      "concurso": "SEFAZ-AL",
+      "legacyId": 6,
+      "topic": "KDD",
+      "front": "Qual fase do KDD aplica algoritmos para descobrir padrões, correlações, fraudes ou anomalias?",
+      "back": "Mineração de Dados. É a fase em que os algoritmos são aplicados aos dados preparados para extrair padrões e modelos úteis.",
+      "difficulty": "facil"
+    },
+    {
+      "id": "trib-007",
+      "concurso": "SEFAZ-AL",
+      "legacyId": 7,
+      "topic": "CRISP-DM",
+      "front": "Quais são as seis fases do CRISP-DM na ordem apresentada na aula?",
+      "back": "1. Entendimento do negócio; 2. Entendimento dos dados; 3. Preparação dos dados; 4. Modelagem; 5. Avaliação; 6. Implantação.",
+      "difficulty": "facil"
+    },
+    {
+      "id": "trib-008",
+      "concurso": "SEFAZ-AL",
+      "legacyId": 8,
+      "topic": "CRISP-DM",
+      "front": "Quais são as principais características do CRISP-DM relevantes para concursos?",
+      "back": "Possui seis fases, é iterativo, independente de ferramentas e aplicável a diferentes setores. A preparação dos dados pode consumir de 50% a 70% do tempo, e a avaliação verifica a adequação dos modelos aos objetivos do negócio.",
+      "difficulty": "medio"
+    },
+    {
+      "id": "trib-009",
+      "concurso": "SEFAZ-AL",
+      "legacyId": 9,
+      "topic": "Aprendizado de Máquina",
+      "front": "Qual é a diferença entre aprendizado supervisionado, não supervisionado e por reforço?",
+      "back": "Supervisionado utiliza dados rotulados para aprender a prever classes ou valores. Não supervisionado procura padrões em dados sem rótulos prévios. Por reforço aprende por meio de feedback, ações e recompensas.",
+      "difficulty": "medio"
+    },
+    {
+      "id": "trib-010",
+      "concurso": "SEFAZ-AL",
+      "legacyId": 10,
+      "topic": "Classificação e Regressão",
+      "front": "Qual é a diferença entre classificação e regressão?",
+      "back": "Classificação prevê categorias ou classes predefinidas, como fraude ou não fraude. Regressão estima valores numéricos, como faturamento, preço ou renda.",
+      "difficulty": "facil"
+    },
+    {
+      "id": "trib-011",
+      "concurso": "SEFAZ-AL",
+      "legacyId": 11,
+      "topic": "Aprendizado de Máquina",
+      "front": "Quais tarefas de mineração são normalmente associadas ao aprendizado supervisionado e quais ao não supervisionado?",
+      "back": "Supervisionado: classificação e regressão. Não supervisionado: associação e agrupamento (clusterização).",
+      "difficulty": "facil"
+    },
+    {
+      "id": "trib-012",
+      "concurso": "SEFAZ-AL",
+      "legacyId": 12,
+      "topic": "Algoritmos de Classificação",
+      "front": "Como funcionam as árvores de decisão, o Naive Bayes e o SVM?",
+      "back": "Árvores de decisão aplicam regras organizadas em nós e ramos para classificação ou regressão. Naive Bayes é um classificador probabilístico baseado no teorema de Bayes, com hipótese de independência entre preditores. SVM busca um hiperplano que separe classes.",
+      "difficulty": "medio"
+    },
+    {
+      "id": "trib-013",
+      "concurso": "SEFAZ-AL",
+      "legacyId": 13,
+      "topic": "Agrupamento",
+      "front": "O que é clusterização e como ela se diferencia da classificação?",
+      "back": "Clusterização agrupa observações semelhantes sem exigir classes previamente definidas. Classificação atribui observações a categorias estabelecidas previamente, utilizando um modelo aprendido com dados rotulados.",
+      "difficulty": "facil"
+    },
+    {
+      "id": "trib-014",
+      "concurso": "SEFAZ-AL",
+      "legacyId": 14,
+      "topic": "K-Means",
+      "front": "Qual é o objetivo do algoritmo K-Means?",
+      "back": "Dividir os dados em K grupos, associando as observações aos centroides dos grupos e buscando minimizar as distâncias entre os pontos e os respectivos centroides.",
+      "difficulty": "medio"
+    },
+    {
+      "id": "trib-015",
+      "concurso": "SEFAZ-AL",
+      "legacyId": 15,
+      "topic": "Silhouette",
+      "front": "Como interpretar o coeficiente Silhouette na avaliação de agrupamentos?",
+      "back": "Valores próximos de +1 indicam agrupamento adequado; próximos de 0 indicam observações na fronteira entre grupos; próximos de -1 sugerem atribuição inadequada ao grupo.",
+      "difficulty": "medio"
+    },
+    {
+      "id": "trib-016",
+      "concurso": "SEFAZ-AL",
+      "legacyId": 16,
+      "topic": "Regras de Associação",
+      "front": "O que são regras de associação e quais são suas principais aplicações?",
+      "back": "São regras que identificam relações frequentes entre itens ou atributos, como produtos comprados conjuntamente. Podem apoiar recomendações, análise de consumo, marketing e identificação de padrões em dados jurídicos ou empresariais.",
+      "difficulty": "facil"
+    },
+    {
+      "id": "trib-017",
+      "concurso": "SEFAZ-AL",
+      "legacyId": 17,
+      "topic": "Regras de Associação",
+      "front": "O que significam suporte e confiança em uma regra de associação X → Y?",
+      "back": "Suporte é a proporção de transações que contêm conjuntamente X e Y. Confiança é a proporção das transações que contêm X e que também contêm Y, calculada por suporte(X ∪ Y) dividido pelo suporte(X).",
+      "difficulty": "medio"
+    },
+    {
+      "id": "trib-018",
+      "concurso": "SEFAZ-AL",
+      "legacyId": 18,
+      "topic": "Regras de Associação",
+      "front": "Como interpretar a medida Lift e qual é a diferença entre Apriori e FP-Growth?",
+      "back": "Lift maior que 1 indica associação positiva; igual a 1 indica independência estatística; menor que 1 indica associação negativa. Apriori procura conjuntos frequentes com base em limiares de suporte e confiança. FP-Growth utiliza uma estrutura FP-Tree para compactar transações e reduzir varreduras completas da base.",
+      "difficulty": "dificil"
+    },
+    {
+      "id": "trib-019",
+      "concurso": "SEFAZ-AL",
+      "legacyId": 19,
+      "topic": "Mineração de Texto",
+      "front": "Qual é a diferença entre stemming, lematização, tokenização e remoção de stopwords?",
+      "back": "Stemming reduz palavras ao radical por regras heurísticas. Lematização converte palavras à forma canônica considerando fatores linguísticos. Tokenização divide o texto em unidades menores. Remoção de stopwords elimina palavras frequentes de baixo valor informativo.",
+      "difficulty": "medio"
+    },
+    {
+      "id": "trib-020",
+      "concurso": "SEFAZ-AL",
+      "legacyId": 20,
+      "topic": "Detecção de Anomalias",
+      "front": "O que é detecção de anomalias e todo outlier deve ser eliminado?",
+      "back": "É a identificação de observações que se desviam significativamente do comportamento esperado, sendo útil na detecção de fraudes e eventos incomuns. Nem todo outlier é erro: pode representar um comportamento raro, porém legítimo, devendo ser analisado antes de sua remoção.",
+      "difficulty": "medio"
     }
+
   ]
 
 }
