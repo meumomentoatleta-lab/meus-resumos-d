@@ -15,6 +15,14 @@
       "subject": "Ciência de Dados",
       "path": "mindmaps/cienciaDados/pre-processamento.html",
       "available": true
+    },
+      {
+      "id": "data-mining",
+      "concurso": "SEFAZ-AL",
+      "title": "Data Mining",
+      "subject": "Ciência de Dados",
+      "path": "mindmaps/cienciaDados/data-mining.html",
+      "available": true
     }
   ]
 }

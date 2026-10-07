@@ -12,6 +12,12 @@
       "concurso": "SEFAZ-AL",
       "title": "Resumo — Aula 06: Pré-processamento de Dados",
       "path": "resumos/cienciaDados/pre-processamento.md"
+    },
+     {
+      "id": "data-mining",
+      "concurso": "SEFAZ-AL",
+      "title": "Resumo — Aula 09: Data Mining",
+      "path": "resumos/cienciaDados/data-mining.md"
     }
   ]
 }

@@ -161,15 +161,17 @@ function getRelevanceTopics() {
 
 function renderRelevanceDashboard() {
   const select = document.getElementById("relevanceSubject");
+  const contestSelect = document.getElementById("relevanceContest");
   const searchInput = document.getElementById("relevanceSearch");
   const tableBody = document.getElementById("relevanceTableBody");
   const emptyState = document.getElementById("relevanceEmptyState");
 
-  if (!select || !searchInput || !tableBody || !emptyState) {
+  if (!select || !contestSelect || !searchInput || !tableBody || !emptyState) {
     return;
   }
 
   const selectedSubject = select.value || "all";
+  const selectedContest = contestSelect.value || "all";
   const topics = getRelevanceTopics();
   const availableSubjects = new Map(
     topics.map((topic) => [topic.subjectId, topic.subject]),
@@ -180,6 +182,25 @@ function renderRelevanceDashboard() {
     select.add(new Option(name, id));
   });
   select.value = availableSubjects.has(selectedSubject) ? selectedSubject : "all";
+
+  const availableContests = [
+    ...new Set(
+      topics
+        .filter(
+          (topic) =>
+            select.value === "all" || topic.subjectId === select.value,
+        )
+        .flatMap((topic) => [...topic.contests]),
+    ),
+  ].sort((left, right) => left.localeCompare(right, "pt-BR"));
+
+  contestSelect.replaceChildren(new Option("Todos os concursos", "all"));
+  availableContests.forEach((contest) => {
+    contestSelect.add(new Option(contest, contest));
+  });
+  contestSelect.value = availableContests.includes(selectedContest)
+    ? selectedContest
+    : "all";
 
   const registeredTopics = topics.filter((topic) =>
     hasRelevanceValue(topicRelevance[topic.subjectId]?.[topic.id]),
@@ -200,6 +221,9 @@ function renderRelevanceDashboard() {
   const filteredTopics = topics.filter((topic) => {
     const matchesSubject =
       select.value === "all" || topic.subjectId === select.value;
+    const matchesContest =
+      contestSelect.value === "all" ||
+      topic.contests.has(contestSelect.value);
     const relevance = topicRelevance[topic.subjectId]?.[topic.id] || {};
     const searchableText = [
       topic.subject,
@@ -212,7 +236,7 @@ function renderRelevanceDashboard() {
       .join(" ")
       .toLocaleLowerCase("pt-BR");
 
-    return matchesSubject && searchableText.includes(query);
+    return matchesSubject && matchesContest && searchableText.includes(query);
   });
 
   tableBody.replaceChildren();
@@ -343,6 +367,7 @@ async function loadSummaries() {
                 return {
                   subjectId: subject.id,
                   id: entry.id,
+                  concurso: entry.concurso,
                   subject: subject.name,
                   path: entry.path,
                   title: entry.title,
