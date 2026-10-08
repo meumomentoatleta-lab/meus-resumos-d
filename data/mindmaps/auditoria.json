@@ -6,6 +6,14 @@
       "subject": "Auditoria",
       "path": "mindmaps/auditoria/sped-fiscal.html",
       "available": true
+    },
+      {
+      "id": "efd e nfe",
+      "concurso": "SEFAZ-AL",
+      "title": "EFD e NF-e",
+      "subject": "Auditoria",
+      "path": "mindmaps/auditoria/efd-nfe.html",
+      "available": true
     }
   ]
 }

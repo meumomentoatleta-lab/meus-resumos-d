@@ -229,7 +229,190 @@
       "front": "Quais erros não podem ser corrigidos por Carta de Correção Eletrônica?",
       "back": "Não podem ser corrigidas, entre outras, variáveis que determinem o valor do imposto; alteração que mude remetente ou destinatário; data de emissão ou saída; campos da NF-e de exportação informados na DU-E; e inclusão ou alteração de parcelas de vendas a prazo.",
       "difficulty": "medio"
+    },
+   
+    {
+      "id": "trib-021",
+      "concurso": "SEFAZ-AL",
+      "legacyId": 21,
+      "topic": "EFD-ICMS/IPI",
+      "front": "Qual período de referência deve abranger o arquivo digital da EFD-ICMS/IPI?",
+      "back": "O período compreendido entre o primeiro e o último dia do mês civil, inclusive.",
+      "difficulty": "facil"
+    },
+    {
+      "id": "trib-022",
+      "concurso": "SEFAZ-AL",
+      "legacyId": 22,
+      "topic": "EFD-ICMS/IPI",
+      "front": "O que significa a 'totalidade das informações' que deve constar na EFD-ICMS/IPI?",
+      "back": "Abrange informações sobre entradas e saídas, serviços prestados e tomados, produtos e insumos, produção, estoques e qualquer informação que repercuta no inventário, processo produtivo, apuração, pagamento ou cobrança de tributos.",
+      "difficulty": "medio"
+    },
+    {
+      "id": "trib-023",
+      "concurso": "SEFAZ-AL",
+      "legacyId": 23,
+      "topic": "EFD-ICMS/IPI",
+      "front": "As situações de isenção, imunidade, não incidência, diferimento e suspensão devem ser informadas na EFD?",
+      "back": "Sim. As situações de exceção na tributação do ICMS ou IPI devem ser informadas no arquivo digital, com indicação do respectivo dispositivo legal.",
+      "difficulty": "facil"
+    },
+    {
+      "id": "trib-024",
+      "concurso": "SEFAZ-AL",
+      "legacyId": 24,
+      "topic": "EFD - Assinatura",
+      "front": "Quais tipos de certificado digital podem ser utilizados para assinar a EFD-ICMS/IPI?",
+      "back": "Certificados digitais dos tipos A1 ou A3, emitidos por autoridade certificadora credenciada pela ICP-Brasil.",
+      "difficulty": "facil"
+    },
+    {
+      "id": "trib-025",
+      "concurso": "SEFAZ-AL",
+      "legacyId": 25,
+      "topic": "EFD - Assinatura",
+      "front": "Qual detalhe do e-CNPJ é importante para a assinatura da EFD?",
+      "back": "O e-PJ ou e-CNPJ deve conter a mesma base do CNPJ, correspondente aos 8 primeiros caracteres do estabelecimento.",
+      "difficulty": "medio"
+    },
+    {
+      "id": "trib-026",
+      "concurso": "SEFAZ-AL",
+      "legacyId": 26,
+      "topic": "EFD - Validação",
+      "front": "Quais verificações são realizadas antes da entrega da EFD?",
+      "back": "Entre outras, são verificadas a consistência do arquivo, os dados cadastrais do contribuinte, a autoria, autenticidade e validade da assinatura digital e a integridade do arquivo.",
+      "difficulty": "medio"
+    },
+    {
+      "id": "trib-027",
+      "concurso": "SEFAZ-AL",
+      "legacyId": 27,
+      "topic": "EFD",
+      "front": "A recepção do arquivo digital da EFD implica homologação da apuração do imposto?",
+      "back": "Não. A recepção não implica reconhecimento da veracidade ou legitimidade das informações nem homologação da apuração do imposto, que permanece sujeita à fiscalização.",
+      "difficulty": "facil"
+    },
+    {
+      "id": "trib-028",
+      "concurso": "SEFAZ-AL",
+      "legacyId": 28,
+      "topic": "NF-e",
+      "front": "Qual é o modelo da NF-e e quais documentos ela substitui?",
+      "back": "A NF-e é o modelo 55 e pode substituir a Nota Fiscal modelos 1 ou 1-A e a Nota Fiscal de Produtor modelo 4, conforme as hipóteses previstas.",
+      "difficulty": "facil"
+    },
+    {
+      "id": "trib-029",
+      "concurso": "SEFAZ-AL",
+      "legacyId": 29,
+      "topic": "NF-e",
+      "front": "O que é a NF-e?",
+      "back": "É um documento emitido e armazenado eletronicamente, de existência exclusivamente digital, destinado a documentar operações e prestações, cuja validade jurídica é garantida por assinatura eletrônica qualificada e autorização de uso pelo Fisco.",
+      "difficulty": "facil"
+    },
+    {
+      "id": "trib-030",
+      "concurso": "SEFAZ-AL",
+      "legacyId": 30,
+      "topic": "NF-e x DANFE",
+      "front": "Qual é a diferença fundamental entre NF-e e DANFE?",
+      "back": "A NF-e é o documento fiscal eletrônico, armazenado em formato XML. O DANFE é apenas uma representação gráfica auxiliar destinada principalmente ao trânsito da mercadoria e à consulta da NF-e.",
+      "difficulty": "facil"
+    },
+    {
+      "id": "trib-031",
+      "concurso": "SEFAZ-AL",
+      "legacyId": 31,
+      "topic": "NF-e x NFC-e",
+      "front": "Qual é a diferença entre os modelos 55 e 65?",
+      "back": "O modelo 55 corresponde à NF-e; o modelo 65 corresponde à NFC-e, utilizada nas operações de venda no varejo ao consumidor final.",
+      "difficulty": "facil"
+    },
+    {
+      "id": "trib-032",
+      "concurso": "SEFAZ-AL",
+      "legacyId": 32,
+      "topic": "DANFE",
+      "front": "Quais informações importantes aparecem em destaque no DANFE?",
+      "back": "A chave de acesso, o código de barras e o protocolo de autorização de uso.",
+      "difficulty": "facil"
+    },
+    {
+      "id": "trib-033",
+      "concurso": "SEFAZ-AL",
+      "legacyId": 33,
+      "topic": "NF-e - Cancelamento",
+      "front": "Qual é, em regra, o prazo para solicitar o cancelamento da NF-e?",
+      "back": "Prazo não superior a 24 horas, contado do momento em que foi concedida a Autorização de Uso.",
+      "difficulty": "facil"
+    },
+    {
+      "id": "trib-034",
+      "concurso": "SEFAZ-AL",
+      "legacyId": 34,
+      "topic": "NF-e - Cancelamento",
+      "front": "Quais condições devem ser observadas para o cancelamento da NF-e?",
+      "back": "Em regra, não pode ter ocorrido circulação da mercadoria, prestação do serviço ou vinculação à Duplicata Escritural.",
+      "difficulty": "medio"
+    },
+    {
+      "id": "trib-035",
+      "concurso": "SEFAZ-AL",
+      "legacyId": 35,
+      "topic": "NF-e - Eventos",
+      "front": "O que é um evento da NF-e?",
+      "back": "É o registro de uma ocorrência relacionada a um documento fiscal eletrônico, podendo alterar sua situação ou apenas registrar ciência sobre determinado acontecimento.",
+      "difficulty": "facil"
+    },
+    {
+      "id": "trib-036",
+      "concurso": "SEFAZ-AL",
+      "legacyId": 36,
+      "topic": "NF-e - Eventos",
+      "front": "Quais são exemplos de eventos registrados pelo destinatário?",
+      "back": "Confirmação da operação, ciência da operação, desconhecimento da operação e operação não realizada.",
+      "difficulty": "facil"
+    },
+    {
+      "id": "trib-037",
+      "concurso": "SEFAZ-AL",
+      "legacyId": 37,
+      "topic": "CC-e",
+      "front": "O que a Carta de Correção Eletrônica não pode alterar?",
+      "back": "Não pode alterar variáveis que determinem o valor do imposto, como base de cálculo, alíquota, quantidade e preço, nem dados que impliquem mudança de remetente ou destinatário, ou as datas de emissão e saída.",
+      "difficulty": "medio"
+    },
+    {
+      "id": "trib-038",
+      "concurso": "SEFAZ-AL",
+      "legacyId": 38,
+      "topic": "MOC",
+      "front": "O que é o Manual de Orientação ao Contribuinte (MOC)?",
+      "back": "É o documento técnico que consolida especificações, padrões de comunicação, leiautes e critérios necessários à integração entre os sistemas das Secretarias de Fazenda e os sistemas dos contribuintes.",
+      "difficulty": "facil"
+    },
+    {
+      "id": "trib-039",
+      "concurso": "SEFAZ-AL",
+      "legacyId": 39,
+      "topic": "XML",
+      "front": "Qual é a função do Schema XML na NF-e?",
+      "back": "Definir a estrutura do XML, seus elementos e grupos, a ordem hierárquica, tipos e tamanhos dos dados e quais informações são obrigatórias ou opcionais.",
+      "difficulty": "medio"
+    },
+    {
+      "id": "trib-040",
+      "concurso": "SEFAZ-AL",
+      "legacyId": 40,
+      "topic": "XML",
+      "front": "Qual codificação de caracteres é utilizada obrigatoriamente no projeto da NF-e?",
+      "back": "UTF-8.",
+      "difficulty": "facil"
     }
+  
+
   
 
   ]
