@@ -1,4 +1,11 @@
 {
   "subject": "Auditoria",
-  "summaries": []
+  "summaries": [
+      {
+      "id": "SPED-Fiscal",
+      "concurso": "SEFAZ-AL",
+      "title": "Resumo — Aula 00: Sped Fiscal",
+      "path": "resumos/auditoria/sped-fiscal.md"
+    }
+  ]
 }

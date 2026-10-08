@@ -48,6 +48,189 @@
       "front": "A autorização de uso da NF-e implica validação do conteúdo tributário da operação pela administração tributária.",
       "back": "Errado. A autorização de uso não valida o conteúdo tributário da operação. Por exemplo, a autorização de uma NF-e que informa alíquota de ICMS de 12% não significa que a SEFAZ confirmou que essa é a alíquota correta; a operação ainda pode ser fiscalizada posteriormente.",
       "difficulty": "facil"
+    },
+   
+    {
+      "id": "trib-001",
+      "concurso": "SEFAZ-AL",
+      "legacyId": 1,
+      "topic": "SPED",
+      "front": "O que é o SPED?",
+      "back": "É o Sistema Público de Escrituração Digital, instrumento que unifica a recepção, validação, armazenamento e autenticação de livros e documentos da escrituração comercial e fiscal por meio de fluxo único e computadorizado de informações.",
+      "difficulty": "facil"
+    },
+    {
+      "id": "trib-002",
+      "concurso": "SEFAZ-AL",
+      "legacyId": 2,
+      "topic": "SPED",
+      "front": "Qual norma instituiu o SPED?",
+      "back": "O Decreto nº 6.022/2007.",
+      "difficulty": "facil"
+    },
+    {
+      "id": "trib-003",
+      "concurso": "SEFAZ-AL",
+      "legacyId": 3,
+      "topic": "SPED",
+      "front": "Quais são os principais objetivos do SPED?",
+      "back": "Promover a integração dos fiscos, padronizar e compartilhar informações, racionalizar e uniformizar obrigações acessórias e tornar mais célere a identificação de ilícitos tributários por meio do cruzamento de dados e da auditoria eletrônica.",
+      "difficulty": "facil"
+    },
+    {
+      "id": "trib-004",
+      "concurso": "SEFAZ-AL",
+      "legacyId": 4,
+      "topic": "SPED",
+      "front": "Cite componentes do SPED relacionados à escrituração e aos documentos fiscais eletrônicos.",
+      "back": "Entre outros: ECD, ECF, EFD ICMS/IPI, EFD Contribuições, EFD-Reinf, e-Financeira, e-Social, NF-e, NFS-e, MDF-e, NFC-e e CT-e.",
+      "difficulty": "medio"
+    },
+    {
+      "id": "trib-005",
+      "concurso": "SEFAZ-AL",
+      "legacyId": 5,
+      "topic": "EFD-ICMS/IPI",
+      "front": "O que é a EFD-ICMS/IPI?",
+      "back": "É um arquivo digital que reúne escriturações de documentos fiscais, outras informações de interesse dos fiscos e registros de apuração de impostos referentes às operações e prestações do contribuinte, sendo assinado digitalmente e transmitido via Internet ao ambiente SPED.",
+      "difficulty": "facil"
+    },
+    {
+      "id": "trib-006",
+      "concurso": "SEFAZ-AL",
+      "legacyId": 6,
+      "topic": "EFD-ICMS/IPI",
+      "front": "Quais livros e documentos são substituídos pela EFD?",
+      "back": "Registro de Entradas; Registro de Saídas; Registro de Inventário; Registro de Apuração do IPI; Registro de Apuração do ICMS; CIAP; e Registro de Controle da Produção e do Estoque.",
+      "difficulty": "medio"
+    },
+    {
+      "id": "trib-007",
+      "concurso": "SEFAZ-AL",
+      "legacyId": 7,
+      "topic": "EFD-ICMS/IPI",
+      "front": "A EFD-ICMS/IPI é apresentada de forma centralizada para todos os estabelecimentos do contribuinte?",
+      "back": "Não. O contribuinte deve gerar e manter uma EFD-ICMS/IPI para cada estabelecimento.",
+      "difficulty": "facil"
+    },
+    {
+      "id": "trib-008",
+      "concurso": "SEFAZ-AL",
+      "legacyId": 8,
+      "topic": "EFD-ICMS/IPI",
+      "front": "A recepção do arquivo da EFD significa homologação da apuração do imposto?",
+      "back": "Não. A recepção do arquivo não implica reconhecimento da veracidade e legitimidade das informações nem homologação da apuração do imposto, que permanece sujeita a posterior fiscalização.",
+      "difficulty": "medio"
+    },
+    {
+      "id": "trib-009",
+      "concurso": "SEFAZ-AL",
+      "legacyId": 9,
+      "topic": "EFD - Blocos",
+      "front": "Qual é a finalidade do Bloco 0 da EFD?",
+      "back": "Abertura, identificação e referências, contendo dados cadastrais e informações gerais da EFD, como período de referência, contribuinte, contabilista, produtos, serviços e participantes.",
+      "difficulty": "facil"
+    },
+    {
+      "id": "trib-010",
+      "concurso": "SEFAZ-AL",
+      "legacyId": 10,
+      "topic": "EFD - Blocos",
+      "front": "O que é escriturado no Bloco C?",
+      "back": "Informações dos documentos fiscais relativos a mercadorias, como NF-e, NFC-e e documentos fiscais relacionados ao fornecimento de energia elétrica, água e gás.",
+      "difficulty": "facil"
+    },
+    {
+      "id": "trib-011",
+      "concurso": "SEFAZ-AL",
+      "legacyId": 11,
+      "topic": "Registro C100",
+      "front": "O que é registrado no C100?",
+      "back": "Informações gerais dos documentos fiscais dos modelos 01, 1B, 04, 55 e 65, incluindo operações de entrada ou saída. A NFC-e, modelo 65, é escriturada no C100 apenas para saídas.",
+      "difficulty": "medio"
+    },
+    {
+      "id": "trib-012",
+      "concurso": "SEFAZ-AL",
+      "legacyId": 12,
+      "topic": "EFD - Blocos",
+      "front": "Qual é a função do Bloco E?",
+      "back": "Registrar a apuração do ICMS e do IPI, incluindo ajustes da apuração, ICMS de operações próprias e ICMS por substituição tributária.",
+      "difficulty": "facil"
+    },
+    {
+      "id": "trib-013",
+      "concurso": "SEFAZ-AL",
+      "legacyId": 13,
+      "topic": "CIAP",
+      "front": "Qual é a finalidade do Bloco G?",
+      "back": "Demonstrar o cálculo da parcela do crédito de ICMS apropriada no mês, decorrente da entrada de mercadorias destinadas ao ativo imobilizado.",
+      "difficulty": "medio"
+    },
+    {
+      "id": "trib-014",
+      "concurso": "SEFAZ-AL",
+      "legacyId": 14,
+      "topic": "CIAP",
+      "front": "Qual é a fórmula do crédito a ser apropriado no CIAP?",
+      "back": "Crédito a ser apropriado = coeficiente de creditamento × saldo acumulado × fração mensal.",
+      "difficulty": "facil"
+    },
+    {
+      "id": "trib-015",
+      "concurso": "SEFAZ-AL",
+      "legacyId": 15,
+      "topic": "EFD - Blocos",
+      "front": "Qual é a finalidade dos Blocos H e K?",
+      "back": "Bloco H: inventário físico do estabelecimento. Bloco K: controle da produção e do estoque, incluindo produção, consumo de insumos e estoque escriturado.",
+      "difficulty": "facil"
+    },
+    {
+      "id": "trib-016",
+      "concurso": "SEFAZ-AL",
+      "legacyId": 16,
+      "topic": "NF-e",
+      "front": "O que é a NF-e e qual é seu modelo?",
+      "back": "É um documento fiscal de existência exclusivamente digital, emitido e armazenado eletronicamente, cuja validade jurídica depende de assinatura eletrônica qualificada e autorização de uso pelo Fisco. A NF-e tradicional corresponde ao modelo 55.",
+      "difficulty": "facil"
+    },
+    {
+      "id": "trib-017",
+      "concurso": "SEFAZ-AL",
+      "legacyId": 17,
+      "topic": "NF-e x DANFE",
+      "front": "Qual é a diferença entre NF-e e DANFE?",
+      "back": "A NF-e é o documento fiscal eletrônico, de existência digital e em formato XML. O DANFE é apenas o Documento Auxiliar da NF-e, uma representação gráfica utilizada principalmente para acompanhar o trânsito da mercadoria e permitir a consulta da NF-e.",
+      "difficulty": "facil"
+    },
+    {
+      "id": "trib-018",
+      "concurso": "SEFAZ-AL",
+      "legacyId": 18,
+      "topic": "NF-e",
+      "front": "Qual é o papel da Autorização de Uso da NF-e?",
+      "back": "Após a transmissão e verificação da integridade formal, a administração tributária fornece o protocolo de recebimento denominado Autorização de Uso, que transforma o documento eletrônico no documento fiscal denominado NF-e.",
+      "difficulty": "medio"
+    },
+    {
+      "id": "trib-019",
+      "concurso": "SEFAZ-AL",
+      "legacyId": 19,
+      "topic": "NF-e - Cancelamento",
+      "front": "Em regra, quais condições devem ser observadas para o cancelamento da NF-e?",
+      "back": "O pedido deve ser realizado por meio de evento, em regra em prazo não superior a 24 horas após a concessão da Autorização de Uso, e não pode ter ocorrido circulação da mercadoria, prestação do serviço ou vinculação à Duplicata Escritural.",
+      "difficulty": "medio"
+    },
+    {
+      "id": "trib-020",
+      "concurso": "SEFAZ-AL",
+      "legacyId": 20,
+      "topic": "NF-e - CC-e",
+      "front": "Quais erros não podem ser corrigidos por Carta de Correção Eletrônica?",
+      "back": "Não podem ser corrigidas, entre outras, variáveis que determinem o valor do imposto; alteração que mude remetente ou destinatário; data de emissão ou saída; campos da NF-e de exportação informados na DU-E; e inclusão ou alteração de parcelas de vendas a prazo.",
+      "difficulty": "medio"
     }
+  
+
   ]
 }

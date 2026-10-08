@@ -1,3 +1,11 @@
 {
-  "mindmaps": []
+  "mindmaps": [    {
+      "id": "sped-fiscal",
+      "concurso": "SEFAZ-AL",
+      "title": "SPED Fiscal",
+      "subject": "Auditoria",
+      "path": "mindmaps/auditoria/sped-fiscal.html",
+      "available": true
+    }
+  ]
 }
