@@ -1,87 +1,146 @@
-📚 Resumo — principais pontos e dicas para concurso
+# SPED Fiscal
 
-1. SPED: conceito que precisa estar muito claro
-   O SPED foi instituído pelo Decreto nº 6.022/2007 e representa a modernização do cumprimento das obrigações acessórias, utilizando meios digitais e certificação digital. Entre seus objetivos estão a integração dos fiscos, a racionalização das obrigações acessórias e a melhoria da fiscalização por cruzamento de dados. curso-400485-aula-00-bbf8-compl… curso-400485-aula-00-bbf8-compl…
-   Pegadinha: não confundir objetivos com benefícios do SPED.
-2. EFD-ICMS/IPI — decore a essência
-   A EFD é um arquivo digital, assinado digitalmente e transmitido pela Internet, contendo documentos fiscais, informações de interesse do Fisco e registros de apuração. curso-400485-aula-00-bbf8-compl…
-   A escrituração é individualizada por estabelecimento e possui periodicidade mensal. curso-400485-aula-00-bbf8-compl… curso-400485-aula-00-bbf8-compl…
-   🚨 Pegadinha clássica
-   Recepção da EFD não significa homologação.
+> **Revisão para concurso** — conceitos, estrutura da EFD-ICMS/IPI e pontos de atenção sobre NF-e.
 
-O recebimento do arquivo não significa que o Fisco reconheceu a veracidade das informações ou homologou a apuração. curso-400485-aula-00-bbf8-compl… 3. Livros substituídos pela EFD
-Decore a sequência:
-Entradas → Saídas → Inventário → Apuração IPI → Apuração ICMS → CIAP → Produção/Estoque.
-A relação está expressamente apresentada no material e no Ajuste SINIEF 02/09. curso-400485-aula-00-bbf8-compl… curso-400485-aula-00-bbf8-compl… 4. Blocos da EFD — alta prioridade
-Bloco Palavra-chave
-0 Cadastro/identificação
-B ISS/DF
-C Mercadorias/documentos fiscais
-D Comunicação e transporte
-E Apuração ICMS/IPI
-G CIAP
-H Inventário
-K Produção e estoque
-1 Outras informações
-9 Totais/controle
+## 1. SPED: conceito e objetivos
 
-O PDF destaca especialmente os blocos C, E, G, H e K para auditoria e questões. curso-400485-aula-00-bbf8-compl… curso-400485-aula-00-bbf8-compl… curso-400485-aula-00-bbf8-compl… curso-400485-aula-00-bbf8-compl… 5. C100 × C170
-Essa é uma associação importante:
-C100 = documento fiscal em nível geral.
-C170 = itens do documento.
-O material ressalta que o C100 não possui detalhamento por item; esse detalhamento aparece no C170. curso-400485-aula-00-bbf8-compl…
-Outra pegadinha:
-NFC-e modelo 65 → somente operações de saída no C100. curso-400485-aula-00-bbf8-compl…
+Instituído pelo **Decreto nº 6.022/2007**, o Sistema Público de Escrituração Digital (SPED) moderniza o cumprimento das obrigações acessórias por meio digital e com certificação digital.
 
-6. CIAP — atenção especial
-   O Bloco G trata do CIAP e do crédito de ICMS relacionado ao ativo imobilizado. curso-400485-aula-00-bbf8-compl…
-   A fórmula destacada no material é:
-   Crédito = coeficiente de creditamento × saldo acumulado × fração mensal
-   Quando a apuração é mensal, a fração é 1/48. curso-400485-aula-00-bbf8-compl…
-   Também é importante diferenciar:
+Entre seus objetivos estão:
 
-- CIAP C → escrituração englobada
-- CIAP D → escrituração individualizada curso-400485-aula-00-bbf8-compl… curso-400485-aula-00-bbf8-compl…
+- integrar as administrações tributárias;
+- racionalizar e uniformizar as obrigações acessórias;
+- aprimorar a fiscalização por meio do cruzamento de dados.
 
-7. NF-e × DANFE — provavelmente a maior pegadinha conceitual
-   NF-e ≠ DANFE.
-   A NF-e é o documento fiscal eletrônico, de existência digital, em arquivo XML.
-   O DANFE é apenas o documento auxiliar, utilizado para acompanhar o trânsito e facilitar a consulta da NF-e. curso-400485-aula-00-bbf8-compl…
-   Quem é a nota fiscal é a NF-e. O DANFE não é a NF-e e não a substitui.
+> **Atenção:** não confunda os objetivos do SPED com os benefícios decorrentes de sua implantação.
 
-O DANFE apresenta, entre outras informações, chave de acesso, código de barras e protocolo de autorização. curso-400485-aula-00-bbf8-compl… 8. Modelo 55 × modelo 65
-NF-e modelo 55 → documento fiscal eletrônico tradicional.
-NF-e modelo 65 → NFC-e, destinada à venda a consumidor final.
-O PDF ressalta essa diferenciação. curso-400485-aula-00-bbf8-compl… 9. Autorização de Uso
-O fluxo básico da NF-e deve ser memorizado:
-Empresa gera XML → assina digitalmente → transmite à SEFAZ → SEFAZ verifica → Autorização de Uso → NF-e passa a ser o documento fiscal.
-Sem a autorização, em regra, não ocorre o trânsito da mercadoria, ressalvadas as hipóteses de contingência previstas na legislação. curso-400485-aula-00-bbf8-compl… 10. Eventos da NF-e
-Evento é o registro de uma ocorrência relacionada ao documento fiscal eletrônico.
-Pode:
+## 2. EFD-ICMS/IPI
 
-- alterar a situação do documento; ou
-- apenas registrar ciência/ocorrência.
-  Exemplos:
-  Emitente: CC-e, cancelamento, EPEC.
-  Destinatário: confirmação, ciência, desconhecimento, operação não realizada.
-  Fisco: manifestação do Fisco, registro de passagem. curso-400485-aula-00-bbf8-compl…
-  🎯 O que eu priorizaria para a prova
-  Prioridade 1
+A Escrituração Fiscal Digital (EFD) é um arquivo digital, assinado digitalmente e transmitido pela Internet. Reúne documentos fiscais, informações de interesse do Fisco e registros de apuração de impostos.
+
+| Característica | Como lembrar |
+| --- | --- |
+| Abrangência | Escrituração individualizada por estabelecimento |
+| Periodicidade | Mensal |
+| Conteúdo | Documentos fiscais, informações fiscais e apuração |
+
+> **Pegadinha clássica:** receber a EFD não significa homologar a apuração nem reconhecer como verdadeiras as informações declaradas.
+
+## 3. Livros substituídos pela EFD
+
+Memorize a sequência:
+
+**Entradas → Saídas → Inventário → Apuração do IPI → Apuração do ICMS → CIAP → Produção/Estoque**
+
+A relação está prevista no material de referência e no **Ajuste SINIEF 02/09**.
+
+## 4. Blocos da EFD
+
+| Bloco | Palavra-chave |
+| --- | --- |
+| 0 | Cadastro e identificação |
+| B | ISS/DF |
+| C | Mercadorias e documentos fiscais |
+| D | Comunicação e transporte |
+| E | Apuração do ICMS/IPI |
+| G | CIAP |
+| H | Inventário |
+| K | Produção e estoque |
+| 1 | Outras informações |
+| 9 | Totais e controle |
+
+**Maior prioridade para auditoria e questões:** blocos **C, E, G, H e K**.
+
+> **Macete:** 0 cadastra; C traz mercadorias; D, transporte/comunicação; E, apuração; G, CIAP; H, inventário; K, produção/estoque; 9 totaliza.
+
+## 5. Registros C100 e C170
+
+| Registro | Nível de informação |
+| --- | --- |
+| C100 | Documento fiscal em nível geral |
+| C170 | Itens do documento fiscal |
+
+O C100 não detalha os itens; esse detalhamento aparece no C170.
+
+> **Atenção:** para a NFC-e, modelo 65, o C100 registra somente operações de saída.
+
+## 6. CIAP — Bloco G
+
+O Bloco G trata do **Controle de Crédito de ICMS do Ativo Permanente (CIAP)** e do crédito de ICMS relacionado ao ativo imobilizado.
+
+**Fórmula destacada:**
+
+`Crédito = coeficiente de creditamento × saldo acumulado × fração mensal`
+
+Na apuração mensal, a fração é **1/48**.
+
+| Escrituração do CIAP | Tipo |
+| --- | --- |
+| CIAP C | Englobada |
+| CIAP D | Individualizada |
+
+## 7. NF-e e DANFE
+
+> **NF-e ≠ DANFE**
+
+| NF-e | DANFE |
+| --- | --- |
+| Documento fiscal eletrônico, de existência digital | Documento Auxiliar da NF-e |
+| Arquivo XML | Representação auxiliar impressa |
+| É o documento fiscal | Ajuda a acompanhar o trânsito e consultar a NF-e |
+
+O DANFE pode apresentar, entre outras informações, a chave de acesso, o código de barras e o protocolo de autorização. **Ele não é a NF-e e não a substitui.**
+
+## 8. Modelos 55 e 65
+
+| Modelo | Documento | Uso associado |
+| --- | --- | --- |
+| 55 | NF-e | Documento fiscal eletrônico tradicional |
+| 65 | NFC-e | Venda a consumidor final |
+
+## 9. Autorização de Uso da NF-e
+
+Memorize o fluxo básico:
+
+**Gerar XML → assinar digitalmente → transmitir à SEFAZ → verificação → Autorização de Uso**
+
+Com a autorização, a NF-e passa a ser o documento fiscal. Em regra, sem autorização não ocorre o trânsito da mercadoria, ressalvadas as hipóteses de contingência previstas na legislação.
+
+## 10. Eventos da NF-e
+
+Evento é o registro de uma ocorrência relacionada ao documento fiscal eletrônico. Ele pode alterar a situação do documento ou apenas registrar ciência/ocorrência.
+
+| Responsável | Exemplos |
+| --- | --- |
+| Emitente | Carta de Correção Eletrônica (CC-e), cancelamento e EPEC |
+| Destinatário | Confirmação, ciência, desconhecimento ou operação não realizada |
+| Fisco | Manifestação do Fisco e registro de passagem |
+
+## O que priorizar para a prova
+
+### Prioridade 1
 
 1. Conceito e objetivos do SPED
 2. EFD e livros substituídos
 3. Blocos da EFD
-4. C100 × C170
-5. NF-e × DANFE
-6. Modelo 55 × modelo 65
-   Prioridade 2
-7. Bloco E — E110 e E210
-8. Bloco G/CIAP
-9. Cancelamento da NF-e
-10. Carta de Correção Eletrônica
-11. Eventos da NF-e
-12. Modelo operacional da NF-e
-    Macete final:
-    0 = cadastro | C = mercadoria | D = transporte/comunicação | E = apuração | G = CIAP | H = inventário | K = produção/estoque | 9 = totalização.
+4. Diferença entre C100 e C170
+5. NF-e e DANFE
+6. Modelos 55 e 65
 
-Esses pontos concentram boa parte das associações diretas que o próprio material explora nas questões comentadas.
+### Prioridade 2
+
+1. Bloco E — registros E110 e E210
+2. Bloco G e CIAP
+3. Cancelamento da NF-e
+4. Carta de Correção Eletrônica
+5. Eventos da NF-e
+6. Modelo operacional da NF-e
+
+## Revisão relâmpago
+
+- **NF-e:** documento digital em XML.
+- **DANFE:** auxiliar; não substitui a NF-e.
+- **55:** NF-e. **65:** NFC-e.
+- **C100:** documento. **C170:** itens.
+- **G:** CIAP. **E:** apuração. **H:** inventário. **K:** produção/estoque.
+- **EFD recebida ≠ EFD homologada.**
