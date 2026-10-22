@@ -18,6 +18,12 @@
       "concurso": "SEFAZ-AL",
       "title": "PAT do IBS - Parte II",
       "path": "resumos/reforma/pat-ii.md"
+    },
+      {
+      "id": "ec-132-2023",
+      "concurso": "SEFAZ-AL",
+      "title": "EC 132/2023 - Reforma Tributária",
+      "path": "resumos/reforma/ec-132-2023.md"
     }
   ]
 }

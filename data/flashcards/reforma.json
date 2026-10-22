@@ -635,8 +635,148 @@
       "front": "Qual é o prazo do recurso de uniformização e quem pode interpô-lo?",
       "back": "10 dias. Podem interpor a representação da Fazenda Pública ou o sujeito passivo. O prazo para contrarrazões também é de 10 dias.",
       "difficulty": "facil"
-    }
-  ]
+    },
+
+    
+
+  {
+    "id": "md-021",
+    "concurso": "SEFAZ-AL",
+    "legacyId": 21,
+    "topic": "Princípios tributários",
+    "front": "Quais são os cinco princípios do art. 145, § 3º?",
+    "back": "Simplicidade, transparência, justiça tributária, cooperação e defesa do meio ambiente.",
+    "difficulty": "facil"
+  },
+  {
+    "id": "md-022",
+    "concurso": "SEFAZ-AL",
+    "legacyId": 22,
+    "topic": "Regressividade tributária",
+    "front": "O que buscarão as alterações na legislação tributária?",
+    "back": "Atenuar os efeitos regressivos da tributação.",
+    "difficulty": "medio"
+  },
+  {
+    "id": "md-023",
+    "concurso": "SEFAZ-AL",
+    "legacyId": 23,
+    "topic": "Competência do IBS",
+    "front": "De quem é a competência do IBS?",
+    "back": "Compartilhada entre Estados, Distrito Federal e Municípios.",
+    "difficulty": "facil"
+  },
+  {
+    "id": "md-024",
+    "concurso": "SEFAZ-AL",
+    "legacyId": 24,
+    "topic": "Incidência do IBS",
+    "front": "Sobre quais operações incide o IBS?",
+    "back": "Operações com bens materiais ou imateriais, direitos e serviços, inclusive importações.",
+    "difficulty": "medio"
+  },
+  {
+    "id": "md-025",
+    "concurso": "SEFAZ-AL",
+    "legacyId": 25,
+    "topic": "Exportações no IBS",
+    "front": "Como o IBS trata as exportações?",
+    "back": "Não incide, assegurando-se a manutenção e o aproveitamento dos créditos, conforme a Constituição.",
+    "difficulty": "medio"
+  },
+  {
+    "id": "md-026",
+    "concurso": "SEFAZ-AL",
+    "legacyId": 26,
+    "topic": "Alíquotas do IBS",
+    "front": "Quem fixa a alíquota própria do IBS?",
+    "back": "Cada ente federativo, por lei específica; o DF exerce competências estadual e municipal.",
+    "difficulty": "medio"
+  },
+  {
+    "id": "md-027",
+    "concurso": "SEFAZ-AL",
+    "legacyId": 27,
+    "topic": "Destino do IBS",
+    "front": "Como é calculada a cobrança do IBS segundo o destino?",
+    "back": "Pelo somatório das alíquotas do Estado e do Município de destino da operação.",
+    "difficulty": "medio"
+  },
+  {
+    "id": "md-028",
+    "concurso": "SEFAZ-AL",
+    "legacyId": 28,
+    "topic": "Não cumulatividade",
+    "front": "Qual é a regra geral de não cumulatividade do IBS?",
+    "back": "Compensa-se o imposto devido com o cobrado nas aquisições, ressalvadas as exceções constitucionais e legais.",
+    "difficulty": "medio"
+  },
+  {
+    "id": "md-029",
+    "concurso": "SEFAZ-AL",
+    "legacyId": 29,
+    "topic": "Comitê Gestor do IBS",
+    "front": "Quais são três competências do Comitê Gestor do IBS?",
+    "back": "Uniformizar a regulamentação, arrecadar e distribuir o imposto e decidir o contencioso administrativo.",
+    "difficulty": "medio"
+  },
+  {
+    "id": "md-030",
+    "concurso": "SEFAZ-AL",
+    "legacyId": 30,
+    "topic": "Composição do Comitê Gestor",
+    "front": "Quantos membros compõem a instância máxima do Comitê Gestor?",
+    "back": "54: 27 representantes dos Estados e DF e 27 do conjunto dos Municípios e DF.",
+    "difficulty": "medio"
+  },
+  {
+    "id": "md-031",
+    "concurso": "SEFAZ-AL",
+    "legacyId": 31,
+    "topic": "Representação municipal",
+    "front": "Como são escolhidos os 27 representantes municipais no Comitê Gestor?",
+    "back": "14 por votos municipais de igual valor e 13 por votos ponderados pelas populações.",
+    "difficulty": "dificil"
+  },
+  {
+    "id": "md-032",
+    "concurso": "SEFAZ-AL",
+    "legacyId": 32,
+    "topic": "Imposto Seletivo",
+    "front": "Qual é a finalidade do Imposto Seletivo?",
+    "back": "Tributar bens e serviços prejudiciais à saúde ou ao meio ambiente, nos termos de lei complementar.",
+    "difficulty": "facil"
+  },
+  {
+    "id": "md-033",
+    "concurso": "SEFAZ-AL",
+    "legacyId": 33,
+    "topic": "Imposto Seletivo na extração",
+    "front": "Qual é a alíquota máxima do Imposto Seletivo na extração?",
+    "back": "1% do valor de mercado do produto, independentemente da destinação.",
+    "difficulty": "dificil"
+  },
+  {
+    "id": "md-034",
+    "concurso": "SEFAZ-AL",
+    "legacyId": 34,
+    "topic": "ITCMD",
+    "front": "Qual critério de progressividade foi previsto para o ITCMD?",
+    "back": "Progressividade conforme o valor do quinhão, do legado ou da doação.",
+    "difficulty": "medio"
+  },
+  {
+    "id": "md-035",
+    "concurso": "SEFAZ-AL",
+    "legacyId": 35,
+    "topic": "Fundo Nacional de Desenvolvimento Regional",
+    "front": "Como se distribuem os recursos do FNDR entre os critérios constitucionais?",
+    "back": "30% conforme a população e 70% conforme o coeficiente previsto no art. 159, I, a.",
+    "difficulty": "dificil"
+  }
+]
+
+  
   
 
   
