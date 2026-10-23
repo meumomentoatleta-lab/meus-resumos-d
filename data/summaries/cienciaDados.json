@@ -4,20 +4,39 @@
     {
       "id": "modelagem-multidimensional",
       "concurso": "SEFAZ-AL",
-      "title": "Resumo — Aula 07: Modelagem Multidimensional",
+      "title": "Resumo : Modelagem Multidimensional",
       "path": "resumos/cienciaDados/modelagem-multidimensional.md"
     },
      {
       "id": "pre-processamento",
       "concurso": "SEFAZ-AL",
-      "title": "Resumo — Aula 06: Pré-processamento de Dados",
+      "title": "Resumo : Pré-processamento de Dados",
       "path": "resumos/cienciaDados/pre-processamento.md"
     },
      {
       "id": "data-mining",
       "concurso": "SEFAZ-AL",
-      "title": "Resumo — Aula 09: Data Mining",
+      "title": "Resumo : Data Mining",
       "path": "resumos/cienciaDados/data-mining.md"
+    },
+     {
+      "id": "normalizacao",
+      "concurso": "SEFAZ-AL",
+      "title": "Resumo : Normalização de Dados",
+      "path": "resumos/cienciaDados/normalizacao_bd.md"
+    },
+     {
+      "id": "tipos-dados",
+      "concurso": "SEFAZ-AL",
+      "title": "Resumo : Tipos de Dados",
+      "path": "resumos/cienciaDados/tipos-dados.md"
+    }
+    ,
+     {
+      "id": "etl",
+      "concurso": "SEFAZ-AL",
+      "title": "Resumo : ETL (Extração, Transformação e Carregamento)",
+      "path": "resumos/cienciaDados/etl.md"
     }
   ]
 }

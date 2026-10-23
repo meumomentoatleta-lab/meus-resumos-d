@@ -23,6 +23,30 @@
       "subject": "Ciência de Dados",
       "path": "mindmaps/cienciaDados/data-mining.html",
       "available": true
+    },
+      {
+      "id": "normalizacao",
+      "concurso": "SEFAZ-AL",
+      "title": "Normalização de Dados",
+      "subject": "Ciência de Dados",
+      "path": "mindmaps/cienciaDados/normalizacao_bd.html",
+      "available": true
+    },
+      {
+      "id": "tipos-dados",
+      "concurso": "SEFAZ-AL",
+      "title": "Tipos de Dados",
+      "subject": "Ciência de Dados",
+      "path": "mindmaps/cienciaDados/tipos-dados.html",
+      "available": true
+    },
+      {
+      "id": "etl",
+      "concurso": "SEFAZ-AL",
+      "title": "ETL (Extração, Transformação e Carregamento)",
+      "subject": "Ciência de Dados",
+      "path": "mindmaps/cienciaDados/etl.html",
+      "available": true
     }
   ]
 }

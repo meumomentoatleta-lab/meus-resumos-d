@@ -559,7 +559,331 @@
       "front": "O que é detecção de anomalias e todo outlier deve ser eliminado?",
       "back": "É a identificação de observações que se desviam significativamente do comportamento esperado, sendo útil na detecção de fraudes e eventos incomuns. Nem todo outlier é erro: pode representar um comportamento raro, porém legítimo, devendo ser analisado antes de sua remoção.",
       "difficulty": "medio"
-    }
+    },
+    
+
+  {
+    "id": "md-036",
+    "concurso": "SEFAZ-AL",
+    "legacyId": 36,
+    "topic": "Normalização de banco de dados",
+    "front": "Qual é o principal objetivo da normalização?",
+    "back": "Reduzir redundâncias e evitar anomalias.",
+    "difficulty": "facil"
+  },
+  {
+    "id": "md-037",
+    "concurso": "SEFAZ-AL",
+    "legacyId": 37,
+    "topic": "Primeira Forma Normal (1FN)",
+    "front": "O que caracteriza a 1FN?",
+    "back": "Valores atômicos e ausência de grupos repetitivos.",
+    "difficulty": "facil"
+  },
+  {
+    "id": "md-038",
+    "concurso": "SEFAZ-AL",
+    "legacyId": 38,
+    "topic": "Segunda Forma Normal (2FN)",
+    "front": "O que caracteriza a 2FN?",
+    "back": "Estar na 1FN e não possuir dependências parciais.",
+    "difficulty": "medio"
+  },
+  {
+    "id": "md-039",
+    "concurso": "SEFAZ-AL",
+    "legacyId": 39,
+    "topic": "Dependência parcial",
+    "front": "Quando ocorre dependência parcial?",
+    "back": "Quando um atributo não-chave depende de parte da chave composta.",
+    "difficulty": "medio"
+  },
+  {
+    "id": "md-040",
+    "concurso": "SEFAZ-AL",
+    "legacyId": 40,
+    "topic": "Terceira Forma Normal (3FN)",
+    "front": "O que caracteriza a 3FN?",
+    "back": "Estar na 2FN e eliminar dependências transitivas inadequadas.",
+    "difficulty": "medio"
+  },
+  {
+    "id": "md-041",
+    "concurso": "SEFAZ-AL",
+    "legacyId": 41,
+    "topic": "Dependência transitiva",
+    "front": "O que é dependência transitiva?",
+    "back": "Quando um atributo não-chave depende de outro atributo não-chave.",
+    "difficulty": "medio"
+  },
+  {
+    "id": "md-042",
+    "concurso": "SEFAZ-AL",
+    "legacyId": 42,
+    "topic": "Forma Normal de Boyce-Codd (FNBC)",
+    "front": "Qual é a principal regra da FNBC?",
+    "back": "Todo determinante de dependência funcional não trivial deve ser superchave.",
+    "difficulty": "dificil"
+  },
+  {
+    "id": "md-043",
+    "concurso": "SEFAZ-AL",
+    "legacyId": 43,
+    "topic": "Anomalias de banco de dados",
+    "front": "O que é uma anomalia de inserção?",
+    "back": "Dificuldade de inserir um dado sem inserir outro desnecessário.",
+    "difficulty": "medio"
+  },
+  {
+    "id": "md-044",
+    "concurso": "SEFAZ-AL",
+    "legacyId": 44,
+    "topic": "Anomalias de banco de dados",
+    "front": "O que é uma anomalia de atualização?",
+    "back": "A mesma informação precisa ser alterada em vários registros.",
+    "difficulty": "medio"
+  },
+  {
+    "id": "md-045",
+    "concurso": "SEFAZ-AL",
+    "legacyId": 45,
+    "topic": "Anomalias de banco de dados",
+    "front": "O que é uma anomalia de exclusão?",
+    "back": "A exclusão de um registro pode causar perda de outra informação relevante.",
+    "difficulty": "medio"
+  },
+
+    {
+      "id": "dados-001",
+      "concurso": "SEFAZ-AL",
+      "legacyId": 1,
+      "topic": "Tipos de Dados",
+      "front": "O que caracteriza um dado estruturado?",
+      "back": "É um dado organizado segundo um esquema predefinido, geralmente com campos definidos em linhas e colunas.",
+      "difficulty": "facil"
+    },
+    {
+      "id": "dados-002",
+      "concurso": "SEFAZ-AL",
+      "legacyId": 2,
+      "topic": "Tipos de Dados",
+      "front": "O que caracteriza um dado semiestruturado?",
+      "back": "Possui organização flexível, com marcadores, chaves, tags ou hierarquias, sem exigir esquema tabular rígido.",
+      "difficulty": "facil"
+    },
+    {
+      "id": "dados-003",
+      "concurso": "SEFAZ-AL",
+      "legacyId": 3,
+      "topic": "Tipos de Dados",
+      "front": "O que caracteriza um dado não estruturado?",
+      "back": "É um dado que não segue um esquema predefinido de campos, como imagens, áudios e textos livres.",
+      "difficulty": "facil"
+    },
+    {
+      "id": "dados-004",
+      "concurso": "SEFAZ-AL",
+      "legacyId": 4,
+      "topic": "Tipos de Dados",
+      "front": "Tabelas de bancos relacionais representam qual tipo de dado?",
+      "back": "Dados estruturados, organizados em registros e campos definidos.",
+      "difficulty": "facil"
+    },
+    {
+      "id": "dados-005",
+      "concurso": "SEFAZ-AL",
+      "legacyId": 5,
+      "topic": "Tipos de Dados",
+      "front": "JSON e XML são exemplos de quais dados?",
+      "back": "Dados semiestruturados, pois apresentam organização flexível e hierárquica.",
+      "difficulty": "facil"
+    },
+    {
+      "id": "dados-006",
+      "concurso": "SEFAZ-AL",
+      "legacyId": 6,
+      "topic": "Tipos de Dados",
+      "front": "Imagens, áudios e vídeos são exemplos de quais dados?",
+      "back": "Dados não estruturados, pois não seguem um esquema tabular predefinido.",
+      "difficulty": "facil"
+    },
+    {
+      "id": "dados-007",
+      "concurso": "SEFAZ-AL",
+      "legacyId": 7,
+      "topic": "Tipos de Dados",
+      "front": "Dados estruturados precisam ser exclusivamente numéricos?",
+      "back": "Não. Podem incluir textos, datas, valores monetários e outros tipos em campos definidos.",
+      "difficulty": "facil"
+    },
+    {
+      "id": "dados-008",
+      "concurso": "SEFAZ-AL",
+      "legacyId": 8,
+      "topic": "Tipos de Dados",
+      "front": "Dados semiestruturados possuem alguma organização?",
+      "back": "Sim. Podem usar chaves, tags, marcadores ou estruturas hierárquicas.",
+      "difficulty": "facil"
+    },
+    {
+      "id": "dados-009",
+      "concurso": "SEFAZ-AL",
+      "legacyId": 9,
+      "topic": "Tipos de Dados",
+      "front": "Dados não estruturados são impossíveis de analisar automaticamente?",
+      "back": "Não. Podem ser analisados por técnicas de mineração de dados e inteligência artificial.",
+      "difficulty": "medio"
+    },
+    {
+      "id": "dados-010",
+      "concurso": "SEFAZ-AL",
+      "legacyId": 10,
+      "topic": "Tipos de Dados",
+      "front": "O que diferencia dados estruturados dos semiestruturados?",
+      "back": "Os estruturados seguem um esquema predefinido; os semiestruturados permitem organização mais flexível.",
+      "difficulty": "medio"
+    },
+    {
+      "id": "dados-011",
+      "concurso": "SEFAZ-AL",
+      "legacyId": 11,
+      "topic": "Tipos de Dados",
+      "front": "Um arquivo JSON precisa seguir uma tabela com colunas fixas?",
+      "back": "Não. JSON permite objetos, listas e estruturas aninhadas sem exigir formato tabular rígido.",
+      "difficulty": "medio"
+    },
+    {
+      "id": "dados-012",
+      "concurso": "SEFAZ-AL",
+      "legacyId": 12,
+      "topic": "Tipos de Dados",
+      "front": "Qual é a função das tags no XML?",
+      "back": "Delimitar elementos e representar a estrutura hierárquica dos dados.",
+      "difficulty": "facil"
+    },
+    {
+      "id": "dados-013",
+      "concurso": "SEFAZ-AL",
+      "legacyId": 13,
+      "topic": "Tipos de Dados",
+      "front": "Uma planilha com colunas e campos definidos representa qual tipo?",
+      "back": "Dados estruturados, desde que os dados estejam organizados segundo uma estrutura definida.",
+      "difficulty": "facil"
+    },
+    {
+      "id": "dados-014",
+      "concurso": "SEFAZ-AL",
+      "legacyId": 14,
+      "topic": "Tipos de Dados",
+      "front": "Um documento com texto livre é normalmente classificado como?",
+      "back": "Dado não estruturado, quando não segue um esquema predefinido de campos.",
+      "difficulty": "facil"
+    },
+    {
+      "id": "dados-015",
+      "concurso": "SEFAZ-AL",
+      "legacyId": 15,
+      "topic": "Tipos de Dados",
+      "front": "Dados semiestruturados possuem necessariamente esquema rígido?",
+      "back": "Não. Sua organização é flexível e não exige necessariamente um esquema tabular rígido.",
+      "difficulty": "medio"
+    },
+    {
+      "id": "dados-016",
+      "concurso": "SEFAZ-AL",
+      "legacyId": 16,
+      "topic": "Tipos de Dados",
+      "front": "O formato ou a extensão do arquivo determina sozinho sua classificação?",
+      "back": "Não. A classificação depende principalmente da organização e da estrutura dos dados.",
+      "difficulty": "medio"
+    },
+    {
+      "id": "dados-017",
+      "concurso": "SEFAZ-AL",
+      "legacyId": 17,
+      "topic": "Tipos de Dados",
+      "front": "Dados não estruturados podem ser armazenados em bancos de dados?",
+      "back": "Sim. A classificação dos dados não impede seu armazenamento em bancos de dados.",
+      "difficulty": "medio"
+    },
+    {
+      "id": "dados-018",
+      "concurso": "SEFAZ-AL",
+      "legacyId": 18,
+      "topic": "Tipos de Dados",
+      "front": "Qual tipo de dado costuma facilitar consultas tabulares?",
+      "back": "O dado estruturado, por possuir campos definidos e organização preestabelecida.",
+      "difficulty": "facil"
+    },
+    {
+      "id": "dados-019",
+      "concurso": "SEFAZ-AL",
+      "legacyId": 19,
+      "topic": "Tipos de Dados",
+      "front": "Como classificar logs com campos identificáveis e formato flexível?",
+      "back": "Podem ser classificados como semiestruturados, dependendo de como os registros são organizados.",
+      "difficulty": "dificil"
+    },
+    {
+      "id": "dados-020",
+      "concurso": "SEFAZ-AL",
+      "legacyId": 20,
+      "topic": "Tipos de Dados",
+      "front": "Qual é a principal diferença entre os três tipos de dados?",
+      "back": "Estruturados: esquema predefinido; semiestruturados: estrutura flexível; não estruturados: sem esquema predefinido.",
+      "difficulty": "medio"
+    },
+    
+  {
+    "id": "dados-021",
+    "concurso": "SEFAZ-AL",
+    "legacyId": 21,
+    "topic": "MDM",
+    "front": "O que significa MDM?",
+    "back": "Master Data Management: gestão dos dados mestres de uma organização.",
+    "difficulty": "facil"
+  },
+  {
+    "id": "dados-022",
+    "concurso": "SEFAZ-AL",
+    "legacyId": 22,
+    "topic": "MDM",
+    "front": "Qual é o principal objetivo do MDM?",
+    "back": "Manter dados mestres consistentes, confiáveis e alinhados entre diferentes sistemas.",
+    "difficulty": "facil"
+  },
+  {
+    "id": "dados-023",
+    "concurso": "SEFAZ-AL",
+    "legacyId": 23,
+    "topic": "MDM",
+    "front": "Quais são exemplos de dados mestres?",
+    "back": "Dados de clientes, produtos, fornecedores e unidades organizacionais.",
+    "difficulty": "facil"
+  },
+  {
+    "id": "dados-024",
+    "concurso": "SEFAZ-AL",
+    "legacyId": 24,
+    "topic": "MDM",
+    "front": "Qual é a diferença entre ETL e MDM?",
+    "back": "ETL integra e prepara dados; MDM gerencia a consistência dos dados mestres.",
+    "difficulty": "medio"
+  },
+  {
+    "id": "dados-025",
+    "concurso": "SEFAZ-AL",
+    "legacyId": 25,
+    "topic": "MDM",
+    "front": "Como o MDM ajuda a qualidade dos dados?",
+    "back": "Ajuda a identificar duplicidades, padronizar registros e manter uma visão consistente das entidades.",
+    "difficulty": "medio"
+  }
+
+  
+
+
+
 
   ]
 
