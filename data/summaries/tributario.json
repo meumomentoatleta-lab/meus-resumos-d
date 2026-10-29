@@ -12,6 +12,18 @@
       "concurso": "SEFAZ-AL",
       "title": "Extinção do Crédito Tributário",
       "path": "resumos/tributario/extincao-credito.md"
+    },
+     {
+      "id": "exclusao-credito",
+      "concurso": "SEFAZ-AL",
+      "title": "Exclusão do Crédito Tributário",
+      "path": "resumos/tributario/exclusao.md"
+    },
+     {
+      "id": "administracao-fiscalizacao",
+      "concurso": "SEFAZ-AL",
+      "title": "Administração e Fiscalização Tributária",
+      "path": "resumos/tributario/administracao-fiscalizacao.md"
     }
   ]
 }

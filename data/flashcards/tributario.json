@@ -873,11 +873,464 @@
       "front": "Em quais situações o sujeito passivo pode consignar judicialmente o crédito tributário?",
       "back": "Quando houver recusa de recebimento ou condicionamento indevido, exigência administrativa sem fundamento legal ou exigência do mesmo tributo por mais de uma pessoa jurídica sobre o mesmo fato gerador.",
       "difficulty": "medio"
-    }
+    },
+    
+
+  {
+    "id": "ext-019",
+    "concurso": "SEFAZ-AL",
+    "legacyId": 19,
+    "topic": "Exclusão do Crédito Tributário",
+    "front": "Quais são as duas modalidades de exclusão do crédito tributário?",
+    "back": "Isenção e anistia, conforme o art. 175 do CTN.",
+    "difficulty": "facil"
+  },
+  {
+    "id": "ext-020",
+    "concurso": "SEFAZ-AL",
+    "legacyId": 20,
+    "topic": "Exclusão do Crédito Tributário",
+    "front": "A exclusão do crédito tributário impede o nascimento da obrigação tributária?",
+    "back": "Não. A obrigação nasce com o fato gerador; a exclusão impede a constituição do crédito tributário.",
+    "difficulty": "medio"
+  },
+  {
+    "id": "ext-021",
+    "concurso": "SEFAZ-AL",
+    "legacyId": 21,
+    "topic": "Obrigações Acessórias",
+    "front": "A exclusão do crédito tributário dispensa obrigações acessórias?",
+    "back": "Não. O art. 175, parágrafo único, do CTN mantém as obrigações acessórias.",
+    "difficulty": "facil"
+  },
+  {
+    "id": "ext-022",
+    "concurso": "SEFAZ-AL",
+    "legacyId": 22,
+    "topic": "Interpretação Literal",
+    "front": "Qual regra de interpretação se aplica à legislação sobre isenção e anistia?",
+    "back": "Interpretação literal, conforme o art. 111 do CTN.",
+    "difficulty": "facil"
+  },
+  {
+    "id": "ext-023",
+    "concurso": "SEFAZ-AL",
+    "legacyId": 23,
+    "topic": "Isenção",
+    "front": "O que é isenção tributária?",
+    "back": "Dispensa legal do pagamento de tributo, sendo hipótese de exclusão do crédito tributário.",
+    "difficulty": "facil"
+  },
+  {
+    "id": "ext-024",
+    "concurso": "SEFAZ-AL",
+    "legacyId": 24,
+    "topic": "Isenção",
+    "front": "A isenção pode decorrer exclusivamente de contrato?",
+    "back": "Não. Conforme o art. 176 do CTN, a isenção é sempre decorrente de lei.",
+    "difficulty": "medio"
+  },
+  {
+    "id": "ext-025",
+    "concurso": "SEFAZ-AL",
+    "legacyId": 25,
+    "topic": "Isenção",
+    "front": "O que a lei concessiva de isenção deve especificar?",
+    "back": "Condições, requisitos, tributos abrangidos e, quando houver, prazo de duração.",
+    "difficulty": "facil"
+  },
+  {
+    "id": "ext-026",
+    "concurso": "SEFAZ-AL",
+    "legacyId": 26,
+    "topic": "Isenção Heterônoma",
+    "front": "A União pode isentar tributos estaduais, distritais ou municipais?",
+    "back": "Não. A vedação às isenções heterônomas está no art. 151, III, da CF/88.",
+    "difficulty": "medio"
+  },
+  {
+    "id": "ext-027",
+    "concurso": "SEFAZ-AL",
+    "legacyId": 27,
+    "topic": "Art. 177 do CTN",
+    "front": "A isenção alcança automaticamente taxas e contribuições de melhoria?",
+    "back": "Não. Em regra, não se estende a elas, salvo disposição legal em contrário.",
+    "difficulty": "medio"
+  },
+  {
+    "id": "ext-028",
+    "concurso": "SEFAZ-AL",
+    "legacyId": 28,
+    "topic": "Art. 177 do CTN",
+    "front": "A isenção alcança tributos instituídos posteriormente à sua concessão?",
+    "back": "Em regra, não. O art. 177, II, admite disposição legal em contrário.",
+    "difficulty": "medio"
+  },
+  {
+    "id": "ext-029",
+    "concurso": "SEFAZ-AL",
+    "legacyId": 29,
+    "topic": "Isenção Geral e Individual",
+    "front": "Qual a diferença entre isenção geral e individual?",
+    "back": "A geral alcança genericamente os enquadrados na lei; a individual exige comprovação dos requisitos e despacho administrativo.",
+    "difficulty": "medio"
+  },
+  {
+    "id": "ext-030",
+    "concurso": "SEFAZ-AL",
+    "legacyId": 30,
+    "topic": "Isenção Individual",
+    "front": "A isenção individual pode exigir renovação periódica?",
+    "back": "Sim. Para tributos lançados por período certo, o despacho deve ser renovado conforme o art. 179, § 1º.",
+    "difficulty": "medio"
+  },
+  {
+    "id": "ext-031",
+    "concurso": "SEFAZ-AL",
+    "legacyId": 31,
+    "topic": "Isenção Onerosa",
+    "front": "Quais requisitos caracterizam a isenção onerosa do art. 178 do CTN?",
+    "back": "Concessão por prazo certo e em função de determinadas condições.",
+    "difficulty": "facil"
+  },
+  {
+    "id": "ext-032",
+    "concurso": "SEFAZ-AL",
+    "legacyId": 32,
+    "topic": "Súmula 544 do STF",
+    "front": "Uma isenção onerosa pode ser livremente suprimida?",
+    "back": "Não. A Súmula 544 do STF afirma que isenções sob condição onerosa não podem ser livremente suprimidas.",
+    "difficulty": "medio"
+  },
+  {
+    "id": "ext-033",
+    "concurso": "SEFAZ-AL",
+    "legacyId": 33,
+    "topic": "Anistia",
+    "front": "O que é anistia tributária?",
+    "back": "Hipótese de exclusão do crédito relativo a penalidades por infrações tributárias abrangidas pela lei.",
+    "difficulty": "facil"
+  },
+  {
+    "id": "ext-034",
+    "concurso": "SEFAZ-AL",
+    "legacyId": 34,
+    "topic": "Art. 180 do CTN",
+    "front": "A anistia alcança infrações cometidas após a lei concessiva?",
+    "back": "Não. Abrange exclusivamente infrações cometidas antes da vigência da lei concessiva.",
+    "difficulty": "facil"
+  },
+  {
+    "id": "ext-035",
+    "concurso": "SEFAZ-AL",
+    "legacyId": 35,
+    "topic": "Art. 180 do CTN",
+    "front": "A anistia pode alcançar crimes, contravenções, dolo, fraude ou simulação?",
+    "back": "Em regra, não. O art. 180, I, exclui essas hipóteses, inclusive atos dolosos, fraudulentos ou simulados em benefício do sujeito passivo.",
+    "difficulty": "dificil"
+  },
+  {
+    "id": "ext-036",
+    "concurso": "SEFAZ-AL",
+    "legacyId": 36,
+    "topic": "Conluio",
+    "front": "A anistia alcança infrações resultantes de conluio?",
+    "back": "Em regra, não. O art. 180, II, admite exceção se houver disposição legal em contrário.",
+    "difficulty": "medio"
+  },
+  {
+    "id": "ext-037",
+    "concurso": "SEFAZ-AL",
+    "legacyId": 37,
+    "topic": "Anistia Individual",
+    "front": "Como se efetiva a anistia não concedida em caráter geral?",
+    "back": "Por despacho da autoridade administrativa, após requerimento e comprovação dos requisitos legais, conforme o art. 182 do CTN.",
+    "difficulty": "medio"
+  },
+  {
+    "id": "ext-038",
+    "concurso": "SEFAZ-AL",
+    "legacyId": 38,
+    "topic": "Exclusão, Suspensão e Extinção",
+    "front": "Moratória, parcelamento e remissão são modalidades de exclusão?",
+    "back": "Não. Moratória e parcelamento suspendem a exigibilidade; remissão extingue o crédito tributário.",
+    "difficulty": "medio"
+  },
   
 
-  
+  {
+    "id": "adm-001",
+    "concurso": "SEFAZ-AL",
+    "legacyId": 1,
+    "topic": "Administração Tributária",
+    "front": "Quais são as características constitucionais das administrações tributárias?",
+    "back": "São atividades essenciais ao Estado, exercidas por carreiras específicas, com recursos prioritários e atuação integrada, inclusive pelo compartilhamento de cadastros e informações fiscais.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "adm-002",
+    "concurso": "SEFAZ-AL",
+    "legacyId": 2,
+    "topic": "Precedentes vinculantes",
+    "front": "Quando decisões do STF e do STJ vinculam a Administração Tributária, segundo o art. 194-A do CTN?",
+    "back": "Quando forem decisões definitivas, transitadas em julgado e dotadas de efeito vinculante no âmbito judicial.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "adm-003",
+    "concurso": "SEFAZ-AL",
+    "legacyId": 3,
+    "topic": "Precedentes vinculantes",
+    "front": "Qual o prazo para a Fazenda dar publicidade à aplicação da orientação prevista no art. 194-A?",
+    "back": "Até 90 dias úteis do trânsito em julgado, por meio de parecer jurídico devidamente fundamentado.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "adm-004",
+    "concurso": "SEFAZ-AL",
+    "legacyId": 4,
+    "topic": "Autorregularização",
+    "front": "Quando devem ser disponibilizados métodos preventivos de autorregularização?",
+    "back": "Antes da lavratura do auto de infração, para possibilitar a regularização de tributos e obrigações acessórias.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "adm-005",
+    "concurso": "SEFAZ-AL",
+    "legacyId": 5,
+    "topic": "Autorregularização",
+    "front": "A autorregularização afasta automaticamente as multas?",
+    "back": "Não. Os procedimentos, prazos e efeitos dependem da legislação específica; ela também não se confunde com a denúncia espontânea do art. 138 do CTN.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "adm-006",
+    "concurso": "SEFAZ-AL",
+    "legacyId": 6,
+    "topic": "Fiscalização",
+    "front": "Contribuintes imunes ou isentos podem ser fiscalizados?",
+    "back": "Sim. A fiscalização alcança pessoas naturais ou jurídicas, contribuintes ou não, inclusive as imunes e as que gozem de isenção pessoal.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "adm-007",
+    "concurso": "SEFAZ-AL",
+    "legacyId": 7,
+    "topic": "Fiscalização",
+    "front": "O que estabelece a Súmula 439 do STF sobre livros comerciais?",
+    "back": "Quaisquer livros comerciais podem ser fiscalizados, mas o exame deve ficar limitado aos pontos objeto da investigação.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "adm-008",
+    "concurso": "SEFAZ-AL",
+    "legacyId": 8,
+    "topic": "Fiscalização",
+    "front": "O Fisco pode apreender mercadorias para forçar o pagamento de tributos?",
+    "back": "Não. A Súmula 323 do STF considera inadmissível a apreensão de mercadorias como meio coercitivo para pagamento de tributos.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "adm-009",
+    "concurso": "SEFAZ-AL",
+    "legacyId": 9,
+    "topic": "Fiscalização",
+    "front": "Até quando devem ser conservados os livros obrigatórios e seus comprovantes?",
+    "back": "Até ocorrer a prescrição dos créditos tributários decorrentes das operações a que se referem, e não por um prazo fixo universal de cinco anos.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "adm-010",
+    "concurso": "SEFAZ-AL",
+    "legacyId": 10,
+    "topic": "Sigilo bancário",
+    "front": "O Fisco precisa de autorização judicial prévia para acessar dados bancários nas condições da LC 105/2001?",
+    "back": "Não. Deve haver processo administrativo instaurado ou procedimento fiscal em curso, e o exame deve ser considerado indispensável pela autoridade competente.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "adm-011",
+    "concurso": "SEFAZ-AL",
+    "legacyId": 11,
+    "topic": "Sigilo fiscal",
+    "front": "Quais informações fiscais podem ser divulgadas nas exceções do art. 198, § 3º, do CTN?",
+    "back": "Representações fiscais para fins penais; inscrições em dívida ativa; parcelamento ou moratória; e incentivo, renúncia, benefício ou imunidade tributária cujo beneficiário seja pessoa jurídica.",
+    "difficulty": "hard"
+  },
+  {
+    "id": "adm-012",
+    "concurso": "SEFAZ-AL",
+    "legacyId": 12,
+    "topic": "Compartilhamento de informações",
+    "front": "Qual a diferença entre os arts. 199 e 199-A do CTN?",
+    "back": "O art. 199 trata de assistência mútua e permuta de informações entre Fazendas Públicas. O art. 199-A permite, mediante convênio, compartilhar fiscalização, lançamento, cobrança e estrutura do processo administrativo fiscal.",
+    "difficulty": "hard"
+  },
+  {
+    "id": "adm-013",
+    "concurso": "SEFAZ-AL",
+    "legacyId": 13,
+    "topic": "Termo de início da fiscalização",
+    "front": "Quais são os três efeitos do termo de início da fiscalização destacados no material?",
+    "back": "Marca o início das diligências e o prazo para sua conclusão; pode antecipar a contagem do prazo decadencial; e afasta a espontaneidade do sujeito passivo.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "adm-014",
+    "concurso": "SEFAZ-AL",
+    "legacyId": 14,
+    "topic": "Termo de início da fiscalização",
+    "front": "Quando o acompanhamento policial pode ocorrer na fiscalização presencial, conforme o art. 196?",
+    "back": "Quando houver justo receio de resistência ao ato fiscalizatório, formalizado e registrado no documento entregue ao contribuinte.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "adm-015",
+    "concurso": "SEFAZ-AL",
+    "legacyId": 15,
+    "topic": "Dívida Ativa",
+    "front": "Quais requisitos a Fazenda analisa no controle de legalidade da inscrição em dívida ativa?",
+    "back": "Certeza, liquidez e exigibilidade do crédito.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "adm-016",
+    "concurso": "SEFAZ-AL",
+    "legacyId": 16,
+    "topic": "Dívida Ativa",
+    "front": "Quais prazos de encaminhamento para inscrição e cobrança constam do art. 201, § 3º, no material?",
+    "back": "Regra geral: até 90 dias úteis; até 120 dias úteis para contribuintes de maior índice de conformidade; 60 dias úteis para aqueles com histórico de baixo recolhimento espontâneo, salvo disposição legal em contrário.",
+    "difficulty": "hard"
+  },
+  {
+    "id": "adm-017",
+    "concurso": "SEFAZ-AL",
+    "legacyId": 17,
+    "topic": "Dívida Ativa",
+    "front": "Quais informações devem constar no termo de inscrição em dívida ativa?",
+    "back": "Devedor e corresponsáveis; quantia devida e cálculo dos juros; origem, natureza e fundamento legal; data da inscrição; e número do processo administrativo, se houver. A CDA também indica livro e folha da inscrição.",
+    "difficulty": "hard"
+  },
+  {
+    "id": "adm-018",
+    "concurso": "SEFAZ-AL",
+    "legacyId": 18,
+    "topic": "Dívida Ativa",
+    "front": "A presunção de certeza e liquidez da dívida ativa é absoluta?",
+    "back": "Não. É relativa e pode ser afastada por prova inequívoca apresentada pelo sujeito passivo ou por terceiro a quem aproveite.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "adm-019",
+    "concurso": "SEFAZ-AL",
+    "legacyId": 19,
+    "topic": "Dívida Ativa",
+    "front": "O que permite a Súmula 392 do STJ sobre a substituição da CDA?",
+    "back": "Permite corrigir erro material ou formal até a sentença dos embargos, mas veda a modificação do sujeito passivo da execução.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "adm-020",
+    "concurso": "SEFAZ-AL",
+    "legacyId": 20,
+    "topic": "Dívida Ativa",
+    "front": "O protesto da Certidão de Dívida Ativa é constitucional?",
+    "back": "Sim. O STF, na ADI 5135, considerou o protesto da CDA um mecanismo constitucional e legítimo, que não configura, por si só, sanção política.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "adm-021",
+    "concurso": "SEFAZ-AL",
+    "legacyId": 21,
+    "topic": "Certidões Negativas",
+    "front": "Qual é o prazo do CTN para fornecer a certidão negativa?",
+    "back": "10 dias contados da entrada do requerimento na repartição. O texto legal não diz 10 dias úteis.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "adm-022",
+    "concurso": "SEFAZ-AL",
+    "legacyId": 22,
+    "topic": "Certidões Negativas",
+    "front": "Em quais situações pode ser expedida certidão positiva com efeitos de negativa?",
+    "back": "Quando existirem créditos não vencidos, créditos em execução fiscal com penhora efetivada ou créditos cuja exigibilidade esteja suspensa.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "adm-023",
+    "concurso": "SEFAZ-AL",
+    "legacyId": 23,
+    "topic": "Certidões Negativas",
+    "front": "Qual é a consequência da expedição de CND com dolo ou fraude e erro contra a Fazenda?",
+    "back": "O funcionário responde pessoalmente pelo crédito tributário e pelos juros de mora acrescidos, sem prejuízo da responsabilidade criminal e funcional.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "adm-024",
+    "concurso": "SEFAZ-AL",
+    "legacyId": 24,
+    "topic": "Prazos tributários",
+    "front": "Como são contados os prazos tributários segundo o art. 210 do CTN?",
+    "back": "São contínuos; exclui-se o dia do começo e inclui-se o dia do vencimento. Se o vencimento cair em dia sem expediente normal, prorroga-se para o próximo dia de expediente normal.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "adm-025",
+    "concurso": "SEFAZ-AL",
+    "legacyId": 25,
+    "topic": "Processo Administrativo Fiscal",
+    "front": "Quais garantias são asseguradas pelo art. 208-A do CTN?",
+    "back": "Devido processo legal, contraditório, ampla defesa e duplo grau de jurisdição, este último obrigatório nos entes com mais de 100.000 habitantes residentes, conforme o último censo do IBGE.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "adm-026",
+    "concurso": "SEFAZ-AL",
+    "legacyId": 26,
+    "topic": "Processo Administrativo Fiscal",
+    "front": "Quais elementos essenciais o auto de infração deve conter, segundo o art. 208-B?",
+    "back": "Identificação do autuado; descrição clara dos fatos; dispositivo infringido e penalidade; enquadramento dos fatos na norma; exigência e intimação para cumprir ou impugnar; local, data e hora; assinatura, cargo ou função e matrícula do autuante.",
+    "difficulty": "hard"
+  },
+  {
+    "id": "adm-027",
+    "concurso": "SEFAZ-AL",
+    "legacyId": 27,
+    "topic": "Precedentes vinculantes",
+    "front": "Quais tipos de precedentes possuem efeito vinculante no processo administrativo fiscal conforme o art. 208-G?",
+    "back": "Pronunciamentos do STF e STJ com efeito vinculante judicial; resolução do Senado que suspenda a execução de norma; e decisões reiteradas e uniformes dos tribunais administrativos consolidadas em súmulas.",
+    "difficulty": "hard"
+  },
+  {
+    "id": "adm-028",
+    "concurso": "SEFAZ-AL",
+    "legacyId": 28,
+    "topic": "Precedentes vinculantes",
+    "front": "O que ocorre com créditos fundados em matéria decidida favoravelmente ao sujeito passivo nos termos do art. 208-G?",
+    "back": "Nos termos do dispositivo, não devem ser lavrados autos ou notificações de lançamento, negados pedidos ou recursos, nem inscritos em dívida ativa créditos fundados nessa matéria.",
+    "difficulty": "hard"
+  },
+  {
+    "id": "adm-029",
+    "concurso": "SEFAZ-AL",
+    "legacyId": 29,
+    "topic": "Sobrestamento",
+    "front": "Quando ocorre o sobrestamento automático do processo administrativo fiscal previsto no art. 208-J?",
+    "back": "Quando STF ou STJ determinar a suspensão coletiva de processos judiciais para resolver, por precedente qualificado, a mesma questão jurídica discutida no processo administrativo.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "adm-030",
+    "concurso": "SEFAZ-AL",
+    "legacyId": 30,
+    "topic": "Processo Administrativo Fiscal",
+    "front": "Qual o prazo para os entes adaptarem sua legislação aos arts. 208-A a 208-J do CTN?",
+    "back": "Dois anos. Se não houver adaptação, as normas gerais serão aplicadas até que sobrevenha legislação específica compatível.",
+    "difficulty": "easy"
+  }
+]
 
 
-    ]
+
+    
 }

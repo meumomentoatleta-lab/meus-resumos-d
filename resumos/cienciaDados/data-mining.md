@@ -26,22 +26,22 @@ A mineração de dados não se limita a Data Warehouses ou dados estruturados. T
 
 #### Tipos de dados
 
-| Tipo | Característica | Exemplos |
-|---|---|---|
-| Estruturados | Possuem modelo definido, campos e organização rígida. | Tabelas relacionais, planilhas |
-| Semiestruturados | Possuem marcadores ou organização parcial, sem esquema totalmente rígido. | XML, JSON |
-| Não estruturados | Não possuem modelo de dados predefinido. | Textos livres, imagens, vídeos e áudios |
+| Tipo             | Característica                                                            | Exemplos                                |
+| ---------------- | ------------------------------------------------------------------------- | --------------------------------------- |
+| Estruturados     | Possuem modelo definido, campos e organização rígida.                     | Tabelas relacionais, planilhas          |
+| Semiestruturados | Possuem marcadores ou organização parcial, sem esquema totalmente rígido. | XML, JSON                               |
+| Não estruturados | Não possuem modelo de dados predefinido.                                  | Textos livres, imagens, vídeos e áudios |
 
 A mineração de processos (Process Mining) utiliza registros de eventos (logs) para descobrir, monitorar e melhorar processos de negócio, identificando gargalos e desvios.
 
 ### 1.2 Tipos de análise de dados
 
-| Tipo | Pergunta | Finalidade |
-|---|---|---|
-| **Descritiva** | O que aconteceu? | Resume dados históricos por meio de estatísticas, relatórios, dashboards e operações OLAP. |
-| **Diagnóstica** | Por que aconteceu? | Investiga relações, padrões e possíveis causas dos resultados observados. |
-| **Preditiva** | O que provavelmente acontecerá? | Utiliza dados históricos, modelos estatísticos e Machine Learning para estimar eventos futuros. |
-| **Prescritiva** | O que deve ser feito? | Recomenda ações utilizando previsões, otimização, simulação e regras de decisão. |
+| Tipo            | Pergunta                        | Finalidade                                                                                      |
+| --------------- | ------------------------------- | ----------------------------------------------------------------------------------------------- |
+| **Descritiva**  | O que aconteceu?                | Resume dados históricos por meio de estatísticas, relatórios, dashboards e operações OLAP.      |
+| **Diagnóstica** | Por que aconteceu?              | Investiga relações, padrões e possíveis causas dos resultados observados.                       |
+| **Preditiva**   | O que provavelmente acontecerá? | Utiliza dados históricos, modelos estatísticos e Machine Learning para estimar eventos futuros. |
+| **Prescritiva** | O que deve ser feito?           | Recomenda ações utilizando previsões, otimização, simulação e regras de decisão.                |
 
 **Macete:** descritiva = passado; diagnóstica = causa; preditiva = futuro; prescritiva = ação.
 
@@ -59,13 +59,13 @@ O KDD é o processo mais amplo de descoberta de conhecimento em bases de dados. 
 
 #### Diferenças entre as fases
 
-| Fase | Palavra-chave | Exemplo |
-|---|---|---|
-| Seleção | Escolher | Selecionar transações dos últimos cinco anos |
-| Pré-processamento | Limpar | Corrigir datas inválidas e tratar ausências |
-| Transformação | Converter | Normalizar valores e codificar categorias |
-| Mineração | Descobrir | Detectar padrões de fraude |
-| Interpretação/Avaliação | Validar | Verificar se os padrões são úteis e confiáveis |
+| Fase                    | Palavra-chave | Exemplo                                        |
+| ----------------------- | ------------- | ---------------------------------------------- |
+| Seleção                 | Escolher      | Selecionar transações dos últimos cinco anos   |
+| Pré-processamento       | Limpar        | Corrigir datas inválidas e tratar ausências    |
+| Transformação           | Converter     | Normalizar valores e codificar categorias      |
+| Mineração               | Descobrir     | Detectar padrões de fraude                     |
+| Interpretação/Avaliação | Validar       | Verificar se os padrões são úteis e confiáveis |
 
 Atenção: alguns autores organizam o KDD de maneira diferente. O material também apresenta uma abordagem de seis etapas, de Elmasri e Navathe, incluindo enriquecimento e relatório/exibição. Se a questão mencionar expressamente um autor, observe a classificação utilizada por ele.
 
@@ -112,15 +112,15 @@ As seis fases são:
 
 ### 1.5 Aprendizado supervisionado, não supervisionado e por reforço
 
-| Tipo | Característica | Principais tarefas |
-|---|---|---|
-| Supervisionado | Utiliza dados rotulados. | Classificação e regressão |
-| Não supervisionado | Busca padrões em dados sem rótulos prévios. | Agrupamento e associação |
-| Por reforço | Aprende por meio de feedback, ações e recompensas. | Maximização de recompensas |
+| Tipo               | Característica                                     | Principais tarefas         |
+| ------------------ | -------------------------------------------------- | -------------------------- |
+| Supervisionado     | Utiliza dados rotulados.                           | Classificação e regressão  |
+| Não supervisionado | Busca padrões em dados sem rótulos prévios.        | Agrupamento e associação   |
+| Por reforço        | Aprende por meio de feedback, ações e recompensas. | Maximização de recompensas |
 
 #### Classificação × regressão
 
-- **Classificação:** prevê uma categoria ou classe. Exemplo: determinar se uma declaração apresenta risco alto ou baixo de fraude.
+- **Classificação:** prevê uma categoria ou classe. tarefa preditiva. Associa registros a classes previamente definidas.Exemplo: determinar se uma declaração apresenta risco alto ou baixo de fraude.
 - **Regressão:** estima um valor numérico, geralmente contínuo. Exemplo: prever o faturamento de uma empresa ou o preço de um imóvel.
 
 #### Algoritmos e técnicas importantes
@@ -139,7 +139,9 @@ A primeira dupla aprende com exemplos rotulados; a segunda procura estruturas, g
 
 ### 1.6 Agrupamento (Clustering)
 
-O agrupamento procura reunir observações semelhantes em grupos, sem que as classes precisem ser definidas previamente.
+tarefa descritiva. O agrupamento procura reunir observações semelhantes em grupos, sem que as classes precisem ser definidas previamente. Identifica grupos naturais nos dados, sem que as classes sejam previamente definidas.
+
+Exemplo: agrupar contribuintes com comportamentos de pagamento semelhantes.
 
 #### Principais técnicas
 
@@ -162,7 +164,7 @@ Sua interpretação geral é:
 
 ### 1.7 Regras de associação
 
-As regras de associação identificam itens ou atributos que ocorrem conjuntamente com frequência. São úteis para descobrir padrões de compra, relações entre características de empresas e combinações de eventos.
+As regras de associação identificam itens ou atributos que ocorrem conjuntamente com frequência. São úteis para descobrir padrões de compra, relações entre características de empresas e combinações de eventos. técnica descritiva.
 
 Uma regra é representada por **X → Y**.
 
@@ -220,16 +222,16 @@ Nem todo outlier é um erro: pode representar uma ocorrência rara, porém legí
 
 #### Técnicas mais cobradas
 
-| Técnica | Função |
-|---|---|
-| Tokenização | Divide o texto em unidades menores, como palavras. |
-| Stopwords | Remove palavras frequentes de baixo valor informativo. |
-| Stemming | Reduz palavras ao radical por regras heurísticas. |
-| Lematização | Converte palavras à forma canônica, considerando fatores linguísticos. |
-| Lowercasing | Converte letras para minúsculas. |
-| Remoção de pontuação | Elimina sinais de pontuação. |
-| Bag of Words | Representa o texto pela ocorrência/frequência dos termos. |
-| TF-IDF | Pondera termos conforme a frequência no documento e sua raridade na coleção. |
+| Técnica              | Função                                                                                                                                                                |
+| -------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Tokenização          | Divide o texto em unidades menores, como palavras.                                                                                                                    |
+| Stopwords            | Remove palavras frequentes de baixo valor informativo.                                                                                                                |
+| Stemming             | Reduz palavras ao radical por regras heurísticas.                                                                                                                     |
+| Lematização          | Converte palavras à forma canônica, considerando fatores linguísticos.                                                                                                |
+| Lowercasing          | Converte letras para minúsculas.                                                                                                                                      |
+| Remoção de pontuação | Elimina sinais de pontuação.                                                                                                                                          |
+| Bag of Words         | Representa o texto pela ocorrência/frequência dos termos. descarta a ordem do texto e produz vetores cujo tamanho equivale ao total de palavras únicas do vocabulário |
+| TF-IDF               | Pondera termos conforme a frequência no documento e sua raridade na coleção.                                                                                          |
 
 **Stemming × lematização:** o stemming pode gerar radicais que não são palavras válidas; a lematização busca uma forma linguística canônica.
 

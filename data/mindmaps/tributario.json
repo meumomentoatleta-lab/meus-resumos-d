@@ -23,6 +23,22 @@
       "subject": "Direito Tributário",
       "path": "mindmaps/tributario/extincao.html",
       "available": true
+    },
+        {
+      "id": "exclusao-credito",
+      "concurso": "SEFAZ-AL",
+      "title": "Exclusão do Crédito Tributário",
+      "subject": "Direito Tributário",
+      "path": "mindmaps/tributario/exclusao.html",
+      "available": true
+    },
+        {
+      "id": "Administração Tributária e fiscalização",
+      "concurso": "SEFAZ-AL",
+      "title": "Administração Tributária e fiscalização",
+      "subject": "Direito Tributário",
+      "path": "mindmaps/tributario/administracao-fiscalizacao.html",
+      "available": true 
     }
   ]
 }
