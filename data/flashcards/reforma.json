@@ -773,7 +773,395 @@
     "front": "Como se distribuem os recursos do FNDR entre os critérios constitucionais?",
     "back": "30% conforme a população e 70% conforme o coeficiente previsto no art. 159, I, a.",
     "difficulty": "dificil"
-  }
+  },
+  
+
+    {
+      "id": "loc-001",
+      "concurso": "SEFAZ-AL",
+      "legacyId": 1,
+      "topic": "Local da Operação",
+      "front": "Qual é o local da operação com bem móvel material?",
+      "back": "Local da entrega ou disponibilização ao destinatário.",
+      "difficulty": "facil"
+    },
+    {
+      "id": "loc-002",
+      "concurso": "SEFAZ-AL",
+      "legacyId": 2,
+      "topic": "Local da Operação",
+      "front": "Qual é o local da operação com bem imóvel?",
+      "back": "Local onde o imóvel está situado.",
+      "difficulty": "facil"
+    },
+    {
+      "id": "loc-003",
+      "concurso": "SEFAZ-AL",
+      "legacyId": 3,
+      "topic": "Local da Operação",
+      "front": "Imóvel situado em mais de um município: qual prevalece?",
+      "back": "Município onde está situada a maior parte da área.",
+      "difficulty": "medio"
+    },
+    {
+      "id": "loc-004",
+      "concurso": "SEFAZ-AL",
+      "legacyId": 4,
+      "topic": "Local da Operação",
+      "front": "Serviço físico sobre pessoa ou fruído presencialmente: qual local?",
+      "back": "Local da prestação do serviço.",
+      "difficulty": "facil"
+    },
+    {
+      "id": "loc-005",
+      "concurso": "SEFAZ-AL",
+      "legacyId": 5,
+      "topic": "Local da Operação",
+      "front": "Qual é o local dos serviços de organização de eventos?",
+      "back": "Local do evento a que o serviço se refere.",
+      "difficulty": "facil"
+    },
+    {
+      "id": "loc-006",
+      "concurso": "SEFAZ-AL",
+      "legacyId": 6,
+      "topic": "Local da Operação",
+      "front": "Qual é o local do transporte de passageiros?",
+      "back": "Local de início do transporte.",
+      "difficulty": "facil"
+    },
+    {
+      "id": "loc-007",
+      "concurso": "SEFAZ-AL",
+      "legacyId": 7,
+      "topic": "Local da Operação",
+      "front": "Qual é o local do transporte de carga?",
+      "back": "Local da entrega ou disponibilização ao destinatário constante no documento fiscal.",
+      "difficulty": "facil"
+    },
+    {
+      "id": "loc-008",
+      "concurso": "SEFAZ-AL",
+      "legacyId": 8,
+      "topic": "Local da Operação",
+      "front": "Como se distribui a tributação da exploração de vias?",
+      "back": "Proporcionalmente à extensão explorada em cada Município, Estado ou DF.",
+      "difficulty": "medio"
+    },
+    {
+      "id": "loc-009",
+      "concurso": "SEFAZ-AL",
+      "legacyId": 9,
+      "topic": "Local da Operação",
+      "front": "Telefonia fixa e comunicação por cabos, fios ou fibras: qual é o local?",
+      "back": "Local de instalação do terminal.",
+      "difficulty": "facil"
+    },
+    {
+      "id": "loc-010",
+      "concurso": "SEFAZ-AL",
+      "legacyId": 10,
+      "topic": "Local da Operação",
+      "front": "Qual é a regra residual para operação onerosa?",
+      "back": "Domicílio principal do adquirente residente ou domiciliado no Brasil.",
+      "difficulty": "medio"
+    },
+    {
+      "id": "loc-011",
+      "concurso": "SEFAZ-AL",
+      "legacyId": 11,
+      "topic": "Local da Operação",
+      "front": "Na operação onerosa, adquirente no exterior e destinatário no Brasil: qual local?",
+      "back": "Domicílio principal do destinatário residente ou domiciliado no Brasil.",
+      "difficulty": "medio"
+    },
+    {
+      "id": "loc-012",
+      "concurso": "SEFAZ-AL",
+      "legacyId": 12,
+      "topic": "Local da Operação",
+      "front": "Qual é a regra residual para operação não onerosa?",
+      "back": "Domicílio principal do destinatário residente ou domiciliado no Brasil.",
+      "difficulty": "medio"
+    },
+    {
+      "id": "loc-013",
+      "concurso": "SEFAZ-AL",
+      "legacyId": 13,
+      "topic": "Local da Operação",
+      "front": "Venda não presencial: como se determina o destino do bem?",
+      "back": "Destino final indicado pelo adquirente ao fornecedor ou ao terceiro responsável pelo transporte.",
+      "difficulty": "medio"
+    },
+    {
+      "id": "loc-014",
+      "concurso": "SEFAZ-AL",
+      "legacyId": 14,
+      "topic": "Local da Operação",
+      "front": "Aquisição de veículo automotor terrestre, aquático ou aéreo: qual é o local?",
+      "back": "Domicílio principal do destinatário.",
+      "difficulty": "facil"
+    },
+    {
+      "id": "loc-015",
+      "concurso": "SEFAZ-AL",
+      "legacyId": 15,
+      "topic": "Local da Operação",
+      "front": "Leilão judicial ou licitação de bem apreendido ou abandonado: qual local?",
+      "back": "Local onde o bem móvel material se encontra.",
+      "difficulty": "medio"
+    },
+    {
+      "id": "loc-016",
+      "concurso": "SEFAZ-AL",
+      "legacyId": 16,
+      "topic": "Local da Operação",
+      "front": "Como se define o domicílio principal da pessoa física?",
+      "back": "Habitação permanente ou, se inexistente ou múltipla, local das relações econômicas mais relevantes.",
+      "difficulty": "medio"
+    },
+    {
+      "id": "loc-017",
+      "concurso": "SEFAZ-AL",
+      "legacyId": 17,
+      "topic": "Local da Operação",
+      "front": "Como se define o domicílio principal da pessoa jurídica?",
+      "back": "Local de cada estabelecimento para o qual o bem ou serviço é fornecido.",
+      "difficulty": "medio"
+    },
+    {
+      "id": "loc-018",
+      "concurso": "SEFAZ-AL",
+      "legacyId": 18,
+      "topic": "Local da Operação",
+      "front": "Sem cadastro regular, quantos critérios devem ser combinados?",
+      "back": "Pelo menos dois critérios não conflitantes, à escolha do fornecedor.",
+      "difficulty": "dificil"
+    },
+    {
+      "id": "loc-019",
+      "concurso": "SEFAZ-AL",
+      "legacyId": 19,
+      "topic": "Local da Operação",
+      "front": "Na aquisição centralizada do § 4º, qual estabelecimento é considerado domicílio principal?",
+      "back": "Estabelecimento matriz do adquirente.",
+      "difficulty": "dificil"
+    },
+    {
+      "id": "loc-020",
+      "concurso": "SEFAZ-AL",
+      "legacyId": 20,
+      "topic": "Local da Operação",
+      "front": "Água, gás canalizado e energia destinados ao consumo: qual local?",
+      "back": "Local da entrega ou disponibilização.",
+      "difficulty": "medio"
+    },
+    
+
+    {
+      "id": "bc-001",
+      "concurso": "SEFAZ-AL",
+      "legacyId": 1,
+      "topic": "Base de Cálculo",
+      "front": "Qual é a regra geral da base de cálculo do IBS e da CBS?",
+      "back": "Valor da operação, salvo disposição em contrário na LC.",
+      "difficulty": "facil"
+    },
+    {
+      "id": "bc-002",
+      "concurso": "SEFAZ-AL",
+      "legacyId": 2,
+      "topic": "Base de Cálculo",
+      "front": "Juros, multas e encargos integram a base de cálculo?",
+      "back": "Sim. Integram o valor integral cobrado pelo fornecedor.",
+      "difficulty": "facil"
+    },
+    {
+      "id": "bc-003",
+      "concurso": "SEFAZ-AL",
+      "legacyId": 3,
+      "topic": "Base de Cálculo",
+      "front": "Desconto condicional integra a base de cálculo?",
+      "back": "Sim. Descontos condicionais integram a base.",
+      "difficulty": "facil"
+    },
+    {
+      "id": "bc-004",
+      "concurso": "SEFAZ-AL",
+      "legacyId": 4,
+      "topic": "Base de Cálculo",
+      "front": "Quais requisitos caracterizam o desconto incondicional?",
+      "back": "Constar no documento fiscal e não depender de evento posterior.",
+      "difficulty": "medio"
+    },
+    {
+      "id": "bc-005",
+      "concurso": "SEFAZ-AL",
+      "legacyId": 5,
+      "topic": "Base de Cálculo",
+      "front": "Desconto de programa de fidelidade pode ser incondicional?",
+      "back": "Sim, se concedido gratuitamente pelo próprio fornecedor.",
+      "difficulty": "medio"
+    },
+    {
+      "id": "bc-006",
+      "concurso": "SEFAZ-AL",
+      "legacyId": 6,
+      "topic": "Base de Cálculo",
+      "front": "O IBS e a CBS incidentes sobre a operação integram a própria base?",
+      "back": "Não. Seus montantes são excluídos da base de cálculo.",
+      "difficulty": "facil"
+    },
+    {
+      "id": "bc-007",
+      "concurso": "SEFAZ-AL",
+      "legacyId": 7,
+      "topic": "Base de Cálculo",
+      "front": "O IPI integra a base de cálculo do IBS e da CBS?",
+      "back": "Não. O montante do IPI é excluído.",
+      "difficulty": "facil"
+    },
+    {
+      "id": "bc-008",
+      "concurso": "SEFAZ-AL",
+      "legacyId": 8,
+      "topic": "Base de Cálculo",
+      "front": "Quando o reembolso de operação de terceiro não integra a base?",
+      "back": "Quando a operação é por conta e ordem ou em nome de terceiro e a nota fiscal está em nome dele.",
+      "difficulty": "dificil"
+    },
+    {
+      "id": "bc-009",
+      "concurso": "SEFAZ-AL",
+      "legacyId": 9,
+      "topic": "Base de Cálculo",
+      "front": "Até quando os tributos do art. 12, § 2º, V, ficam excluídos da base?",
+      "back": "De 1º/01/2026 a 31/12/2032.",
+      "difficulty": "medio"
+    },
+    {
+      "id": "bc-010",
+      "concurso": "SEFAZ-AL",
+      "legacyId": 10,
+      "topic": "Base de Cálculo",
+      "front": "Qual contribuição do art. 149-A da CF é excluída da base?",
+      "back": "A contribuição prevista no art. 149-A da Constituição Federal.",
+      "difficulty": "medio"
+    },
+    {
+      "id": "bc-011",
+      "concurso": "SEFAZ-AL",
+      "legacyId": 11,
+      "topic": "Base de Cálculo",
+      "front": "Quando a base de cálculo utiliza o valor de mercado?",
+      "back": "Falta de valor, valor indeterminado, valor não monetário ou operação entre partes relacionadas.",
+      "difficulty": "dificil"
+    },
+    {
+      "id": "bc-012",
+      "concurso": "SEFAZ-AL",
+      "legacyId": 12,
+      "topic": "Base de Cálculo",
+      "front": "Como a LC define valor de mercado?",
+      "back": "Valor praticado em operações comparáveis entre partes não relacionadas.",
+      "difficulty": "medio"
+    },
+    {
+      "id": "bc-013",
+      "concurso": "SEFAZ-AL",
+      "legacyId": 13,
+      "topic": "Base de Cálculo",
+      "front": "Como converter operação expressa em moeda estrangeira?",
+      "back": "Pela taxa de câmbio apurada pelo Banco Central, conforme regulamento.",
+      "difficulty": "medio"
+    },
+    {
+      "id": "bc-014",
+      "concurso": "SEFAZ-AL",
+      "legacyId": 14,
+      "topic": "Base de Cálculo",
+      "front": "Quando o ganho em derivativo integra a base do IBS e da CBS?",
+      "back": "Quando contratado fora das condições de mercado e ocultar total ou parcialmente o valor da operação.",
+      "difficulty": "dificil"
+    },
+    {
+      "id": "bc-015",
+      "concurso": "SEFAZ-AL",
+      "legacyId": 15,
+      "topic": "Base de Cálculo",
+      "front": "Qual é a base de cálculo na devolução ou no cancelamento?",
+      "back": "A mesma utilizada na operação original.",
+      "difficulty": "facil"
+    },
+    {
+      "id": "bc-016",
+      "concurso": "SEFAZ-AL",
+      "legacyId": 16,
+      "topic": "Base de Cálculo",
+      "front": "Transporte internacional de passageiros: ida e volta vendidas juntas. Qual a base?",
+      "back": "Metade do valor cobrado.",
+      "difficulty": "medio"
+    },
+    {
+      "id": "bc-017",
+      "concurso": "SEFAZ-AL",
+      "legacyId": 17,
+      "topic": "Base de Cálculo",
+      "front": "Qual é a base na aquisição multilateral de energia elétrica?",
+      "back": "Valor da liquidação financeira apurada pela CCEE, observada a participação proporcional.",
+      "difficulty": "dificil"
+    },
+    {
+      "id": "bc-018",
+      "concurso": "SEFAZ-AL",
+      "legacyId": 18,
+      "topic": "Arbitramento",
+      "front": "Quando a administração tributária pode arbitrar o valor da operação?",
+      "back": "Quando faltam elementos comprobatórios ou declarações e documentos são omissos, conflitantes ou não merecem fé.",
+      "difficulty": "dificil"
+    },
+    {
+      "id": "bc-019",
+      "concurso": "SEFAZ-AL",
+      "legacyId": 19,
+      "topic": "Arbitramento",
+      "front": "Qual é a primeira referência para a base de cálculo arbitrada?",
+      "back": "Valor de mercado em operações comparáveis entre partes não relacionadas.",
+      "difficulty": "medio"
+    },
+    {
+      "id": "bc-020",
+      "concurso": "SEFAZ-AL",
+      "legacyId": 20,
+      "topic": "Arbitramento",
+      "front": "Se o valor de mercado não estiver disponível, quais critérios podem ser usados?",
+      "back": "Custo e despesas indispensáveis, lucro bruto contábil/fiscal ou preços e valores de referência previstos na lei.",
+      "difficulty": "dificil"
+    },
+    {
+      "id": "bc-021",
+      "concurso": "SEFAZ-AL",
+      "legacyId": 21,
+      "topic": "Arbitramento",
+      "front": "Documento fiscal com valor notoriamente inferior ao mercado pode justificar arbitramento?",
+      "back": "Sim, quando não forem apresentados elementos necessários à comprovação do valor.",
+      "difficulty": "medio"
+    },
+    {
+      "id": "bc-022",
+      "concurso": "SEFAZ-AL",
+      "legacyId": 22,
+      "topic": "Base de Cálculo",
+      "front": "O transporte integra a base quando realizado por conta e ordem de quem?",
+      "back": "Do fornecedor, ou quando efetuado pelo próprio fornecedor.",
+      "difficulty": "medio"
+    }
+  
+
+
+  
+
+
 ]
 
   

@@ -47,6 +47,22 @@
       "subject": "Reforma Tributária",
       "path": "mindmaps/reforma/227-I_ao_II.html",
       "available": true
+    },
+    {
+      "id": "EC 214/2025",
+      "concurso": "SEFAZ-AL",
+      "title": "EC 214/2025 - Local de Operação",
+      "subject": "Reforma Tributária",
+      "path": "mindmaps/reforma/214-local-operacao.html",
+      "available": true
+    },
+    {
+      "id": "EC 214/2025",
+      "concurso": "SEFAZ-AL",
+      "title": "EC 214/2025 - Base de Cálculo",
+      "subject": "Reforma Tributária",
+      "path": "mindmaps/reforma/214-base-calculo.html",
+      "available": true
     }
   ]
 }

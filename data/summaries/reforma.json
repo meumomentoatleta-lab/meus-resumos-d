@@ -25,189 +25,20 @@
       "title": "EC 132/2023 - Reforma Tributária",
       "path": "resumos/reforma/ec-132-2023.md"
     },
+      {
+      "id": "ec-214-2025",
+      "concurso": "SEFAZ-AL",
+      "title": "EC 214/2025 - Local de Operação",
+      "path": "resumos/reforma/214-local-operacao.md"
+    },
+      {
+      "id": "ec-132-2023",
+      "concurso": "SEFAZ-AL",
+      "title": "EC 214/2025 - Base de Cálculo",
+      "path": "resumos/reforma/214-base-calculo.md"
+    }
 
     
-
-  {
-    "id": "lc227-001",
-    "concurso": "SEFAZ-AL",
-    "legacyId": 1,
-    "topic": "CGIBS",
-    "front": "Qual é a natureza jurídica do CGIBS?",
-    "back": "Entidade pública de caráter técnico e operacional, sob regime especial.",
-    "difficulty": "facil"
-  },
-  {
-    "id": "lc227-002",
-    "concurso": "SEFAZ-AL",
-    "legacyId": 2,
-    "topic": "CGIBS",
-    "front": "Onde fica a sede e o foro do CGIBS?",
-    "back": "No Distrito Federal.",
-    "difficulty": "facil"
-  },
-  {
-    "id": "lc227-003",
-    "concurso": "SEFAZ-AL",
-    "legacyId": 3,
-    "topic": "CGIBS",
-    "front": "Quais são as quatro independências do CGIBS?",
-    "back": "Técnica, administrativa, orçamentária e financeira.",
-    "difficulty": "facil"
-  },
-  {
-    "id": "lc227-004",
-    "concurso": "SEFAZ-AL",
-    "legacyId": 4,
-    "topic": "CGIBS",
-    "front": "O CGIBS possui subordinação hierárquica a algum órgão público?",
-    "back": "Não. Atua sem vinculação, tutela ou subordinação hierárquica a qualquer órgão público.",
-    "difficulty": "medio"
-  },
-  {
-    "id": "lc227-005",
-    "concurso": "SEFAZ-AL",
-    "legacyId": 5,
-    "topic": "Competências do CGIBS",
-    "front": "Quais são as três competências administrativas centrais do CGIBS?",
-    "back": "Regulamentar e uniformizar o IBS; arrecadar e distribuir sua receita; decidir o contencioso administrativo.",
-    "difficulty": "facil"
-  },
-  {
-    "id": "lc227-006",
-    "concurso": "SEFAZ-AL",
-    "legacyId": 6,
-    "topic": "Competências do CGIBS",
-    "front": "Quem cria obrigações acessórias relativas ao IBS?",
-    "back": "Exclusivamente o CGIBS.",
-    "difficulty": "facil"
-  },
-  {
-    "id": "lc227-007",
-    "concurso": "SEFAZ-AL",
-    "legacyId": 7,
-    "topic": "Harmonização IBS e CBS",
-    "front": "Como são aprovadas as normas comuns ao IBS e à CBS do regulamento único?",
-    "back": "Por ato conjunto do CGIBS e do Poder Executivo federal.",
-    "difficulty": "medio"
-  },
-  {
-    "id": "lc227-008",
-    "concurso": "SEFAZ-AL",
-    "legacyId": 8,
-    "topic": "Cobrança do IBS",
-    "front": "Qual é o prazo máximo regulamentar para a cobrança administrativa do IBS?",
-    "back": "Até 12 meses, contados da constituição definitiva do crédito tributário.",
-    "difficulty": "facil"
-  },
-  {
-    "id": "lc227-009",
-    "concurso": "SEFAZ-AL",
-    "legacyId": 9,
-    "topic": "Dívida ativa",
-    "front": "O que ocorre com a titularidade quando o CGIBS inscreve crédito em dívida ativa por delegação?",
-    "back": "A titularidade do crédito permanece com o ente federativo.",
-    "difficulty": "medio"
-  },
-  {
-    "id": "lc227-010",
-    "concurso": "SEFAZ-AL",
-    "legacyId": 10,
-    "topic": "Fiscalização do IBS",
-    "front": "Onde os entes podem fiscalizar sujeitos passivos do IBS?",
-    "back": "Em seu território, em qualquer localidade com operações destinadas ao seu território ou por delegação.",
-    "difficulty": "medio"
-  },
-  {
-    "id": "lc227-011",
-    "concurso": "SEFAZ-AL",
-    "legacyId": 11,
-    "topic": "Fiscalização do IBS",
-    "front": "Quais informações devem constar no registro eletrônico de interesse fiscalizatório?",
-    "back": "Sujeito passivo, tipo de operação, período fiscalizado e motivos da fiscalização.",
-    "difficulty": "facil"
-  },
-  {
-    "id": "lc227-012",
-    "concurso": "SEFAZ-AL",
-    "legacyId": 12,
-    "topic": "Fiscalização do IBS",
-    "front": "Quem coordena a fiscalização compartilhada do IBS?",
-    "back": "O CGIBS, integrando as administrações tributárias dos Estados, do DF e dos Municípios.",
-    "difficulty": "facil"
-  },
-  {
-    "id": "lc227-013",
-    "concurso": "SEFAZ-AL",
-    "legacyId": 13,
-    "topic": "Fiscalização do IBS",
-    "front": "É permitida a segregação da fiscalização por porte ou atividade econômica?",
-    "back": "Não. A segregação por atividade econômica, porte ou qualquer outro critério é vedada.",
-    "difficulty": "facil"
-  },
-  {
-    "id": "lc227-014",
-    "concurso": "SEFAZ-AL",
-    "legacyId": 14,
-    "topic": "Fiscalização do IBS",
-    "front": "Quando fiscalizações de diferentes entes devem ser conjuntas e integradas?",
-    "back": "Quando envolverem o mesmo sujeito passivo, período e fatos geradores.",
-    "difficulty": "medio"
-  },
-  {
-    "id": "lc227-015",
-    "concurso": "SEFAZ-AL",
-    "legacyId": 15,
-    "topic": "Fiscalização do IBS",
-    "front": "Qual é a composição ordinária da titularidade de uma fiscalização?",
-    "back": "Uma administração tributária titular e uma cotitular, de esferas federativas distintas, ressalvadas as exceções legais.",
-    "difficulty": "medio"
-  },
-  {
-    "id": "lc227-016",
-    "concurso": "SEFAZ-AL",
-    "legacyId": 16,
-    "topic": "Autoridade fiscal",
-    "front": "Quem é considerado autoridade fiscal pela LC nº 227/2026?",
-    "back": "Servidor efetivo de carreira específica, com competência para fiscalizar obrigações tributárias e constituir crédito.",
-    "difficulty": "medio"
-  },
-  {
-    "id": "lc227-017",
-    "concurso": "SEFAZ-AL",
-    "legacyId": 17,
-    "topic": "Cobrança do IBS",
-    "front": "Quem executa a cobrança administrativa do IBS?",
-    "back": "Servidores efetivos das carreiras das administrações tributárias competentes.",
-    "difficulty": "facil"
-  },
-  {
-    "id": "lc227-018",
-    "concurso": "SEFAZ-AL",
-    "legacyId": 18,
-    "topic": "Cobrança do IBS",
-    "front": "Quem executa a cobrança judicial e a representação judicial do IBS?",
-    "back": "Servidores efetivos de carreira específica de procurador, ressalvada a regra para municípios sem Procuradoria.",
-    "difficulty": "medio"
-  },
-  {
-    "id": "lc227-019",
-    "concurso": "SEFAZ-AL",
-    "legacyId": 19,
-    "topic": "Delegação",
-    "front": "Como atua o ente federativo que recebe delegação para cobrar o IBS?",
-    "back": "Atua em nome dos entes federativos delegantes.",
-    "difficulty": "facil"
-  },
-  {
-    "id": "lc227-020",
-    "concurso": "SEFAZ-AL",
-    "legacyId": 20,
-    "topic": "Simples Nacional",
-    "front": "As regras dos arts. 3º a 5º alcançam o IBS apurado pelo Simples Nacional?",
-    "back": "Sim. O art. 6º estende essas disposições aos créditos de IBS apurados nesse regime.",
-    "difficulty": "facil"
-  }
 
 
   ]
