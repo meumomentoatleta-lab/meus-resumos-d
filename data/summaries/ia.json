@@ -1,0 +1,11 @@
+{
+  "subject": "Inteligência Artificial",
+  "summaries": [
+    {
+      "id": "IA-001",
+      "concurso": "SEFAZ-AL",
+      "title": "Resumo : Inteligência Artificial",
+      "path": "resumos/ia/ia.md"
+    }
+  ]
+}

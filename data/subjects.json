@@ -87,6 +87,17 @@
       "flashcards": "data/flashcards/cienciaDados.json",
       "mindmaps": "data/mindmaps/cienciaDados.json",
       "summaries": "data/summaries/cienciaDados.json"
+    },
+         {
+      "id": "inteligenciaArtificial",
+      "name": "Inteligência Artificial",
+      "shortName": "IA",
+      "icon": "�",
+      "color": "#0891b2",
+      "description": "Inteligência Artificial, machine learning, deep learning e aplicações.",
+      "flashcards": "data/flashcards/ia.json",
+      "mindmaps": "data/mindmaps/ia.json",
+      "summaries": "data/summaries/ia.json"
     }
    
   ]

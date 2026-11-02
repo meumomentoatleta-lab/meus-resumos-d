@@ -1155,12 +1155,283 @@
       "front": "O transporte integra a base quando realizado por conta e ordem de quem?",
       "back": "Do fornecedor, ou quando efetuado pelo próprio fornecedor.",
       "difficulty": "medio"
+    },
+    
+    {
+      "id": "aliq-001",
+      "concurso": "SEFAZ-AL",
+      "legacyId": 1,
+      "topic": "Competência para fixação",
+      "front": "Quem fixa a alíquota da CBS?",
+      "back": "A União, por meio de lei específica.",
+      "difficulty": "facil"
+    },
+    {
+      "id": "aliq-002",
+      "concurso": "SEFAZ-AL",
+      "legacyId": 2,
+      "topic": "Competência para fixação",
+      "front": "Quem fixa a alíquota do IBS estadual?",
+      "back": "Cada Estado, por meio de lei específica.",
+      "difficulty": "facil"
+    },
+    {
+      "id": "aliq-003",
+      "concurso": "SEFAZ-AL",
+      "legacyId": 3,
+      "topic": "Competência para fixação",
+      "front": "Quem fixa a alíquota do IBS municipal?",
+      "back": "Cada Município, por meio de lei específica.",
+      "difficulty": "facil"
+    },
+    {
+      "id": "aliq-004",
+      "concurso": "SEFAZ-AL",
+      "legacyId": 4,
+      "topic": "Competência para fixação",
+      "front": "Quais competências o Distrito Federal exerce na fixação das alíquotas do IBS?",
+      "back": "As competências estadual e municipal.",
+      "difficulty": "facil"
+    },
+    {
+      "id": "aliq-005",
+      "concurso": "SEFAZ-AL",
+      "legacyId": 5,
+      "topic": "Fernando de Noronha",
+      "front": "Quem exerce a competência municipal para fixar a alíquota do IBS em Fernando de Noronha?",
+      "back": "O Estado de Pernambuco.",
+      "difficulty": "medio"
+    },
+    {
+      "id": "aliq-006",
+      "concurso": "SEFAZ-AL",
+      "legacyId": 6,
+      "topic": "Alíquota de referência",
+      "front": "Ao fixar sua alíquota, o ente federativo pode vinculá-la à alíquota de referência?",
+      "back": "Sim. Pode acrescentar ou diminuir pontos percentuais em relação à alíquota de referência da respectiva esfera federativa.",
+      "difficulty": "medio"
+    },
+    {
+      "id": "aliq-007",
+      "concurso": "SEFAZ-AL",
+      "legacyId": 7,
+      "topic": "Alíquota de referência",
+      "front": "O ente federativo é obrigado a vincular sua alíquota à alíquota de referência?",
+      "back": "Não. Pode definir sua alíquota sem vinculação à alíquota de referência.",
+      "difficulty": "medio"
+    },
+    {
+      "id": "aliq-008",
+      "concurso": "SEFAZ-AL",
+      "legacyId": 8,
+      "topic": "Ausência de lei específica",
+      "front": "O que acontece se o ente federativo não tiver lei específica estabelecendo sua alíquota?",
+      "back": "Será aplicada a alíquota de referência da respectiva esfera federativa.",
+      "difficulty": "facil"
+    },
+    {
+      "id": "aliq-009",
+      "concurso": "SEFAZ-AL",
+      "legacyId": 9,
+      "topic": "Alíquota-padrão",
+      "front": "Como devem ser entendidas as referências às alíquotas-padrão na LC 214/2025?",
+      "back": "Como remissões às alíquotas fixadas por cada ente federativo nos termos do art. 14.",
+      "difficulty": "dificil"
+    },
+    {
+      "id": "aliq-010",
+      "concurso": "SEFAZ-AL",
+      "legacyId": 10,
+      "topic": "Alíquota do IBS",
+      "front": "Como se determina a alíquota do IBS quando o destino da operação está em um Estado e em um Município?",
+      "back": "Pela soma da alíquota do Estado de destino com a alíquota do Município de destino.",
+      "difficulty": "facil"
+    },
+    {
+      "id": "aliq-011",
+      "concurso": "SEFAZ-AL",
+      "legacyId": 11,
+      "topic": "Alíquota do IBS",
+      "front": "Qual alíquota do IBS é aplicada quando o Distrito Federal é o destino da operação?",
+      "back": "A alíquota do Distrito Federal.",
+      "difficulty": "facil"
+    },
+    {
+      "id": "aliq-012",
+      "concurso": "SEFAZ-AL",
+      "legacyId": 12,
+      "topic": "Destino da operação",
+      "front": "Como se define o destino da operação para fins de aplicação da alíquota do IBS?",
+      "back": "É o local da ocorrência da operação, definido conforme o art. 11 da LC 214/2025.",
+      "difficulty": "medio"
+    },
+    {
+      "id": "aliq-013",
+      "concurso": "SEFAZ-AL",
+      "legacyId": 13,
+      "topic": "Uniformidade",
+      "front": "A alíquota fixada por cada ente federativo pode variar livremente conforme o bem ou serviço?",
+      "back": "Não. É a mesma para todas as operações com bens ou serviços, ressalvadas as hipóteses previstas na LC 214/2025.",
+      "difficulty": "medio"
+    },
+    {
+      "id": "aliq-014",
+      "concurso": "SEFAZ-AL",
+      "legacyId": 14,
+      "topic": "Uniformidade",
+      "front": "A uniformidade da alíquota de cada ente federativo é absoluta?",
+      "back": "Não. A LC prevê hipóteses excepcionais.",
+      "difficulty": "medio"
+    },
+    {
+      "id": "aliq-015",
+      "concurso": "SEFAZ-AL",
+      "legacyId": 15,
+      "topic": "Regimes diferenciados",
+      "front": "Sobre qual alíquota são aplicadas as reduções dos regimes diferenciados?",
+      "back": "Sobre a alíquota de cada ente federativo.",
+      "difficulty": "medio"
+    },
+    {
+      "id": "aliq-016",
+      "concurso": "SEFAZ-AL",
+      "legacyId": 16,
+      "topic": "Regimes específicos",
+      "front": "Após a LC 227/2026, sobre qual alíquota são aplicadas as reduções dos regimes diferenciados e específicos?",
+      "back": "Sobre a alíquota de cada ente federativo, ressalvados os casos de aplicação de alíquota nacionalmente uniforme.",
+      "difficulty": "dificil"
+    },
+    {
+      "id": "aliq-017",
+      "concurso": "SEFAZ-AL",
+      "legacyId": 17,
+      "topic": "LC 227/2026",
+      "front": "Qual ressalva foi acrescentada pela LC 227/2026 ao parágrafo único do art. 16?",
+      "back": "Os casos de aplicação de alíquota nacionalmente uniforme.",
+      "difficulty": "dificil"
+    },
+    {
+      "id": "aliq-018",
+      "concurso": "SEFAZ-AL",
+      "legacyId": 18,
+      "topic": "Devolução e cancelamento",
+      "front": "Qual alíquota deve ser aplicada na devolução ou no cancelamento de uma operação?",
+      "back": "A mesma alíquota cobrada na operação original.",
+      "difficulty": "facil"
+    },
+    {
+      "id": "aliq-019",
+      "concurso": "SEFAZ-AL",
+      "legacyId": 19,
+      "topic": "Cálculo do IBS",
+      "front": "Estado de destino com alíquota de 12% e Município de destino com alíquota de 3%. Qual é a alíquota total do IBS?",
+      "back": "15%, resultante da soma das alíquotas estadual e municipal.",
+      "difficulty": "facil"
+    },
+    {
+      "id": "aliq-020",
+      "concurso": "SEFAZ-AL",
+      "legacyId": 20,
+      "topic": "Devolução e cancelamento",
+      "front": "Na devolução de uma operação, deve ser utilizada necessariamente a alíquota vigente na data da devolução?",
+      "back": "Não. Deve ser utilizada a mesma alíquota cobrada na operação original.",
+      "difficulty": "medio"
+    },
+    
+{
+      "id": "aliqref-001",
+      "concurso": "SEFAZ-AL",
+      "legacyId": 1,
+      "topic": "Alíquotas de Referência",
+      "front": "Quem fixa as alíquotas de referência?",
+      "back": "O Senado Federal, por resolução.",
+      "difficulty": "facil"
+    },
+    {
+      "id": "aliqref-002",
+      "concurso": "SEFAZ-AL",
+      "legacyId": 2,
+      "topic": "Alíquotas de Referência",
+      "front": "Qual o período de fixação da referência da CBS?",
+      "back": "De 2027 a 2035.",
+      "difficulty": "facil"
+    },
+    {
+      "id": "aliqref-003",
+      "concurso": "SEFAZ-AL",
+      "legacyId": 3,
+      "topic": "Alíquotas de Referência",
+      "front": "Qual o período de fixação da referência do IBS?",
+      "back": "De 2029 a 2035.",
+      "difficulty": "facil"
+    },
+    {
+      "id": "aliqref-004",
+      "concurso": "SEFAZ-AL",
+      "legacyId": 4,
+      "topic": "Alíquotas de Referência",
+      "front": "Quais referências vigoram para IBS e CBS após 2035?",
+      "back": "As alíquotas vigentes no ano anterior.",
+      "difficulty": "medio"
+    },
+    {
+      "id": "aliqref-005",
+      "concurso": "SEFAZ-AL",
+      "legacyId": 5,
+      "topic": "Compensação de Arrecadação",
+      "front": "O que ocorre se lei federal alterar a arrecadação do IBS ou CBS?",
+      "back": "O Senado ajusta as alíquotas de referência para preservar a arrecadação das esferas federativas.",
+      "difficulty": "medio"
+    },
+    {
+      "id": "aliqref-006",
+      "concurso": "SEFAZ-AL",
+      "legacyId": 6,
+      "topic": "Compensação de Arrecadação",
+      "front": "Quando entra em vigor a alteração federal do art. 19?",
+      "back": "Com o início dos efeitos do ajuste das alíquotas de referência.",
+      "difficulty": "medio"
+    },
+    {
+      "id": "aliqref-007",
+      "concurso": "SEFAZ-AL",
+      "legacyId": 7,
+      "topic": "Compensação de Arrecadação",
+      "front": "Quais alterações federais são desconsideradas no art. 19?",
+      "back": "Alterações na alíquota da CBS e no montante da devolução específica da CBS a pessoas físicas.",
+      "difficulty": "dificil"
+    },
+    {
+      "id": "aliqref-008",
+      "concurso": "SEFAZ-AL",
+      "legacyId": 8,
+      "topic": "Anterioridade",
+      "front": "Quais anterioridades se aplicam ao ajuste das referências?",
+      "back": "CBS: anterioridade nonagesimal. IBS: anterioridade nonagesimal e anual.",
+      "difficulty": "dificil"
+    },
+    {
+      "id": "aliqref-009",
+      "concurso": "SEFAZ-AL",
+      "legacyId": 9,
+      "topic": "Procedimento de Ajuste",
+      "front": "Qual o prazo para envio dos cálculos e metodologia ao TCU?",
+      "back": "60 dias após a promulgação da lei que alterar a arrecadação.",
+      "difficulty": "medio"
+    },
+    {
+      "id": "aliqref-010",
+      "concurso": "SEFAZ-AL",
+      "legacyId": 10,
+      "topic": "Impacto Legislativo",
+      "front": "Projeto de LC que altera a arrecadação pode ser apreciado sem estimativa de impacto?",
+      "back": "Não. Deve acompanhar estimativa de impacto nas alíquotas de referência do IBS e da CBS.",
+      "difficulty": "facil"
     }
   
 
 
   
-
 
 ]
 

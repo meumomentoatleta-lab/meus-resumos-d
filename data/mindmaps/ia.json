@@ -1,0 +1,12 @@
+{
+  "mindmaps": [
+    {
+      "id": "ia",
+      "concurso": "SEFAZ-AL",
+      "title": "Inteligência Artificial",
+      "subject": "Inteligência Artificial",
+      "path": "mindmaps/ia/ia-intro.html",
+      "available": true
+    }
+  ]
+}

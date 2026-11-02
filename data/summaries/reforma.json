@@ -32,10 +32,22 @@
       "path": "resumos/reforma/214-local-operacao.md"
     },
       {
-      "id": "ec-132-2023",
+      "id": "ec-214-2025",
       "concurso": "SEFAZ-AL",
       "title": "EC 214/2025 - Base de Cálculo",
       "path": "resumos/reforma/214-base-calculo.md"
+    },
+      {
+      "id": "ec-214-2025",
+      "concurso": "SEFAZ-AL",
+      "title": "EC 214/2025 - Aliquota",
+      "path": "resumos/reforma/214-aliquota.md"
+    },
+      {
+      "id": "ec-214-2025",
+      "concurso": "SEFAZ-AL",
+      "title": "EC 214/2025 - Aliquota de Referencia",
+      "path": "resumos/reforma/214-aliquota-referencia.md"
     }
 
     

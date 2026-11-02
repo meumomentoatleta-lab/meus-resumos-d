@@ -63,6 +63,22 @@
       "subject": "Reforma Tributária",
       "path": "mindmaps/reforma/214-base-calculo.html",
       "available": true
+    },
+    {
+      "id": "EC 214/2025",
+      "concurso": "SEFAZ-AL",
+      "title": "EC 214/2025 - Aliquota",
+      "subject": "Reforma Tributária",
+      "path": "mindmaps/reforma/214-aliquota.html",
+      "available": true
+    },
+    {
+      "id": "EC 214/2025",
+      "concurso": "SEFAZ-AL",
+      "title": "EC 214/2025 - Aliquota de Referencia",
+      "subject": "Reforma Tributária",
+      "path": "mindmaps/reforma/214-aliquota-referencia.html",
+      "available": true
     }
   ]
 }

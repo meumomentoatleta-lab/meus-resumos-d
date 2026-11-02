@@ -1,0 +1,236 @@
+{
+    "subject": "Inteligência Artificial",
+  "cards": [
+    {
+      "id": "ia-001",
+      "concurso": "SEFAZ-AL",
+      "legacyId": 1,
+      "topic": "Conceitos básicos",
+      "front": "O que é Inteligência Artificial?",
+      "back": "Simulação de processos da inteligência humana por sistemas computacionais.",
+      "difficulty": "facil"
+    },
+    {
+      "id": "ia-002",
+      "concurso": "SEFAZ-AL",
+      "legacyId": 2,
+      "topic": "Conceitos básicos",
+      "front": "Quais são as características dos sistemas de IA?",
+      "back": "Aprendizado, adaptação, autonomia, raciocínio e interação.",
+      "difficulty": "facil"
+    },
+    {
+      "id": "ia-003",
+      "concurso": "SEFAZ-AL",
+      "legacyId": 3,
+      "topic": "Conceitos básicos",
+      "front": "Qual a relação entre IA, Machine Learning e Deep Learning?",
+      "back": "Deep Learning é subcampo de Machine Learning, que é subcampo da IA.",
+      "difficulty": "medio"
+    },
+    {
+      "id": "ia-004",
+      "concurso": "SEFAZ-AL",
+      "legacyId": 4,
+      "topic": "Conceitos básicos",
+      "front": "O que avalia o Teste de Turing?",
+      "back": "Se uma máquina consegue imitar comportamento humano em uma conversa.",
+      "difficulty": "facil"
+    },
+    {
+      "id": "ia-005",
+      "concurso": "SEFAZ-AL",
+      "legacyId": 5,
+      "topic": "Ontologias",
+      "front": "O que é uma ontologia?",
+      "back": "Representação formal de conceitos, propriedades e relações de um domínio.",
+      "difficulty": "facil"
+    },
+    {
+      "id": "ia-006",
+      "concurso": "SEFAZ-AL",
+      "legacyId": 6,
+      "topic": "Ontologias",
+      "front": "Qual a diferença entre banco de dados e ontologia?",
+      "back": "Banco armazena dados; ontologia representa seus significados e relações.",
+      "difficulty": "medio"
+    },
+    {
+      "id": "ia-007",
+      "concurso": "SEFAZ-AL",
+      "legacyId": 7,
+      "topic": "Tipos de IA",
+      "front": "O que caracteriza a IA fraca?",
+      "back": "Executa tarefas específicas sem consciência ou compreensão genuína.",
+      "difficulty": "facil"
+    },
+    {
+      "id": "ia-008",
+      "concurso": "SEFAZ-AL",
+      "legacyId": 8,
+      "topic": "Tipos de IA",
+      "front": "O que caracteriza a IA forte?",
+      "back": "Inteligência geral com consciência e compreensão; ainda é teórica.",
+      "difficulty": "facil"
+    },
+    {
+      "id": "ia-009",
+      "concurso": "SEFAZ-AL",
+      "legacyId": 9,
+      "topic": "Tipos de IA",
+      "front": "Qual a diferença entre ANI, AGI e ASI?",
+      "back": "ANI: estreita; AGI: geral; ASI: superior à inteligência humana.",
+      "difficulty": "medio"
+    },
+    {
+      "id": "ia-010",
+      "concurso": "SEFAZ-AL",
+      "legacyId": 10,
+      "topic": "Tipos de IA",
+      "front": "Qual a diferença entre IA discriminativa e generativa?",
+      "back": "Discriminativa classifica dados; generativa cria novos conteúdos.",
+      "difficulty": "facil"
+    },
+    {
+      "id": "ia-011",
+      "concurso": "SEFAZ-AL",
+      "legacyId": 11,
+      "topic": "Ética e riscos",
+      "front": "O que significa a matriz FAT?",
+      "back": "Fairness, Accountability e Transparency: justiça, responsabilidade e transparência.",
+      "difficulty": "facil"
+    },
+    {
+      "id": "ia-012",
+      "concurso": "SEFAZ-AL",
+      "legacyId": 12,
+      "topic": "Ética e riscos",
+      "front": "O que é viés algorítmico?",
+      "back": "Distorção nos resultados que pode produzir decisões injustas ou discriminatórias.",
+      "difficulty": "medio"
+    },
+    {
+      "id": "ia-013",
+      "concurso": "SEFAZ-AL",
+      "legacyId": 13,
+      "topic": "Ética e riscos",
+      "front": "O que é uma alucinação de IA?",
+      "back": "Geração de informação falsa ou incorreta apresentada como verdadeira.",
+      "difficulty": "facil"
+    },
+    {
+      "id": "ia-014",
+      "concurso": "SEFAZ-AL",
+      "legacyId": 14,
+      "topic": "Ética e riscos",
+      "front": "O que são deepfakes?",
+      "back": "Conteúdos artificiais realistas que simulam pessoas ou acontecimentos.",
+      "difficulty": "facil"
+    },
+    {
+      "id": "ia-015",
+      "concurso": "SEFAZ-AL",
+      "legacyId": 15,
+      "topic": "IA Generativa",
+      "front": "O que caracteriza a IA generativa?",
+      "back": "Cria textos, imagens, áudios, vídeos e outros conteúdos a partir de padrões aprendidos.",
+      "difficulty": "facil"
+    },
+    {
+      "id": "ia-016",
+      "concurso": "SEFAZ-AL",
+      "legacyId": 16,
+      "topic": "Modelos de linguagem",
+      "front": "O que significa LLM?",
+      "back": "Large Language Model: modelo de linguagem de grande escala.",
+      "difficulty": "facil"
+    },
+    {
+      "id": "ia-017",
+      "concurso": "SEFAZ-AL",
+      "legacyId": 17,
+      "topic": "Modelos de linguagem",
+      "front": "O que é tokenização?",
+      "back": "Divisão do texto em unidades menores chamadas tokens.",
+      "difficulty": "facil"
+    },
+    {
+      "id": "ia-018",
+      "concurso": "SEFAZ-AL",
+      "legacyId": 18,
+      "topic": "Arquiteturas",
+      "front": "Qual a principal característica das CNNs?",
+      "back": "Utilizam convoluções para extrair padrões visuais, especialmente em imagens.",
+      "difficulty": "medio"
+    },
+    {
+      "id": "ia-019",
+      "concurso": "SEFAZ-AL",
+      "legacyId": 19,
+      "topic": "Arquiteturas",
+      "front": "Qual a principal característica das RNNs?",
+      "back": "Processam sequências mantendo informações de estados anteriores.",
+      "difficulty": "medio"
+    },
+    {
+      "id": "ia-020",
+      "concurso": "SEFAZ-AL",
+      "legacyId": 20,
+      "topic": "Arquiteturas",
+      "front": "Qual a principal característica dos Transformers?",
+      "back": "Utilizam mecanismo de atenção para processar sequências em paralelo.",
+      "difficulty": "medio"
+    },
+    {
+      "id": "ia-021",
+      "concurso": "SEFAZ-AL",
+      "legacyId": 21,
+      "topic": "Arquiteturas",
+      "front": "Como funciona uma GAN?",
+      "back": "A geradora cria dados; a discriminadora avalia sua autenticidade.",
+      "difficulty": "medio"
+    },
+    {
+      "id": "ia-022",
+      "concurso": "SEFAZ-AL",
+      "legacyId": 22,
+      "topic": "Agentes de IA",
+      "front": "O que é um agente de IA?",
+      "back": "Entidade que percebe o ambiente por sensores e age por atuadores para atingir objetivos.",
+      "difficulty": "medio"
+    },
+    {
+      "id": "ia-023",
+      "concurso": "SEFAZ-AL",
+      "legacyId": 23,
+      "topic": "Agentes de IA",
+      "front": "O que caracteriza um agente racional?",
+      "back": "Escolhe a ação que maximiza o desempenho esperado nas condições disponíveis.",
+      "difficulty": "medio"
+    },
+    {
+      "id": "ia-024",
+      "concurso": "SEFAZ-AL",
+      "legacyId": 24,
+      "topic": "Engenharia de prompt",
+      "front": "O que é engenharia de prompt?",
+      "back": "Criação e otimização de instruções para orientar modelos generativos.",
+      "difficulty": "facil"
+    },
+    {
+      "id": "ia-025",
+      "concurso": "SEFAZ-AL",
+      "legacyId": 25,
+      "topic": "Engenharia de prompt",
+      "front": "Qual a diferença entre Zero-shot e Few-shot?",
+      "back": "Zero-shot não fornece exemplos; Few-shot fornece alguns exemplos no prompt.",
+      "difficulty": "medio"
+    }
+  ]
+
+
+
+
+
+    
+}
