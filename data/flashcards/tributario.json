@@ -1327,7 +1327,238 @@
     "front": "Qual o prazo para os entes adaptarem sua legislação aos arts. 208-A a 208-J do CTN?",
     "back": "Dois anos. Se não houver adaptação, as normas gerais serão aplicadas até que sobrevenha legislação específica compatível.",
     "difficulty": "easy"
-  }
+  },
+
+  
+
+    {
+      "id": "impuni-001",
+      "concurso": "SEFAZ-AL",
+      "legacyId": 1,
+      "topic": "Imposto de Importação",
+      "front": "Qual é a finalidade predominante do II?",
+      "back": "Extrafiscal, pois é instrumento de controle do comércio exterior.",
+      "difficulty": "facil"
+    },
+    {
+      "id": "impuni-002",
+      "concurso": "SEFAZ-AL",
+      "legacyId": 2,
+      "topic": "Imposto de Importação",
+      "front": "Qual é o fato gerador do II segundo o CTN?",
+      "back": "A entrada de produtos estrangeiros no território nacional.",
+      "difficulty": "facil"
+    },
+    {
+      "id": "impuni-003",
+      "concurso": "SEFAZ-AL",
+      "legacyId": 3,
+      "topic": "Imposto de Importação",
+      "front": "Qual é a base de cálculo do II quando a alíquota é específica?",
+      "back": "A unidade de medida adotada pela lei tributária.",
+      "difficulty": "facil"
+    },
+    {
+      "id": "impuni-004",
+      "concurso": "SEFAZ-AL",
+      "legacyId": 4,
+      "topic": "Imposto de Importação",
+      "front": "Qual é a base de cálculo do II quando a alíquota é ad valorem?",
+      "back": "O preço normal, entendido como valor aduaneiro.",
+      "difficulty": "medio"
+    },
+    {
+      "id": "impuni-005",
+      "concurso": "SEFAZ-AL",
+      "legacyId": 5,
+      "topic": "Imposto de Exportação",
+      "front": "Qual é o fato gerador do IE?",
+      "back": "A saída de produtos nacionais ou nacionalizados do território nacional.",
+      "difficulty": "facil"
+    },
+    {
+      "id": "impuni-006",
+      "concurso": "SEFAZ-AL",
+      "legacyId": 6,
+      "topic": "Imposto de Exportação",
+      "front": "Qual é a base de cálculo do IE quando a alíquota é específica?",
+      "back": "A unidade de medida adotada pela lei tributária.",
+      "difficulty": "facil"
+    },
+    {
+      "id": "impuni-007",
+      "concurso": "SEFAZ-AL",
+      "legacyId": 7,
+      "topic": "Imposto de Exportação",
+      "front": "Quem é o contribuinte do IE?",
+      "back": "O exportador ou quem a lei a ele equiparar.",
+      "difficulty": "facil"
+    },
+    {
+      "id": "impuni-008",
+      "concurso": "SEFAZ-AL",
+      "legacyId": 8,
+      "topic": "Imposto de Renda",
+      "front": "Quais são os três critérios constitucionais do IR?",
+      "back": "Generalidade, universalidade e progressividade.",
+      "difficulty": "facil"
+    },
+    {
+      "id": "impuni-009",
+      "concurso": "SEFAZ-AL",
+      "legacyId": 9,
+      "topic": "Imposto de Renda",
+      "front": "O que significa generalidade no IR?",
+      "back": "A tributação alcança as pessoas em geral.",
+      "difficulty": "facil"
+    },
+    {
+      "id": "impuni-010",
+      "concurso": "SEFAZ-AL",
+      "legacyId": 10,
+      "topic": "Imposto de Renda",
+      "front": "O que significa universalidade no IR?",
+      "back": "A tributação alcança as diferentes espécies de rendimentos.",
+      "difficulty": "facil"
+    },
+    {
+      "id": "impuni-011",
+      "concurso": "SEFAZ-AL",
+      "legacyId": 11,
+      "topic": "Imposto de Renda",
+      "front": "O IR respeita a anterioridade anual e a noventena?",
+      "back": "Respeita a anterioridade anual, mas é exceção à anterioridade nonagesimal.",
+      "difficulty": "medio"
+    },
+    {
+      "id": "impuni-012",
+      "concurso": "SEFAZ-AL",
+      "legacyId": 12,
+      "topic": "Imposto de Renda",
+      "front": "Qual é a modalidade de lançamento do IR?",
+      "back": "Por homologação, apesar da declaração prestada pelo contribuinte.",
+      "difficulty": "medio"
+    },
+    {
+      "id": "impuni-013",
+      "concurso": "SEFAZ-AL",
+      "legacyId": 13,
+      "topic": "IPI",
+      "front": "Quais são os três fatos geradores do IPI previstos no CTN?",
+      "back": "Desembaraço aduaneiro de produto estrangeiro; saída de estabelecimento industrial ou equiparado; arrematação de produto apreendido ou abandonado em leilão.",
+      "difficulty": "medio"
+    },
+    {
+      "id": "impuni-014",
+      "concurso": "SEFAZ-AL",
+      "legacyId": 14,
+      "topic": "IPI",
+      "front": "Qual é a base de cálculo do IPI na saída de produto industrializado?",
+      "back": "O valor da operação. Na falta dele, o preço corrente no mercado atacadista da praça do remetente.",
+      "difficulty": "medio"
+    },
+    {
+      "id": "impuni-015",
+      "concurso": "SEFAZ-AL",
+      "legacyId": 15,
+      "topic": "IPI",
+      "front": "O IPI incide sobre produtos industrializados destinados ao exterior?",
+      "back": "Não. Há imunidade nas exportações de produtos industrializados.",
+      "difficulty": "facil"
+    },
+    {
+      "id": "impuni-016",
+      "concurso": "SEFAZ-AL",
+      "legacyId": 16,
+      "topic": "IPI",
+      "front": "A redução a zero das alíquotas do IPI em 2027 significa sua extinção?",
+      "back": "Não. A redução a zero é a regra, mas há exceção para produtos com industrialização incentivada na Zona Franca de Manaus.",
+      "difficulty": "medio"
+    },
+    {
+      "id": "impuni-017",
+      "concurso": "SEFAZ-AL",
+      "legacyId": 17,
+      "topic": "IOF",
+      "front": "Quais operações constituem fatos geradores do IOF?",
+      "back": "Operações de crédito, câmbio, seguro e relativas a títulos ou valores mobiliários.",
+      "difficulty": "facil"
+    },
+    {
+      "id": "impuni-018",
+      "concurso": "SEFAZ-AL",
+      "legacyId": 18,
+      "topic": "IOF",
+      "front": "Qual é o fato gerador do IOF sobre operações de seguro?",
+      "back": "A emissão da apólice ou o recebimento do prêmio, na forma da lei.",
+      "difficulty": "medio"
+    },
+    {
+      "id": "impuni-019",
+      "concurso": "SEFAZ-AL",
+      "legacyId": 19,
+      "topic": "IOF",
+      "front": "Como é repartida a arrecadação do IOF sobre ouro como ativo financeiro?",
+      "back": "30% para Estado, DF ou Território de origem e 70% para o Município de origem.",
+      "difficulty": "medio"
+    },
+    {
+      "id": "impuni-020",
+      "concurso": "SEFAZ-AL",
+      "legacyId": 20,
+      "topic": "IOF",
+      "front": "Incide IOF sobre saques em caderneta de poupança?",
+      "back": "Não. A incidência foi considerada inconstitucional pela Súmula 664 do STF.",
+      "difficulty": "medio"
+    },
+    {
+      "id": "impuni-021",
+      "concurso": "SEFAZ-AL",
+      "legacyId": 21,
+      "topic": "ITR",
+      "front": "Qual é o fato gerador do ITR?",
+      "back": "Propriedade, domínio útil ou posse de imóvel por natureza situado fora da zona urbana do Município.",
+      "difficulty": "facil"
+    },
+    {
+      "id": "impuni-022",
+      "concurso": "SEFAZ-AL",
+      "legacyId": 22,
+      "topic": "ITR",
+      "front": "Qual é a finalidade da progressividade das alíquotas do ITR?",
+      "back": "Desestimular a manutenção de propriedades rurais improdutivas.",
+      "difficulty": "facil"
+    },
+    {
+      "id": "impuni-023",
+      "concurso": "SEFAZ-AL",
+      "legacyId": 23,
+      "topic": "ITR",
+      "front": "O Município que fiscaliza e cobra o ITR pode receber quanto da arrecadação?",
+      "back": "100%, se optar pela fiscalização e cobrança na forma prevista constitucionalmente.",
+      "difficulty": "medio"
+    },
+    {
+      "id": "impuni-024",
+      "concurso": "SEFAZ-AL",
+      "legacyId": 24,
+      "topic": "Imposto Seletivo",
+      "front": "Qual é o objetivo do Imposto Seletivo?",
+      "back": "Tributar bens e serviços prejudiciais à saúde ou ao meio ambiente, com finalidade extrafiscal.",
+      "difficulty": "facil"
+    },
+    {
+      "id": "impuni-025",
+      "concurso": "SEFAZ-AL",
+      "legacyId": 25,
+      "topic": "Imposto Seletivo",
+      "front": "Qual é a alíquota máxima do IS na extração?",
+      "back": "1% do valor de mercado do produto, independentemente da destinação.",
+      "difficulty": "medio"
+    }
+  
+
+
 ]
 
 
