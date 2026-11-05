@@ -1,18 +1,84 @@
 {
   "subjects": {
     "tributario": {
-      "credito-tributario": {},
-      "suspensao-credito": {},
-      "extincao-credito": {"Relevância": "Alta"}
+     
+      "credito-tributario-lancamento": {
+        "title": "Crédito Tributário e Lançamento",
+        "bancas": {"CESPE": 20.27}
+      },
+      "limitacoes-constitucionais-poder-tributar": {
+        "title": "Limitações Constitucionais ao Poder de Tributar",
+        "bancas": {"CESPE": 15.03}
+      },
+      "obrigacao-tributaria": {
+        "title": "Obrigação Tributária",
+        "bancas": {"CESPE": 10.56}
+      },
+      "especies-tributos": {
+        "title": "Espécies de Tributos",
+        "bancas": {"CESPE": 11.18}
+      },
+      "administracao-tributaria": {
+        "title": "Administração Tributária",
+        "bancas": {"CESPE": 8.21}
+      },
+      "impostos-estaduais": {
+        "title": "Impostos Estaduais",
+        "bancas": {"CESPE": 8.07}
+      },
+      "competencia-tributaria": {
+        "title": "Competência Tributária",
+        "bancas": {"CESPE": 8.07}
+      },
+      "jurisprudencia-tributaria": {
+        "title": "Jurisprudência",
+        "bancas": {"CESPE": 4.97}
+      },
+      "legislacao-tributaria": {
+        "title": "Legislação Tributária",
+        "bancas": {"CESPE": 3.73}
+      },
+      "impostos-municipais": {
+        "title": "Impostos Municipais",
+        "bancas": {"CESPE": 3.73}
+      },
+      "reparticao-receitas-tributarias": {
+        "title": "Repartição das Receitas Tributárias",
+        "bancas": {"CESPE": 3.73}
+      },
+      "impostos-federais": {
+        "title": "Impostos Federais",
+        "bancas": {"CESPE": 2.48}
+      },
+      "conceito-classificacao-tributos": {
+        "title": "Conceito e Classificação dos Tributos",
+        "bancas": {"CESPE": 11.43}
+      },
+      "suspensao-credito-tributario": {
+        "title": "Suspensão do Crédito Tributário",
+        "bancas": {"CESPE": 3.16}
+      },
+      
+      "exclusao-credito-tributario": {
+        "title": "Exclusão do Crédito Tributário",
+        "bancas": {"CESPE": 2.03}
+      },
+      "extincao-credito-tributario": {
+        "title": "Extinção do Crédito Tributário",
+        "bancas": {"CESPE": 8.83}
+      }
     },
     "reforma": {
-      "ibs-cbs": {},
-      "itbi-cosip": {},
-      "pat-i": {}
+      "ibs-cbs": {"bancas": {"CESPE": 40}},
+      "itbi-cosip": {"bancas": {"CESPE": 25}},
+      "pat-i": {"bancas": {"CESPE": 30}}
     },
     "cienciaDados": {
-      "modelagem-multidimensional": {},
-         "data-mining": {"Relevância": "Alta"}
+      "modelagem-multidimensional": {"bancas": {"CESPE": 35}},
+      "data-mining": {
+        "bancas": {"CESPE": 40},
+        "relevanciaAnterior": "Alta"
+      }
     }
   }
 }

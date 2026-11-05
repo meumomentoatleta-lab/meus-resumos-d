@@ -12,3 +12,18 @@ O projeto é um site estático: não precisa de etapa de build nem de servidor p
 Para testar sem conectar um repositório, também é possível publicar a pasta do projeto pelo recurso de deploy manual do Netlify. Para atualizações frequentes, a integração com Git publica cada novo commit automaticamente.
 
 **Privacidade:** esta hospedagem é pública. Os arquivos HTML, JSON e Markdown enviados ao site poderão ser acessados por qualquer pessoa. O progresso dos flashcards é salvo apenas na sessão do navegador e não é sincronizado entre dispositivos.
+
+## Relevância por banca
+
+Os percentuais são cadastrados em `data/relevancia.json`, por matéria, assunto e banca. Use números de `0` a `100`; não inclua o símbolo `%` no JSON. Um assunto pode ter um percentual diferente para cada banca:
+
+```json
+"credito-tributario": {
+  "bancas": {
+    "CESPE": 35,
+    "FCC": 25
+  }
+}
+```
+
+Os dados preenchidos atualmente são exemplos, entre 15% e 40%. No painel **Relevância**, filtre por banca e ordene os percentuais em ordem crescente ou decrescente. Registros antigos sem banca ficam guardados em `relevanciaAnterior` e não entram nos percentuais.

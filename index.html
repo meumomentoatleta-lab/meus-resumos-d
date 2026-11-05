@@ -249,7 +249,7 @@
                 </h3>
 
                 <p>
-                    Compare a importância dos assuntos para cada concurso.
+                    Compare o percentual de relevância dos assuntos por banca.
                 </p>
 
                 <span class="action-link">
@@ -538,7 +538,7 @@
                 <h1>📊 Relevância em prova</h1>
 
                 <p>
-                    Visão geral da relevância dos assuntos por concurso.
+                    Compare o percentual de relevância de cada assunto por banca.
                 </p>
 
             </div>
@@ -559,15 +559,15 @@
                 <span class="stat-icon">📝</span>
                 <div>
                     <span class="stat-number" id="relevanceTrackedCount">0</span>
-                    <span class="stat-label">Com relevância cadastrada</span>
+                    <span class="stat-label">Relevâncias cadastradas</span>
                 </div>
             </div>
 
             <div class="stat-card">
                 <span class="stat-icon">⭐</span>
                 <div>
-                    <span class="stat-number" id="relevanceHighCount">0</span>
-                    <span class="stat-label">Marcados como alta</span>
+                    <span class="stat-number" id="relevanceBancaCount">0</span>
+                    <span class="stat-label">Bancas monitoradas</span>
                 </div>
             </div>
 
@@ -583,18 +583,27 @@
             </select>
 
             <select
-                id="relevanceContest"
-                aria-label="Filtrar por concurso"
+                id="relevanceBanca"
+                aria-label="Filtrar por banca"
                 onchange="renderRelevanceDashboard()">
-                <option value="all">Todos os concursos</option>
+                <option value="all">Todas as bancas</option>
+            </select>
+
+            <select
+                id="relevanceSort"
+                aria-label="Ordenar por relevância"
+                onchange="renderRelevanceDashboard()">
+                <option value="none">Sem ordenação</option>
+                <option value="ascending">Relevância crescente</option>
+                <option value="descending">Relevância decrescente</option>
             </select>
 
             <input
                 type="search"
                 id="relevanceSearch"
                 class="search-input"
-                placeholder="Buscar assunto ou concurso..."
-                aria-label="Buscar assunto ou concurso"
+                placeholder="Buscar assunto ou banca..."
+                aria-label="Buscar assunto ou banca"
                 oninput="renderRelevanceDashboard()">
 
         </div>
@@ -606,8 +615,8 @@
                     <tr>
                         <th scope="col">Matéria</th>
                         <th scope="col">Assunto</th>
-                        <th scope="col">Concurso</th>
-                        <th scope="col">Relevância</th>
+                        <th scope="col">Banca</th>
+                        <th scope="col">Relevância (%)</th>
                     </tr>
                 </thead>
                 <tbody id="relevanceTableBody"></tbody>

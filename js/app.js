@@ -61,45 +61,38 @@ async function loadTopicRelevance() {
 }
 
 function formatTopicRelevance(subjectId, topicId) {
-  const relevance = topicRelevance[subjectId]?.[topicId];
+  const entries = getTopicBancaEntries(subjectId, topicId);
 
-  if (!relevance || Object.keys(relevance).length === 0) {
+  if (entries.length === 0) {
     return "Relevância não cadastrada";
   }
 
-  return Object.entries(relevance)
-    .map(([exam, level]) => `${exam}: ${level}`)
+  return entries
+    .map(([banca, percentage]) => `${banca}: ${formatPercentage(percentage)}`)
     .join(" | ");
 }
 
-function hasRelevanceValue(value) {
-  if (typeof value === "string") {
-    return value.trim().length > 0;
+function getTopicBancaEntries(subjectId, topicId) {
+  const bancas = topicRelevance[subjectId]?.[topicId]?.bancas;
+
+  if (!bancas || typeof bancas !== "object" || Array.isArray(bancas)) {
+    return [];
   }
 
-  if (Array.isArray(value)) {
-    return value.some(hasRelevanceValue);
-  }
-
-  if (value && typeof value === "object") {
-    return Object.values(value).some(hasRelevanceValue);
-  }
-
-  return value !== null && value !== undefined;
+  return Object.entries(bancas).filter(
+    ([banca, percentage]) =>
+      banca.trim() !== "" &&
+      typeof percentage === "number" &&
+      Number.isFinite(percentage) &&
+      percentage >= 0 &&
+      percentage <= 100,
+  );
 }
 
-function formatRelevanceValue(value) {
-  if (Array.isArray(value)) {
-    return value.map(formatRelevanceValue).join(", ");
-  }
-
-  if (value && typeof value === "object") {
-    return Object.entries(value)
-      .map(([key, nestedValue]) => `${key}: ${formatRelevanceValue(nestedValue)}`)
-      .join(", ");
-  }
-
-  return String(value);
+function formatPercentage(percentage) {
+  return `${new Intl.NumberFormat("pt-BR", {
+    maximumFractionDigits: 2,
+  }).format(percentage)}%`;
 }
 
 function getRelevanceTopics() {
@@ -122,13 +115,8 @@ function getRelevanceTopics() {
           subjects.find((entry) => entry.id === item.subjectId)?.name ||
           item.subjectId,
         title: item.title || item.topic || item.id,
-        contests: new Set(),
       };
       topicsById.set(key, topic);
-    }
-
-    if (item.concurso) {
-      topic.contests.add(item.concurso);
     }
   }
 
@@ -136,7 +124,7 @@ function getRelevanceTopics() {
   summaryDocuments.forEach(addTopic);
 
   Object.entries(topicRelevance).forEach(([subjectId, subjectTopics]) => {
-    Object.entries(subjectTopics).forEach(([id]) => {
+    Object.entries(subjectTopics).forEach(([id, relevance]) => {
       const key = `${subjectId}:${id}`;
 
       if (!topicsById.has(key)) {
@@ -145,33 +133,42 @@ function getRelevanceTopics() {
           id,
           subjectId,
           subject: subject?.name || subjectId,
-          title: id,
-          contests: new Set(),
+          title: relevance.title || id,
         });
       }
     });
   });
 
-  return [...topicsById.values()].sort(
-    (left, right) =>
-      left.subject.localeCompare(right.subject, "pt-BR") ||
-      left.title.localeCompare(right.title, "pt-BR"),
-  );
+  return [...topicsById.values()]
+    .filter((topic) => getTopicBancaEntries(topic.subjectId, topic.id).length > 0)
+    .sort(
+      (left, right) =>
+        left.subject.localeCompare(right.subject, "pt-BR") ||
+        left.title.localeCompare(right.title, "pt-BR"),
+    );
 }
 
 function renderRelevanceDashboard() {
   const select = document.getElementById("relevanceSubject");
-  const contestSelect = document.getElementById("relevanceContest");
+  const bancaSelect = document.getElementById("relevanceBanca");
+  const sortSelect = document.getElementById("relevanceSort");
   const searchInput = document.getElementById("relevanceSearch");
   const tableBody = document.getElementById("relevanceTableBody");
   const emptyState = document.getElementById("relevanceEmptyState");
 
-  if (!select || !contestSelect || !searchInput || !tableBody || !emptyState) {
+  if (
+    !select ||
+    !bancaSelect ||
+    !sortSelect ||
+    !searchInput ||
+    !tableBody ||
+    !emptyState
+  ) {
     return;
   }
 
   const selectedSubject = select.value || "all";
-  const selectedContest = contestSelect.value || "all";
+  const selectedBanca = bancaSelect.value || "all";
   const topics = getRelevanceTopics();
   const availableSubjects = new Map(
     topics.map((topic) => [topic.subjectId, topic.subject]),
@@ -183,98 +180,121 @@ function renderRelevanceDashboard() {
   });
   select.value = availableSubjects.has(selectedSubject) ? selectedSubject : "all";
 
-  const availableContests = [
+  const availableBancas = [
     ...new Set(
-      topics
-        .filter(
-          (topic) =>
-            select.value === "all" || topic.subjectId === select.value,
-        )
-        .flatMap((topic) => [...topic.contests]),
+      topics.flatMap((topic) =>
+        getTopicBancaEntries(topic.subjectId, topic.id).map(([banca]) => banca),
+      ),
     ),
   ].sort((left, right) => left.localeCompare(right, "pt-BR"));
 
-  contestSelect.replaceChildren(new Option("Todos os concursos", "all"));
-  availableContests.forEach((contest) => {
-    contestSelect.add(new Option(contest, contest));
+  bancaSelect.replaceChildren(new Option("Todas as bancas", "all"));
+  [...new Set(availableBancas)].forEach((banca) => {
+    bancaSelect.add(new Option(banca, banca));
   });
-  contestSelect.value = availableContests.includes(selectedContest)
-    ? selectedContest
+  bancaSelect.value = availableBancas.includes(selectedBanca)
+    ? selectedBanca
     : "all";
 
-  const registeredTopics = topics.filter((topic) =>
-    hasRelevanceValue(topicRelevance[topic.subjectId]?.[topic.id]),
-  );
-  const highRelevanceTopics = registeredTopics.filter((topic) =>
-    Object.values(topicRelevance[topic.subjectId][topic.id]).some((level) =>
-      /alta/i.test(formatRelevanceValue(level)),
-    ),
+  const relevanceCount = topics.reduce(
+    (count, topic) =>
+      count + getTopicBancaEntries(topic.subjectId, topic.id).length,
+    0,
   );
 
   document.getElementById("relevanceTopicCount").textContent = topics.length;
   document.getElementById("relevanceTrackedCount").textContent =
-    registeredTopics.length;
-  document.getElementById("relevanceHighCount").textContent =
-    highRelevanceTopics.length;
+    relevanceCount;
+  document.getElementById("relevanceBancaCount").textContent =
+    new Set(availableBancas).size;
 
   const query = searchInput.value.trim().toLocaleLowerCase("pt-BR");
   const filteredTopics = topics.filter((topic) => {
     const matchesSubject =
       select.value === "all" || topic.subjectId === select.value;
-    const matchesContest =
-      contestSelect.value === "all" ||
-      topic.contests.has(contestSelect.value);
-    const relevance = topicRelevance[topic.subjectId]?.[topic.id] || {};
+    const relevanceEntries = getTopicBancaEntries(topic.subjectId, topic.id);
+    const matchesBanca =
+      bancaSelect.value === "all" ||
+      relevanceEntries.some(([banca]) => banca === bancaSelect.value);
     const searchableText = [
       topic.subject,
       topic.title,
-      ...topic.contests,
-      ...Object.entries(relevance).map(
-        ([exam, level]) => `${exam} ${formatRelevanceValue(level)}`,
+      ...(bancaSelect.value === "all" ? [] : [bancaSelect.value]),
+      ...relevanceEntries.map(
+        ([banca, percentage]) => `${banca} ${formatPercentage(percentage)}`,
       ),
     ]
       .join(" ")
       .toLocaleLowerCase("pt-BR");
 
-    return matchesSubject && matchesContest && searchableText.includes(query);
+    return matchesSubject && matchesBanca && searchableText.includes(query);
   });
 
+  const rows = filteredTopics.flatMap((topic) => {
+    const entries = getTopicBancaEntries(topic.subjectId, topic.id);
+
+    if (bancaSelect.value !== "all") {
+      const selectedEntry = entries.find(
+        ([banca]) => banca === bancaSelect.value,
+      );
+
+      if (!selectedEntry) {
+        return [];
+      }
+
+      return [
+        {
+          topic,
+          banca: bancaSelect.value,
+          percentage: selectedEntry[1],
+        },
+      ];
+    }
+
+    return entries.length > 0
+      ? entries.map(([banca, percentage]) => ({
+          topic,
+          banca,
+          percentage,
+        }))
+      : [];
+  });
+
+  if (sortSelect.value !== "none") {
+    const direction = sortSelect.value === "ascending" ? 1 : -1;
+    rows.sort((left, right) => {
+      return (
+        direction * (left.percentage - right.percentage) ||
+        left.topic.subject.localeCompare(right.topic.subject, "pt-BR") ||
+        left.topic.title.localeCompare(right.topic.title, "pt-BR") ||
+        left.banca.localeCompare(right.banca, "pt-BR")
+      );
+    });
+  }
+
   tableBody.replaceChildren();
-  filteredTopics.forEach((topic) => {
+  rows.forEach(({ topic, banca, percentage }) => {
     const row = document.createElement("tr");
     const subjectCell = document.createElement("td");
     const titleCell = document.createElement("td");
-    const contestCell = document.createElement("td");
+    const bancaCell = document.createElement("td");
     const relevanceCell = document.createElement("td");
-    const relevance = topicRelevance[topic.subjectId]?.[topic.id] || {};
-    const relevanceEntries = Object.entries(relevance).filter(([, level]) =>
-      hasRelevanceValue(level),
-    );
 
     subjectCell.textContent = topic.subject;
     titleCell.textContent = topic.title;
-    contestCell.textContent = [...topic.contests].join(", ") || "—";
+    bancaCell.textContent = banca;
 
-    if (relevanceEntries.length === 0) {
-      relevanceCell.textContent = "Não cadastrada";
-      relevanceCell.className = "relevance-unset";
-    } else {
-      relevanceEntries.forEach(([exam, level]) => {
-        const badge = document.createElement("span");
-        const formattedLevel = formatRelevanceValue(level);
+    const badge = document.createElement("span");
+    badge.className = "relevance-value";
+    badge.textContent = formatPercentage(percentage);
+    badge.dataset.percent = String(percentage);
+    relevanceCell.appendChild(badge);
 
-        badge.className = "relevance-value";
-        badge.textContent = `${exam}: ${formattedLevel}`;
-        badge.dataset.level = formattedLevel.toLocaleLowerCase("pt-BR");
-        relevanceCell.appendChild(badge);
-      });
-    }
-
-    row.append(subjectCell, titleCell, contestCell, relevanceCell);
+    row.append(subjectCell, titleCell, bancaCell, relevanceCell);
     tableBody.appendChild(row);
   });
 
-  emptyState.hidden = filteredTopics.length > 0;
+  emptyState.hidden = rows.length > 0;
 }
 
 async function loadStudyData() {
