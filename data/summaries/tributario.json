@@ -30,6 +30,12 @@
       "concurso": "SEFAZ-AL",
       "title": "Impostos da União",
       "path": "resumos/tributario/impostos-uniao.md"
+    },
+     {
+      "id": "impostos municipais",
+      "concurso": "SEFAZ-AL",
+      "title": "Impostos Municipais",
+      "path": "resumos/tributario/impostos-municipais.md"
     }
   ]
 }

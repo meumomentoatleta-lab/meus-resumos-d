@@ -1554,8 +1554,239 @@
       "topic": "Imposto Seletivo",
       "front": "Qual é a alíquota máxima do IS na extração?",
       "back": "1% do valor de mercado do produto, independentemente da destinação.",
+      "difficulty": "medio"},
+
+      
+
+    {
+      "id": "impmun-001",
+      "concurso": "SEFAZ-AL",
+      "legacyId": 1,
+      "topic": "Impostos Municipais",
+      "front": "Quais são os três impostos de competência dos Municípios?",
+      "back": "IPTU, ITBI e ISS.",
+      "difficulty": "facil"
+    },
+    {
+      "id": "impmun-002",
+      "concurso": "SEFAZ-AL",
+      "legacyId": 2,
+      "topic": "IPTU",
+      "front": "Qual é o fato gerador do IPTU?",
+      "back": "A propriedade, o domínio útil ou a posse de bem imóvel por natureza ou acessão física, localizado na zona urbana do Município.",
+      "difficulty": "facil"
+    },
+    {
+      "id": "impmun-003",
+      "concurso": "SEFAZ-AL",
+      "legacyId": 3,
+      "topic": "IPTU",
+      "front": "Qual é a base de cálculo do IPTU?",
+      "back": "O valor venal do imóvel.",
+      "difficulty": "facil"
+    },
+    {
+      "id": "impmun-004",
+      "concurso": "SEFAZ-AL",
+      "legacyId": 4,
+      "topic": "IPTU",
+      "front": "Quais são os contribuintes do IPTU segundo o CTN?",
+      "back": "O proprietário do imóvel, o titular do domínio útil ou o possuidor a qualquer título.",
+      "difficulty": "facil"
+    },
+    {
+      "id": "impmun-005",
+      "concurso": "SEFAZ-AL",
+      "legacyId": 5,
+      "topic": "IPTU",
+      "front": "Quantos melhoramentos públicos são exigidos, em regra, para caracterizar a zona urbana pelo art. 32, § 1º, do CTN?",
+      "back": "Pelo menos dois dos melhoramentos previstos no dispositivo.",
+      "difficulty": "facil"
+    },
+    {
+      "id": "impmun-006",
+      "concurso": "SEFAZ-AL",
+      "legacyId": 6,
+      "topic": "IPTU",
+      "front": "A incidência do IPTU sobre área urbanizável ou de expansão urbana exige os melhoramentos do art. 32, § 1º, do CTN?",
+      "back": "Não. Conforme a Súmula 626 do STJ, não é necessária a existência dos melhoramentos quando a área é considerada urbanizável ou de expansão urbana pela lei local.",
       "difficulty": "medio"
+    },
+    {
+      "id": "impmun-007",
+      "concurso": "SEFAZ-AL",
+      "legacyId": 7,
+      "topic": "IPTU",
+      "front": "Qual é a diferença entre progressividade fiscal e extrafiscal do IPTU?",
+      "back": "A fiscal é baseada no valor do imóvel; a extrafiscal é baseada no tempo e busca estimular o adequado aproveitamento do solo urbano.",
+      "difficulty": "facil"
+    },
+    {
+      "id": "impmun-008",
+      "concurso": "SEFAZ-AL",
+      "legacyId": 8,
+      "topic": "IPTU",
+      "front": "Qual é a alíquota máxima do IPTU progressivo no tempo?",
+      "back": "15%.",
+      "difficulty": "facil"
+    },
+    {
+      "id": "impmun-009",
+      "concurso": "SEFAZ-AL",
+      "legacyId": 9,
+      "topic": "IPTU",
+      "front": "O IPTU pode ter alíquotas diferentes de acordo com quais critérios?",
+      "back": "De acordo com a localização e o uso do imóvel.",
+      "difficulty": "facil"
+    },
+    {
+      "id": "impmun-010",
+      "concurso": "SEFAZ-AL",
+      "legacyId": 10,
+      "topic": "IPTU",
+      "front": "O IPTU pode incidir sobre imóvel alugado por templo religioso?",
+      "back": "Não. A imunidade alcança templos de qualquer culto, ainda que a entidade religiosa seja apenas locatária do imóvel.",
+      "difficulty": "medio"
+    },
+    {
+      "id": "impmun-011",
+      "concurso": "SEFAZ-AL",
+      "legacyId": 11,
+      "topic": "IPTU",
+      "front": "Qual é a modalidade de lançamento do IPTU?",
+      "back": "Lançamento de ofício.",
+      "difficulty": "facil"
+    },
+    {
+      "id": "impmun-012",
+      "concurso": "SEFAZ-AL",
+      "legacyId": 12,
+      "topic": "ITBI",
+      "front": "Qual é o fato gerador do ITBI?",
+      "back": "A transmissão inter vivos, por ato oneroso, da propriedade ou domínio útil de bens imóveis, de direitos reais sobre imóveis (exceto garantia) e a cessão onerosa de direitos relativos a essas transmissões.",
+      "difficulty": "medio"
+    },
+    {
+      "id": "impmun-013",
+      "concurso": "SEFAZ-AL",
+      "legacyId": 13,
+      "topic": "ITBI",
+      "front": "Qual Município é competente para cobrar o ITBI?",
+      "back": "O Município da situação do bem imóvel.",
+      "difficulty": "facil"
+    },
+    {
+      "id": "impmun-014",
+      "concurso": "SEFAZ-AL",
+      "legacyId": 14,
+      "topic": "ITBI",
+      "front": "A transmissão inter vivos gratuita de imóvel é tributada pelo ITBI?",
+      "back": "Não. A transmissão inter vivos a título gratuito é tributada pelo ITCMD, imposto estadual.",
+      "difficulty": "facil"
+    },
+    {
+      "id": "impmun-015",
+      "concurso": "SEFAZ-AL",
+      "legacyId": 15,
+      "topic": "ITBI",
+      "front": "O ITBI incide sobre direitos reais de garantia?",
+      "back": "Não. Os direitos reais de garantia são excluídos da incidência do ITBI.",
+      "difficulty": "facil"
+    },
+    {
+      "id": "impmun-016",
+      "concurso": "SEFAZ-AL",
+      "legacyId": 16,
+      "topic": "ITBI",
+      "front": "O ITBI incide sobre a aquisição da propriedade por usucapião ou desapropriação?",
+      "back": "Não. São formas originárias de aquisição da propriedade, sobre as quais não incide ITBI.",
+      "difficulty": "medio"
+    },
+    {
+      "id": "impmun-017",
+      "concurso": "SEFAZ-AL",
+      "legacyId": 17,
+      "topic": "ITBI",
+      "front": "O que estabelece o Tema 796 do STF sobre a imunidade do ITBI na integralização de capital?",
+      "back": "A imunidade não alcança o valor dos bens que exceder o limite do capital social a ser integralizado.",
+      "difficulty": "dificil"
+    },
+    {
+      "id": "impmun-018",
+      "concurso": "SEFAZ-AL",
+      "legacyId": 18,
+      "topic": "ITBI",
+      "front": "Como o CTN define o valor venal para fins de ITBI, conforme a LC 227/2026 apresentada na aula?",
+      "back": "O valor pelo qual o bem ou direito seria negociado à vista, em condições normais de mercado.",
+      "difficulty": "medio"
+    },
+    {
+      "id": "impmun-019",
+      "concurso": "SEFAZ-AL",
+      "legacyId": 19,
+      "topic": "ITBI",
+      "front": "Quais são as modalidades de lançamento do ITBI indicadas no material?",
+      "back": "Por declaração ou por homologação. O lançamento de ofício é considerado inviável conforme a jurisprudência do STJ citada na aula.",
+      "difficulty": "medio"
+    },
+    {
+      "id": "impmun-020",
+      "concurso": "SEFAZ-AL",
+      "legacyId": 20,
+      "topic": "ISS",
+      "front": "Qual é o fato gerador do ISS?",
+      "back": "A prestação de serviços previstos na LC 116/2003, não compreendidos no campo de incidência do ICMS.",
+      "difficulty": "facil"
+    },
+    {
+      "id": "impmun-021",
+      "concurso": "SEFAZ-AL",
+      "legacyId": 21,
+      "topic": "ISS",
+      "front": "O ISS incide sobre serviços provenientes do exterior ou iniciados no exterior?",
+      "back": "Sim. A LC 116/2003 prevê a incidência sobre serviços provenientes do exterior ou cuja prestação tenha se iniciado no exterior.",
+      "difficulty": "facil"
+    },
+    {
+      "id": "impmun-022",
+      "concurso": "SEFAZ-AL",
+      "legacyId": 22,
+      "topic": "ISS",
+      "front": "O ISS incide sobre exportações de serviços para o exterior?",
+      "back": "Não. As exportações de serviços para o exterior do País não sofrem incidência do ISS.",
+      "difficulty": "facil"
+    },
+    {
+      "id": "impmun-023",
+      "concurso": "SEFAZ-AL",
+      "legacyId": 23,
+      "topic": "ISS",
+      "front": "Qual é a regra geral para definir o Município competente para cobrar o ISS?",
+      "back": "O local do estabelecimento prestador ou, na falta deste, o local do domicílio do prestador, ressalvadas as exceções da LC 116/2003.",
+      "difficulty": "medio"
+    },
+    {
+      "id": "impmun-024",
+      "concurso": "SEFAZ-AL",
+      "legacyId": 24,
+      "topic": "ISS",
+      "front": "Quais são as alíquotas mínima e máxima gerais do ISS?",
+      "back": "Alíquota mínima de 2% e máxima de 5%.",
+      "difficulty": "facil"
+    },
+    {
+      "id": "impmun-025",
+      "concurso": "SEFAZ-AL",
+      "legacyId": 25,
+      "topic": "ISS",
+      "front": "Quem é o contribuinte do ISS e qual é sua modalidade de lançamento?",
+      "back": "O prestador do serviço é o contribuinte. O lançamento é por homologação.",
+      "difficulty": "facil"
     }
+  
+
+
+    
   
 
 
