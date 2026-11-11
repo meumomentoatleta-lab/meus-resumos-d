@@ -55,6 +55,14 @@
       "subject": "Direito Tributário",
       "path": "mindmaps/tributario/impostos-municipais.html",
       "available": true 
+    },
+        {
+      "id": "Repartição tributária ",
+      "concurso": "SEFAZ-AL",
+      "title": "Repartição tributária ",
+      "subject": "Direito Tributário",
+      "path": "mindmaps/tributario/reparticao.html",
+      "available": true 
     }
   ]
 }

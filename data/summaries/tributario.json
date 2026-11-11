@@ -36,6 +36,12 @@
       "concurso": "SEFAZ-AL",
       "title": "Impostos Municipais",
       "path": "resumos/tributario/impostos-municipais.md"
+    },
+     {
+      "id": "reparticao tributaria",
+      "concurso": "SEFAZ-AL",
+      "title": "Repartição Tributária",
+      "path": "resumos/tributario/reparticao.md"
     }
   ]
 }

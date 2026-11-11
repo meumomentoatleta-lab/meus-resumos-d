@@ -1782,17 +1782,192 @@
       "front": "Quem é o contribuinte do ISS e qual é sua modalidade de lançamento?",
       "back": "O prestador do serviço é o contribuinte. O lançamento é por homologação.",
       "difficulty": "facil"
+    },
+
+
+    {
+      "id": "rep-001",
+      "concurso": "SEFAZ-AL",
+      "legacyId": 1,
+      "topic": "Repartição de Receitas",
+      "front": "Qual é a finalidade principal da repartição das receitas tributárias?",
+      "back": "Promover o equilíbrio federativo e garantir maior autonomia financeira aos entes federativos, especialmente Estados e Municípios.",
+      "difficulty": "facil"
+    },
+    {
+      "id": "rep-002",
+      "concurso": "SEFAZ-AL",
+      "legacyId": 2,
+      "topic": "Competência Tributária",
+      "front": "A repartição das receitas tributárias altera a competência para instituir tributos?",
+      "back": "Não. A repartição ocorre após a arrecadação e não altera a competência tributária do ente que instituiu o tributo. A competência tributária é indelegável.",
+      "difficulty": "facil"
+    },
+    {
+      "id": "rep-003",
+      "concurso": "SEFAZ-AL",
+      "legacyId": 3,
+      "topic": "IRRF",
+      "front": "A quem pertence o IRRF incidente sobre rendimentos pagos pelos Estados, DF e Municípios?",
+      "back": "Pertence integralmente (100%) ao próprio ente que efetuou o pagamento, inclusive quando realizado por suas autarquias e fundações.",
+      "difficulty": "facil"
+    },
+    {
+      "id": "rep-004",
+      "concurso": "SEFAZ-AL",
+      "legacyId": 4,
+      "topic": "IRRF",
+      "front": "O IRRF sobre pagamentos realizados a fornecedores de bens e serviços também pertence aos Estados, DF e Municípios?",
+      "back": "Sim. Conforme o STF no Tema 1130, a titularidade alcança o IRRF incidente sobre valores pagos a pessoas físicas ou jurídicas contratadas para fornecimento de bens ou prestação de serviços.",
+      "difficulty": "medio"
+    },
+    {
+      "id": "rep-005",
+      "concurso": "SEFAZ-AL",
+      "legacyId": 5,
+      "topic": "IOF sobre Ouro",
+      "front": "Como é repartida a arrecadação do IOF sobre ouro definido como ativo financeiro ou instrumento cambial?",
+      "back": "30% pertencem aos Estados e ao Distrito Federal e 70% aos Municípios.",
+      "difficulty": "facil"
+    },
+    {
+      "id": "rep-006",
+      "concurso": "SEFAZ-AL",
+      "legacyId": 6,
+      "topic": "Impostos Residuais",
+      "front": "Qual percentual dos impostos residuais instituídos pela União pertence aos Estados e ao Distrito Federal?",
+      "back": "20% do produto da arrecadação, conforme o art. 157, II, da Constituição Federal.",
+      "difficulty": "facil"
+    },
+    {
+      "id": "rep-007",
+      "concurso": "SEFAZ-AL",
+      "legacyId": 7,
+      "topic": "CIDE-Combustíveis",
+      "front": "Qual percentual da arrecadação da CIDE-Combustíveis é destinado aos Estados e ao Distrito Federal?",
+      "back": "29%. Desse montante, 25% são repassados aos Municípios, equivalentes a 7,25% da arrecadação total.",
+      "difficulty": "medio"
+    },
+    {
+      "id": "rep-008",
+      "concurso": "SEFAZ-AL",
+      "legacyId": 8,
+      "topic": "ITR",
+      "front": "Qual percentual do ITR pertence ao Município que não opta por fiscalizar e arrecadar o imposto?",
+      "back": "50% da arrecadação do ITR relativa aos imóveis situados em seu território.",
+      "difficulty": "facil"
+    },
+    {
+      "id": "rep-009",
+      "concurso": "SEFAZ-AL",
+      "legacyId": 9,
+      "topic": "ITR",
+      "front": "Qual percentual do ITR pertence ao Município que opta por fiscalizar e arrecadar o imposto?",
+      "back": "100% da arrecadação do ITR relativa aos imóveis situados em seu território, observadas as condições constitucionais.",
+      "difficulty": "facil"
+    },
+    {
+      "id": "rep-010",
+      "concurso": "SEFAZ-AL",
+      "legacyId": 10,
+      "topic": "IPVA",
+      "front": "Qual percentual da arrecadação do IPVA pertence aos Municípios?",
+      "back": "50%, relativamente aos veículos licenciados em seus territórios ou, no caso de veículos aquáticos e aéreos, cujos proprietários sejam neles domiciliados.",
+      "difficulty": "facil"
+    },
+    {
+      "id": "rep-011",
+      "concurso": "SEFAZ-AL",
+      "legacyId": 11,
+      "topic": "ICMS",
+      "front": "Qual percentual da arrecadação do ICMS pertence aos Municípios?",
+      "back": "25% do produto da arrecadação estadual.",
+      "difficulty": "facil"
+    },
+    {
+      "id": "rep-012",
+      "concurso": "SEFAZ-AL",
+      "legacyId": 12,
+      "topic": "ICMS",
+      "front": "Como são distribuídos os 25% do ICMS pertencentes aos Municípios?",
+      "back": "No mínimo 65% proporcionalmente ao valor adicionado. Até 35% conforme lei estadual, observando-se, dentro dessa parcela, no mínimo 10 pontos percentuais vinculados à melhoria da aprendizagem e à equidade educacional.",
+      "difficulty": "dificil"
+    },
+    {
+      "id": "rep-013",
+      "concurso": "SEFAZ-AL",
+      "legacyId": 13,
+      "topic": "FPE",
+      "front": "Qual percentual da arrecadação do IR, IPI e Imposto Seletivo é destinado ao FPE?",
+      "back": "21,5% do montante destinado aos fundos constitucionais, observadas as exclusões constitucionais relativas ao IRRF já pertencente a outros entes.",
+      "difficulty": "medio"
+    },
+    {
+      "id": "rep-014",
+      "concurso": "SEFAZ-AL",
+      "legacyId": 14,
+      "topic": "FPM",
+      "front": "Qual é o percentual total destinado ao FPM, considerando as parcelas adicionais?",
+      "back": "25,5%: 22,5% da parcela principal, acrescidos de 1% em julho, 1% em setembro e 1% em dezembro.",
+      "difficulty": "medio"
+    },
+    {
+      "id": "rep-015",
+      "concurso": "SEFAZ-AL",
+      "legacyId": 15,
+      "topic": "Fundos Regionais",
+      "front": "Qual percentual da arrecadação do IR, IPI e Imposto Seletivo é destinado aos programas de financiamento das regiões Norte, Nordeste e Centro-Oeste?",
+      "back": "3%, destinados a programas de financiamento ao setor produtivo por meio das instituições financeiras regionais. Metade dos recursos destinados ao Nordeste é assegurada ao semiárido nordestino.",
+      "difficulty": "medio"
+    },
+    {
+      "id": "rep-016",
+      "concurso": "SEFAZ-AL",
+      "legacyId": 16,
+      "topic": "Imposto Seletivo",
+      "front": "O Imposto Seletivo participa das regras constitucionais de repartição do IR e do IPI?",
+      "back": "Sim. A EC 132/2023 incluiu o Imposto Seletivo nos critérios de repartição previstos no art. 159, I, da Constituição Federal.",
+      "difficulty": "medio"
+    },
+    {
+      "id": "rep-017",
+      "concurso": "SEFAZ-AL",
+      "legacyId": 17,
+      "topic": "FNDR",
+      "front": "Qual é o objetivo do Fundo Nacional de Desenvolvimento Regional (FNDR)?",
+      "back": "Reduzir as desigualdades regionais e sociais, financiando infraestrutura, atividades produtivas, geração de emprego e renda, desenvolvimento científico, tecnológico e inovação.",
+      "difficulty": "facil"
+    },
+    {
+      "id": "rep-018",
+      "concurso": "SEFAZ-AL",
+      "legacyId": 18,
+      "topic": "FNDR",
+      "front": "Quais são os pesos utilizados na distribuição dos recursos do FNDR entre Estados e DF?",
+      "back": "População: 30%. Coeficiente individual de participação no FPE: 70%.",
+      "difficulty": "medio"
+    },
+    {
+      "id": "rep-019",
+      "concurso": "SEFAZ-AL",
+      "legacyId": 19,
+      "topic": "Jurisprudência",
+      "front": "Segundo o STF no Tema 490, benefícios fiscais concedidos pelo ente arrecadador obrigam a compensação financeira dos demais entes que recebem repartição?",
+      "back": "Não. A repartição incide sobre a arrecadação efetivamente realizada. Os benefícios fiscais podem reduzir proporcionalmente o montante repassado, sem obrigação de compensação.",
+      "difficulty": "dificil"
+    },
+    {
+      "id": "rep-020",
+      "concurso": "SEFAZ-AL",
+      "legacyId": 20,
+      "topic": "IBS",
+      "front": "Qual percentual da arrecadação do IBS estadual pertence aos Municípios e quais são os critérios de distribuição?",
+      "back": "25%. A distribuição ocorre conforme os critérios constitucionais: 80% em montantes iguais, 10% por indicadores de aprendizagem e equidade, 5% por indicadores ambientais e 5% proporcionalmente à população.",
+      "difficulty": "dificil"
     }
   
-
-
-    
   
-
-
+  
 ]
-
-
-
     
 }
