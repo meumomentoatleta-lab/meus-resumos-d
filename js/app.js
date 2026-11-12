@@ -82,14 +82,19 @@ function getTopicBancaEntries(subjectId, topicId) {
   return Object.entries(bancas).filter(
     ([banca, percentage]) =>
       banca.trim() !== "" &&
-      typeof percentage === "number" &&
-      Number.isFinite(percentage) &&
-      percentage >= 0 &&
-      percentage <= 100,
+      ((typeof percentage === "number" &&
+        Number.isFinite(percentage) &&
+        percentage >= 0 &&
+        percentage <= 100) ||
+        percentage === "<1%"),
   );
 }
 
 function formatPercentage(percentage) {
+  if (typeof percentage === "string") {
+    return percentage;
+  }
+
   return `${new Intl.NumberFormat("pt-BR", {
     maximumFractionDigits: 2,
   }).format(percentage)}%`;
@@ -140,7 +145,9 @@ function getRelevanceTopics() {
   });
 
   return [...topicsById.values()]
-    .filter((topic) => getTopicBancaEntries(topic.subjectId, topic.id).length > 0)
+    .filter(
+      (topic) => getTopicBancaEntries(topic.subjectId, topic.id).length > 0,
+    )
     .sort(
       (left, right) =>
         left.subject.localeCompare(right.subject, "pt-BR") ||
@@ -178,7 +185,9 @@ function renderRelevanceDashboard() {
   availableSubjects.forEach((name, id) => {
     select.add(new Option(name, id));
   });
-  select.value = availableSubjects.has(selectedSubject) ? selectedSubject : "all";
+  select.value = availableSubjects.has(selectedSubject)
+    ? selectedSubject
+    : "all";
 
   const availableBancas = [
     ...new Set(
@@ -203,10 +212,10 @@ function renderRelevanceDashboard() {
   );
 
   document.getElementById("relevanceTopicCount").textContent = topics.length;
-  document.getElementById("relevanceTrackedCount").textContent =
-    relevanceCount;
-  document.getElementById("relevanceBancaCount").textContent =
-    new Set(availableBancas).size;
+  document.getElementById("relevanceTrackedCount").textContent = relevanceCount;
+  document.getElementById("relevanceBancaCount").textContent = new Set(
+    availableBancas,
+  ).size;
 
   const query = searchInput.value.trim().toLocaleLowerCase("pt-BR");
   const filteredTopics = topics.filter((topic) => {
@@ -263,8 +272,13 @@ function renderRelevanceDashboard() {
   if (sortSelect.value !== "none") {
     const direction = sortSelect.value === "ascending" ? 1 : -1;
     rows.sort((left, right) => {
+      const leftPercentage =
+        typeof left.percentage === "number" ? left.percentage : 0;
+      const rightPercentage =
+        typeof right.percentage === "number" ? right.percentage : 0;
+
       return (
-        direction * (left.percentage - right.percentage) ||
+        direction * (leftPercentage - rightPercentage) ||
         left.topic.subject.localeCompare(right.topic.subject, "pt-BR") ||
         left.topic.title.localeCompare(right.topic.title, "pt-BR") ||
         left.banca.localeCompare(right.banca, "pt-BR")

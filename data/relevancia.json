@@ -79,6 +79,80 @@
         "bancas": {"CESPE": 40},
         "relevanciaAnterior": "Alta"
       }
+    },
+    "Desenvolvimento de Software": {
+      "java-se-poo-ides": {
+        "title": "Java SE, programação orientada a objetos e IDEs",
+        "bancas": {"Banca não identificada": 16.04}
+      },
+      "estrutura-dados-algoritmos": {
+        "title": "Estrutura de dados e algoritmos",
+        "bancas": {"Banca não identificada": 11.68}
+      },
+      "web-services-rest": {
+        "title": "Web Services e REST",
+        "bancas": {"Banca não identificada": 9.31}
+      },
+      "boas-praticas-testes-clean-code-xp-fdd-tdd": {
+        "title": "Boas práticas de programação com testes automatizados, Clean Code, XP, FDD e TDD",
+        "bancas": {"Banca não identificada": 9.31}
+      },
+      "html-css": {
+        "title": "HTML e CSS",
+        "bancas": {"Banca não identificada": 8.91}
+      },
+      "javascript-jquery-ajax-json-spring": {
+        "title": "Java Script, JQuery, Ajax, JSON e Spring",
+        "bancas": {"Banca não identificada": 8.12}
+      },
+      "logica-programacao-sistemas-numeracao": {
+        "title": "Lógica de programação e sistemas de numeração",
+        "bancas": {"Banca não identificada": 6.73}
+      },
+      "php": {
+        "title": "PHP",
+        "bancas": {"Banca não identificada": 5.94}
+      },
+      "jdbc-jpa-hibernate-jms-ejb-jndi-jta": {
+        "title": "JDBC, JPA, Hibernate, JMS, EJB, JNDI e JTA",
+        "bancas": {"Banca não identificada": 5.35}
+      },
+      "devops-ddd-emergent-design-refatoracao-docker-kubernetes-openshift": {
+        "title": "DEVOPS, DDD, Emergent Design, Refatoração, Docker, Kubernets e Openshift",
+        "bancas": {"Banca não identificada": 3.37}
+      },
+      "xml-xslt-xsd": {
+        "title": "XML, XSLT e XSD",
+        "bancas": {"Banca não identificada": 3.17}
+      },
+      "desenvolvimento-mobile": {
+        "title": "Desenvolvimento mobile",
+        "bancas": {"Banca não identificada": 2.57}
+      },
+      "compiladores-interpretadores": {
+        "title": "Compiladores e Interpretadores",
+        "bancas": {"Banca não identificada": 2.38}
+      },
+      "javaee-jakartaee-jsp-jsf-jstl-servlets-angular-react": {
+        "title": "JavaEE/JakartaEE, JSP, JSF, JSTL, Servlets, Angular e React",
+        "bancas": {"Banca não identificada": 2.18}
+      },
+      "controle-versao-monitoramento-codigo": {
+        "title": "Controle de versão e monitoramento de código",
+        "bancas": {"Banca não identificada": 2.18}
+      },
+      "arquitetura-monolitica-microservicos": {
+        "title": "Arquitetura monolítica e microserviços",
+        "bancas": {"Banca não identificada": 1.98}
+      },
+      "python-ruby": {
+        "title": "Python e Ruby",
+        "bancas": {"Banca não identificada": "<1%"}
+      },
+      "c-dotnet-csharp-asp": {
+        "title": "C, .NET, C# e ASP",
+        "bancas": {"Banca não identificada": "<1%"}
+      }
     }
   }
 }
